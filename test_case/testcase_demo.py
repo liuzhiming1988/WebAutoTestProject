@@ -11,17 +11,19 @@ from page_object.search_page_demo import SearchPage
 
 class SearchBaidu(unittest.TestCase):
 
-    def setUp(self):
-        pass
+    # def __int__(self):
+    #     self.driver = webdriver.Chrome()
+
     def test_search_01(self):
-        # self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome()
         search = SearchPage(self.driver)
         search.search("回收宝科技")
 
+    def test_search_02(self):
+        self.driver = webdriver.Chrome()
+        search = SearchPage(self.driver)
+        search.search("回收宝科技2021")
 
-
-    def tearDown(self):
-        self.driver.close()
 
 
 if __name__ == '__main__':

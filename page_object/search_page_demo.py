@@ -5,19 +5,22 @@
 # @File    : search_page_demo.py
 # @Software: PyCharm
 from base.base_page import BasePage
+from selenium.webdriver.common.by import By
+import time
+from common.config import ConfigRead
 
 class SearchPage(BasePage):
     """百度搜索页面"""
     # 定义元素及操作元素的方法
-    url = "https://www.baidu.com"
+    url = ConfigRead().get_url("baidu")
     input = (By.ID,"kw")
     submit = (By.ID,"su")
 
     # 元素操作的方法
     def search(self,keywords):
 
-        self.getUrl(url=self.url)
-        self.send_key(loc=self.input,value=keywords)
+        self.get_url(url=self.url)
+        self.send_key(self.input,value=keywords)
         self.click(loc=self.submit)
         time.sleep(3)
 
