@@ -6,11 +6,14 @@
 # @Software: PyCharm
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from public.config import ConfigRead
+import common
+
 
 class BasePage:
     # 封装每个页面共同的属性和方法
 
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
 
     # 定位属性方法
