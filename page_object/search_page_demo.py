@@ -22,5 +22,5 @@ class SearchPage(BasePage):
         self.get_url(url=self.url)
         self.send_key(self.input,value=keywords)
         self.click(loc=self.submit)
-        time.sleep(3)
+        time.sleep(1)
 

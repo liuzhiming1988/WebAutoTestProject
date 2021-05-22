@@ -29,4 +29,4 @@ class OmsLoginPage(BasePage):
         self.send_key(self.passwd, passwd)
         self.click(self.submit)
 
-        time.sleep(3)
+        time.sleep(1)

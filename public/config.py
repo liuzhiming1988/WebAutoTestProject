@@ -16,7 +16,6 @@ class ConfigRead:
 
     """定义读取ini配置文件的方法"""
     global_path = """D:\work\WebAutoTestProject\config\config_global.ini"""
-    account_path = """D:\work\WebAutoTestProject\config\/account.ini"""
 
     def __init__(self):
         pass
@@ -24,7 +23,7 @@ class ConfigRead:
     def get_account(self, name):
         """获取默认用户名和密码"""
         config = configparser.ConfigParser()
-        config.read(self.account_path)
+        config.read(self.global_path)
         try:
             value = config.get("account", name)
             return value
@@ -53,6 +52,12 @@ class ConfigRead:
         config = configparser.ConfigParser()
         config.read(self.global_path)
         value = config.items(select)
+        return value
+
+    def get_all_section(self, select):
+        config = configparser.ConfigParser()
+        config.read(self.global_path)
+        value = config.sections()
         return value
 
     def get_browser(self):

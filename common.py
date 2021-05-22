@@ -17,6 +17,12 @@ def get_filename():
     return name
 
 
+def get_time():
+    time_abc = time.strftime("%Y%m%d%H%M%S", time.localtime())
+    return time_abc
+
+
 if __name__ == '__main__':
     get_filename()
+    print(get_time())
 
