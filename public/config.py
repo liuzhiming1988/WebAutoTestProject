@@ -15,7 +15,7 @@ from selenium import webdriver
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    global_path = """D:\work\WebAutoTestProject\config\config_global.ini"""
+    global_path = """..\config\config_global.ini"""
 
     def __init__(self):
         pass

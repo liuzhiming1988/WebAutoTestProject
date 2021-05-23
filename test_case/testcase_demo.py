@@ -7,23 +7,26 @@
 
 import unittest
 from selenium import webdriver
+from public.config import ConfigRead
 from page_object.search_page_demo import SearchPage
+import common
+
 
 class SearchBaidu(unittest.TestCase):
 
-    # def __int__(self):
-    #     self.driver = webdriver.Chrome()
+    def setUp(self):
+        self.driver = ConfigRead().get_browser()
 
     def test_search_01(self):
-        self.driver = webdriver.Chrome()
         search = SearchPage(self.driver)
         search.search("回收宝科技")
 
     def test_search_02(self):
-        self.driver = webdriver.Chrome()
         search = SearchPage(self.driver)
         search.search("回收宝科技2021")
 
+    def tearDown(self) -> None:
+        self.driver.close()
 
 
 if __name__ == '__main__':

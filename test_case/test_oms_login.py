@@ -15,9 +15,8 @@ import common
 
 class OmsLogin(unittest.TestCase):
     """oms系统登录测试"""
-    def setUp(self) -> None:
+    def setUp(self):
         self.driver = ConfigRead().get_browser()
-        # self.driver = webdriver.Firefox()
 
     def test_oms_login_01(self):
         """默认账号登录"""
@@ -29,9 +28,10 @@ class OmsLogin(unittest.TestCase):
         oms_login = OmsLoginPage(self.driver)
         oms_login.oms_login(username="ghlfd123hg", passwd="36489264783")
 
-    def tearDown(self) -> None:
+    def tearDown(self):
 
-        self.driver.close()
+        # self.driver.close()   # 如果还有chrome进程存在，会报错--OSError: [WinError 6] 句柄无效
+        self.driver.quit()
 
 
 if __name__ == '__main__':
