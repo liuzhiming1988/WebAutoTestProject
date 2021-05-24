@@ -10,12 +10,15 @@
 import configparser
 import traceback
 from selenium import webdriver
+import os
 
 
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    global_path = """..\config\config_global.ini"""
+    # BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # 获取当前文件绝对路径
+    BASE_DIR = os.path.dirname(os.path.abspath("."))  # 获取当前文件的上级绝对路径
+    global_path = os.path.join(BASE_DIR, "config\\config_global.ini")  # 拼接上配置文件路径
 
     def __init__(self):
         pass
@@ -70,6 +73,9 @@ class ConfigRead:
 
 
 if __name__ == '__main__':
+
+    print(ConfigRead().BASE_DIR)
+    print(ConfigRead().global_path)
     aa = ConfigRead().get_url("oms")
     bb = ConfigRead().get_account("username")
     cc = ConfigRead().get_value("browser", "browser")

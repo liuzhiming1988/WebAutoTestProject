@@ -1,0 +1,217 @@
+2021-05-24 18:16:48,112 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:16:48,112 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:16:48,209 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:16:48,209 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:16:48,226 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:16:48,226 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:16:48,275 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:16:48,275 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:16:48,289 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:16:48,289 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:16:49,352 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称test_oms_login_01
+2021-05-24 18:16:49,352 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称test_oms_login_01
+2021-05-24 18:16:52,868 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:16:52,868 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:16:52,925 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:16:52,925 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:16:52,942 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:16:52,942 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:16:52,999 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:16:52,999 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:16:53,014 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:16:53,014 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:16:54,046 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称test_oms_login_02
+2021-05-24 18:16:54,046 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称test_oms_login_02
+2021-05-24 18:17:11,154 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:17:11,154 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:17:11,252 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:17:11,252 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:17:11,269 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:17:11,269 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:17:11,317 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:17:11,317 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:17:11,332 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:17:11,332 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:17:12,396 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称test_oms_login_01
+2021-05-24 18:17:12,396 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称test_oms_login_01
+2021-05-24 18:17:15,954 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:17:15,954 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:17:16,010 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:17:16,010 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:17:16,027 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:17:16,027 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:17:16,079 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:17:16,079 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:17:16,098 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:17:16,098 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:17:17,135 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称test_oms_login_02
+2021-05-24 18:17:17,135 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称test_oms_login_02
+2021-05-24 18:19:17,273 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:17,273 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:17,291 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:17,291 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:17,390 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:19:17,390 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:19:17,390 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:17,390 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:17,407 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:17,407 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:17,453 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:19:17,453 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:19:17,453 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:17,453 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:17,467 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:17,467 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:18,552 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称test_oms_login_01
+2021-05-24 18:19:18,552 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称test_oms_login_01
+2021-05-24 18:19:22,054 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:22,054 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:22,072 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:22,072 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:19:22,130 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:19:22,130 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:19:22,130 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:22,130 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:22,147 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:22,147 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:19:22,214 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:19:22,214 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:19:22,214 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:22,214 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:22,230 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:22,230 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:19:23,263 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称test_oms_login_02
+2021-05-24 18:19:23,263 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称test_oms_login_02
+2021-05-24 18:20:03,375 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:03,375 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:03,393 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:03,393 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:03,491 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:20:03,491 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:20:03,491 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:03,491 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:03,508 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:03,508 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:03,555 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:20:03,555 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:20:03,555 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:03,555 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:03,569 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:03,569 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:04,632 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-05-24 18:20:04,632 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-05-24 18:20:09,145 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:09,145 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:09,164 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:09,164 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:20:09,222 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:20:09,222 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:20:09,222 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:09,222 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:09,239 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:09,239 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:20:09,294 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:20:09,294 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:20:09,294 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:09,294 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:09,309 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:09,309 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:20:10,340 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称：test_oms_login_02，测试完成
+2021-05-24 18:20:10,340 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称：test_oms_login_02，测试完成
+2021-05-24 18:23:58,481 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:23:58,481 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:23:58,499 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:23:58,499 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:23:58,595 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:23:58,595 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:23:58,595 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:23:58,595 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:23:58,612 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:23:58,612 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:23:58,659 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:23:58,659 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:23:58,659 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:23:58,659 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:23:58,673 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:23:58,673 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:23:59,758 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:30] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-05-24 18:23:59,758 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:30] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-05-24 18:24:03,319 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:24:03,319 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:24:03,337 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:24:03,337 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:24:03,393 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:24:03,393 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:24:03,393 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:24:03,393 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:24:03,410 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:24:03,410 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:24:03,468 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:24:03,468 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:24:03,469 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:24:03,469 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:24:03,487 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:24:03,487 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:24:04,518 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:36] - INFO: 用例名称：test_oms_login_02，测试完成
+2021-05-24 18:24:04,518 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:36] - INFO: 用例名称：test_oms_login_02，测试完成
+2021-05-24 18:25:15,191 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:25:15,208 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:25:15,305 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:25:15,306 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:25:15,322 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:25:15,370 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:25:15,371 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:25:15,384 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:25:19,977 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:25:19,994 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:25:20,049 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:25:20,049 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:25:20,066 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:25:20,125 - D:\work\WebAutoTestProject\base\base_page.py[line:42] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:25:20,125 - D:\work\WebAutoTestProject\base\base_page.py[line:34] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:25:20,143 - D:\work\WebAutoTestProject\base\base_page.py[line:36] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:32:37,906 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:32:37,924 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:32:38,018 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:32:38,019 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:32:38,035 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:32:38,084 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:32:38,084 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:32:38,097 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:32:39,164 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:30] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-05-24 18:32:42,679 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:32:42,697 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:32:42,752 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:32:42,752 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:32:42,769 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:32:42,824 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:32:42,824 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:32:42,843 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:32:43,874 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:36] - INFO: 用例名称：test_oms_login_02，测试完成
+2021-05-24 18:35:25,566 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:35:25,585 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:35:25,683 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入test_liuzhiming@huishoubao.com.cn
+2021-05-24 18:35:25,683 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:35:25,699 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:35:25,749 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入f6758a4e
+2021-05-24 18:35:25,749 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:35:25,764 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:35:26,828 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:29] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-05-24 18:35:30,299 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:35:30,299 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:35:30,316 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:35:30,316 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
+2021-05-24 18:35:30,373 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:35:30,373 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[1]/div/div/input"),输入ghlfd123hg
+2021-05-24 18:35:30,373 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:35:30,373 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:35:30,390 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:35:30,390 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
+2021-05-24 18:35:30,444 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:35:30,444 - D:\work\WebAutoTestProject\base\base_page.py[line:41] - WARNING: 元素('xpath', ".//*[@id='app']/form/div[2]/div/div/input"),输入36489264783
+2021-05-24 18:35:30,444 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:35:30,444 - D:\work\WebAutoTestProject\base\base_page.py[line:33] - INFO: 开始寻找元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:35:30,463 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:35:30,463 - D:\work\WebAutoTestProject\base\base_page.py[line:35] - INFO: 已找到元素('xpath', ".//*[@id='app']/form/div[3]/div/button")
+2021-05-24 18:35:31,502 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称：test_oms_login_02，测试完成
+2021-05-24 18:35:31,502 - D:\work\WebAutoTestProject\test_hsb_case\test_oms_login.py[line:35] - INFO: 用例名称：test_oms_login_02，测试完成

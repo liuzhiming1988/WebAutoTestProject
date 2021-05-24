@@ -6,10 +6,8 @@
 # @Software: PyCharm
 
 import unittest
-from selenium import webdriver
 from public.config import ConfigRead
-from page_object.search_page_demo import SearchPage
-import common
+from page_object_hsb.search_page_demo import SearchPage
 
 
 class SearchBaidu(unittest.TestCase):

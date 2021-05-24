@@ -7,26 +7,33 @@
 @Time    : 2021/5/21 19:27
 """
 import unittest
-from selenium import webdriver
 from public.config import ConfigRead
-from page_object.oms_login_page import OmsLoginPage
-import common
+from page_object_hsb.oms_login_page import OmsLoginPage
+import time
+from public.logger import Logger
+from public.common import *
 
 
 class OmsLogin(unittest.TestCase):
     """oms系统登录测试"""
+
+    full_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
+    logger = Logger(full_name).logger
+
     def setUp(self):
         self.driver = ConfigRead().get_browser()
 
     def test_oms_login_01(self):
         """默认账号登录"""
-        oms_login = OmsLoginPage(self.driver)
+        oms_login = OmsLoginPage(self.driver, self.logger)
         oms_login.oms_login()
+        self.logger.info("用例名称：{0}，测试完成".format(get_current_function_name()))
 
     def test_oms_login_02(self):
         """错误账号登录"""
-        oms_login = OmsLoginPage(self.driver)
+        oms_login = OmsLoginPage(self.driver, self.logger)
         oms_login.oms_login(username="ghlfd123hg", passwd="36489264783")
+        self.logger.info("用例名称：{0}，测试完成".format(get_current_function_name()))
 
     def tearDown(self):
 
