@@ -14,8 +14,8 @@ class SearchPage(BasePage):
     """百度搜索页面"""
     # 定义元素及操作元素的方法
     url = ConfigRead().get_url("baidu")
-    input = (By.ID, "kw")
-    submit = (By.ID, "su")
+    input = ('id', "kw")
+    submit = ('id', "su")
 
     # 元素操作的方法
     def search(self, keywords):
@@ -23,5 +23,5 @@ class SearchPage(BasePage):
         self.get_url(url=self.url)
         self.send_key(self.input, value=keywords)
         self.click(loc=self.submit)
-        time.sleep(1)
+        time.sleep(3)
 

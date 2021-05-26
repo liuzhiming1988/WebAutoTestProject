@@ -10,6 +10,7 @@ import os
 import time
 import sys
 import inspect
+import traceback
 
 
 def get_filename():
@@ -67,6 +68,7 @@ def get_current_function_name():
     # "{0}.{1}".format(self.__class__.__name__, get_current_function_name())
     return inspect.stack()[1][3]
 
+
 def get_current_project_path():
     """
 
@@ -74,6 +76,44 @@ def get_current_project_path():
     """
     project_path = os.path.abspath(os.path.dirname(__file__)).split('WebAutoTestProject')[0]
     return project_path+'WebAutoTestProject'
+
+
+def get_log_name():
+    """
+
+    :return:
+     - log_name - 定义log文件名，目前规则每天一个log文件，如20210520.log，固定路径为当前项目的log文件夹中
+    """
+    log_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
+    return log_name
+
+
+def get_config_path():
+    """
+
+    :return:
+    """
+    config_path = get_current_project_path() + "\\config\\"
+    return config_path
+
+
+def get_img_name(fun_name = 'img'):
+    """
+
+    :arg
+     - fun_name - 方法名，可以用get_current_function_name()来获取。默认值img
+
+    :return:
+
+    """
+
+    img_name = get_current_project_path() + "\\screenshot\\" + fun_name + '_' + get_time() + ".png"
+    return img_name
+
+
+def get_error_info():
+    content = traceback.format_exc()
+    return content
 
 
 if __name__ == '__main__':

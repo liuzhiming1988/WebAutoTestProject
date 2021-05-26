@@ -11,13 +11,13 @@ import configparser
 import traceback
 from selenium import webdriver
 import os
+from public.common import *
 
 
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    # BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # 获取当前文件绝对路径
-    BASE_DIR = os.path.dirname(os.path.abspath("."))  # 获取当前文件的上级绝对路径
+    BASE_DIR = get_current_project_path()  # 获取当前项目的绝对路径
     global_path = os.path.join(BASE_DIR, "config\\config_global.ini")  # 拼接上配置文件路径
 
     def __init__(self):
@@ -65,7 +65,11 @@ class ConfigRead:
 
     def get_browser(self):
         if self.get_value("browser", "browser") == "chrome":
-            return webdriver.Chrome()
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option("excludeSwitches", ["enable-logging"])
+            driver = webdriver.Chrome(options=options)
+            # 解决日志中此错误--ERROR:device_event_log_impl.cc(214)] [16:59:41.983] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+            return driver
         elif self.get_value("browser", "browser") == "firefox":
             return webdriver.Firefox()
         else:

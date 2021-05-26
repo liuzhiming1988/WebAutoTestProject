@@ -12,16 +12,23 @@ from page_object_hsb.oms_login_page import OmsLoginPage
 import time
 from public.logger import Logger
 from public.common import *
+import pytest
 
 
-class OmsLogin(unittest.TestCase):
+class TestOmsLogin(unittest.TestCase):
     """oms系统登录测试"""
 
     full_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
     logger = Logger(full_name).logger
+    driver = ConfigRead().get_browser()
 
     def setUp(self):
-        self.driver = ConfigRead().get_browser()
+        print("开始测试")
+
+    def tearDown(self):
+        # self.driver.close()   # 如果还有chrome进程存在，会报错--OSError: [WinError 6] 句柄无效
+        self.logger.info("本条用例测试完成，关闭浏览器......")
+        self.driver.quit()
 
     def test_oms_login_01(self):
         """默认账号登录"""
@@ -35,11 +42,6 @@ class OmsLogin(unittest.TestCase):
         oms_login.oms_login(username="ghlfd123hg", passwd="36489264783")
         self.logger.info("用例名称：{0}，测试完成".format(get_current_function_name()))
 
-    def tearDown(self):
 
-        # self.driver.close()   # 如果还有chrome进程存在，会报错--OSError: [WinError 6] 句柄无效
-        self.driver.quit()
-
-
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     pytest.main()

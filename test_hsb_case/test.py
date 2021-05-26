@@ -5,6 +5,8 @@ import time
 import os
 from public.config import ConfigRead
 from public.common import *
+from selenium.webdriver.common.by import By
+import inspect
 
 
 
@@ -15,7 +17,24 @@ class MyClass:
     def tte(self):
         pass
 
-if __name__ == '__main__':
 
-    mc = MyClass().function_one()
-    print(get_current_function_name())
+def f():
+    a = inspect.stack()[1][3]
+    return inspect.stack()[1][3]
+
+
+if __name__ == '__main__':
+    FIND_LIST = {
+        # selenium
+        'css': 'By.CSS_SELECTOR',
+        'id_': By.ID,
+        'name': By.NAME,
+        'xpath': By.XPATH,
+        'link_text': By.LINK_TEXT,
+        'class_name': By.CLASS_NAME,
+    }
+    a = FIND_LIST['css']
+    print(type(a))
+    print(type(By.ID))
+    print(f())
+
