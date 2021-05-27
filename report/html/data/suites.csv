@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 27 21:04:33 CST 2021","Thu May 27 21:04:37 CST 2021","3655","testcase.web.web_hsb_case","test_demo","TestSearchBaidu","","","test_search_01",""

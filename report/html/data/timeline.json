@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-2SLFBAC",
+    "children" : [ {
+      "name" : "34584-MainThread",
+      "children" : [ {
+        "name" : "test_search_01",
+        "uid" : "465bc89e3402688",
+        "parentUid" : "8601f0028dd15d1327614743584abaef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622120673658,
+          "stop" : 1622120677313,
+          "duration" : 3655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8601f0028dd15d1327614743584abaef"
+    } ],
+    "uid" : "b82f36192dc507973a262fd4667ebebb"
+  } ]
+}

@@ -1,0 +1,6 @@
+[
+  "test_demo.py::TestSearchBaidu::test_search_01",
+  "test_demo.py::TestSearchBaidu::test_search_02",
+  "test_oms_login.py::TestOmsLogin::test_oms_login_01",
+  "test_oms_login.py::TestOmsLogin::test_oms_login_02"
+]

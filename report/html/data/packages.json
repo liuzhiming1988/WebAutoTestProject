@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcase.web.web_hsb_case.test_demo",
+    "children" : [ {
+      "name" : "test_search_01",
+      "uid" : "465bc89e3402688",
+      "parentUid" : "3e94e0b26f10dd57eda2897de12256b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622120673658,
+        "stop" : 1622120677313,
+        "duration" : 3655
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testcase.web.web_hsb_case.test_demo"
+  } ]
+}

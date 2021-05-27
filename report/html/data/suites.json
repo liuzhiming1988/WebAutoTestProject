@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase.web.web_hsb_case",
+    "children" : [ {
+      "name" : "test_demo",
+      "children" : [ {
+        "name" : "TestSearchBaidu",
+        "children" : [ {
+          "name" : "test_search_01",
+          "uid" : "465bc89e3402688",
+          "parentUid" : "8f6712491503d1e6cc5bb6ac2229f26a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1622120673658,
+            "stop" : 1622120677313,
+            "duration" : 3655
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8f6712491503d1e6cc5bb6ac2229f26a"
+      } ],
+      "uid" : "0cf7fa6472ed769b236a224f8dcd17d4"
+    } ],
+    "uid" : "1824ea72003a28f83f287ae2a4c52f2e"
+  } ]
+}
