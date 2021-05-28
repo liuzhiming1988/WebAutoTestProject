@@ -11,6 +11,38 @@ import time
 import sys
 import inspect
 import traceback
+import yagmail
+from public.config import ConfigRead
+
+
+# 从配置文件中读取邮件配置信息
+conf = ConfigRead()
+user = conf.get_value("email", "user")
+password = conf.get_value("email", "password")
+host = conf.get_value("email", "host")
+title = conf.get_value("email", "subject")
+content = conf.get_value("email", "content")
+address_list = conf.get_value("email", "to").split(";")
+
+
+def send_mail(attachment=None, text=content, subject=title):
+    """
+
+    :param attachment: 附件路径，传列表
+    :param text: 邮件正文部分，可以传html
+    :param subject: 邮件标题，默认值可在配置文件中修改
+    :return:
+    """
+    send_smtp = yagmail.SMTP(
+        user=user,
+        password=password,
+        host=host)
+    send_smtp.send(
+        address_list,
+        subject,
+        content,
+        attachment)
+    send_smtp.close()
 
 
 def get_filename():
@@ -97,7 +129,7 @@ def get_config_path():
     return config_path
 
 
-def get_img_name(fun_name = 'img'):
+def get_img_name(fun_name='img'):
     """
 
     :arg
@@ -117,9 +149,7 @@ def get_error_info():
 
 
 if __name__ == '__main__':
-    path_name = get_current_project_path()
-    print(path_name)
-    full_name = path_name+"\\log\\"+get_time()+".log"
-    print(full_name)
+    get_time()
+
 
 

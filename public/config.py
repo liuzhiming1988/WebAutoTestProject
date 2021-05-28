@@ -11,24 +11,25 @@ import configparser
 import traceback
 from selenium import webdriver
 import os
-from public.common import *
 
 
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    BASE_DIR = get_current_project_path()  # 获取当前项目的绝对路径
-    global_path = os.path.join(BASE_DIR, "config\\config_global.ini")  # 拼接上配置文件路径
+    global_path = "..\\config\\config_global.ini"  # 拼接上配置文件路径
 
-    def __init__(self):
-        pass
+
+    def __init__(self,file_path=global_path):
+        self.file_path = file_path
+        self.config = configparser.ConfigParser()
+        self.config.read(self.file_path, encoding="utf-8-sig")
 
     def get_account(self, name):
         """获取默认用户名和密码"""
-        config = configparser.ConfigParser()
-        config.read(self.global_path)
+        # config = configparser.ConfigParser()
+        # config.read(self.global_path)
         try:
-            value = config.get("account", name)
+            value = self.config.get("account", name)
             return value
 
         except:
@@ -36,31 +37,24 @@ class ConfigRead:
 
     def get_url(self, name):
         """根据系统名称获取配置文件中的系统地址"""
-        config = configparser.ConfigParser()
-        config.read(self.global_path)
+
         try:
-            value = config.get('url', name)
+            value = self.config.get('url', name)
             return value
 
         except:
             print(traceback.format_exc())
 
     def get_value(self, select, name):
-        config = configparser.ConfigParser()
-        config.read(self.global_path)
-        value = config.get(select, name)
+        value = self.config.get(select, name)
         return value
 
     def get_value_list(self, select):
-        config = configparser.ConfigParser()
-        config.read(self.global_path)
-        value = config.items(select)
+        value = self.config.items(select)
         return value
 
     def get_all_section(self, select):
-        config = configparser.ConfigParser()
-        config.read(self.global_path)
-        value = config.sections()
+        value = self.config.sections()
         return value
 
     def get_browser(self):
@@ -77,15 +71,5 @@ class ConfigRead:
 
 
 if __name__ == '__main__':
-
-    print(ConfigRead().BASE_DIR)
-    print(ConfigRead().global_path)
-    aa = ConfigRead().get_url("oms")
-    bb = ConfigRead().get_account("username")
-    cc = ConfigRead().get_value("browser", "browser")
-    list1 = ConfigRead().get_value_list("url")
-
-    print(aa)
-    print(bb)
-    print(cc)
-    print(list1[0])
+    p = ConfigRead().get_value_list("email")
+    print(p)
