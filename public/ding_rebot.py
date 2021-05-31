@@ -24,13 +24,15 @@ hmac_code = hmac.new(app_secret_enc, string_to_sign_enc, digestmod=hashlib.sha25
 sign = base64.b64encode(hmac_code).decode('utf-8')
 print(sign)
 
-headers={'Content-Type': 'application/json'}   #定义数据类型
-webhook = ''+timestamp+"&sign="+sign
-#定义要发送的数据
-
+web_hook=''
+url = web_hook+'&timestamp='+timestamp+'&sign='+sign
+HEADERS = {'Content-Type': 'application/json'}
 data = {
     "msgtype": "text",
-    "text": {"content": 'hahhahajahflash'},
-    "isAtAll": False}
-res = requests.post(webhook, data=json.dumps(data), headers=headers)   #发送post请求
+    "text": {
+        "content": "这是一个消息，群机器人新建成功了，这里随便输入你想要发送的消息"
+    }
+}
+
+res = requests.post(url=url, headers=HEADERS, json=json.dumps(data))
 print(res.text)
