@@ -123,9 +123,10 @@ class PoExcel:
 
 
 if __name__ == '__main__':
-    path ="D:\\autotest_projects\\WebAutoTestProject\\data\\value_oms_login.xls"
+    path ="..\\"+"\\data\\value_oms_login.xls"
     dd=PoExcel(path)
     dd.show_details()
     dd.get_every_values()
+    print(dd.get_vaild_data())
     print(dd.get_vaild_data()[0])
     print(dd.get_vaild_data()[1])

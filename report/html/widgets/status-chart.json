@@ -1,10 +1,20 @@
 [ {
-  "uid" : "465bc89e3402688",
-  "name" : "test_search_01",
+  "uid" : "6f8569f7beb9468f",
+  "name" : "test_get_balance_info",
   "time" : {
-    "start" : 1622120673658,
-    "stop" : 1622120677313,
-    "duration" : 3655
+    "start" : 1622787139176,
+    "stop" : 1622787139458,
+    "duration" : 282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0e0cc09099db58a",
+  "name" : "test_place_order",
+  "time" : {
+    "start" : 1622787139461,
+    "stop" : 1622787139890,
+    "duration" : 429
   },
   "status" : "passed",
   "severity" : "normal"

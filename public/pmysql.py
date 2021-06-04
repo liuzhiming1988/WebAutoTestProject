@@ -11,36 +11,56 @@ import pymysql
 from public.config import ConfigRead
 
 
+cr = ConfigRead()
+host = cr.get_value("mysql", "host")
+port = int(cr.get_value("mysql", "port"))
+username = cr.get_value("mysql", "username")
+passwd = cr.get_value("mysql", "passwd")
+database = cr.get_value("mysql", "database")
+
+
 class Pmysql:
 
     def __init__(self):
         self.conn = pymysql.connect(
-            host="127.0.0.1",
-            port=3308,
-            user="root", password="123456",
-            database="test",
+            host=host,
+            port=port,
+            user=username,
+            password=passwd,
+            database=database,
             charset="utf8")
         self.cursor = self.conn.cursor()
 
     def execute_sql(self, sql, limit=10):
         """
 
-        :param sql: 传入要执行的sql语句
+        :param sql: 传入要执行的sql语句,sql后不带入分号
         :param limit: 默认限制最多返回10条记录
         :return:
         """
-        self.cursor.execute(sql)
         result=None
+        if ";" in sql:
+            sql = sql[:-1]
+        else:
+            pass
+
         if "select" in sql.lower():
+            if "limit" in sql.lower():
+                pass
+            else:
+                sql += " limit {0}".format(limit)
+            self.cursor.execute(sql)
+
             num = self.cursor.rownumber
             count = self.cursor.rowcount
-            if count >= limit:
-                result = self.cursor.fetchmany(size=limit)
-            elif count == 1:
-                result = self.cursor.fetchone()
-            else:
-                result = self.cursor.fetchall()
+            result = self.cursor.fetchall()
+            # if count > 1:
+            #     result = self.cursor.fetchall()
+            # else:
+            #     result = self.cursor.fetchone()
+
         else:
+            self.cursor.execute(sql)
             self.conn.commit()
             result = "{0} is success".format(sql)
         self.cursor.close()
@@ -50,6 +70,14 @@ class Pmysql:
     def close(self):
         self.cursor.close()
         self.conn.close()
+
+
+if __name__ == '__main__':
+    msq = Pmysql()
+    sql = "SELECT u.Fuser_id FROM t_user u WHERE u.Fphone_num = '13049368516';"
+
+    res = msq.execute_sql(sql, limit=1)
+    print(res[0][0])
 
 
 

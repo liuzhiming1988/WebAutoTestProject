@@ -1,4 +1,26 @@
 {
-  "total" : 1,
-  "items" : [ ]
+  "total" : 2,
+  "items" : [ {
+    "uid" : "0c2c8edd37d232e4e9e846e8afdac2d5",
+    "name" : "【回收宝APP】账户信息测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "c4ad380b7ffea6f7074269f74f790537",
+    "name" : "【回收宝APP】自有回收订单测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }
