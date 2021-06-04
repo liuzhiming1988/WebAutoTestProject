@@ -4,22 +4,35 @@
   "children" : [ {
     "name" : "DESKTOP-2SLFBAC",
     "children" : [ {
-      "name" : "34584-MainThread",
+      "name" : "38632-MainThread",
       "children" : [ {
-        "name" : "test_search_01",
-        "uid" : "465bc89e3402688",
-        "parentUid" : "8601f0028dd15d1327614743584abaef",
+        "name" : "test_place_order",
+        "uid" : "a0e0cc09099db58a",
+        "parentUid" : "5c642a94f4f72866f7aa9e704cae0b3c",
         "status" : "passed",
         "time" : {
-          "start" : 1622120673658,
-          "stop" : 1622120677313,
-          "duration" : 3655
+          "start" : 1622787139461,
+          "stop" : 1622787139890,
+          "duration" : 429
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_get_balance_info",
+        "uid" : "6f8569f7beb9468f",
+        "parentUid" : "5c642a94f4f72866f7aa9e704cae0b3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622787139176,
+          "stop" : 1622787139458,
+          "duration" : 282
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8601f0028dd15d1327614743584abaef"
+      "uid" : "5c642a94f4f72866f7aa9e704cae0b3c"
     } ],
     "uid" : "b82f36192dc507973a262fd4667ebebb"
   } ]

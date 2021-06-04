@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "1824ea72003a28f83f287ae2a4c52f2e",
-    "name" : "testcase.web.web_hsb_case",
+    "uid" : "afa013bd0a536d1bc51ccb7b227a5961",
+    "name" : "testcase.api.hsb_ordercenter",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   } ]
 }

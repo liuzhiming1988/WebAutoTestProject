@@ -14,6 +14,8 @@ from public.common import *
 import traceback
 from selenium import webdriver
 
+
+# 定义寻找元素方法
 FIND_LIST = {
     # selenium
     'css': By.CSS_SELECTOR,
@@ -23,6 +25,7 @@ FIND_LIST = {
     'link_text': By.LINK_TEXT,
     'class_name': By.CLASS_NAME,
 }
+
 
 class BasePage:
     # 封装每个页面共同的属性和方法

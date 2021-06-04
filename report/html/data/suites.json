@@ -2,29 +2,50 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "testcase.web.web_hsb_case",
+    "name" : "testcase.api.hsb_ordercenter",
     "children" : [ {
-      "name" : "test_demo",
+      "name" : "test_get_balance",
       "children" : [ {
-        "name" : "TestSearchBaidu",
+        "name" : "TestGetBalance",
         "children" : [ {
-          "name" : "test_search_01",
-          "uid" : "465bc89e3402688",
-          "parentUid" : "8f6712491503d1e6cc5bb6ac2229f26a",
+          "name" : "test_get_balance_info",
+          "uid" : "6f8569f7beb9468f",
+          "parentUid" : "6728e0b9dc162b74f57bbd7893a56af3",
           "status" : "passed",
           "time" : {
-            "start" : 1622120673658,
-            "stop" : 1622120677313,
-            "duration" : 3655
+            "start" : 1622787139176,
+            "stop" : 1622787139458,
+            "duration" : 282
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "8f6712491503d1e6cc5bb6ac2229f26a"
+        "uid" : "6728e0b9dc162b74f57bbd7893a56af3"
       } ],
-      "uid" : "0cf7fa6472ed769b236a224f8dcd17d4"
+      "uid" : "ac5720a2687ef9ce7d4b9ee8187d0b7b"
+    }, {
+      "name" : "test_own_order",
+      "children" : [ {
+        "name" : "TestOwnOrderT",
+        "children" : [ {
+          "name" : "test_place_order",
+          "uid" : "a0e0cc09099db58a",
+          "parentUid" : "73d044c1d14da7789094088166e7e772",
+          "status" : "passed",
+          "time" : {
+            "start" : 1622787139461,
+            "stop" : 1622787139890,
+            "duration" : 429
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "73d044c1d14da7789094088166e7e772"
+      } ],
+      "uid" : "8b4aacab4816a130ef60ea8873ea5468"
     } ],
-    "uid" : "1824ea72003a28f83f287ae2a4c52f2e"
+    "uid" : "afa013bd0a536d1bc51ccb7b227a5961"
   } ]
 }

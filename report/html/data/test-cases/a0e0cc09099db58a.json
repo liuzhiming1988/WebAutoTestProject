@@ -1,0 +1,95 @@
+{
+  "uid" : "a0e0cc09099db58a",
+  "name" : "test_place_order",
+  "fullName" : "testcase.api.hsb_ordercenter.test_own_order.TestOwnOrderT#test_place_order",
+  "historyId" : "8a7ff7a912f337089abdf4e8cb3b1efb",
+  "time" : {
+    "start" : 1622787139461,
+    "stop" : 1622787139890,
+    "duration" : 429
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1622787139461,
+      "stop" : 1622787139461,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_uid",
+    "time" : {
+      "start" : 1622787139461,
+      "stop" : 1622787139461,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "【回收宝app】回收订单：下单-到店回收"
+  }, {
+    "name" : "feature",
+    "value" : "【回收宝APP】自有回收订单测试"
+  }, {
+    "name" : "tag",
+    "value" : "hsbapitest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.api.hsb_ordercenter"
+  }, {
+    "name" : "suite",
+    "value" : "test_own_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOwnOrderT"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2SLFBAC"
+  }, {
+    "name" : "thread",
+    "value" : "38632-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.api.hsb_ordercenter.test_own_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "hsbapitest" ]
+  },
+  "source" : "a0e0cc09099db58a.json",
+  "parameterValues" : [ ]
+}

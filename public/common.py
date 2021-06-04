@@ -13,6 +13,8 @@ import inspect
 import traceback
 import yagmail
 from public.config import ConfigRead
+import json
+import hashlib
 
 
 # 从配置文件中读取邮件配置信息
@@ -146,6 +148,59 @@ def get_img_name(fun_name='img'):
 def get_error_info():
     content = traceback.format_exc()
     return content
+
+
+def json_format(body):
+    """
+    格式化json字符串，并显示汉字字符，格式缩进更美观
+    :param body:
+    :return:
+    """
+    return json.dumps(body, sort_keys=True, indent=2, ensure_ascii=False)
+
+
+def md5_encrypt(str):
+    m = hashlib.md5()
+    m.update(str.encode("utf-8"))
+    return m.hexdigest()
+
+
+def get_header_json(body, secret_key="ohHmcePiHr2hkXIeBlvleHyfuuSkPP2h", server_id="112002"):
+    """
+    获取公共头部
+    :param body: 传入参数字典
+    :param secret_key:
+    :param server_id:
+    :return:
+    """
+    data=json.dumps(body) + "_" + secret_key
+    headers = {"Content-Type": "application/json;charset=UTF-8",
+               "HSB-OPENAPI-SIGNATURE": md5_encrypt(data),
+               "HSB-OPENAPI-CALLERSERVICEID": server_id}
+    return headers
+
+
+def get_signData(data):
+    """
+    回收宝自有sign规则，将所有的参数名进行排序，然后按照参数名+参数值进行拼接，最后拼接上key值，再进行sha1加密（utf-8编码），再hexdigest加密
+    :param data: 传入一个字典，不包含签名
+    :return:
+    签名
+    """
+    signKey = 'b7cab12b2b81385dd2cccb8ce67e4998'
+    str1 = ""
+    # 将传入的字典进行排序并拼接
+    for i in sorted(data):
+        # print(i)
+        str1 += i+str(data[i])
+    # 拼接上key
+    str1 += signKey
+    # 进行加密
+    s = hashlib.sha1()
+    s.update(str1.encode("utf-8"))
+    sign = s.hexdigest()
+    data["sign"]=sign
+    return data
 
 
 if __name__ == '__main__':

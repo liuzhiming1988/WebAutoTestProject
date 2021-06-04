@@ -16,7 +16,8 @@ import os
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    global_path = "..\\config\\config_global.ini"  # 拼接上配置文件路径
+    project_path = os.path.abspath(os.path.dirname(__file__)).split('WebAutoTestProject')[0] # 获取当前项目所在绝对路径
+    global_path = project_path+'WebAutoTestProject'+"\\config\\config_global.ini"  # 拼接上配置文件路径
 
 
     def __init__(self,file_path=global_path):

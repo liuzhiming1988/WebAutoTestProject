@@ -1,7 +1,0 @@
-INFO     D:\work\WebAutoTestProject\log\20210527.log:base_page.py:58 >>>开始寻找元素:定位方法id，值kw
-INFO     D:\work\WebAutoTestProject\log\20210527.log:base_page.py:68 成功定位元素:定位方法id，值kw
-INFO     D:\work\WebAutoTestProject\log\20210527.log:base_page.py:58 >>>开始寻找元素:定位方法id，值kw
-INFO     D:\work\WebAutoTestProject\log\20210527.log:base_page.py:68 成功定位元素:定位方法id，值kw
-WARNING  D:\work\WebAutoTestProject\log\20210527.log:base_page.py:97 输入数据回收宝科技
-INFO     D:\work\WebAutoTestProject\log\20210527.log:base_page.py:58 >>>开始寻找元素:定位方法id，值su
-INFO     D:\work\WebAutoTestProject\log\20210527.log:base_page.py:68 成功定位元素:定位方法id，值su
