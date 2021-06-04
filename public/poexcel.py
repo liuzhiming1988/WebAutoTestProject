@@ -129,4 +129,3 @@ if __name__ == '__main__':
     dd.get_every_values()
     print(dd.get_vaild_data()[0])
     print(dd.get_vaild_data()[1])
-
