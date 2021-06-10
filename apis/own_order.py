@@ -8,12 +8,12 @@
 """
 
 from public.common import *
-from base.base_api import HsbOwnApiBase
+from base.base_api import HsbApiBase
 from urllib3 import encode_multipart_formdata
 import requests
 
 
-class OwnOrder(HsbOwnApiBase):
+class OwnOrder(HsbApiBase):
     # full_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
     # logger = Logger(full_name).logger
 
@@ -30,11 +30,11 @@ class OwnOrder(HsbOwnApiBase):
         }
         data=dict(data, **self.get_common_args())
         data=get_signData(data)
-        print(json_format(data))
+        print(self.json_format(data))
         bd = self.boundary
         data_res = encode_multipart_formdata(data, boundary=bd)
         response = requests.post(path, data=data_res[0], headers=self.get_headers_multipart(bd))
-        info = json_format(response.json())
+        info = self.json_format(response.json())
         print("接口{0}的返回结果是\n{1}".format(path, info))
         evaluateId = json.loads(response.text)["_data"]["evaluateid"]
         print(evaluateId)
@@ -60,10 +60,10 @@ class OwnOrder(HsbOwnApiBase):
         }
         data=dict(data, **self.get_common_args())
         data=get_signData(data)
-        print(json_format(data))
+        print(self.json_format(data))
         bd = self.boundary
         data_res = encode_multipart_formdata(data, boundary=bd)
         response = requests.post(path, data=data_res[0], headers=self.get_headers_multipart(bd))
-        info = json_format(response.json())
+        info = self.json_format(response.json())
         print("接口{0}的返回结果是\n{1}".format(path, info))
 

@@ -93,7 +93,7 @@ class OwnApi:
         print("接口{0}的返回结果是\n{1}".format(path, info))
         token = json.loads(response.text)["_data"]["token"]
         uid = json.loads(response.text)["_data"]["eid"]
-        return token,uid
+        return token, uid
 
 
 phone = "13049368516"
@@ -101,7 +101,7 @@ oa = OwnApi()
 res = oa.own_login(phone)
 
 
-@pytest.fixture(scope="module",autouse=True)
+@pytest.fixture(scope="module", autouse=True)
 def get_token():
     loginToken = res[0]
     return loginToken

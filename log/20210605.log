@@ -1,0 +1,14 @@
+2021-06-05 18:16:32,726 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值kw
+2021-06-05 18:16:32,751 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值kw
+2021-06-05 18:16:32,774 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值kw
+2021-06-05 18:16:32,795 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值kw
+2021-06-05 18:16:32,856 - D:\work\WebAutoTestProject\base\base_page.py[line:100] - WARNING: 输入数据回收宝科技
+2021-06-05 18:16:32,857 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值su
+2021-06-05 18:16:32,879 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值su
+2021-06-05 18:16:39,559 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值kw
+2021-06-05 18:16:39,586 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值kw
+2021-06-05 18:16:39,609 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值kw
+2021-06-05 18:16:39,633 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值kw
+2021-06-05 18:16:39,715 - D:\work\WebAutoTestProject\base\base_page.py[line:100] - WARNING: 输入数据回收宝科技2021
+2021-06-05 18:16:39,715 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值su
+2021-06-05 18:16:39,737 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值su
