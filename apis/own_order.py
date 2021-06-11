@@ -8,7 +8,7 @@
 """
 
 from public.common import *
-from base.base_api import HsbApiBase
+from base.own_api_base import HsbApiBase
 from urllib3 import encode_multipart_formdata
 import requests
 

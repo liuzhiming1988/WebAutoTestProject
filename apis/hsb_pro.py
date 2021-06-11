@@ -7,7 +7,7 @@
 @Time    : 2021/6/7 18:50
 """
 
-from base.base_api import HsbApiBase
+from base.own_api_base import HsbApiBase
 import requests
 import json
 from urllib import parse

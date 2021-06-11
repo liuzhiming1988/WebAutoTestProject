@@ -6,7 +6,7 @@
 @Author  : liuzhiming
 @Time    : 2021/6/7 19:47
 """
-from base.base_api import HsbApiBase
+from base.own_api_base import HsbApiBase
 import requests
 import json
 from urllib import parse
