@@ -149,16 +149,6 @@ def get_error_info():
     content = traceback.format_exc()
     return content
 
-
-def json_format(body):
-    """
-    格式化json字符串，并显示汉字字符，格式缩进更美观
-    :param body:
-    :return:
-    """
-    return json.dumps(body, sort_keys=True, indent=2, ensure_ascii=False)
-
-
 def md5_encrypt(str):
     m = hashlib.md5()
     m.update(str.encode("utf-8"))

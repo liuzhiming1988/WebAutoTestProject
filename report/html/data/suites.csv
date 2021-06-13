@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Jun 04 14:12:19 CST 2021","Fri Jun 04 14:12:19 CST 2021","282","testcase.api.hsb_ordercenter","test_get_balance","TestGetBalance","","","test_get_balance_info",""
-"passed","Fri Jun 04 14:12:19 CST 2021","Fri Jun 04 14:12:19 CST 2021","429","testcase.api.hsb_ordercenter","test_own_order","TestOwnOrderT","","","test_place_order",""

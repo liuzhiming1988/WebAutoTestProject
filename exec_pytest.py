@@ -56,4 +56,4 @@ def gen_html(mark=None, kw=None):
 
 if __name__ == '__main__':
     # gen_html()
-    gen_allure(mark="hsbapitest")
+    gen_allure(mark="webtest")

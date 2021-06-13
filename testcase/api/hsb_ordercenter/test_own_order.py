@@ -14,6 +14,7 @@ import allure
 import pytest
 from apis.own_order import OwnOrder
 
+
 @allure.feature("【回收宝APP】自有回收订单测试")
 class TestOwnOrder:
     # full_name = get_current_project_path() + "\\log\\ownapi_" + get_time()[0:8] + ".log"
