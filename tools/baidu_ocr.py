@@ -8,16 +8,13 @@
 """
 
 from aip import AipOcr
-# import .ocr_conf
+from tools import ocr_conf
 
-APP_ID = "24365769"
-API_KEY = "HxGBCbGNYtmMeQIhzHoQFZmC"
-SECRET_KEY = "dlsmg3BNLnPpBKlUKnheRG6IlBTD2g2m"
 
 class BaiduOcr:
 
     def __init__(self):
-        self.client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+        self.client = AipOcr(ocr_conf.APP_ID, ocr_conf.API_KEY, ocr_conf.SECRET_KEY)
 
     def get_file_content(self, filepath):
         """
@@ -41,7 +38,7 @@ class BaiduOcr:
         # 将识别到的每行文字进行拼接
         for x in data["words_result"]:
             res_data+="{}\n".format(x["words"])
-        # print(res_data.strip())
+        print(res_data.strip())
         return res_data.strip()
 
 
