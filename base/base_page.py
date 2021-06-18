@@ -97,7 +97,7 @@ class BasePage:
         """输入方法"""
         self.find_element(loc).clear()
         self.find_element(loc).send_keys(value)
-        self.logger.warning("输入数据{0}".format(value))
+        self.logger.debug("输入数据{0}".format(value))
 
     def click(self, loc):
         """点击"""
@@ -129,6 +129,9 @@ class BasePage:
         self.logger.info("刷新当前页面")
         time.sleep(2)
 
+    def swich_to_frame(self, frame):
+        self.driver.switch_to.frame(frame)
+        self.logger.info("进入frame")
 
 
 # 常用键盘操作

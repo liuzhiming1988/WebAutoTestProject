@@ -8,7 +8,7 @@
 """
 
 from aip import AipOcr
-from tools import ocr_conf
+from public import ocr_conf
 
 
 class BaiduOcr:
@@ -43,5 +43,5 @@ class BaiduOcr:
 
 
 if __name__ == '__main__':
-    path = "d:\\test_ocr.png"
+    path = "d:\\55.jpg"
     BaiduOcr().get_ocr_data(path)

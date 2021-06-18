@@ -1,0 +1,110 @@
+2021-06-16 11:44:27,043 - D:\work\WebAutoTestProject\base\base_page.py[line:125] - INFO: 最大化当前页面
+2021-06-16 11:44:27,044 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 11:44:27,070 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 11:44:27,092 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 11:44:27,112 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 11:44:27,133 - D:\work\WebAutoTestProject\base\base_page.py[line:100] - WARNING: 输入数据026
+2021-06-16 11:44:27,133 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 11:44:27,152 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 11:44:27,172 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 11:44:27,187 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 11:44:27,223 - D:\work\WebAutoTestProject\base\base_page.py[line:100] - WARNING: 输入数据026
+2021-06-16 11:44:27,223 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-16 11:44:27,242 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:loginBtn
+2021-06-16 17:05:42,205 - D:\work\WebAutoTestProject\base\base_page.py[line:125] - INFO: 最大化当前页面
+2021-06-16 17:05:42,214 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:05:42,240 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:05:42,261 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:05:42,279 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:05:42,303 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:05:42,320 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:05:42,340 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:05:42,354 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:05:42,388 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-16 17:05:42,404 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:loginBtn
+2021-06-16 17:05:48,806 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:05:52,107 - D:\work\WebAutoTestProject\base\base_page.py[line:116] - INFO: 截图成功，保存路径为D:\work\WebAutoTestProject\screenshot\find_element_20210616170551.png
+2021-06-16 17:05:52,115 - D:\work\WebAutoTestProject\base\base_page.py[line:75] - ERROR: 在3秒内未定位到元素，定位方法xpath，值.//*[@id='INSYS']/span
+异常：<class 'selenium.common.exceptions.TimeoutException'> 
+Info：Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\base_page.py", line 69, in find_element
+    WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located((By.XPATH, value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-06-16 17:11:43,551 - D:\work\WebAutoTestProject\base\base_page.py[line:125] - INFO: 最大化当前页面
+2021-06-16 17:11:43,551 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:11:43,573 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:11:43,594 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:11:43,611 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:11:43,634 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:11:43,652 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:11:43,674 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:11:43,690 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:11:43,722 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-16 17:11:43,740 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:loginBtn
+2021-06-16 17:11:51,744 - D:\work\WebAutoTestProject\base\base_page.py[line:134] - INFO: 进入frame
+2021-06-16 17:11:51,744 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:11:51,764 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:11:51,814 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值
+2021-06-16 17:11:55,089 - D:\work\WebAutoTestProject\base\base_page.py[line:116] - INFO: 截图成功，保存路径为D:\work\WebAutoTestProject\screenshot\find_element_20210616171154.png
+2021-06-16 17:11:55,089 - D:\work\WebAutoTestProject\base\base_page.py[line:75] - ERROR: 在3秒内未定位到元素，定位方法xpath，值
+异常：<class 'selenium.common.exceptions.TimeoutException'> 
+Info：Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\base_page.py", line 69, in find_element
+    WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located((By.XPATH, value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+2021-06-16 17:12:47,916 - D:\work\WebAutoTestProject\base\base_page.py[line:125] - INFO: 最大化当前页面
+2021-06-16 17:12:47,916 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:12:47,939 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:12:47,960 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:12:47,977 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:12:47,998 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:12:48,017 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:12:48,038 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:12:48,053 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:12:48,091 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-16 17:12:48,108 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:loginBtn
+2021-06-16 17:12:55,749 - D:\work\WebAutoTestProject\base\base_page.py[line:134] - INFO: 进入frame
+2021-06-16 17:12:55,750 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:12:55,770 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:12:55,817 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='PO_span']
+2021-06-16 17:12:56,341 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='PO_span']
+2021-06-16 17:14:11,700 - D:\work\WebAutoTestProject\base\base_page.py[line:125] - INFO: 最大化当前页面
+2021-06-16 17:14:11,700 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:14:11,720 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:14:11,743 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:14:11,764 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:14:11,787 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:14:11,806 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:14:11,827 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:14:11,842 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:14:11,875 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-16 17:14:11,894 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:loginBtn
+2021-06-16 17:14:22,096 - D:\work\WebAutoTestProject\base\base_page.py[line:134] - INFO: 进入frame
+2021-06-16 17:14:22,096 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:14:22,119 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:14:22,165 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='PO_span']
+2021-06-16 17:14:22,693 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='PO_span']
+2021-06-16 17:16:20,077 - D:\work\WebAutoTestProject\base\base_page.py[line:125] - INFO: 最大化当前页面
+2021-06-16 17:16:20,077 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:16:20,104 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:16:20,130 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-16 17:16:20,150 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:nv_userid
+2021-06-16 17:16:20,166 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:16:20,185 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:16:20,205 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-16 17:16:20,217 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:passWord
+2021-06-16 17:16:20,243 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-16 17:16:20,263 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法id，值form1:loginBtn
+2021-06-16 17:16:34,558 - D:\work\WebAutoTestProject\base\base_page.py[line:134] - INFO: 进入frame
+2021-06-16 17:16:34,558 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:16:34,578 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-16 17:16:34,623 - D:\work\WebAutoTestProject\base\base_page.py[line:61] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='PO_span']
+2021-06-16 17:16:35,148 - D:\work\WebAutoTestProject\base\base_page.py[line:71] - INFO: 成功定位元素:定位方法xpath，值.//*[@id='PO_span']
