@@ -10,7 +10,7 @@ Desktop.ini
 *.egg-info
 dist
 build
-venv
+venv_mac
 
 # My configurations:
 test.ini
