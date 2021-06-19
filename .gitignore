@@ -11,6 +11,7 @@ Desktop.ini
 dist
 build
 venv_mac
+.DS_Store
 
 # My configurations:
 test.ini
