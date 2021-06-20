@@ -9,6 +9,8 @@
 
 import logging
 from logging import handlers
+from config import path_conf
+import time
 
 
 class Logger:
@@ -24,7 +26,12 @@ class Logger:
         'critical': logging.CRITICAL
     }    # 定义日志级别
 
-    def __init__(self, filename, level='info', when='D', backCount=3,
+    log_name = time.strftime("%Y%m%d", time.localtime())+".log"
+    path_list = ["log", log_name]
+    log_path = path_conf.path_join(path_list)
+    print(log_path)
+
+    def __init__(self, filename=log_path, level='info', when='D', backCount=3,
                  fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
         self.logger = logging.getLogger(filename)
         self.logger.handlers.clear()   # 清理已经存在的handler，防止日志重复
@@ -48,9 +55,6 @@ class Logger:
 
 
 if __name__ == '__main__':
-
-    logger = Logger("D:\\work\\WebAutoTestProject\\log\\20210524\\123\\test.log")
+    logger = Logger().logger
     message = "信息info:测试一下by test"
-    logger.logger.info(message)
-
-
+    logger.info(message)

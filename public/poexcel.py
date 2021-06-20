@@ -9,6 +9,7 @@
 
 import xlrd as xr
 import xlwt as xw
+import os
 
 
 class PoExcel:
@@ -123,8 +124,12 @@ class PoExcel:
 
 
 if __name__ == '__main__':
-    path ="..\\"+"\\data\\value_oms_login.xls"
-    dd=PoExcel(path)
+
+    pp = os.path.abspath("..")
+    pp = os.path.join(pp,"data")
+    pp = os.path.join(pp,"value_oms_login.xls")
+    print(pp)
+    dd=PoExcel(pp)
     dd.show_details()
     dd.get_every_values()
     print(dd.get_vaild_data())

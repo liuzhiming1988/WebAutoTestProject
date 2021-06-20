@@ -70,7 +70,7 @@ class DingRebot:
 
 if __name__ == '__main__':
     DR = DingRebot()
-    # DR.send_text("我是一个毫无感情的机器人")
+    DR.send_text("测试：我是一个毫无感情的机器人")
     link = {
         "title": "钉钉机器人",
         "text": "--2021年6月5号，",

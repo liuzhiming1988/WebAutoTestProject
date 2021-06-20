@@ -7,7 +7,7 @@
 @Time    : 2021/6/4 11:48
 """
 
-from public.config import ConfigRead
+from public.config_read import ConfigRead
 from public.common import *
 from public.logger import Logger
 import allure

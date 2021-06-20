@@ -3,7 +3,7 @@ from selenium import webdriver
 import pytest
 import time
 import os
-from public.config import ConfigRead
+from public.config_read import ConfigRead
 from public.common import *
 from selenium.webdriver.common.by import By
 import inspect

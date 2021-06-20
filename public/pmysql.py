@@ -8,7 +8,7 @@
 """
 # 导入pymysql模块
 import pymysql
-from public.config import ConfigRead
+from public.config_read import ConfigRead
 
 
 cr = ConfigRead()

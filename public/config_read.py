@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : config.py
+@File    : config_read.py
 @Author  : liuzhiming
 @Time    : 2021/5/21 16:18
 @Software: PyCharm
@@ -16,11 +16,15 @@ import os
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    project_path = os.path.abspath(os.path.dirname(__file__)).split('WebAutoTestProject')[0] # 获取当前项目所在绝对路径
-    global_path = project_path+'WebAutoTestProject'+"\\config\\config_global.ini"  # 拼接上配置文件路径
+    project_path = os.path.abspath(os.path.dirname(__file__)).split('WebAutoTestProject')[0]  # 获取当前项目所在绝对路径
+    # print(project_path)
+    # global_path = project_path+'WebAutoTestProject'+"\\config\\config_global.ini"  # 拼接上配置文件路径-windows
+    global_path = os.path.join(project_path, "WebAutoTestProject")
+    global_path = os.path.join(global_path, "config")
+    global_path = os.path.join(global_path, "config_global.ini")
+    # print(global_path)
 
-
-    def __init__(self,file_path=global_path):
+    def __init__(self, file_path=global_path):
         self.file_path = file_path
         self.config = configparser.ConfigParser()
         self.config.read(self.file_path, encoding="utf-8-sig")
@@ -32,7 +36,6 @@ class ConfigRead:
         try:
             value = self.config.get("account", name)
             return value
-
         except:
             print(traceback.format_exc())
 
@@ -63,7 +66,8 @@ class ConfigRead:
             options = webdriver.ChromeOptions()
             options.add_experimental_option("excludeSwitches", ["enable-logging"])
             driver = webdriver.Chrome(options=options)
-            # 解决日志中此错误--ERROR:device_event_log_impl.cc(214)] [16:59:41.983] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+            # 解决日志中此错误--ERROR:device_event_log_impl.cc(214)] [16:59:41.983] Bluetooth:
+            # bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
             return driver
         elif self.get_value("browser", "browser") == "firefox":
             return webdriver.Firefox()
@@ -72,5 +76,7 @@ class ConfigRead:
 
 
 if __name__ == '__main__':
-    p = ConfigRead().get_value_list("email")
-    print(p)
+    p = ConfigRead()
+    p.get_account("username")
+    # p.get_value_list("email")
+    # print(p)

@@ -5,7 +5,7 @@
 # @File    : test_demo.py
 # @Software: PyCharm
 
-from public.config import ConfigRead
+from public.config_read import ConfigRead
 from page.web_hsb_page.search_page_demo import SearchPage
 from public.common import *
 from public.logger import Logger

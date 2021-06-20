@@ -10,7 +10,11 @@ Desktop.ini
 *.egg-info
 dist
 build
+
+
+# MacOS:
 venv_mac
+.DS_Store
 
 # My configurations:
 test.ini

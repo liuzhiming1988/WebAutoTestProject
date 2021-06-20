@@ -7,7 +7,7 @@
 @Time    : 2021/6/16 16:59
 """
 
-from public.config import ConfigRead
+from public.config_read import ConfigRead
 from page.web_gwms_page.gwms_menu_page import GwmsMenu
 from page.web_gwms_page.gwms_login_page import GwmsLoginPage
 from public.common import *
