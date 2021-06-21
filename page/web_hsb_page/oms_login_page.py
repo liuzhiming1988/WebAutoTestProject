@@ -27,7 +27,7 @@ class OmsLoginPage(BasePage):
 
     def oms_login(self, username=config.get_account("username"), passwd=config.get_account("passwd")):
         self.get_url(self.url)
-        self.max_window()
+        # self.max_window() # mac不兼容
         self.logger.info("开始输入用户名")
         with allure.step("开始输入用户名"):
             self.send_key(self.username, username)

@@ -14,16 +14,15 @@ import pytest
 
 class TestSearchBaidu():
 
-    full_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
-    logger = Logger(full_name).logger
+    logger = Logger().logger
 
     def test_search_01(self, get_driver):
-        search = SearchPage(get_driver, self.logger)
+        search = SearchPage(get_driver)
         search.search("回收宝科技")
 
     @pytest.mark.webtest
     def test_search_02(self, get_driver):
-        search = SearchPage(get_driver, self.logger)
+        search = SearchPage(get_driver)
         search.search("回收宝科技2021")
 
 

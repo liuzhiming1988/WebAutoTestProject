@@ -13,6 +13,7 @@ import sys
 from public.common import *
 import traceback
 from selenium import webdriver
+from public.logger import Logger
 
 
 # 定义寻找元素方法
@@ -30,9 +31,9 @@ FIND_LIST = {
 class BasePage:
     # 封装每个页面共同的属性和方法
 
-    def __init__(self, driver, logger):
+    def __init__(self, driver):
         self.driver = driver
-        self.logger = logger
+        self.logger = Logger().logger
 
     def __elements(self, key, value):
         """
@@ -72,7 +73,8 @@ class BasePage:
             except Exception as e:
                 self.save_img(get_current_function_name())
                 ec = traceback.format_exc()
-                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常：{3} \nInfo：{4}".format(timeout, key, value, e.__class__, ec))
+                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常：{3} \nInfo：{4}".format(
+                    timeout, key, value, e.__class__, ec))
 
         else:
             self.logger.error("请检查定位方法，目前仅支持：{0}".format(FIND_LIST.values()))

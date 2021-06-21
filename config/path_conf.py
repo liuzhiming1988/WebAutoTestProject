@@ -17,7 +17,7 @@ def path_join(path_list):
     :param path_list: For example: [os.path.abspath(".."), "config", "path_conf.py"]
     :return:Full path
     """
-    full_path = os.path.abspath("..")
+    full_path = project_path = os.path.abspath(os.path.dirname(__file__)).split('WebAutoTestProject')[0]+'WebAutoTestProject'
     for x in path_list:
         full_path = os.path.join(full_path, x)
     return full_path

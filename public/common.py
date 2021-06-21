@@ -15,6 +15,7 @@ import yagmail
 from public.config_read import ConfigRead
 import json
 import hashlib
+import inspect
 
 
 
@@ -164,8 +165,34 @@ def get_signData(data):
     return data
 
 
-if __name__ == '__main__':
-    get_time()
+def get_method_name():
+    """
+    获取当前方法的名字
+    :return:
+    """
+    return inspect.stack()[1][3]
 
+
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        res = func(*args, **kwargs)
+        time.sleep(1)
+        end_time = time.time()
+        print("{}--总耗时：{}".format(func.__name__, end_time-start_time))
+        # logger.info("{}--总耗时：{}".format(func.__name__, end_time-start_time))
+        return res
+    return wrapper
+
+@timer
+def test(a, b):
+    print(a*b)
+    print(get_method_name())
+    return a*b
+
+
+if __name__ == '__main__':
+    # get_time()
+    test(5, 7)
 
 

@@ -10,6 +10,7 @@
 import requests
 import json
 from urllib import parse
+from public.logger import Logger
 
 class HttpBase:
 
