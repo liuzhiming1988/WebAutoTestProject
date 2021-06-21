@@ -14,7 +14,9 @@ build
 
 # MacOS:
 venv_mac
+*.DS_Store
 .DS_Store
+DS_Store
 
 # My configurations:
 test.ini
