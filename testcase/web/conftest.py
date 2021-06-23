@@ -9,7 +9,7 @@
 
 import pytest
 from selenium import webdriver
-from public.config_read import ConfigRead
+from utils.config_read import ConfigRead
 
 
 @pytest.fixture(scope="function", autouse=True)

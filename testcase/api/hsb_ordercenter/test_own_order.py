@@ -7,9 +7,9 @@
 @Time    : 2021/6/4 9:54
 """
 
-from public.config_read import ConfigRead
-from public.common import *
-from public.logger import Logger
+from utils.config_read import ConfigRead
+from utils.common import *
+from utils.logger import Logger
 import allure
 import pytest
 from apis.own_order import OwnOrder

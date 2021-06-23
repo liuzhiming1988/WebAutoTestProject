@@ -9,9 +9,9 @@
 from base.base_page import BasePage
 from selenium.webdriver.common.by import By
 import time
-from public.config_read import ConfigRead
-from public.logger import Logger
-from public.common import *
+from utils.config_read import ConfigRead
+from utils.logger import Logger
+from utils.common import *
 import allure
 
 

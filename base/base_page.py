@@ -7,16 +7,20 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchWindowException
+from selenium.common.exceptions import NoAlertPresentException
+from selenium.common.exceptions import NoSuchFrameException
 import os
 import time
 import sys
-from public.common import *
+from utils.common import *
 import traceback
 from selenium import webdriver
-from public.logger import Logger
+from utils.logger import Logger
+from config.path_conf import *
 
-
-# 定义寻找元素方法
+# 定义寻找元素方法字典
 FIND_LIST = {
     # selenium
     'css': By.CSS_SELECTOR,
@@ -24,16 +28,17 @@ FIND_LIST = {
     'name': By.NAME,
     'xpath': By.XPATH,
     'link_text': By.LINK_TEXT,
-    'class_name': By.CLASS_NAME,
+    'class_name': By.CLASS_NAME
 }
 
 
 class BasePage:
     # 封装每个页面共同的属性和方法
 
-    def __init__(self, driver):
+    def __init__(self, driver, timeout=30):
         self.driver = driver
         self.logger = Logger().logger
+        self.timeout = timeout
 
     def __elements(self, key, value):
         """
@@ -45,7 +50,8 @@ class BasePage:
         elements = self.driver.find_elements(by=key, value=value)
         return elements
 
-    def find_element(self, loc, timeout=3):
+    @timer
+    def find_element(self, loc):
         """
 
         :param loc:
@@ -61,51 +67,58 @@ class BasePage:
             try:
                 self.logger.info(">>>开始寻找元素:定位方法{0}，值{1}".format(key, value))
                 if key == 'id':
-                    WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located((By.ID, value)))
+                    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((By.ID, value)))
                     elem = self.driver.find_element(By.ID, value)
                 elif key == 'name':
-                    WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located((By.NAME, value)))
+                    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((By.NAME, value)))
                     elem = self.driver.find_element(By.NAME, value)
                 elif key == 'xpath':
-                    WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located((By.XPATH, value)))
+                    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((By.XPATH, value)))
                     elem = self.driver.find_element(By.XPATH, value)
                 self.logger.info("成功定位元素:定位方法{0}，值{1}".format(key, value))
+            except TimeoutException as t:
+                self.save_img(get_current_function_name())
+                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3}".format(
+                    self.timeout, key, value, t))
             except Exception as e:
                 self.save_img(get_current_function_name())
                 ec = traceback.format_exc()
-                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常：{3} \nInfo：{4}".format(
-                    timeout, key, value, e.__class__, ec))
+                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3} \nInfo：{4}".format(
+                    self.timeout, key, value, e.__class__, ec))
 
         else:
             self.logger.error("请检查定位方法，目前仅支持：{0}".format(FIND_LIST.values()))
 
         return elem
 
-    def loctor(self, loc, timeout=15):
-        """
-        元素定位
-
-        :arg:
-         - loc - 传入一个元组，如input = (By.ID, "kw")
-        :return:
-         - 返回元素对象
-        """
-        self.logger.info("开始寻找元素{0}".format(loc))
-        WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located(loc))
-        self.logger.info("已找到元素{0}".format(loc))
-        return self.driver.find_element(*loc)
+    # def loctor(self, loc, timeout=15):
+    #     """
+    #     元素定位
+    #
+    #     :arg:
+    #      - loc - 传入一个元组，如input = (By.ID, "kw")
+    #     :return:
+    #      - 返回元素对象
+    #     """
+    #     self.logger.info("开始寻找元素{0}".format(loc))
+    #     WebDriverWait(self.driver, timeout, 0.5).until(EC.visibility_of_element_located(loc))
+    #     self.logger.info("已找到元素{0}".format(loc))
+    #     return self.driver.find_element(*loc)
 
     def send_key(self, loc, value):
         """输入方法"""
-        self.find_element(loc).clear()
-        self.find_element(loc).send_keys(value)
-        self.logger.debug("输入数据{0}".format(value))
+        self.logger.info("准备输入数据{0}".format(value))
+        element = self.find_element(loc)
+        element.clear()
+        element.send_keys(value)
 
     def click(self, loc):
         """点击"""
+        self.logger.info("点击元素：".format(loc))
         self.find_element(loc).click()
 
     def get_url(self, url):
+        self.logger.info("打开网址：{}".format(url))
         self.driver.get(url)
 
     def save_img(self, name="Img"):
@@ -113,7 +126,8 @@ class BasePage:
 
         :return:
         """
-        img_path=get_current_project_path() + "\\screenshot\\" + name + '_' + get_time() + ".png"
+        img_name = name + '_' + get_time() + ".png"
+        img_path = path_join(["screenshot", img_name])
         self.driver.get_screenshot_as_file(img_path)
         self.logger.info("截图成功，保存路径为{0}".format(img_path))
 
@@ -123,6 +137,7 @@ class BasePage:
         self.logger.info("移动滚动条位置：x={0},y={1}".format(x, y))
 
     def max_window(self):
+        # can not use in Mac
         self.driver.maximize_window()
         self.logger.info("最大化当前页面")
 
@@ -131,9 +146,31 @@ class BasePage:
         self.logger.info("刷新当前页面")
         time.sleep(2)
 
-    def swich_to_frame(self, frame):
+    def switch_to_frame(self, frame):
         self.driver.switch_to.frame(frame)
-        self.logger.info("进入frame")
+        self.logger.info("<===============>进入frame:{}".format(frame))
+
+    def switch_to_default_frame(self):
+        """返回默认的frame"""
+        self.logger.info("跳转回默认的iframe")
+        try:
+            self.driver.switch_to.default_content()
+        except Exception as e:
+            self.logger.error("跳转默认iframe失败，error:{}".format(e))
+
+    def is_alert_exist(self):
+        """
+        assert alert if exist
+        :return: alert obj
+        """
+        self.logger.info("assert alert if exist")
+        try:
+            re = WebDriverWait(self.driver, self.timeout).until(EC.alert_is_present())
+        except NoAlertPresentException:
+            return False
+        except Exception:
+            return False
+        return re
 
 
 # 常用键盘操作

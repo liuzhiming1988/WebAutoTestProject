@@ -7,10 +7,10 @@
 @Time    : 2021/5/21 19:27
 """
 import unittest
-from public.config_read import ConfigRead
+from utils.config_read import ConfigRead
 from page.web_hsb_page.oms_login_page import OmsLoginPage
-from public.logger import Logger
-from public.common import *
+from utils.logger import Logger
+from utils.common import *
 import allure
 import pytest
 

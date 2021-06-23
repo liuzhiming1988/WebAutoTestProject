@@ -123,9 +123,4 @@ if __name__ == "__main__":
     # response = requests.post(url,data=m[0],headers=HEARDERS)
     # print(response.request.body)
     # print(response.text)
-    import time
-
-
-
-
 

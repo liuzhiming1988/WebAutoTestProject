@@ -7,15 +7,16 @@
 @Time    : 2021/6/3 19:48
 """
 
-from public.common import *
-from base.own_api_base import HsbApiBase
+from utils.common import *
+from base.own_api_base import OwnApiBase
 from urllib3 import encode_multipart_formdata
 import requests
+from utils.logger import Logger
 
 
-class OwnOrder(HsbApiBase):
-    # full_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
-    # logger = Logger(full_name).logger
+class OwnOrder(OwnApiBase):
+
+    logger = Logger().logger
 
     def get_evaluate(self, loginToken, uuid):
         path = self.domain+"/api/product/evaluate"

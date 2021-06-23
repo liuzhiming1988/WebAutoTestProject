@@ -8,25 +8,17 @@
 """
 import requests
 import time
-from public.common import *
+from utils.common import *
 import random
 from urllib3 import encode_multipart_formdata
-from public.pmysql import Pmysql
+from utils.pmysql import Pmysql
 import pytest
 import time
 import json
+from base.own_api_base import OwnApiBase
 
-class OwnApi:
 
-    def __init__(self):
-        self.domain = "https://api.huishoubao.com"
-        self.pid = "1260"
-        self.platform = "7"
-        self.timestamp = str(int(time.time()))
-        self.version = "4007002"
-        self.versionName = "15"
-        self.uuid = "28887EA52156419080B8B873FF258772"
-        self.boundary = "Boundary+30F6D62471EF{0}".format(random.randint(1000,9999))
+class OwnApi(OwnApiBase):
 
     def get_common_args(self):
         common_args = {
@@ -58,7 +50,7 @@ class OwnApi:
         data_res = encode_multipart_formdata(data,boundary=bd)
         response = requests.post(path, data=data_res[0], headers=self.get_headers(bd))
         # 美化返回的json
-        info = json_format(response.json())
+        info = self.json_format(response.json())
         print("接口{0}的返回结果是\n{1}".format(path,info))
         assert "成功" in response.text
         # 强制等待两秒钟，待数据库生成短信验证码
@@ -70,6 +62,7 @@ class OwnApi:
         # print("获取到的验证码是：{0}".format(smsCode))
         return smsCode
 
+    @timer
     def own_login(self, phone, sms_code="auto"):
         """"""
         if sms_code == "auto":
@@ -86,15 +79,15 @@ class OwnApi:
         bd = self.boundary
         data_res = encode_multipart_formdata(data, boundary=bd)
         response = requests.post(path, data=data_res[0], headers=self.get_headers(bd))
-        info = json_format(response.json())
+        info = self.json_format(response.json())
         print("接口{0}的返回结果是\n{1}".format(path, info))
         token = json.loads(response.text)["_data"]["token"]
         return token
 
 
 if __name__ == '__main__':
-    # oa = OwnApi()
-    # oa.own_login("13049368516")
+    oa = OwnApi()
+    oa.own_login("13049368516")
     # import yaml
     # path = "D:\\work\\WebAutoTestProject\\testcase\\api\\hsb_ordercenter\\ownApi.yaml"
     # logintoken={"loginToken": token}
@@ -102,11 +95,7 @@ if __name__ == '__main__':
     #     yaml.dump(logintoken, f)
     # with open(path, "r", encoding="utf-8") as f:
     #     print(yaml.safe_load(f)["token"])
-    def a():
-        a =1
-        b=2
-        return a,b
-    print(a()[0])
+
 
 
 

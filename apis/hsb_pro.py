@@ -7,15 +7,15 @@
 @Time    : 2021/6/7 18:50
 """
 
-from base.own_api_base import HsbApiBase
+from base.own_api_base import OwnApiBase
 import requests
 import json
 from urllib import parse
-from public.pmysql import Pmysql
+from utils.pmysql import Pmysql
 import time
 
 
-class HsbPro(HsbApiBase):
+class HsbPro(OwnApiBase):
 
     def pro_get_login_captcha(self, phone):
         url = "https://hsbpro.huishoubao.com/hsbpro"

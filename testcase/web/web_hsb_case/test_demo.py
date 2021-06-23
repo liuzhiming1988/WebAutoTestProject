@@ -5,10 +5,10 @@
 # @File    : test_demo.py
 # @Software: PyCharm
 
-from public.config_read import ConfigRead
+from utils.config_read import ConfigRead
 from page.web_hsb_page.search_page_demo import SearchPage
-from public.common import *
-from public.logger import Logger
+from utils.common import *
+from utils.logger import Logger
 import pytest
 
 

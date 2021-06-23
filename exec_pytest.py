@@ -8,7 +8,7 @@
 """
 
 import os
-from public.common import *
+from utils.common import *
 from selenium import webdriver
 
 

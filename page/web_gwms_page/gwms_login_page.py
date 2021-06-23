@@ -11,9 +11,9 @@
 from base.base_page import BasePage
 from selenium.webdriver.common.by import By
 import time
-from public.config_read import ConfigRead
-from public.logger import Logger
-from public.common import *
+from utils.config_read import ConfigRead
+from utils.logger import Logger
+from utils.common import *
 import allure
 from page.web_gwms_page import gwsm_conf
 
@@ -26,7 +26,6 @@ class GwmsLoginPage(BasePage):
     user_name = ("id", "form1:nv_userid")
     password = ("id", "form1:passWord")
     login_button = ("id", "form1:loginBtn")
-
 
     def login(self, username="026", password="026"):
         self.get_url(self.url)

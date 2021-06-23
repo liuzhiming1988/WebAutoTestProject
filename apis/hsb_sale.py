@@ -10,7 +10,7 @@ from base.own_api_base import HsbApiBase
 import requests
 import json
 from urllib import parse
-from public.pmysql import Pmysql
+from utils.pmysql import Pmysql
 import time
 
 

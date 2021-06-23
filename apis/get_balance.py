@@ -7,7 +7,7 @@
 @Time    : 2021/6/4 11:40
 """
 
-from public.common import *
+from utils.common import *
 from base.own_api_base import HsbApiBase
 from urllib3 import encode_multipart_formdata
 import requests

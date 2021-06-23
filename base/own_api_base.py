@@ -13,11 +13,13 @@ import json
 from urllib3 import encode_multipart_formdata
 from urllib import parse
 import requests
+from base.http_base import HttpBase
 
 
-class HsbApiBase:
+class OwnApiBase(HttpBase):
 
     def __init__(self):
+        super().__init__()
         self.domain = "https://api.huishoubao.com"
         self.pid = "1260"
         self.platform = "7"
@@ -68,7 +70,8 @@ class HsbApiBase:
                    "HSB-OPENAPI-CALLERSERVICEID": server_id}
         return headers
 
-    def json_format(self, body):
+    @staticmethod
+    def json_format(body):
         """
         格式化json字符串，并显示汉字字符，格式缩进更美观
         :param body:

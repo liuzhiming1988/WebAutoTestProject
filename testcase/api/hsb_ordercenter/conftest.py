@@ -8,13 +8,13 @@
 """
 
 import pytest
-from public.common import *
+from utils.common import *
 import requests
 import time
-from public.common import *
+from utils.common import *
 import random
 from urllib3 import encode_multipart_formdata
-from public.pmysql import Pmysql
+from utils.pmysql import Pmysql
 import pytest
 import time
 import json

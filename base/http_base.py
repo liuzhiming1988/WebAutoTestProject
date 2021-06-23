@@ -10,9 +10,11 @@
 import requests
 import json
 from urllib import parse
-from public.logger import Logger
+from utils.logger import Logger
 
 class HttpBase:
+
+    logger = Logger().logger
 
     def __init__(self):
         self.HEADERS = None
@@ -23,9 +25,16 @@ class HttpBase:
         self.PATH = None
         self.BODY = None
 
-
-    def do_post(self):
-        pass
+    def do_post(self, path, data):
+        if self.PORT is None:
+            url = self.PROTOCOL + "://" + self.DOMAIN + path
+        else:
+            url = self.PROTOCOL + "://" + self.DOMAIN + self.PORT + path
+        self.logger.info("Url:{}".format(url))
+        self.logger.info("body = {}".format(json.dumps(data)))
+        response = requests.post(url, data=json.dumps(data), headers = self.HEADERS)
+        self.logger.info("{}---response：{}".format(url,response))
+        return response
 
     def do_get(self):
         requests.get(self.PROTOCOL+self.DOMAIN+self.PORT+self.PATH)
@@ -37,5 +46,4 @@ class HttpException:
 
 
 if __name__ == '__main__':
-    res = requests.get("http://api.huishoubao.com/v5/HsbTool/env").text
-    print(res)
+    HttpBase().do_post()
