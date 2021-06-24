@@ -61,7 +61,7 @@ class OwnApi:
         data_res = encode_multipart_formdata(data,boundary=bd)
         response = requests.post(path, data=data_res[0], headers=self.get_headers(bd))
         # 美化返回的json
-        info = json_format(response.json())
+        info = response.json()
         print("接口{0}的返回结果是\n{1}".format(path,info))
         assert "成功" in response.text
         # 强制等待两秒钟，待数据库生成短信验证码
@@ -89,7 +89,7 @@ class OwnApi:
         bd = self.boundary
         data_res = encode_multipart_formdata(data, boundary=bd)
         response = requests.post(path, data=data_res[0], headers=self.get_headers(bd))
-        info = json_format(response.json())
+        info = response
         print("接口{0}的返回结果是\n{1}".format(path, info))
         token = json.loads(response.text)["_data"]["token"]
         uid = json.loads(response.text)["_data"]["eid"]

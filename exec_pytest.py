@@ -10,18 +10,22 @@
 import os
 from utils.common import *
 from selenium import webdriver
+from config.path_conf import path_join
 
 
 # 结果数据，报告不备份
 def exec_command(command):
-    venv_path = get_current_project_path() + "\\venv\\Scripts\\activate.bat"
-    os.system('chcp 65001')
+    path_list = ["venv", "Scripts", "activate.bat"]
+    venv_path = path_join(path_list)
+    # 防止在cmd中显示乱码
+    os.system('CHCP 65001')
     os.system("{0} && {1} ".format(venv_path, command))
 
 
 def gen_allure(mark=None, kw=None):
-    res_path = get_current_project_path() + "\\report\\result\\"
-    report_path = get_current_project_path() + "\\report\\html\\"
+
+    res_path = path_join(["report", "data"])
+    report_path = path_join(["report", "allure_html"])
     # 主动清理历史数据，--clean不生效，不知道原因
     os.system("rmdir /s/q {0}".format(report_path))   # 清理报告数据
     os.system("rmdir /s/q {0}".format(res_path))   # 清理结果数据

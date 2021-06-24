@@ -16,14 +16,22 @@ import pytest
 
 
 class TestLogin:
-    full_name = get_current_project_path() + "\\log\\" + get_time()[0:8] + ".log"
-    logger = Logger(full_name).logger
 
+    logger = Logger().logger
+
+    login_test_data = [
+        ({"username": "test_liuzhiming@huishoubao.com.cn", "password": "32rfdfs"}, "fail", "登录：错误的密码"),
+        ({"username": "026", "password": "026"}, "success", "正确的用户名和密码"),
+        ({"username": "", "password": ""}, "block", "错误：用户名和密码为空")
+    ]
+    @allure.story("巨沃系统-登录测试用例")
+    @allure.title("{case_name}")
     @pytest.mark.webtest
-    def test_login_01(self, get_driver):
+    @pytest.mark.parametrize("login_data, expect, case_name", login_test_data )
+    def test_login_01(self, get_driver, login_data, expect, case_name):
 
-        gwms = GwmsLoginPage(get_driver, self.logger)
-        gwms.login("026", "026")
+        gwms = GwmsLoginPage(get_driver)
+        gwms.login(login_data["username"], login_data["password"])
 
 
 if __name__ == '__main__':

@@ -63,19 +63,11 @@ class BasePage:
         elem = 0
 
         if key in FIND_LIST.keys():
-
             try:
                 self.logger.info(">>>开始寻找元素:定位方法{0}，值{1}".format(key, value))
-                if key == 'id':
-                    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((By.ID, value)))
-                    elem = self.driver.find_element(By.ID, value)
-                elif key == 'name':
-                    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((By.NAME, value)))
-                    elem = self.driver.find_element(By.NAME, value)
-                elif key == 'xpath':
-                    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((By.XPATH, value)))
-                    elem = self.driver.find_element(By.XPATH, value)
-                self.logger.info("成功定位元素:定位方法{0}，值{1}".format(key, value))
+                WebDriverWait(self.driver, self.timeout, 0.5).until(
+                    EC.visibility_of_element_located((FIND_LIST[key], value)))
+                elem = self.driver.find_element(FIND_LIST[key], value)
             except TimeoutException as t:
                 self.save_img(get_current_function_name())
                 self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3}".format(
@@ -170,6 +162,7 @@ class BasePage:
             return False
         except Exception:
             return False
+
         return re
 
 
@@ -195,4 +188,11 @@ webdriver.ActionChains(driver).double_click("双击的元素定位").perform() #
 webdriver.ActionChains(driver).drag_and_drop("拖动的起点元素", "拖动的终点元素").perform() #拖动事件
 """
 
+
+if __name__ == '__main__':
+    keys = FIND_LIST.keys()
+    for x in keys:
+        print(x)
+
+    # print(keys)
 

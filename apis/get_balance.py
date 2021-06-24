@@ -8,12 +8,12 @@
 """
 
 from utils.common import *
-from base.own_api_base import HsbApiBase
+from base.own_api_base import OwnApiBase
 from urllib3 import encode_multipart_formdata
 import requests
 
 
-class GetBalanceInfo(HsbApiBase):
+class GetBalanceInfo(OwnApiBase):
 
     def get_balance_info(self, loginToken, uid):
         path = self.domain + "/api/wallet/getBalanceInfo"

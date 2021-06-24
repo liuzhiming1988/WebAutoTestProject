@@ -10,13 +10,19 @@ Desktop.ini
 *.egg-info
 dist
 build
-
+.pytest_cache
+__pycache__
+.idea
 
 # MacOS:
 venv_mac
 *.DS_Store
 .DS_Store
 DS_Store
+
+# project
+report
+screenshot
 
 # My configurations:
 test.ini
