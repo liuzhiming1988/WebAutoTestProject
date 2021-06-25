@@ -341,3 +341,7 @@ TypeError: unsupported operand type(s) for +: 'float' and 'Logger'
 2021-06-24 17:52:51,244 - D:\work\WebAutoTestProject\base\base_page.py[line:67] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='app']/form/div[3]/div/button
 2021-06-24 17:52:52,272 - D:\work\WebAutoTestProject\utils\common.py[line:30] - INFO: find_element--总耗时：1.03
 2021-06-24 17:52:54,303 - D:\work\WebAutoTestProject\testcase\web\web_hsb_case\test_oms_login.py[line:40] - INFO: 用例名称：test_oms_login_01，测试完成
+2021-06-24 22:17:41,132 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py[line:30] - INFO: is_exists_path--总耗时：1.0秒
+2021-06-24 22:19:30,161 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py[line:30] - INFO: test_--总耗时：1.01秒
+2021-06-24 22:25:12,771 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py[line:30] - INFO: test_add--总耗时：1.01秒
+2021-06-24 22:28:56,172 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py[line:30] - INFO: test_add--总耗时：1.01秒

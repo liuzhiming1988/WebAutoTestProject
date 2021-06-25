@@ -9,9 +9,7 @@
 import os
 import time
 import sys
-import inspect
 import traceback
-import yagmail
 from utils.config_read import ConfigRead
 import json
 import hashlib
@@ -52,7 +50,7 @@ def get_time():
     return time_abc
 
 
-def exists_path(pt_name):
+def is_exists_path(pt_name):
     """
     判断某个文件夹是否存在，存在返回true，不存在则创建
 
@@ -186,8 +184,9 @@ def get_method_name():
 
 
 if __name__ == '__main__':
-    # get_time()
+    get_time()
+    # is_exists_path("/Users/liuzhiming/Documents")
 
-    get_signData({"fds":"trewt"})
+    # get_signData({"fds":"trewt"})
 
 
