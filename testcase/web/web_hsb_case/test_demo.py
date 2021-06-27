@@ -5,9 +5,7 @@
 # @File    : test_demo.py
 # @Software: PyCharm
 
-from utils.config_read import ConfigRead
 from page.web_hsb_page.search_page_demo import SearchPage
-from utils.common import *
 from utils.logger import Logger
 import pytest
 

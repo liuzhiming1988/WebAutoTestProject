@@ -107,7 +107,7 @@ class IDCard:
         # print(digit17)
         return digit17
 
-    def get_id_card(self):
+    def get_IdCard(self):
         """
         get the check digit,and return the IDCard
         :return:
@@ -129,6 +129,6 @@ if __name__ == '__main__':
     # get_address_num()
     # get_date_number()
     # get_digit3()
-    IDCard().get_id_card()
+    IDCard().get_IdCard()
 
 

@@ -7,10 +7,7 @@
 @Time    : 2021/5/21 19:12
 """
 from base.base_page import BasePage
-from selenium.webdriver.common.by import By
-import time
-from utils.config_read import ConfigRead
-from utils.logger import Logger
+from config.config_read import ConfigRead
 from utils.common import *
 import allure
 

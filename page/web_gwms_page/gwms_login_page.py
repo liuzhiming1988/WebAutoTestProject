@@ -9,33 +9,49 @@
 
 
 from base.base_page import BasePage
-from selenium.webdriver.common.by import By
-import time
-from utils.config_read import ConfigRead
-from utils.logger import Logger
 from utils.common import *
-import allure
 from page.web_gwms_page import gwsm_conf
 
 
 class GwmsLoginPage(BasePage):
 
     """OMS系统后台登录页面"""
-    url = gwsm_conf.LOGINURL
+    URL = gwsm_conf.LOGINURL
+    UNAME = gwsm_conf.USERNAME
+    PWD = gwsm_conf.PASSWORD
 
     user_name = ("id", "form1:nv_userid")
     password = ("id", "form1:passWord")
     login_button = ("id", "form1:loginBtn")
 
-    def login(self, username="026", password="026"):
-        self.get_url(self.url)
-        self.max_window()
+    def goto_loginpage(self, url):
+        self.get_url(url)
+
+    def set_username(self, username):
         self.send_key(self.user_name, username)
+
+    def set_password(self, password):
         self.send_key(self.password, password)
+
+    def click_loginButton(self):
         self.click(self.login_button)
-        time.sleep(5)
 
+    def wait_login(self, timeout=5):
+        if isinstance(timeout, int):
+            time.sleep(timeout)
+        else:
+            self.logger.info("等待时间必须是int类型")
 
+    def login(self, username=None, password=None):
+        # 如果没传用户名和密码，就用配置文件中的默认值
+        if username is None:
+            username = self.UNAME
+            password = self.PWD
+        self.goto_loginpage(self.URL)
+        self.set_username(username)
+        self.set_password(password)
+        self.click_loginButton()
+        self.wait_login()
 
 
 

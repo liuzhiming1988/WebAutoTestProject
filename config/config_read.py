@@ -11,23 +11,31 @@ import configparser
 import traceback
 from selenium import webdriver
 import os
+from config.path_conf import path_join
 
 
 class ConfigRead:
 
     """定义读取ini配置文件的方法"""
-    project_path = os.path.abspath(os.path.dirname(__file__)).split('WebAutoTestProject')[0]  # 获取当前项目所在绝对路径
-    # print(project_path)
-    # global_path = project_path+'WebAutoTestProject'+"\\config\\config_global.ini"  # 拼接上配置文件路径-windows
-    global_path = os.path.join(project_path, "WebAutoTestProject")
-    global_path = os.path.join(global_path, "config")
-    global_path = os.path.join(global_path, "config_global.ini")
+    # get path of the config file
+    path_list = ["config", "config_global.ini"]
+    conf_path = path_join(path_list)
     # print(global_path)
 
-    def __init__(self, file_path=global_path):
-        self.file_path = file_path
-        self.config = configparser.ConfigParser()
-        self.config.read(self.file_path, encoding="utf-8-sig")
+    # add singleton，优化：增加单例模式
+    __obj = None
+    __init_flag = True
+
+    def __new__(cls, *args, **kwargs):
+        if cls.__obj == None:
+            cls.__obj = object.__new__(cls)
+        return cls.__obj
+
+    def __init__(self):
+        if ConfigRead.__init_flag:
+            self.config = configparser.ConfigParser()
+            self.config.read(self.conf_path, encoding="utf-8-sig")
+            ConfigRead.__init_flag = False
 
     def get_account(self, name):
         """获取默认用户名和密码"""
@@ -61,6 +69,10 @@ class ConfigRead:
         value = self.config.sections()
         return value
 
+    def get_log_level(self):
+        level = self.config.get("log", "level")
+        return level
+
     def get_browser(self):
         if self.get_value("browser", "browser") == "chrome":
             options = webdriver.ChromeOptions()
@@ -76,7 +88,11 @@ class ConfigRead:
 
 
 if __name__ == '__main__':
-    p = ConfigRead()
-    p.get_account("username")
-    # p.get_value_list("email")
-    # print(p)
+    cr = ConfigRead()
+    print(dir(cr))
+    print("==",cr.__dict__)
+    print(cr.__doc__)
+    print(cr.__class__)
+    level = cr.get_log_level()
+    print(level)
+

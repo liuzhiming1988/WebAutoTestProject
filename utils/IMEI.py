@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : generate_IMEI.py
+@File    : IMEI.py
 @Author  : liuzhiming
 @Time    : 2021/6/17 17:09
 """
@@ -49,10 +49,14 @@ def generate_imei():
     else:
         check_digit = str(10-ass)
     imei = st+check_digit
-    print(imei)
+    # print(imei)
     return imei
 
-generate_imei()
+
+if __name__ == '__main__':
+
+    imei = generate_imei()
+    print(imei)
 
 
 

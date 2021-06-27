@@ -13,7 +13,6 @@ from base.base_page import BasePage
 
 class GwmsMenu(BasePage):
 
-
     # frame
     frame = "folderForm"
     # “入库处理”--父菜单
@@ -30,14 +29,18 @@ class GwmsMenu(BasePage):
     shipper_allocation = ("xpath", ".//*[@id='owcoserv']/span[2]")
     shipper_material_allocation = ("xpath", ".//*[@id='owcoIncoSet_span']") # 货主物料配置
 
+    # 定义进入菜单的方法，跳入frame>进入菜单>返回默认frame，方便后续操作
     def open_in_storage_orders(self):
-        self.swich_to_frame(self.frame)
+        """open the in_storage_orders menu"""
+        self.switch_to_frame(self.frame)
         self.click(self.in_storage)
         self.click(self.in_storage_orders)
+        self.switch_to_default_frame()
 
     def open_shipper_material_allocation(self):
-        self.swich_to_frame(self.frame)
+        self.switch_to_frame(self.frame)
         self.click(self.system_management)
         self.click(self.shipper_allocation)
         self.click(self.shipper_material_allocation)
+        self.switch_to_default_frame()
 

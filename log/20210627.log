@@ -1,0 +1,413 @@
+2021-06-27 01:47:38,297 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/http_base.py[line:80] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'}
+body={
+  "_head": {
+    "_appVersion": "5.0.0",
+    "_callerServiceId": "111111",
+    "_groupNo": "1",
+    "_interface": "get_merchant_info",
+    "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1624729658",
+    "_msgType": "request",
+    "_remark": "",
+    "_timestamps": "1624729658",
+    "_version": "0.01",
+    "channelStr": "appstore",
+    "latitude": 22.532460629273437,
+    "longitude": 113.94299928073816
+  },
+  "_param": {
+    "login_token": "4512751100206992728bcfb5e6d8f458",
+    "merchantId": "220395845",
+    "permissions": "0",
+    "queryType": "tagInfo"
+  }
+}
+2021-06-27 01:47:38,627 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/http_base.py[line:83] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+  "Access-Control-Allow-Headers": "x-requested-with,content-type",
+  "Access-Control-Allow-Methods": "POST,GET,PUT",
+  "Access-Control-Allow-Origin": "*",
+  "Connection": "keep-alive",
+  "Content-Type": "application/json",
+  "Date": "Sat, 26 Jun 2021 17:47:38 GMT",
+  "Server": "nginx",
+  "Transfer-Encoding": "chunked"
+}
+response_body={
+  "_data": {
+    "_errCode": "0",
+    "_errStr": "SUCCEED",
+    "_ret": "0",
+    "data": {
+      "auditStatus": "1",
+      "buyerLevel": "sales_silver",
+      "goodsQuality": "0",
+      "jpMerchantAuth": "auth_yes",
+      "jpMerchantSalesRanking": "0",
+      "jpMerchantWuyougou": "",
+      "jpPersonalAuth": "",
+      "jpSalesAmount3m": "0",
+      "jpSalesAmount6m": "0",
+      "jpSalesVolume30": "0",
+      "merchantName": "自动注册商户13049368516",
+      "regCityName": null,
+      "regProvinceName": null,
+      "scoreDelivery": "5",
+      "scoreHot": "5",
+      "scoreQuality": "5",
+      "sellerLevel": "sales_silver",
+      "starLevel": "0"
+    }
+  }
+}
+2021-06-27 01:47:39,633 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py[line:27] - INFO: 执行耗时：1.34秒
+
+
+2021-06-27 02:00:48,596 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:63] - DEBUG: 信息info:测试一下by test
+2021-06-27 02:06:23,380 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:06:23,381 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:06:36,857 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:63] - DEBUG: 信息info:测试一下by test
+2021-06-27 02:06:36,858 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:06:36,858 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:06:36,858 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:66] - INFO: info====
+2021-06-27 02:06:36,858 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:67] - WARNING: warning======
+2021-06-27 02:07:03,393 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:07:03,393 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:07:12,430 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:63] - DEBUG: 信息info:测试一下by test
+2021-06-27 02:07:12,431 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:07:12,431 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:07:12,431 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:66] - INFO: info====
+2021-06-27 02:07:12,431 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:67] - WARNING: warning======
+2021-06-27 02:07:25,782 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:07:25,783 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:07:25,783 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:67] - WARNING: warning======
+2021-06-27 02:07:32,892 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:07:32,892 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:07:32,892 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:66] - INFO: info====
+2021-06-27 02:07:32,892 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:67] - WARNING: warning======
+2021-06-27 02:08:02,312 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:63] - DEBUG: 信息info:测试一下by test
+2021-06-27 02:08:02,313 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:64] - ERROR: error:-----
+2021-06-27 02:08:02,313 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - CRITICAL: critical------
+2021-06-27 02:08:02,313 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:66] - INFO: info====
+2021-06-27 02:08:02,313 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:67] - WARNING: warning======
+2021-06-27 02:22:58,789 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:65] - DEBUG: 信息info:测试一下by test
+2021-06-27 02:22:58,789 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:66] - ERROR: error:-----
+2021-06-27 02:22:58,789 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:67] - CRITICAL: critical------
+2021-06-27 02:22:58,789 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:68] - INFO: info====
+2021-06-27 02:22:58,789 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/logger.py[line:69] - WARNING: warning======
+2021-06-27 02:32:05,605 - logger.py - <module>[line:87] - DEBUG: 信息info:测试一下by test
+2021-06-27 02:32:05,605 - logger.py - <module>[line:88] - ERROR: error:-----
+2021-06-27 02:32:05,605 - logger.py - <module>[line:89] - CRITICAL: critical------
+2021-06-27 02:32:05,605 - logger.py - <module>[line:90] - INFO: info====
+2021-06-27 02:32:05,605 - logger.py - <module>[line:91] - WARNING: warning======
+2021-06-27 02:32:18,388 - http_base.py - do_post[line:81] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'}
+body={
+  "_head": {
+    "_appVersion": "5.0.0",
+    "_callerServiceId": "111111",
+    "_groupNo": "1",
+    "_interface": "get_merchant_info",
+    "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1624732338",
+    "_msgType": "request",
+    "_remark": "",
+    "_timestamps": "1624732338",
+    "_version": "0.01",
+    "channelStr": "appstore",
+    "latitude": 22.532460629273437,
+    "longitude": 113.94299928073816
+  },
+  "_param": {
+    "login_token": "4512751100206992728bcfb5e6d8f458",
+    "merchantId": "220395845",
+    "permissions": "0",
+    "queryType": "tagInfo"
+  }
+}
+2021-06-27 02:32:18,745 - http_base.py - do_post[line:84] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+  "Access-Control-Allow-Headers": "x-requested-with,content-type",
+  "Access-Control-Allow-Methods": "POST,GET,PUT",
+  "Access-Control-Allow-Origin": "*",
+  "Connection": "keep-alive",
+  "Content-Type": "application/json",
+  "Date": "Sat, 26 Jun 2021 18:32:18 GMT",
+  "Server": "nginx",
+  "Transfer-Encoding": "chunked"
+}
+response_body={
+  "_data": {
+    "_errCode": "0",
+    "_errStr": "SUCCEED",
+    "_ret": "0",
+    "data": {
+      "auditStatus": "1",
+      "buyerLevel": "sales_silver",
+      "goodsQuality": "0",
+      "jpMerchantAuth": "auth_yes",
+      "jpMerchantSalesRanking": "0",
+      "jpMerchantWuyougou": "",
+      "jpPersonalAuth": "",
+      "jpSalesAmount3m": "0",
+      "jpSalesAmount6m": "0",
+      "jpSalesVolume30": "0",
+      "merchantName": "自动注册商户13049368516",
+      "regCityName": null,
+      "regProvinceName": null,
+      "scoreDelivery": "5",
+      "scoreHot": "5",
+      "scoreQuality": "5",
+      "sellerLevel": "sales_silver",
+      "starLevel": "0"
+    }
+  }
+}
+2021-06-27 02:32:19,753 - common.py - wrapper[line:27] - INFO: 执行耗时：1.36秒
+
+
+2021-06-27 02:33:33,570 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/http_base.py - do_post[line:81] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'}
+body={
+  "_head": {
+    "_appVersion": "5.0.0",
+    "_callerServiceId": "111111",
+    "_groupNo": "1",
+    "_interface": "get_merchant_info",
+    "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1624732413",
+    "_msgType": "request",
+    "_remark": "",
+    "_timestamps": "1624732413",
+    "_version": "0.01",
+    "channelStr": "appstore",
+    "latitude": 22.532460629273437,
+    "longitude": 113.94299928073816
+  },
+  "_param": {
+    "login_token": "4512751100206992728bcfb5e6d8f458",
+    "merchantId": "220395845",
+    "permissions": "0",
+    "queryType": "tagInfo"
+  }
+}
+2021-06-27 02:33:33,798 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/http_base.py - do_post[line:84] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+  "Access-Control-Allow-Headers": "x-requested-with,content-type",
+  "Access-Control-Allow-Methods": "POST,GET,PUT",
+  "Access-Control-Allow-Origin": "*",
+  "Connection": "keep-alive",
+  "Content-Type": "application/json",
+  "Date": "Sat, 26 Jun 2021 18:33:33 GMT",
+  "Server": "nginx",
+  "Transfer-Encoding": "chunked"
+}
+response_body={
+  "_data": {
+    "_errCode": "0",
+    "_errStr": "SUCCEED",
+    "_ret": "0",
+    "data": {
+      "auditStatus": "1",
+      "buyerLevel": "sales_silver",
+      "goodsQuality": "0",
+      "jpMerchantAuth": "auth_yes",
+      "jpMerchantSalesRanking": "0",
+      "jpMerchantWuyougou": "",
+      "jpPersonalAuth": "",
+      "jpSalesAmount3m": "0",
+      "jpSalesAmount6m": "0",
+      "jpSalesVolume30": "0",
+      "merchantName": "自动注册商户13049368516",
+      "regCityName": null,
+      "regProvinceName": null,
+      "scoreDelivery": "5",
+      "scoreHot": "5",
+      "scoreQuality": "5",
+      "sellerLevel": "sales_silver",
+      "starLevel": "0"
+    }
+  }
+}
+2021-06-27 02:33:34,807 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.23秒
+
+
+2021-06-27 12:00:42,086 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:00:47,146 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:00:52,480 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:02:04,284 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:02:05,765 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据test_liuzhiming@huishoubao.com.cn
+2021-06-27 12:02:05,766 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:02:06,816 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.05秒
+
+
+2021-06-27 12:02:07,006 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据32rfdfs
+2021-06-27 12:02:07,006 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:02:08,042 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:02:08,108 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:02:08,108 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:02:09,131 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.02秒
+
+
+2021-06-27 12:02:18,199 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:02:19,298 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 12:02:19,298 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:02:20,351 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.05秒
+
+
+2021-06-27 12:02:20,483 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 12:02:20,483 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:02:21,522 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:02:21,597 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:02:21,597 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:02:22,623 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.03秒
+
+
+2021-06-27 12:02:31,680 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:02:34,129 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据
+2021-06-27 12:02:34,129 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:02:35,204 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.07秒
+
+
+2021-06-27 12:02:35,280 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据
+2021-06-27 12:02:35,281 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:02:36,320 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:02:36,383 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:02:36,383 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:02:37,412 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.03秒
+
+
+2021-06-27 12:04:41,771 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:04:42,882 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据test_liuzhiming@huishoubao.com.cn
+2021-06-27 12:04:42,882 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:04:43,950 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-06-27 12:04:44,134 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据32rfdfs
+2021-06-27 12:04:44,134 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:04:45,177 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:04:45,255 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:04:45,255 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:04:46,276 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.02秒
+
+
+2021-06-27 12:04:51,654 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - is_alert_exist[line:158] - INFO: assert alert if exist
+2021-06-27 12:05:25,401 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:05:26,529 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 12:05:26,529 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:05:27,572 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:05:27,706 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 12:05:27,706 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:05:28,754 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.05秒
+
+
+2021-06-27 12:05:28,824 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:05:28,824 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:05:29,850 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.02秒
+
+
+2021-06-27 12:05:35,132 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - is_alert_exist[line:158] - INFO: assert alert if exist
+2021-06-27 12:06:08,952 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:06:10,000 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据
+2021-06-27 12:06:10,000 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:06:11,056 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.05秒
+
+
+2021-06-27 12:06:11,130 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据
+2021-06-27 12:06:11,131 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:06:12,171 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:06:12,231 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:06:12,232 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:06:13,261 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.03秒
+
+
+2021-06-27 12:06:18,583 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - is_alert_exist[line:158] - INFO: assert alert if exist
+2021-06-27 12:15:04,244 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:15:06,244 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据test_liuzhiming@huishoubao.com.cn
+2021-06-27 12:15:06,244 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:15:07,296 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.05秒
+
+
+2021-06-27 12:15:07,497 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据32rfdfs
+2021-06-27 12:15:07,497 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:15:08,535 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:15:08,609 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:15:08,609 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:15:09,636 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.02秒
+
+
+2021-06-27 12:15:15,011 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - is_alert_exist[line:158] - INFO: assert alert if exist
+2021-06-27 12:15:48,762 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:15:49,948 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 12:15:49,948 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:15:50,993 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:15:51,138 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 12:15:51,139 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:15:52,178 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:15:52,248 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:15:52,248 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:15:53,274 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.02秒
+
+
+2021-06-27 12:15:58,548 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - is_alert_exist[line:158] - INFO: assert alert if exist
+2021-06-27 12:16:32,376 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 12:16:33,537 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据
+2021-06-27 12:16:33,538 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 12:16:34,592 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.05秒
+
+
+2021-06-27 12:16:34,666 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据
+2021-06-27 12:16:34,666 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 12:16:35,706 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 12:16:35,759 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 12:16:35,759 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 12:16:36,790 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.03秒
+
+
+2021-06-27 12:16:42,107 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - is_alert_exist[line:158] - INFO: assert alert if exist
+2021-06-27 13:02:48,566 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - get_url[line:113] - INFO: 打开网址：http://119.23.17.189:8090/gwms_test/main.jsf
+2021-06-27 13:02:49,751 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 13:02:49,751 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:nv_userid
+2021-06-27 13:02:50,800 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 13:02:50,935 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - send_key[line:102] - INFO: 准备输入数据026
+2021-06-27 13:02:50,935 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:passWord
+2021-06-27 13:02:51,975 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.04秒
+
+
+2021-06-27 13:02:52,049 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 13:02:52,049 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法id，值form1:loginBtn
+2021-06-27 13:02:53,076 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.03秒
+
+
+2021-06-27 13:02:58,694 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - switch_to_frame[line:143] - INFO: <===============>进入frame:folderForm
+2021-06-27 13:02:58,695 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 13:02:58,695 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='INSYS']/span
+2021-06-27 13:02:59,755 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-06-27 13:02:59,968 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - click[line:109] - INFO: 点击元素：
+2021-06-27 13:02:59,969 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - find_element[line:67] - INFO: >>>开始寻找元素:定位方法xpath，值.//*[@id='PO_span']
+2021-06-27 13:03:01,032 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/utils/common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-06-27 13:03:01,411 - /Users/liuzhiming/Documents/autotest/WebAutoTestProject/base/base_page.py - switch_to_default_frame[line:147] - INFO: 跳转回默认的iframe

@@ -10,7 +10,6 @@ import os
 import time
 import sys
 import traceback
-from utils.config_read import ConfigRead
 import json
 import hashlib
 import inspect
@@ -24,8 +23,8 @@ def timer(func):
         time.sleep(1)
         end_time = time.time()
         run_time = round(end_time-start_time, 2)
-        print("{}--执行耗时：{}".format(func.__name__, run_time))
-        Logger().logger.info("{}--总耗时：{}秒".format(func.__name__, run_time))
+        # print("{}--执行耗时：{}".format(func.__name__, run_time))
+        Logger().logger.info("执行耗时：{}秒\n\n".format(run_time))
         return res
     return wrapper
 

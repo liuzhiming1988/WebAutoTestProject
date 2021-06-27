@@ -7,9 +7,7 @@
 @Time    : 2021/6/16 11:06
 """
 
-from utils.config_read import ConfigRead
 from page.web_gwms_page.gwms_login_page import GwmsLoginPage
-from utils.common import *
 from utils.logger import Logger
 import allure
 import pytest
@@ -24,6 +22,7 @@ class TestLogin:
         ({"username": "026", "password": "026"}, "success", "正确的用户名和密码"),
         ({"username": "", "password": ""}, "block", "错误：用户名和密码为空")
     ]
+
     @allure.story("巨沃系统-登录测试用例")
     @allure.title("{case_name}")
     @pytest.mark.webtest

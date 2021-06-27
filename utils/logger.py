@@ -11,6 +11,29 @@ import logging
 from logging import handlers
 from config import path_conf
 import time
+from config.config_read import ConfigRead
+
+
+"""
+日志级别等级：CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
+
+format参数中可能用到的格式化串：
+%(name)s             Logger的名字
+%(levelno)s          数字形式的日志级别
+%(levelname)s     文本形式的日志级别
+%(pathname)s     调用日志输出函数的模块的完整路径名，可能没有
+%(filename)s        调用日志输出函数的模块的文件名
+%(module)s          调用日志输出函数的模块名
+%(funcName)s     调用日志输出函数的函数名
+%(lineno)d           调用日志输出函数的语句所在的代码行
+%(created)f          当前时间，用UNIX标准的表示时间的浮 点数表示
+%(relativeCreated)d    输出日志信息时的，自Logger创建以 来的毫秒数
+%(asctime)s                字符串形式的当前时间。默认格式是 “2003-07-08 16:49:45,896”。逗号后面的是毫秒
+%(thread)d                 线程ID。可能没有
+%(threadName)s        线程名。可能没有
+%(process)d              进程ID。可能没有
+%(message)s            用户输出的消息
+"""
 
 
 class Logger:
@@ -29,17 +52,18 @@ class Logger:
     log_name = time.strftime("%Y%m%d", time.localtime())+".log"
     path_list = ["log", log_name]
     log_path = path_conf.path_join(path_list)
-    print(log_path)
+    # print(log_path)
+    log_level = ConfigRead().get_log_level()
+    fmt = '%(asctime)s - %(pathname)s - %(funcName)s[line:%(lineno)d] - %(levelname)s: %(message)s'
 
-    def __init__(self, filename=log_path, level='info', when='D', backCount=3,
-                 fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
-        self.logger = logging.getLogger(filename)
+    def __init__(self, when='D', backCount=3):
+        self.logger = logging.getLogger(self.log_path)
         self.logger.handlers.clear()   # 清理已经存在的handler，防止日志重复
-        format_str = logging.Formatter(fmt)  # 设置日志格式
-        self.logger.setLevel(self.level_relations.get(level))  # 设置日志级别
+        format_str = logging.Formatter(self.fmt)  # 设置日志格式
+        self.logger.setLevel(self.level_relations.get(self.log_level))  # 设置日志级别
         sh = logging.StreamHandler() # 往屏幕上输出
         sh.setFormatter(format_str)  # 设置屏幕上显示的格式
-        th = handlers.TimedRotatingFileHandler(filename=filename, when=when, backupCount=backCount,
+        th = handlers.TimedRotatingFileHandler(filename=self.log_path, when=when, backupCount=backCount,
                                                encoding='utf-8')  # 往文件里写入#指定间隔时间自动生成文件的处理器
         # 实例化TimedRotatingFileHandler
         # interval是时间间隔，backupCount是备份文件的个数，如果超过这个个数，就会自动删除，when是间隔的时间单位，单位有以下几种：
@@ -55,6 +79,13 @@ class Logger:
 
 
 if __name__ == '__main__':
-    logger = Logger().logger
+    lg = Logger()
+    logger = lg.logger
+    # test = lg.level_relations.get("debug")
+    # print(test)
     message = "信息info:测试一下by test"
-    logger.info(message)
+    logger.debug(message)
+    logger.error("error:-----")
+    logger.critical("critical------")
+    logger.info("info====")
+    logger.warning("warning======")

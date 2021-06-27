@@ -7,7 +7,7 @@
 @Time    : 2021/6/19 下午10:10
 """
 import yagmail
-from utils.config_read import ConfigRead
+from config.config_read import ConfigRead
 
 # 从配置文件中读取邮件配置信息
 conf = ConfigRead()
@@ -41,5 +41,9 @@ def send_mail(attachment=None, text=content, subject=title):
 
 if __name__ == '__main__':
 
-    send_mail(attachment=["/Users/liuzhiming/Documents/test_ocr.png"], text="测试：Test on macOS", subject="测试：From macOS email_client")
+    send_mail(
+        attachment=["/Users/liuzhiming/Documents/test_ocr.png"],
+        text="测试：Test on macOS",
+        subject="测试：From macOS email_client"
+    )
 

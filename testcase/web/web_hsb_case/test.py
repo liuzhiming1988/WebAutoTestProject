@@ -1,9 +1,3 @@
-
-from selenium import webdriver
-import pytest
-import time
-import os
-from utils.config_read import ConfigRead
 from utils.common import *
 from selenium.webdriver.common.by import By
 import inspect

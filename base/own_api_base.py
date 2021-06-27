@@ -70,15 +70,6 @@ class OwnApiBase(HttpBase):
                    "HSB-OPENAPI-CALLERSERVICEID": server_id}
         return headers
 
-    @staticmethod
-    def json_format(body):
-        """
-        格式化json字符串，并显示汉字字符，格式缩进更美观
-        :param body:
-        :return:
-        """
-        return json.dumps(body, sort_keys=True, indent=2, ensure_ascii=False)
-
     def get_signData(self, data):
         """
         回收宝自有sign规则，将所有的参数名进行排序，然后按照参数名+参数值进行拼接，最后拼接上key值，再进行sha1加密（utf-8编码），再hexdigest加密
@@ -101,36 +92,4 @@ class OwnApiBase(HttpBase):
         data["sign"] = sign
         return data
 
-    def pro_data_format(self, _interface, _param):
-        # 构建字典请求体
-        formData = {
-            "_head": {
-                "_remark": "",
-                "_appVersion": "5.0.0",
-                "_version": "0.01",
-                "_groupNo": "1",
-                "longitude": 113.94299928073816,
-                "latitude": 22.532460629273437,
-                "_interface": _interface,
-                "_timestamps": self.timestamp,
-                "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_{0}".format(self.timestamp),
-                "_msgType": "request",
-                "channelStr": "appstore",
-                "_callerServiceId": "111111"
-            },
-            "_param": _param
-        }
-        ## 字典转换k1=v1 & k2=v2 模式
-        # formData = parse.urlencode(data)
-        data = json.dumps(formData)
-        # print(self.json_format(formData))
-        return data
 
-    def pro_post(self, url,interface, param):
-        # 与_head参数部分拼接，获取json格式化后的最终传参
-        data = self.pro_data_format(interface, param)
-        res = requests.post(url, data=data, headers=self.headers_urlencoded).text
-        # 格式化返回数据
-        text = self.json_format(json.loads(res))
-        print("接口{0}，返回数据：\n {1}".format(url, text))
-        return json.loads(res)

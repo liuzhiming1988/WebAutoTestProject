@@ -5,9 +5,8 @@
 # @File    : search_page_demo.py
 # @Software: PyCharm
 from base.base_page import BasePage
-from selenium.webdriver.common.by import By
 import time
-from utils.config_read import ConfigRead
+from config.config_read import ConfigRead
 
 
 class SearchPage(BasePage):
