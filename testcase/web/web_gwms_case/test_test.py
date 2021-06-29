@@ -13,11 +13,7 @@ from utils.common import *
 from utils.logger import Logger
 import pytest
 
-text = input("请输入：")
-if isinstance(text, str):
-    print(text)
-else:
-    print("error")
+
 
 
 if __name__ == '__main__':
