@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : gwms_login_page.py
+@File    : login_page.py
 @Author  : liuzhiming
 @Time    : 2021/6/16 11:07
 """
@@ -10,15 +10,15 @@
 
 from base.base_page import BasePage
 from utils.common import *
-from page.web_gwms_page import gwsm_conf
+from page.web_gwms_page import conf
 
 
 class GwmsLoginPage(BasePage):
 
     """OMS系统后台登录页面"""
-    URL = gwsm_conf.LOGINURL
-    UNAME = gwsm_conf.USERNAME
-    PWD = gwsm_conf.PASSWORD
+    URL = conf.LOGINURL
+    UNAME = conf.USERNAME
+    PWD = conf.PASSWORD
 
     user_name = ("id", "form1:nv_userid")
     password = ("id", "form1:passWord")

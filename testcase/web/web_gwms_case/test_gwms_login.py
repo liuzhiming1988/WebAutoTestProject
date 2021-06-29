@@ -7,7 +7,7 @@
 @Time    : 2021/6/16 11:06
 """
 
-from page.web_gwms_page.gwms_login_page import GwmsLoginPage
+from page.web_gwms_page.login_page import GwmsLoginPage
 from utils.logger import Logger
 import allure
 import pytest

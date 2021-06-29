@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : gwsm_conf.py
+@File    : conf.py
 @Author  : liuzhiming
 @Time    : 2021/6/16 11:10
 """

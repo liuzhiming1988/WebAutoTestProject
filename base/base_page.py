@@ -4,6 +4,7 @@
 # @Email   : 
 # @File    : base_page.py
 # @Software: PyCharm
+from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -19,6 +20,7 @@ import traceback
 from selenium import webdriver
 from utils.logger import Logger
 from config.path_conf import *
+from utils.ding_rebot import DingRebot
 
 # 定义寻找元素方法字典
 FIND_LIST = {
@@ -31,23 +33,53 @@ FIND_LIST = {
     'class_name': By.CLASS_NAME
 }
 
+"""
+元素操作的日志信息基本都使用debug级别，业务相关的使用info级别
+"""
+
 
 class BasePage:
     # 封装每个页面共同的属性和方法
 
-    def __init__(self, driver, timeout=30):
+    def __init__(self, driver, timeout=20):
         self.driver = driver
         self.logger = Logger().logger
         self.timeout = timeout
 
-    def __elements(self, key, value):
+    def find_elements(self, loc):
         """
 
-        :param key:
-        :param value:
+        :param loc:
         :return:
         """
-        elements = self.driver.find_elements(by=key, value=value)
+        key = loc[0]
+        value = loc[1]
+        elements = None
+
+        if key == "xpath":
+            try:
+                self.logger.debug("定位元素：方法【{0}】，值【{1}】".format(key, value))
+                WebDriverWait(self.driver, self.timeout, 0.5).until(
+                    EC.visibility_of_element_located((FIND_LIST[key], value)))
+                elements = self.driver.find_elements_by_xpath(value)
+            except TimeoutException as t:
+                self.save_img(get_current_function_name())
+                ec = traceback.format_exc()
+                ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：【{3}】".format(
+                    self.timeout, key, value, ec)
+                DingRebot().send_text(ex_text)
+                self.logger.error(ex_text)
+
+            except Exception as e:
+                self.save_img(get_current_function_name())
+                ec = traceback.format_exc()
+                err_text = "在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3}".format(
+                    self.timeout, key, value, e)
+                DingRebot().send_text(err_text)
+                self.logger.error(err_text)
+        else:
+            self.logger.error("find_elements目前仅支持：xpath")
+
         return elements
 
     @timer
@@ -60,22 +92,28 @@ class BasePage:
         """
         key = loc[0]
         value = loc[1]
-        elem = 0
+        elem = None
 
         if key in FIND_LIST.keys():
+            self.logger.debug("定位元素:定位方法【{0}】，值【{1}】".format(key, value))
+            # filename = os.path.split(os.path.abspath(sys.argv[0]))
             try:
-                self.logger.info(">>>开始寻找元素:定位方法{0}，值{1}".format(key, value))
+
                 WebDriverWait(self.driver, self.timeout, 0.5).until(
                     EC.visibility_of_element_located((FIND_LIST[key], value)))
                 elem = self.driver.find_element(FIND_LIST[key], value)
             except TimeoutException as t:
                 self.save_img(get_current_function_name())
-                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3}".format(
-                    self.timeout, key, value, t))
+                # filename = os.path.split(os.path.abspath(__file__))
+                ec = traceback.format_exc()
+                ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3}".format(
+                    self.timeout, key, value, ec)
+                DingRebot().send_text(ex_text)
+                self.logger.error(ex_text)
             except Exception as e:
                 self.save_img(get_current_function_name())
                 ec = traceback.format_exc()
-                self.logger.error("在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3} \nInfo：{4}".format(
+                self.logger.error("在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} \nInfo：{4}".format(
                     self.timeout, key, value, e.__class__, ec))
 
         else:
@@ -99,19 +137,27 @@ class BasePage:
 
     def send_key(self, loc, value):
         """输入方法"""
-        self.logger.info("准备输入数据{0}".format(value))
+
         element = self.find_element(loc)
+        self.logger.debug("输入数据：【{0}】".format(value))
         element.clear()
         element.send_keys(value)
 
     def click(self, loc):
-        """点击"""
-        self.logger.info("点击元素：".format(loc))
-        self.find_element(loc).click()
+        """点击元素"""
+        element = self.find_element(loc)
+        self.logger.debug("点击元素：【{}】>>【{}】".format(loc[0], loc[1]))
+        element.click()
 
     def get_url(self, url):
-        self.logger.info("打开网址：{}".format(url))
+        self.logger.info("打开网址：【{}】".format(url))
         self.driver.get(url)
+
+    def get_elem_text(self, loc):
+        element = self.find_element(loc)
+        text = element.text
+        self.logger.debug("获取到的文本为：【{0}】".format(text))
+        return text
 
     def save_img(self, name="Img"):
         """
@@ -121,30 +167,30 @@ class BasePage:
         img_name = name + '_' + get_time() + ".png"
         img_path = path_join(["screenshot", img_name])
         self.driver.get_screenshot_as_file(img_path)
-        self.logger.info("截图成功，保存路径为{0}".format(img_path))
+        self.logger.debug("截图成功，保存路径为【{0}】".format(img_path))
 
     def scroll_to(self, x=10, y=20):
         js = "window.scrollTo({0}, {1});".format(x, y)
         self.driver.execute_script(js)
-        self.logger.info("移动滚动条位置：x={0},y={1}".format(x, y))
+        self.logger.debug("移动滚动条位置：x={0},y={1}".format(x, y))
 
     def max_window(self):
         # can not use in Mac
         self.driver.maximize_window()
-        self.logger.info("最大化当前页面")
+        self.logger.debug("最大化当前页面")
 
     def refresh(self):
         self.driver.refresh()
-        self.logger.info("刷新当前页面")
+        self.logger.debug("【refresh】刷新当前页面")
         time.sleep(2)
 
     def switch_to_frame(self, frame):
         self.driver.switch_to.frame(frame)
-        self.logger.info("<===============>进入frame:{}".format(frame))
+        self.logger.debug("进入frame:【{}】".format(frame))
 
     def switch_to_default_frame(self):
         """返回默认的frame"""
-        self.logger.info("跳转回默认的iframe")
+        self.logger.debug("跳转回默认的frame")
         try:
             self.driver.switch_to.default_content()
         except Exception as e:
@@ -155,7 +201,7 @@ class BasePage:
         assert alert if exist
         :return: alert obj
         """
-        self.logger.info("assert alert if exist")
+        self.logger.debug("assert alert if exist")
         try:
             re = WebDriverWait(self.driver, self.timeout).until(EC.alert_is_present())
         except NoAlertPresentException:
@@ -164,6 +210,49 @@ class BasePage:
             return False
 
         return re
+
+    def sleep(self, sleep_time):
+        self.logger.info("强制等待 {} 秒".format(sleep_time))
+        time.sleep(sleep_time)
+
+    def get_alert_text(self):
+        alert = self.driver.switch_to.alert
+        self.sleep(2)
+        self.logger.info("弹窗中的文本内容为：【{}】".format(alert.text))
+        return alert.text
+
+    def alert_accept(self):
+        """在弹出框中点确定"""
+        self.logger.debug("在弹出框中点击【确定】按钮")
+        alert = self.driver.switch_to.alert
+        self.sleep(2)
+        alert.accept()
+
+    def alert_dismiss(self):
+        """在弹出框中点取消"""
+        self.logger.debug("在弹出框中点击【取消】按钮")
+        alert = self.driver.switch_to.alert
+        self.sleep(2)
+        alert.dismiss()
+
+    def alert_send_key(self, value):
+        """在弹出框中输入文本，适合alert-prompt"""
+        self.logger.debug("在弹出框中输入文本：【{}】".format(value))
+        alert = self.driver.switch_to.alert
+        self.sleep(2)
+        alert.send_keys(value)
+
+    def exec_script(self, js_str):
+        """
+        example:
+        # 利用js代码块去除自定义弹窗
+        js1 = 'document.getElementById('div_company_mini').style.display='none';'
+        # div_company_mini为弹窗对应的id
+        :param js_str:
+        :return:
+        """
+        self.logger.debug("执行JS语句：【{}】".format(js_str))
+        self.driver.execute_script(js_str)
 
 
 # 常用键盘操作
