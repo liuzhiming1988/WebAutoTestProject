@@ -30,6 +30,7 @@ def gen_allure(mark=None, kw=None):
     os.system("rmdir /s/q {0}".format(report_path))   # 清理报告数据
     os.system("rmdir /s/q {0}".format(res_path))   # 清理结果数据
     generate_command = "allure generate {0} -o {1} --clean".format(res_path, report_path)
+    # allure serve data_path = allure open
     open_command = "allure open {0}".format(report_path)
     html_name = "./report/{0}".format(get_time())
 
