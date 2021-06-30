@@ -58,10 +58,10 @@ class GwmsMenuPage(BasePage):
         self.click(self.in_storage_orders)
 
     @swi_frame
-    def open_arrival_list(self):
-        """open the arrival_list menu"""
+    def open_storage_order(self):
+        """open the storage_order"""
         self.click(self.in_storage)
-        self.click(self.arrival_list)
+        self.click(self.in_storage_bill)
 
     @swi_frame
     def open_shipper_material_allocation(self):

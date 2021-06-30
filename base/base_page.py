@@ -82,7 +82,7 @@ class BasePage:
 
         return elements
 
-    @timer
+    # @timer
     def find_element(self, loc):
         """
 
@@ -135,6 +135,7 @@ class BasePage:
     #     self.logger.info("已找到元素{0}".format(loc))
     #     return self.driver.find_element(*loc)
 
+    @timer
     def send_key(self, loc, value):
         """输入方法"""
 
@@ -143,6 +144,7 @@ class BasePage:
         element.clear()
         element.send_keys(value)
 
+    @timer
     def click(self, loc):
         """点击元素"""
         element = self.find_element(loc)
@@ -222,11 +224,13 @@ class BasePage:
         return alert.text
 
     def alert_accept(self):
-        """在弹出框中点确定"""
+        """在弹出框中点确定，处理alert窗口是不要开多个浏览器，偶尔会导致失败"""
         self.logger.debug("在弹出框中点击【确定】按钮")
         alert = self.driver.switch_to.alert
-        self.sleep(2)
+        self.sleep(3)
+        self.logger.info("弹窗中的文本内容为：【{}】".format(alert.text))
         alert.accept()
+        self.sleep(2)
 
     def alert_dismiss(self):
         """在弹出框中点取消"""

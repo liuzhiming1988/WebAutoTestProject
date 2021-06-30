@@ -8,19 +8,21 @@
 """
 
 from flask import Flask
+from flask import request
+from flask import render_template
 from website import default_config
 
 
-app = Flask(__name__, static_url_path="/s", static_folder="static_files")
+app = Flask(__name__, static_url_path="/s", static_folder="static_files", template_folder="templates")
 
 app.config.from_object(default_config.DefaultConfig)
 
-
 @app.route("/")
+@app.route("/index")
 def index():
     print(app.config["AUTHOR"])
-    return "我的第一个flask程序"
+    return render_template("index.html")
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)

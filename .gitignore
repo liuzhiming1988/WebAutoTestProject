@@ -11,8 +11,8 @@ Desktop.ini
 dist
 build
 .pytest_cache
-__pycache__
 .idea
+__pycache__
 
 # MacOS:
 venv_mac

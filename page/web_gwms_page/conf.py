@@ -8,5 +8,5 @@
 """
 
 LOGINURL = "http://119.23.17.189:8090/gwms_test/main.jsf"
-USERNAME = "026"
-PASSWORD = "026"
+USERNAME = "030"
+PASSWORD = "030"
