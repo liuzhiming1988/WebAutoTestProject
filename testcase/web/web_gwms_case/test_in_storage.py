@@ -20,12 +20,10 @@ import pytest
 class TestInStorage():
     logger = Logger().logger
 
-    barCode = ["ZY0101210630000039", "ZY0101210630000038", "ZY0101210630000037"]
-    #
-    # order = input("请输入商品编码：")
+    # barCode = ["ZY0101210630000039", "ZY0101210630000038", "ZY0101210630000037"]
 
     @pytest.mark.web_gwms
-    @pytest.mark.parametrize("barCode", barCode)
+    # @pytest.mark.parametrize("barCode", barCode)
     def test_add_storage_order(self, get_driver, barCode):
         """
         添加入库单：

@@ -5,14 +5,27 @@
     <title>自动化测试主页</title>
 </head>
 <body>
-<h1>欢迎使用自动化测试平台</h1>
-<h4>请输入一个已检测的商品条码</h4>
-<form method="post" action="#" >
-提示：一次只能输入一个条码，前后不能输入空格<br>
+<h1>{{name}},欢迎使用自动化测试平台</h1>
+<h4>请输入已检测的商品条码，多个条码用英文逗号隔开</h4>
+<form action="http://localhost:5000/index" method="POST">
+
 <label>商品条码：
+    <textarea type="text" name="bar_code" rows="10" cols="60"> </textarea>
+    <!-- 
     <input type="text" name="bar_code" >
+    -->
 </label>
-    <button type="submit" >确 定</button>>
+    <button type="submit" >确 定</button>
+</form>
+<form>
+    <label>使用说明：<br>
+        1. 每个条码必须输入18位，否则无法通过；<br>
+        2. 每个条码完成入库操作需要三分钟左右，无论最后是否入库成功，都会在网页上显示执行结果；<br>
+        3. 进行入库处理时会根据商品条码搜索，若查不到对应的来源单号，则不会继续执行入库操作。<br>
+        <!-- 
+        <textarea rows="10" cols="60"> {{res_text}}</textarea>
+        -->
+    </label>
 </form>
 </body>
 </html>

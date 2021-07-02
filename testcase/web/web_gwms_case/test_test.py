@@ -17,4 +17,9 @@ import pytest
 
 
 if __name__ == '__main__':
-    pass
+
+    st = "1243"
+    li_ = st.split(",")
+    print(li_)
+
+

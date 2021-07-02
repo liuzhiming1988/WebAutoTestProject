@@ -10,31 +10,33 @@
 from flask import Flask
 from flask import request
 from flask import render_template
-from website import default_config
+from website import in_storage
 
 
 app = Flask(__name__, static_url_path="/s", static_folder="static_files", template_folder="templates")
 
-app.config.from_object(default_config.DefaultConfig)
+# app.config.from_object(default_config.DefaultConfig)
 
-@app.route("/", methods=("get", "post"))
-@app.route("/index")
+@app.route("/")
+@app.route("/index", methods=['GET', 'POST'])
 def index():
-    if request.method == "GET":
-        print(app.config["AUTHOR"])
-        return render_template("index.html")
+    name = "嘿嘿嘿"
+    res_text = ""
 
-    if request.method == "post":
-        print("这是一个post请求")
-        print(request.headers)
-        print(request.json)
-        print(request.data)
-        barCode = request.form.to_dict()
-        print(barCode.get("bar_code"))
-        if barCode.get("bar_code") == "123":
-            return redirect("/")
-    print(request.form.to_dict())
+    print(request.url)
+    print(request.method)
 
+    if request.method == "POST":
+
+        barCode = request.form.get("bar_code")     # 获取html中提交的参数
+        if len(barCode) == 18:
+            test = in_storage.TestInStorage()
+            res_text = test.test_add_storage_order(barCode)    # 将这个结果返回到页面上
+        else:
+            res_text = "您输入的条码为：【{}】<br><br>错误提示：商品条码的长度应为18，输入有误,请检查后重新提交".format(barCode)
+        return res_text
+
+    return render_template("index.html", name=name, res_text=res_text)
 
 
 if __name__ == '__main__':

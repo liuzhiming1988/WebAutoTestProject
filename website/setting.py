@@ -2,13 +2,16 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : default_config.py
+@File    : setting.py
 @Author  : liuzhiming
 @Time    : 2021/6/30 上午12:18
 """
 
 
-class DefaultConfig:
-    """默认配置"""
+DEBUG = True
+PORT = 5000
+# DOMAIN = "10.0.11.172"
+DOMAIN = "localhost"
 
-    AUTHOR = "LIUZHIMING"
+
+
