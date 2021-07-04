@@ -11,7 +11,9 @@
 DEBUG = True
 PORT = 5000
 # DOMAIN = "10.0.11.172"
-DOMAIN = "localhost"
+DOMAIN = "127.0.0.1"
+SECRET_KEY = "sessKKW234ERGF781413"
+
 
 
 
