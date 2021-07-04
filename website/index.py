@@ -21,7 +21,8 @@ import time
 from website import in_storage
 
 
-app = Flask(__name__, static_url_path="/s", static_folder="static_files", template_folder="templates")
+app = Flask(__name__, static_url_path="/s",
+            static_folder="static_files", template_folder="templates")
 
 app.config.from_object("setting")       # 引入.py的配置文件
 # app.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
@@ -42,7 +43,8 @@ def index():
             res_text += "商品编码【{}】执行结果：<br>".format(barCode)
             if len(barCode) == 18:
                 test = in_storage.TestInStorage()
-                res_text += test.test_add_storage_order(barCode)    # 将这个结果返回到页面上
+                res_text += test.test_add_storage_order(barCode)
+                # 将这个结果返回到页面上
             else:
                 res_text += "错误提示：商品条码的长度应为18，输入有误,请检查后重新提交"
             res_text += "<br><br>"
@@ -133,7 +135,8 @@ def user_info2():
 
 @app.route('/logout2')
 def logout2():
-    session.pop('username', None) # None参数保证不报错，也就是当pop找不到需要删除的下标的时候会返回None，从而使得不报错。
+    session.pop('username', None)
+    # None参数保证不报错，也就是当pop找不到需要删除的下标的时候会返回None，从而使得不报错。
     return '退出成功！'
 
 # 请求上下文和应用上下文
@@ -170,6 +173,57 @@ def app_data():
     print(text)
     return text
 
+
+# 统计网站浏览次数
+# 初始化num变量
+@app.before_first_request
+def set_num():
+    session["num"] = 0
+
+
+# 每次请求前自动+1
+# 限制ip访问，只允许本地和公司网络进行访问
+@app.before_request
+def add_num():
+    client_ip = request.__dict__["environ"]["REMOTE_ADDR"]
+    if "10.0.1" in client_ip or "127.0.0" in client_ip:
+        session["num"] += 1
+    else:
+        return "非公司IP，不允许访问"
+
+
+@app.route("/get_num")
+def get_num():
+    num = str(session["num"])
+    text = "网站总访问次数为：{}".format(num)
+    return text
+
+
+# 记录最后一次访问时间
+@app.after_request
+def record_last_time(response):
+    response.set_cookie("time", str(
+        datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+    return response
+
+
+# 获取最后一次访问时间
+@app.route("/get_last_time")
+def get_last_time():
+    time_ = str(request.cookies.get("time"))
+    time_text = "最后一次访问时间为：{}".format(time_)
+    return time_text
+
+
+# 异常捕获，捕获404返回码
+@app.errorhandler(404)
+def error(e):
+    print(e)
+    error_text = "不存在的页面：<br>{}".format(e)
+    return error_text
+
+
+# Jinja2模板引擎
 
 
 

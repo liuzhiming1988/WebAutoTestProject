@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1>获取参数</h1>
+int类型：{{my_int}}<br>
+str类型：{{my_str}}<br>
+列表：{{my_list}}<br>
+字典：{{my_dict}}<br>
+
+<h2>使用参数</h2>
+{{my_int*2}}<br>
+{{my_list[0]}}<br>
+{{my_str+"字符串"}}<br>
+{{my_dict["name"]}}<br>
+{{my_dict.age}}<br>
+<br><br>
+{% if user.is_login %}
+        <a href="">退出</a>
+{% else %}
+        <a href="">登录</a>
+{% endif %}
+
+{% for book in books %}
+        <p>{{ loop.index }}、{{ book.name }}------{{ book.author }}</p>
+{% endfor %}
+</body>
+</html>
