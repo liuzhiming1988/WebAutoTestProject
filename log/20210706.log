@@ -1,0 +1,167 @@
+2021-07-06 17:03:41,009 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-07-06 17:03:41,222 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-07-06 17:03:41,261 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:03:42,314 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.09秒
+
+
+2021-07-06 17:03:42,314 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-07-06 17:03:42,336 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:03:43,397 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.08秒
+
+
+2021-07-06 17:03:43,397 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-07-06 17:03:43,419 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-07-06 17:03:45,960 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：2.56秒
+
+
+2021-07-06 17:03:50,982 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-07-06 17:03:50,982 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-07-06 17:03:51,002 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-07-06 17:03:52,049 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.07秒
+
+
+2021-07-06 17:03:52,049 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-07-06 17:03:52,067 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-07-06 17:03:53,111 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-07-06 17:03:53,111 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-07-06 17:04:02,921 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-07-06 17:04:02,921 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-07-06 17:04:02,959 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【123456789123456789】
+2021-07-06 17:04:04,053 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.13秒
+
+
+2021-07-06 17:04:04,053 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-07-06 17:04:04,076 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-07-06 17:04:05,138 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.08秒
+
+
+2021-07-06 17:04:05,138 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-07-06 17:04:10,139 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-07-06 17:04:10,171 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【 】
+2021-07-06 17:04:10,171 - D:\work\WebAutoTestProject\page\web_gwms_page\in_storage_orders_page.py - audit_order[line:79] - ERROR: 没有返回数据，请检查此商品是否有对应的入库订单号
+2021-07-06 17:04:10,171 - D:\work\WebAutoTestProject\website\in_storage.py - test_add_storage_order[line:41] - DEBUG: 【123456789123456789】对应的来源单号为：【False】
+2021-07-06 17:04:10,171 - D:\work\WebAutoTestProject\website\in_storage.py - test_add_storage_order[line:60] - ERROR: 1. 没有来源单号，无法入库，请检查，商品编码【123456789123456789】
+2021-07-06 17:05:00,439 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-07-06 17:05:00,638 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-07-06 17:05:00,660 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:05:01,723 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.09秒
+
+
+2021-07-06 17:05:01,723 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-07-06 17:05:01,744 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:05:02,798 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.07秒
+
+
+2021-07-06 17:05:02,798 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-07-06 17:05:02,818 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-07-06 17:05:04,948 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：2.15秒
+
+
+2021-07-06 17:05:09,974 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-07-06 17:05:09,974 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-07-06 17:05:09,991 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-07-06 17:05:11,038 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-07-06 17:05:11,038 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-07-06 17:05:11,057 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-07-06 17:05:12,101 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-07-06 17:05:12,101 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-07-06 17:05:16,799 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-07-06 17:05:16,799 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-07-06 17:05:16,833 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【789456123789456123】
+2021-07-06 17:05:17,937 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.14秒
+
+
+2021-07-06 17:05:17,939 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-07-06 17:05:17,974 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-07-06 17:05:19,034 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.1秒
+
+
+2021-07-06 17:05:19,034 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-07-06 17:05:24,034 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-07-06 17:05:24,063 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【 】
+2021-07-06 17:05:24,063 - D:\work\WebAutoTestProject\page\web_gwms_page\in_storage_orders_page.py - audit_order[line:79] - ERROR: 没有返回数据，请检查此商品是否有对应的入库订单号
+2021-07-06 17:05:24,063 - D:\work\WebAutoTestProject\website\in_storage.py - test_add_storage_order[line:41] - DEBUG: 【789456123789456123】对应的来源单号为：【False】
+2021-07-06 17:05:24,063 - D:\work\WebAutoTestProject\website\in_storage.py - test_add_storage_order[line:60] - ERROR: 1. 没有来源单号，无法入库，请检查，商品编码【789456123789456123】
+2021-07-06 17:05:27,383 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-07-06 17:05:27,548 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-07-06 17:05:27,572 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:05:28,618 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.07秒
+
+
+2021-07-06 17:05:28,618 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-07-06 17:05:28,644 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:05:29,708 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.09秒
+
+
+2021-07-06 17:05:29,708 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-07-06 17:05:29,728 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-07-06 17:05:31,926 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：2.22秒
+
+
+2021-07-06 17:05:36,952 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-07-06 17:05:36,952 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-07-06 17:05:36,973 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-07-06 17:05:38,023 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.07秒
+
+
+2021-07-06 17:05:38,023 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-07-06 17:05:38,046 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-07-06 17:05:39,088 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.06秒
+
+
+2021-07-06 17:05:39,088 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-07-06 17:05:43,425 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-07-06 17:05:43,426 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-07-06 17:05:43,469 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【789456123789456123】
+2021-07-06 17:05:44,556 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.13秒
+
+
+2021-07-06 17:05:44,556 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-07-06 17:05:44,578 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-07-06 17:05:45,639 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.08秒
+
+
+2021-07-06 17:05:45,639 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-07-06 17:05:50,640 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-07-06 17:05:50,667 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【 】
+2021-07-06 17:05:50,667 - D:\work\WebAutoTestProject\page\web_gwms_page\in_storage_orders_page.py - audit_order[line:79] - ERROR: 没有返回数据，请检查此商品是否有对应的入库订单号
+2021-07-06 17:05:50,667 - D:\work\WebAutoTestProject\website\in_storage.py - test_add_storage_order[line:41] - DEBUG: 【789456123789456123】对应的来源单号为：【False】
+2021-07-06 17:05:50,667 - D:\work\WebAutoTestProject\website\in_storage.py - test_add_storage_order[line:60] - ERROR: 1. 没有来源单号，无法入库，请检查，商品编码【789456123789456123】
+2021-07-06 17:08:02,183 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-07-06 17:08:02,388 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-07-06 17:08:02,428 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:08:03,472 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.08秒
+
+
+2021-07-06 17:08:03,472 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-07-06 17:08:03,494 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:08:04,550 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.08秒
+
+
+2021-07-06 17:08:04,550 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-07-06 17:08:04,570 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-07-06 17:08:06,800 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：2.25秒
+
+
+2021-07-06 17:08:19,656 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-07-06 17:08:20,005 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-07-06 17:08:20,030 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:08:21,083 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.08秒
+
+
+2021-07-06 17:08:21,083 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-07-06 17:08:21,107 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-07-06 17:08:22,173 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：1.09秒
+
+
+2021-07-06 17:08:22,173 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-07-06 17:08:22,193 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-07-06 17:08:24,379 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:27] - INFO: 执行耗时：2.21秒
+
+

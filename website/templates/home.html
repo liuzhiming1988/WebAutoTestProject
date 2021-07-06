@@ -5,11 +5,14 @@
     <title>{{title}}</title>
 </head>
 <body>
+{% extends 'base.html' %}
+{% block content %}
 <h1>获取参数</h1>
 int类型：{{my_int}}<br>
 str类型：{{my_str}}<br>
 列表：{{my_list}}<br>
 字典：{{my_dict}}<br>
+int列表:{{my_int_list}} <br>
 
 <h2>使用参数</h2>
 {{my_int*2}}<br>
@@ -27,5 +30,48 @@ str类型：{{my_str}}<br>
 {% for book in books %}
         <p>{{ loop.index }}、{{ book.name }}------{{ book.author }}</p>
 {% endfor %}
+
+<h3>过滤器</h3>
+{{ my_str | upper }} <br>  <!--全部字母转为大写-->
+    {{ my_str | lower }} <br>  <!--全部字母转为小写-->
+    {{ my_list | first }} <br>  <!--取列表第一个元素-->
+    {{ my_list | last }} <br>  <!--取列表最后一个元素-->
+    {{ my_list | length }} <br>  <!--计算列表长度-->
+    {{ my_int_list | sum }} <br>  <!--计算列表元素总和-->
+    {{ my_list | sort }} <br>  <!--对列表元素进行排序-->
+    {{ [6,2,3,1,5,4] | sort }} <br>  <!--对列表元素进行排序-->
+
+<h4>自定义过滤器,过滤出列表中大于10的数</h4>
+{{my_int_list | filter_large}}
+
+
+<h4>宏的应用</h4>
+<br>
+    <!--在模板中定义宏格式：macro开头，宏名称(标签各属性)-->
+    {% macro input(label='', name='', type='', value='') %}
+        <!--定义具体输出结果，将参数接收过来进行属性的赋值-->
+        <label>{{ label }}</label><input type="{{ type }}" name="{{ name }}" value="{{ value }}">
+    {% endmacro %}
+    <!--以endmacro结束-->
+    <!--宏的使用-->
+    <form action="">
+        <!--宏名称(传递值到宏中)-->
+        {{ input('用户名：', 'username') }}
+        {{ input('密码：', 'pwd', 'password') }}
+        {{ input('提交：', 'sub-btn', 'submit', '登录') }}
+    </form>
+
+<h2>test包含</h2>
+{% include 'index.html' ignore missing %}
+<!--ignore missing作用可以起到如果hello.html不存在的话不报错-->
+
+<h3>从config读取配置信息</h3>
+{{config.SECRET_KEY }} <br>
+{{request.url }}
+<h3>
+    <a href="{{ url_for('home') }}">跳转到index页面</a>
+</h3>
+
+{% endblock content %}
 </body>
 </html>

@@ -16,6 +16,7 @@ from flask import make_response
 from flask import session
 from flask import g
 from flask import current_app
+from flask import flash
 import datetime
 import time
 from website import in_storage
@@ -28,7 +29,7 @@ app.config.from_object("setting")       # 引入.py的配置文件
 # app.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
 
 # https://blog.csdn.net/lingjiphp/category_8707067.html
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 @app.route("/index", methods=['GET', 'POST'])
 def index():
     name = "嘿嘿嘿"
@@ -45,10 +46,13 @@ def index():
                 test = in_storage.TestInStorage()
                 res_text += test.test_add_storage_order(barCode)
                 # 将这个结果返回到页面上
+                flash(res_text)
             else:
-                res_text += "错误提示：商品条码的长度应为18，输入有误,请检查后重新提交"
+                res_text += "错误提示：商品条码的长度应为18，" \
+                            "你輸入的条码长度为 {}，输入有误,请检查后重新提交".format(len(barCode))
+                flash(res_text)
             res_text += "<br><br>"
-        return res_text
+        # return res_text
 
     return render_template("index.html", name=name, res_text=res_text)
 
@@ -186,7 +190,7 @@ def set_num():
 @app.before_request
 def add_num():
     client_ip = request.__dict__["environ"]["REMOTE_ADDR"]
-    if "10.0.1" in client_ip or "127.0.0" in client_ip:
+    if "10.0." in client_ip or "127.0.0" in client_ip:
         session["num"] += 1
     else:
         return "非公司IP，不允许访问"

@@ -7,7 +7,7 @@
 <body>
 <h1>{{name}},欢迎使用自动化测试平台</h1>
 <h4>请输入已检测的商品条码，多个条码用英文逗号隔开</h4>
-<form action="http://localhost:5000/index" method="POST">
+<form action="" method="POST">
 
 <label>商品条码：
     <textarea type="text" name="bar_code" rows="10" cols="60"> </textarea>
@@ -17,6 +17,9 @@
 </label>
     <button type="submit" >确 定</button>
 </form>
+{% for message in get_flashed_messages() %}
+        <h3>{{ message }}</h3>
+    {% endfor %}
 <form>
     <label>使用说明：<br>
         1. 每个条码必须输入18位，否则无法通过；<br>
