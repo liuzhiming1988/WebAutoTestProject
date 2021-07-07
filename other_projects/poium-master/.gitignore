@@ -1,9 +1,0 @@
-*.pyc
-*.log
-logs/
-.idea/
-.vscode/
-__pycache__/
-build/
-dist/
-poium.egg-info/
