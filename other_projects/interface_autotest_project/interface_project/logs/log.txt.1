@@ -1,0 +1,305 @@
+2016-04-07 03:49:59,684 httpprotocol.py[line: 51] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2016-04-07 03:49:59,777 ipquery.py[line: 31] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407034957 and testcase_id = 39 and step_id = 41
+2016-04-07 03:49:59,777 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407034957 and testcase_id = 39 and step_id = 41
+2016-04-07 03:49:59,782 ipquery.py[line: 34] INFO: 正在解析返回结果
+2016-04-07 03:49:59,783 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:49:59,783 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:49:59" WHERE executed_history_id = 20160407034957 AND testcase_id = 39 AND step_id = 41 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:49:59,788 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:49:59,789 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 39, '获取ip信息接口', '项目1-测试计划1', '项目1', 42, 2, '', 'http', 'gc.ditu.aliyun.com', '80', '{"class":"GeoCoding","function": "test_get_ip_info","method":"get", "url":"/geocoding?","params":[{"a":"$city_name"}]}', '{"lon":114.05786,"lat":22.54309}', 'Block', '', '')
+2016-04-07 03:49:59,792 testcase.py[line: 60] INFO: 开始执行步骤操作[第2步]
+2016-04-07 03:49:59,792 casestep.py[line: 58] INFO: 调用的方法为：GeoCoding.test_get_ip_info
+2016-04-07 03:49:59,792 geocoding.py[line: 22] INFO: 正在发起GET请求...
+2016-04-07 03:49:59,793 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/geocoding?a=%E6%B7%B1%E5%9C%B3%E5%B8%82
+2016-04-07 03:49:59,861 geocoding.py[line: 37] INFO: 正在解析返回结果
+2016-04-07 03:49:59,862 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:49:59,862 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:49:59" WHERE executed_history_id = 20160407034957 AND testcase_id = 39 AND step_id = 42 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:49:59,866 testcase.py[line: 101] INFO: 测试用例[id=39, name=获取ip信息接口]执行成功
+2016-04-07 03:49:59,866 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:49:59,866 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:49:59" WHERE executed_history_id = 20160407034957 AND testcase_id = 39 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:50:00,079 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=2, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=39]的执行结果
+2016-04-07 03:50:00,794 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:50:00,794 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 54, '根据经纬度获取地区名', '根据经纬度获取地区名接口', '项目1-测试计划1', '项目1', 'Block', '')
+2016-04-07 03:50:00,796 testplan.py[line: 60] INFO: 开始执行测试用例[id=54，name=根据经纬度获取地区名]
+2016-04-07 03:50:00,796 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:50:00,796 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 54, '根据经纬度获取地区名', '项目1-测试计划1', '项目1', 61, 1, '', 'http', 'gc.ditu.aliyun.com', '80', '{"class":"Regeocoding","function":"test_regeocoding","method":"get","url":"/regeocoding?","params":[{"l":"39.938133,116.395739","type":"100"}]}', '{"name":"地安门外大街"}', 'Block', '', '')
+2016-04-07 03:50:00,799 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:50:00,799 casestep.py[line: 58] INFO: 调用的方法为：Regeocoding.test_regeocoding
+2016-04-07 03:50:00,800 regeocoding.py[line: 24] INFO: 正在发起GET请求...
+2016-04-07 03:50:00,800 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/regeocoding?type=100&l=39.938133%2C116.395739
+2016-04-07 03:50:00,898 regeocoding.py[line: 27] INFO: 正在解析返回结果
+2016-04-07 03:50:00,898 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:50:00,899 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:50:00" WHERE executed_history_id = 20160407034957 AND testcase_id = 54 AND step_id = 61 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:50:00,905 testcase.py[line: 101] INFO: 测试用例[id=54, name=根据经纬度获取地区名]执行成功
+2016-04-07 03:50:00,906 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:50:00,906 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:50:00" WHERE executed_history_id = 20160407034957 AND testcase_id = 54 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:50:01,132 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=2, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=54]的执行结果
+2016-04-07 03:50:01,427 testplan.py[line: 85] INFO: 测试计划[project=项目1 ,testplan=项目1-测试计划1]已执行完
+2016-04-07 03:50:01,666 main.py[line: 166] INFO: 正在读取测试计划[project：项目1，testplan：项目1-测试计划2]的协议，host，端口配置...
+2016-04-07 03:50:01,667 main.py[line: 168] INFO: 成功读取配置信息：{"protocol":"http","host":"gc.ditu.aliyun.com","port":"80"}
+2016-04-07 03:50:01,668 main.py[line: 185] INFO: 正在执行测试计划[project：项目1，testplan：项目1-测试计划2]
+2016-04-07 03:50:01,668 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划2]的测试用例
+2016-04-07 03:50:01,881 testplan.py[line: 35] INFO: 成功获取测试计划[project=项目1，name=项目1-测试计划2]的测试用例id：dict_keys(['28'])
+2016-04-07 03:50:01,881 testplan.py[line: 38] WARNING: 测试计划[project=项目1，name=项目1-测试计划2]处于不活动状态[active=0]，不执行
+2016-04-07 03:50:02,061 main.py[line: 166] INFO: 正在读取测试计划[project：项目1，testplan：项目1-测试计划3]的协议，host，端口配置...
+2016-04-07 03:50:02,061 main.py[line: 168] INFO: 成功读取配置信息：{"protocol":"http","host":gc.ditu.aliyun.com,"port":"80"}
+2016-04-07 03:50:02,061 main.py[line: 179] ERROR: 测试计划[project：项目1，testplan：项目1-测试计划3]协议，host，端口信息配置错误,暂时无法执行：No JSON object could be decoded
+2016-04-07 03:50:02,245 main.py[line: 166] INFO: 正在读取测试计划[project：项目1，testplan：项目1-测试计划4]的协议，host，端口配置...
+2016-04-07 03:50:02,245 main.py[line: 168] INFO: 成功读取配置信息：
+2016-04-07 03:50:02,246 main.py[line: 170] ERROR: 测试计划[project：项目1，testplan：项目1-测试计划4]未配置协议，host，端口信息，暂时无法执行
+2016-04-07 03:50:02,475 main.py[line: 157] ERROR: 测试计划[project：项目1，testplan：项目-测试计划4]获取失败，暂时无法执行：3033: (getTestPlanByName) - Test Plan (name:项目-测试计划4) does not exist on Test Project (name:项目1).
+getTestPlanByName({'testprojectname': '项目1', 'devKey': '965a88dd56a1fe1c4d0d7891ed87272d', 'testplanname': '项目-测试计划4'})
+2016-04-07 03:50:02,665 main.py[line: 166] INFO: 正在读取测试计划[project：项目1，testplan：项目1-测试计划5]的协议，host，端口配置...
+2016-04-07 03:50:02,665 main.py[line: 168] INFO: 成功读取配置信息：{"protocol":"http","host":"gc.ditu.aliyun.com","port":"80"} 
+2016-04-07 03:50:02,666 main.py[line: 185] INFO: 正在执行测试计划[project：项目1，testplan：项目1-测试计划5]
+2016-04-07 03:50:02,667 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划5]的测试用例
+2016-04-07 03:50:02,865 testplan.py[line: 35] INFO: 成功获取测试计划[project=项目1，name=项目1-测试计划5]的测试用例id：dict_keys(['58', '39', '54'])
+2016-04-07 03:50:03,517 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:50:03,518 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 58, '测试用例名2', '根据经纬度获取地区名接口', '项目1-测试计划5', '项目1', 'Block', '')
+2016-04-07 03:50:03,521 testplan.py[line: 60] INFO: 开始执行测试用例[id=58，name=测试用例名2]
+2016-04-07 03:50:03,521 testcase.py[line: 26] WARNING: 用例[name=测试用例名2]处于禁用状态[active=0]，不执行
+2016-04-07 03:50:03,521 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:50:03,521 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Block", runtime="2016-04-07 03:50:03" WHERE executed_history_id = 20160407034957 AND testcase_id = 58 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:50:03,758 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=64, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=58]的执行结果
+2016-04-07 03:50:04,194 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:50:04,194 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 39, '获取ip信息接口', '根据地区名获取经纬度接口', '项目1-测试计划5', '项目1', 'Block', '')
+2016-04-07 03:50:04,196 testplan.py[line: 60] INFO: 开始执行测试用例[id=39，name=获取ip信息接口]
+2016-04-07 03:50:04,197 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:50:04,197 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 39, '获取ip信息接口', '项目1-测试计划5', '项目1', 41, 1, '', 'http', 'gc.ditu.aliyun.com', '80', '{"class":"IPQuery","function": "test_get_address_info","method":"get", "url":"/ipquery","params":""}', '{"city_name":"深圳市"}', 'Block', '', '')
+2016-04-07 03:50:04,199 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:50:04,199 casestep.py[line: 58] INFO: 调用的方法为：IPQuery.test_get_address_info
+2016-04-07 03:50:04,201 ipquery.py[line: 25] INFO: 正在发起GET请求...
+2016-04-07 03:50:04,201 httpprotocol.py[line: 51] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2016-04-07 03:50:04,295 ipquery.py[line: 31] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407034957 and testcase_id = 39 and step_id = 41
+2016-04-07 03:50:04,296 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407034957 and testcase_id = 39 and step_id = 41
+2016-04-07 03:50:04,305 ipquery.py[line: 34] INFO: 正在解析返回结果
+2016-04-07 03:50:04,306 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:50:04,307 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:50:04" WHERE executed_history_id = 20160407034957 AND testcase_id = 39 AND step_id = 41 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:50:04,313 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:50:04,313 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 39, '获取ip信息接口', '项目1-测试计划5', '项目1', 42, 2, '', 'http', 'gc.ditu.aliyun.com', '80', '{"class":"GeoCoding","function": "test_get_ip_info","method":"get", "url":"/geocoding?","params":[{"a":"$city_name"}]}', '{"lon":114.05786,"lat":22.54309}', 'Block', '', '')
+2016-04-07 03:50:04,387 testcase.py[line: 60] INFO: 开始执行步骤操作[第2步]
+2016-04-07 03:50:04,388 casestep.py[line: 58] INFO: 调用的方法为：GeoCoding.test_get_ip_info
+2016-04-07 03:50:04,389 geocoding.py[line: 22] INFO: 正在发起GET请求...
+2016-04-07 03:50:04,389 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/geocoding?a=%E6%B7%B1%E5%9C%B3%E5%B8%82
+2016-04-07 03:50:04,482 geocoding.py[line: 37] INFO: 正在解析返回结果
+2016-04-07 03:50:04,483 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:50:04,483 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:50:04" WHERE executed_history_id = 20160407034957 AND testcase_id = 39 AND step_id = 42 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:50:04,487 testcase.py[line: 101] INFO: 测试用例[id=39, name=获取ip信息接口]执行成功
+2016-04-07 03:50:04,487 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:50:04,487 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:50:04" WHERE executed_history_id = 20160407034957 AND testcase_id = 39 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:50:04,699 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=64, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=39]的执行结果
+2016-04-07 03:50:05,318 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:50:05,319 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 54, '根据经纬度获取地区名', '根据经纬度获取地区名接口', '项目1-测试计划5', '项目1', 'Block', '')
+2016-04-07 03:50:05,323 testplan.py[line: 60] INFO: 开始执行测试用例[id=54，name=根据经纬度获取地区名]
+2016-04-07 03:50:05,324 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:50:05,325 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407034957', 54, '根据经纬度获取地区名', '项目1-测试计划5', '项目1', 61, 1, '', 'http', 'gc.ditu.aliyun.com', '80', '{"class":"Regeocoding","function":"test_regeocoding","method":"get","url":"/regeocoding?","params":[{"l":"39.938133,116.395739","type":"100"}]}', '{"name":"地安门外大街"}', 'Block', '', '')
+2016-04-07 03:50:05,328 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:50:05,328 casestep.py[line: 58] INFO: 调用的方法为：Regeocoding.test_regeocoding
+2016-04-07 03:50:05,329 regeocoding.py[line: 24] INFO: 正在发起GET请求...
+2016-04-07 03:50:05,329 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/regeocoding?type=100&l=39.938133%2C116.395739
+2016-04-07 03:50:05,424 regeocoding.py[line: 27] INFO: 正在解析返回结果
+2016-04-07 03:50:05,426 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:50:05,426 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:50:05" WHERE executed_history_id = 20160407034957 AND testcase_id = 54 AND step_id = 61 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:50:05,431 testcase.py[line: 101] INFO: 测试用例[id=54, name=根据经纬度获取地区名]执行成功
+2016-04-07 03:50:05,432 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:50:05,432 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:50:05" WHERE executed_history_id = 20160407034957 AND testcase_id = 54 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:50:05,636 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=64, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=54]的执行结果
+2016-04-07 03:50:05,832 testplan.py[line: 85] INFO: 测试计划[project=项目1 ,testplan=项目1-测试计划5]已执行完
+2016-04-07 03:50:05,832 main.py[line: 230] INFO: 接口测试已执行完成，正在关闭数据库连接
+2016-04-07 03:50:05,833 htmlreporter.py[line: 38] INFO: 正在查询测试用例总数
+2016-04-07 03:50:05,833 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE executed_history_id = %s  data：('20160407034957',)
+2016-04-07 03:50:05,835 htmlreporter.py[line: 44] INFO: 正在查询执行通过的用例数
+2016-04-07 03:50:05,835 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Pass', '20160407034957')
+2016-04-07 03:50:05,837 htmlreporter.py[line: 50] INFO: 正在查询执行失败的用例数
+2016-04-07 03:50:05,837 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Fail', '20160407034957')
+2016-04-07 03:50:05,839 htmlreporter.py[line: 56] INFO: 正在查询执行出错的用例数
+2016-04-07 03:50:05,839 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Error', '20160407034957')
+2016-04-07 03:50:05,840 htmlreporter.py[line: 62] INFO: 正在查询未执行的用例数
+2016-04-07 03:50:05,840 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Block', '20160407034957')
+2016-04-07 03:50:05,842 htmlreporter.py[line: 73] INFO: 正在查询已运的测试计划
+2016-04-07 03:50:05,842 mydb.py[line: 93] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20160407034957',)
+2016-04-07 03:50:05,856 htmlreporter.py[line: 99] INFO: 正在查询测试计划[project：项目1, testplan：项目1-测试计划1]的测试用例执行结果
+2016-04-07 03:50:05,856 mydb.py[line: 93] INFO: query：SELECT id, executed_history_id, testcase_id, testcase_name,testsuit, testplan, project, runresult, runtime FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s ORDER BY id ASC  data：('项目1', '项目1-测试计划1', '20160407034957')
+2016-04-07 03:50:05,865 htmlreporter.py[line: 106] INFO: 正在记录测试测试计划[project：项目1, testplan：项目1-测试计划1]的测试用例运行结果到测试报告
+2016-04-07 03:50:05,866 htmlreporter.py[line: 99] INFO: 正在查询测试计划[project：项目1, testplan：项目1-测试计划5]的测试用例执行结果
+2016-04-07 03:50:05,866 mydb.py[line: 93] INFO: query：SELECT id, executed_history_id, testcase_id, testcase_name,testsuit, testplan, project, runresult, runtime FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s ORDER BY id ASC  data：('项目1', '项目1-测试计划5', '20160407034957')
+2016-04-07 03:50:05,868 htmlreporter.py[line: 106] INFO: 正在记录测试测试计划[project：项目1, testplan：项目1-测试计划5]的测试用例运行结果到测试报告
+2016-04-07 03:50:05,869 htmlreporter.py[line: 116] INFO: 正在查询已运的测试计划
+2016-04-07 03:50:05,869 mydb.py[line: 93] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20160407034957',)
+2016-04-07 03:50:05,871 htmlreporter.py[line: 128] INFO: 正在查询测试计划[project：项目1, testplan：项目1-测试计划1]已运行的测试用例
+2016-04-07 03:50:05,872 mydb.py[line: 93] INFO: query：SELECT testcase_id, testcase_name, project, testplan FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s  GROUP BY testcase_id ORDER BY id ASC  data：('项目1', '项目1-测试计划1', '20160407034957')
+2016-04-07 03:50:05,874 htmlreporter.py[line: 159] INFO: 正在查询测试用例[id=58]步骤运行结果
+2016-04-07 03:50:05,874 mydb.py[line: 93] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '项目1-测试计划1', 58, '20160407034957')
+2016-04-07 03:50:05,877 htmlreporter.py[line: 159] INFO: 正在查询测试用例[id=39]步骤运行结果
+2016-04-07 03:50:05,877 mydb.py[line: 93] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '项目1-测试计划1', 39, '20160407034957')
+2016-04-07 03:50:05,881 htmlreporter.py[line: 159] INFO: 正在查询测试用例[id=54]步骤运行结果
+2016-04-07 03:50:05,881 mydb.py[line: 93] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '项目1-测试计划1', 54, '20160407034957')
+2016-04-07 03:50:05,885 htmlreporter.py[line: 128] INFO: 正在查询测试计划[project：项目1, testplan：项目1-测试计划5]已运行的测试用例
+2016-04-07 03:50:05,886 mydb.py[line: 93] INFO: query：SELECT testcase_id, testcase_name, project, testplan FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s  GROUP BY testcase_id ORDER BY id ASC  data：('项目1', '项目1-测试计划5', '20160407034957')
+2016-04-07 03:50:05,889 htmlreporter.py[line: 159] INFO: 正在查询测试用例[id=58]步骤运行结果
+2016-04-07 03:50:05,890 mydb.py[line: 93] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '项目1-测试计划5', 58, '20160407034957')
+2016-04-07 03:50:05,895 htmlreporter.py[line: 159] INFO: 正在查询测试用例[id=39]步骤运行结果
+2016-04-07 03:50:05,896 mydb.py[line: 93] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '项目1-测试计划5', 39, '20160407034957')
+2016-04-07 03:50:05,901 htmlreporter.py[line: 159] INFO: 正在查询测试用例[id=54]步骤运行结果
+2016-04-07 03:50:05,901 mydb.py[line: 93] INFO: query：SELECT step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, cstb.runresult, reason, cstb.runtime FROM case_step_report_tb AS cstb JOIN testcase_report_tb AS tstb ON cstb.testcase_id =  tstb.testcase_id AND cstb.project=tstb.project AND cstb.testplan=tstb.testplan AND cstb.executed_history_id = tstb.executed_history_id WHERE tstb.project= %s AND tstb.testplan=%s AND cstb.testcase_id=%s AND cstb.executed_history_id = %s  data：('项目1', '项目1-测试计划5', 54, '20160407034957')
+2016-04-07 03:50:05,908 htmlreporter.py[line: 178] INFO: 正在设置测试报告结果文件名
+2016-04-07 03:50:05,909 htmlreporter.py[line: 188] INFO: 测试报告文件名所在路径为：F:\\project\\report\\test_report20160407034957.html
+2016-04-07 03:50:05,910 htmlreporter.py[line: 181] INFO: 正在生成测试报告
+2016-04-07 03:50:05,946 main.py[line: 252] INFO: 生成测试报告成功
+2016-04-07 03:50:07,222 main.py[line: 259] INFO: F:\\project\\report\\test_report20160407034957.html
+2016-04-07 03:50:07,222 main.py[line: 262] INFO: 正在发送测试报告邮件...
+2016-04-07 03:50:07,802 main.py[line: 266] INFO: 发送邮件成功
+2016-04-07 03:51:35,620 globalpy.py[line: 14] INFO: 正在初始化数据库[名称：TESTDB]对象
+2016-04-07 03:51:35,640 globalpy.py[line: 17] INFO: 正在获取testlink
+2016-04-07 03:51:35,770 main.py[line: 61] INFO: 正在创建测试用例报告报表
+2016-04-07 03:51:35,770 mydb.py[line: 37] INFO: query：CREATE TABLE IF NOT EXISTS testcase_report_tb                                         (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,                                          executed_history_id varchar(50) NOT NULL,                                          testcase_id int NOT NULL,                                          testcase_name varchar(40) NOT NULL,                                          testsuit varchar(40),                                          testplan varchar(40),                                          project varchar(40),                                          runresult varchar(20),                                          runtime datetime)
+2016-04-07 03:51:35,772 main.py[line: 64] INFO: 正在创建测试步骤报告报表
+2016-04-07 03:51:35,772 mydb.py[line: 37] INFO: query：CREATE TABLE IF NOT EXISTS case_step_report_tb                                         (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,                                          executed_history_id varchar(50) NOT NULL,                                          testcase_id int NOT NULL,                                          testcase_name varchar(40) NOT NULL,                                          testplan varchar(40) NOT NULL,                                          project varchar(40) NOT NULL,                                          step_id int,                                          step_num int NOT NULL,                                          step_action varchar(1000),                                           expected_results varchar(1000),                                          runresult varchar(10),                                          reason varchar(2000),                                          protocol_method varchar(40) ,                                          protocol varchar(40),                                          host varchar(40),                                          port int,                                          runtime datetime)
+2016-04-07 03:51:35,774 main.py[line: 67] INFO: 正在读取运行模式配置
+2016-04-07 03:51:35,777 main.py[line: 72] INFO: 按项目运行测试
+2016-04-07 03:51:35,778 main.py[line: 76] INFO: 运行所有项目
+2016-04-07 03:51:36,001 main.py[line: 86] INFO: 正在读取测项目[id：1, project：项目1]的协议，host，端口配置...
+2016-04-07 03:51:36,001 main.py[line: 89] INFO: 成功读取配置信息：{"protocol":"http","host":"gc.ditu.aliyun.com","port":80}
+2016-04-07 03:51:36,003 main.py[line: 105] INFO: 正在执行测试项目[id：1, project：项目1]
+2016-04-07 03:51:36,003 testproject.py[line: 22] INFO: 正在获取测试项目[id：1, name：项目1]对应对应的测试计划名称列表
+2016-04-07 03:51:36,215 testproject.py[line: 27] INFO: 成功获取项目测试计划名称列表[list=['项目1-测试计划1', '项目1-测试计划2', '项目1-测试计划3', '项目1-测试计划4', '项目1-测试计划5']]
+2016-04-07 03:51:36,422 testproject.py[line: 37] INFO: 正在执行项目测试计划[project：项目1，testplan：项目1-测试计划1]
+2016-04-07 03:51:36,423 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划1]的测试用例
+2016-04-07 03:51:36,625 testplan.py[line: 35] INFO: 成功获取测试计划[project=项目1，name=项目1-测试计划1]的测试用例id：dict_keys(['39', '58', '54'])
+2016-04-07 03:51:37,027 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:51:37,027 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 39, '获取ip信息接口', '根据地区名获取经纬度接口', '项目1-测试计划1', '项目1', 'Block', '')
+2016-04-07 03:51:37,029 testplan.py[line: 60] INFO: 开始执行测试用例[id=39，name=获取ip信息接口]
+2016-04-07 03:51:37,030 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:51:37,030 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 39, '获取ip信息接口', '项目1-测试计划1', '项目1', 41, 1, '', 'http', 'gc.ditu.aliyun.com', 80, '{"class":"IPQuery","function": "test_get_address_info","method":"get", "url":"/ipquery","params":""}', '{"city_name":"深圳市"}', 'Block', '', '')
+2016-04-07 03:51:37,032 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:51:37,033 casestep.py[line: 58] INFO: 调用的方法为：IPQuery.test_get_address_info
+2016-04-07 03:51:37,034 ipquery.py[line: 25] INFO: 正在发起GET请求...
+2016-04-07 03:51:37,035 httpprotocol.py[line: 51] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2016-04-07 03:51:37,127 ipquery.py[line: 31] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407035135 and testcase_id = 39 and step_id = 41
+2016-04-07 03:51:37,127 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407035135 and testcase_id = 39 and step_id = 41
+2016-04-07 03:51:37,134 ipquery.py[line: 34] INFO: 正在解析返回结果
+2016-04-07 03:51:37,135 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:51:37,136 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:51:37" WHERE executed_history_id = 20160407035135 AND testcase_id = 39 AND step_id = 41 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:51:37,141 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:51:37,142 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 39, '获取ip信息接口', '项目1-测试计划1', '项目1', 42, 2, '', 'http', 'gc.ditu.aliyun.com', 80, '{"class":"GeoCoding","function": "test_get_ip_info","method":"get", "url":"/geocoding?","params":[{"a":"$city_name"}]}', '{"lon":114.05786,"lat":22.54309}', 'Block', '', '')
+2016-04-07 03:51:37,146 testcase.py[line: 60] INFO: 开始执行步骤操作[第2步]
+2016-04-07 03:51:37,147 casestep.py[line: 58] INFO: 调用的方法为：GeoCoding.test_get_ip_info
+2016-04-07 03:51:37,148 geocoding.py[line: 22] INFO: 正在发起GET请求...
+2016-04-07 03:51:37,148 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/geocoding?a=%E6%B7%B1%E5%9C%B3%E5%B8%82
+2016-04-07 03:51:37,230 geocoding.py[line: 37] INFO: 正在解析返回结果
+2016-04-07 03:51:37,231 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:51:37,232 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:51:37" WHERE executed_history_id = 20160407035135 AND testcase_id = 39 AND step_id = 42 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:51:37,242 testcase.py[line: 101] INFO: 测试用例[id=39, name=获取ip信息接口]执行成功
+2016-04-07 03:51:37,243 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:51:37,243 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:51:37" WHERE executed_history_id = 20160407035135 AND testcase_id = 39 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:51:37,438 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=2, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=39]的执行结果
+2016-04-07 03:51:38,170 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:51:38,171 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 58, '测试用例名2', '根据经纬度获取地区名接口', '项目1-测试计划1', '项目1', 'Block', '')
+2016-04-07 03:51:38,173 testplan.py[line: 60] INFO: 开始执行测试用例[id=58，name=测试用例名2]
+2016-04-07 03:51:38,174 testcase.py[line: 26] WARNING: 用例[name=测试用例名2]处于禁用状态[active=0]，不执行
+2016-04-07 03:51:38,174 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:51:38,174 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Block", runtime="2016-04-07 03:51:38" WHERE executed_history_id = 20160407035135 AND testcase_id = 58 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:51:38,399 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=2, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=58]的执行结果
+2016-04-07 03:51:38,807 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:51:38,808 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 54, '根据经纬度获取地区名', '根据经纬度获取地区名接口', '项目1-测试计划1', '项目1', 'Block', '')
+2016-04-07 03:51:38,809 testplan.py[line: 60] INFO: 开始执行测试用例[id=54，name=根据经纬度获取地区名]
+2016-04-07 03:51:38,810 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:51:38,810 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 54, '根据经纬度获取地区名', '项目1-测试计划1', '项目1', 61, 1, '', 'http', 'gc.ditu.aliyun.com', 80, '{"class":"Regeocoding","function":"test_regeocoding","method":"get","url":"/regeocoding?","params":[{"l":"39.938133,116.395739","type":"100"}]}', '{"name":"地安门外大街"}', 'Block', '', '')
+2016-04-07 03:51:38,813 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:51:38,814 casestep.py[line: 58] INFO: 调用的方法为：Regeocoding.test_regeocoding
+2016-04-07 03:51:38,814 regeocoding.py[line: 24] INFO: 正在发起GET请求...
+2016-04-07 03:51:38,814 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/regeocoding?l=39.938133%2C116.395739&type=100
+2016-04-07 03:51:38,902 regeocoding.py[line: 27] INFO: 正在解析返回结果
+2016-04-07 03:51:38,902 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:51:38,903 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:51:38" WHERE executed_history_id = 20160407035135 AND testcase_id = 54 AND step_id = 61 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:51:38,924 testcase.py[line: 101] INFO: 测试用例[id=54, name=根据经纬度获取地区名]执行成功
+2016-04-07 03:51:38,924 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:51:38,924 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:51:38" WHERE executed_history_id = 20160407035135 AND testcase_id = 54 AND project='项目1' AND testplan='项目1-测试计划1'
+2016-04-07 03:51:39,146 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=2, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=54]的执行结果
+2016-04-07 03:51:39,374 testplan.py[line: 85] INFO: 测试计划[project=项目1 ,testplan=项目1-测试计划1]已执行完
+2016-04-07 03:51:39,571 testproject.py[line: 37] INFO: 正在执行项目测试计划[project：项目1，testplan：项目1-测试计划2]
+2016-04-07 03:51:39,571 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划2]的测试用例
+2016-04-07 03:51:39,770 testplan.py[line: 35] INFO: 成功获取测试计划[project=项目1，name=项目1-测试计划2]的测试用例id：dict_keys(['28'])
+2016-04-07 03:51:39,770 testplan.py[line: 38] WARNING: 测试计划[project=项目1，name=项目1-测试计划2]处于不活动状态[active=0]，不执行
+2016-04-07 03:51:39,970 testproject.py[line: 37] INFO: 正在执行项目测试计划[project：项目1，testplan：项目1-测试计划3]
+2016-04-07 03:51:39,971 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划3]的测试用例
+2016-04-07 03:51:40,163 testplan.py[line: 32] WARNING: 未获取到测试用例
+2016-04-07 03:51:40,349 testproject.py[line: 37] INFO: 正在执行项目测试计划[project：项目1，testplan：项目1-测试计划4]
+2016-04-07 03:51:40,350 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划4]的测试用例
+2016-04-07 03:51:40,544 testplan.py[line: 32] WARNING: 未获取到测试用例
+2016-04-07 03:51:40,733 testproject.py[line: 37] INFO: 正在执行项目测试计划[project：项目1，testplan：项目1-测试计划5]
+2016-04-07 03:51:40,733 testplan.py[line: 29] INFO: 正在获取测试计划[project=项目1，name=项目1-测试计划5]的测试用例
+2016-04-07 03:51:40,947 testplan.py[line: 35] INFO: 成功获取测试计划[project=项目1，name=项目1-测试计划5]的测试用例id：dict_keys(['39', '58', '54'])
+2016-04-07 03:51:41,336 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:51:41,336 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 39, '获取ip信息接口', '根据地区名获取经纬度接口', '项目1-测试计划5', '项目1', 'Block', '')
+2016-04-07 03:51:41,338 testplan.py[line: 60] INFO: 开始执行测试用例[id=39，name=获取ip信息接口]
+2016-04-07 03:51:41,339 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:51:41,339 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 39, '获取ip信息接口', '项目1-测试计划5', '项目1', 41, 1, '', 'http', 'gc.ditu.aliyun.com', 80, '{"class":"IPQuery","function": "test_get_address_info","method":"get", "url":"/ipquery","params":""}', '{"city_name":"深圳市"}', 'Block', '', '')
+2016-04-07 03:51:41,341 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:51:41,341 casestep.py[line: 58] INFO: 调用的方法为：IPQuery.test_get_address_info
+2016-04-07 03:51:41,343 ipquery.py[line: 25] INFO: 正在发起GET请求...
+2016-04-07 03:51:41,343 httpprotocol.py[line: 51] INFO: 发起的请求为：http://ip.ws.126.net:80/ipquery
+2016-04-07 03:51:41,443 ipquery.py[line: 31] INFO: 正在更新步骤端口，主机，协议等配置信息: UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407035135 and testcase_id = 39 and step_id = 41
+2016-04-07 03:51:41,444 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET protocol="http",host="ditu.amap.com", port="80"WHERE executed_history_id = 20160407035135 and testcase_id = 39 and step_id = 41
+2016-04-07 03:51:41,451 ipquery.py[line: 34] INFO: 正在解析返回结果
+2016-04-07 03:51:41,451 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:51:41,452 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:51:41" WHERE executed_history_id = 20160407035135 AND testcase_id = 39 AND step_id = 41 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:51:41,456 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:51:41,457 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 39, '获取ip信息接口', '项目1-测试计划5', '项目1', 42, 2, '', 'http', 'gc.ditu.aliyun.com', 80, '{"class":"GeoCoding","function": "test_get_ip_info","method":"get", "url":"/geocoding?","params":[{"a":"$city_name"}]}', '{"lon":114.05786,"lat":22.54309}', 'Block', '', '')
+2016-04-07 03:51:41,459 testcase.py[line: 60] INFO: 开始执行步骤操作[第2步]
+2016-04-07 03:51:41,460 casestep.py[line: 58] INFO: 调用的方法为：GeoCoding.test_get_ip_info
+2016-04-07 03:51:41,460 geocoding.py[line: 22] INFO: 正在发起GET请求...
+2016-04-07 03:51:41,461 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/geocoding?a=%E6%B7%B1%E5%9C%B3%E5%B8%82
+2016-04-07 03:51:41,561 geocoding.py[line: 37] INFO: 正在解析返回结果
+2016-04-07 03:51:41,561 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:51:41,562 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:51:41" WHERE executed_history_id = 20160407035135 AND testcase_id = 39 AND step_id = 42 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:51:41,566 testcase.py[line: 101] INFO: 测试用例[id=39, name=获取ip信息接口]执行成功
+2016-04-07 03:51:41,566 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:51:41,567 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:51:41" WHERE executed_history_id = 20160407035135 AND testcase_id = 39 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:51:41,781 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=64, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=39]的执行结果
+2016-04-07 03:51:42,390 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:51:42,390 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 58, '测试用例名2', '根据经纬度获取地区名接口', '项目1-测试计划5', '项目1', 'Block', '')
+2016-04-07 03:51:42,392 testplan.py[line: 60] INFO: 开始执行测试用例[id=58，name=测试用例名2]
+2016-04-07 03:51:42,392 testcase.py[line: 26] WARNING: 用例[name=测试用例名2]处于禁用状态[active=0]，不执行
+2016-04-07 03:51:42,393 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:51:42,393 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Block", runtime="2016-04-07 03:51:42" WHERE executed_history_id = 20160407035135 AND testcase_id = 58 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:51:42,576 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=64, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=58]的执行结果
+2016-04-07 03:51:42,965 testplan.py[line: 57] INFO: 记录测试用例到测试用例报表
+2016-04-07 03:51:42,966 mydb.py[line: 50] INFO: query：INSERT INTO testcase_report_tb(executed_history_id, testcase_id, testcase_name, testsuit, testplan, project, runresult, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 54, '根据经纬度获取地区名', '根据经纬度获取地区名接口', '项目1-测试计划5', '项目1', 'Block', '')
+2016-04-07 03:51:42,968 testplan.py[line: 60] INFO: 开始执行测试用例[id=54，name=根据经纬度获取地区名]
+2016-04-07 03:51:42,968 testcase.py[line: 48] INFO: 记录测试步骤到测试步骤报告表
+2016-04-07 03:51:42,968 mydb.py[line: 50] INFO: query：INSERT INTO case_step_report_tb(executed_history_id, testcase_id, testcase_name, testplan, project, step_id, step_num, protocol_method, protocol, host, port, step_action, expected_results, runresult, reason, runtime) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)  data：('20160407035135', 54, '根据经纬度获取地区名', '项目1-测试计划5', '项目1', 61, 1, '', 'http', 'gc.ditu.aliyun.com', 80, '{"class":"Regeocoding","function":"test_regeocoding","method":"get","url":"/regeocoding?","params":[{"l":"39.938133,116.395739","type":"100"}]}', '{"name":"地安门外大街"}', 'Block', '', '')
+2016-04-07 03:51:42,971 testcase.py[line: 60] INFO: 开始执行步骤操作[第1步]
+2016-04-07 03:51:42,971 casestep.py[line: 58] INFO: 调用的方法为：Regeocoding.test_regeocoding
+2016-04-07 03:51:42,971 regeocoding.py[line: 24] INFO: 正在发起GET请求...
+2016-04-07 03:51:42,971 httpprotocol.py[line: 51] INFO: 发起的请求为：http://gc.ditu.aliyun.com:80/regeocoding?l=39.938133%2C116.395739&type=100
+2016-04-07 03:51:43,067 regeocoding.py[line: 27] INFO: 正在解析返回结果
+2016-04-07 03:51:43,068 testcase.py[line: 98] INFO: 正在更新步骤执行结果
+2016-04-07 03:51:43,068 mydb.py[line: 63] INFO: query：UPDATE case_step_report_tb SET runresult="Pass",reason="", protocol_method="get", runtime="2016-04-07 03:51:42" WHERE executed_history_id = 20160407035135 AND testcase_id = 54 AND step_id = 61 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:51:43,076 testcase.py[line: 101] INFO: 测试用例[id=54, name=根据经纬度获取地区名]执行成功
+2016-04-07 03:51:43,077 testplan.py[line: 64] INFO: 正在更新用例执行结果
+2016-04-07 03:51:43,078 mydb.py[line: 63] INFO: query：UPDATE testcase_report_tb SET runresult="Pass", runtime="2016-04-07 03:51:42" WHERE executed_history_id = 20160407035135 AND testcase_id = 54 AND project='项目1' AND testplan='项目1-测试计划5'
+2016-04-07 03:51:43,283 testplan.py[line: 75] INFO: 正在更新testlink上测试计划[testplan_id=64, bulid_version=测试计划1-Version1.0.2],对应用例[testcase_id=54]的执行结果
+2016-04-07 03:51:43,472 testplan.py[line: 85] INFO: 测试计划[project=项目1 ,testplan=项目1-测试计划5]已执行完
+2016-04-07 03:51:43,472 main.py[line: 86] INFO: 正在读取测项目[id：9, project：项目2]的协议，host，端口配置...
+2016-04-07 03:51:43,472 main.py[line: 89] INFO: 成功读取配置信息：{"protocol":"http"}
+2016-04-07 03:51:43,472 main.py[line: 100] ERROR: 测试项目[id：9, project：项目2]协议，host，端口信息配置错误,暂时无法执行：'host'
+2016-04-07 03:51:43,472 main.py[line: 86] INFO: 正在读取测项目[id：22, project：项目3]的协议，host，端口配置...
+2016-04-07 03:51:43,473 main.py[line: 89] INFO: 成功读取配置信息：
+2016-04-07 03:51:43,473 main.py[line: 91] ERROR: 测试项目[id：22, project：项目3]未配置协议，host，端口信息，暂时无法执行
+2016-04-07 03:51:43,473 main.py[line: 230] INFO: 接口测试已执行完成，正在关闭数据库连接
+2016-04-07 03:51:43,474 htmlreporter.py[line: 38] INFO: 正在查询测试用例总数
+2016-04-07 03:51:43,475 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE executed_history_id = %s  data：('20160407035135',)
+2016-04-07 03:51:43,477 htmlreporter.py[line: 44] INFO: 正在查询执行通过的用例数
+2016-04-07 03:51:43,477 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Pass', '20160407035135')
+2016-04-07 03:51:43,479 htmlreporter.py[line: 50] INFO: 正在查询执行失败的用例数
+2016-04-07 03:51:43,541 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Fail', '20160407035135')
+2016-04-07 03:51:43,543 htmlreporter.py[line: 56] INFO: 正在查询执行出错的用例数
+2016-04-07 03:51:43,544 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Error', '20160407035135')
+2016-04-07 03:51:43,546 htmlreporter.py[line: 62] INFO: 正在查询未执行的用例数
+2016-04-07 03:51:43,546 mydb.py[line: 77] INFO: query：SELECT count(testcase_id) FROM testcase_report_tb WHERE runresult = %s AND executed_history_id = %s  data：('Block', '20160407035135')
+2016-04-07 03:51:43,549 htmlreporter.py[line: 73] INFO: 正在查询已运的测试计划
+2016-04-07 03:51:43,549 mydb.py[line: 93] INFO: query：SELECT project, testplan FROM testcase_report_tb WHERE executed_history_id = %s GROUP BY project, testplan ORDER BY id ASC  data：('20160407035135',)
+2016-04-07 03:51:43,552 htmlreporter.py[line: 99] INFO: 正在查询测试计划[project：项目1, testplan：项目1-测试计划1]的测试用例执行结果
+2016-04-07 03:51:43,552 mydb.py[line: 93] INFO: query：SELECT id, executed_history_id, testcase_id, testcase_name,testsuit, testplan, project, runresult, runtime FROM testcase_report_tb WHERE project=%s AND testplan=%s AND executed_history_id = %s ORDER BY id ASC  data：('项目1', '项目1-测试计划1', '20160407035135')
+2016-04-07 03:51:43,555 htmlreporter.py[line: 106] INFO: 正在记录测试测试计划[project：项目1, testplan：项目1-测试计划1]的测试用例运行结果到测试报告
+2016-04-07 03:51:43,557 htmlreporter.py[line: 99] INFO: 正在查询测试计划[project：项目1, testplan：项目1-测试计划5]的测试用例执行结果

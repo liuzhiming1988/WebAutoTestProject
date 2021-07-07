@@ -1,0 +1,1 @@
+java -jar ./driver/selenium-server-standalone-2.45.0.jar -role node
