@@ -10,6 +10,7 @@
 import requests
 import json
 from urllib import parse
+from urllib.parse import urlencode
 from utils.logger import Logger
 from utils.common import *
 
@@ -73,19 +74,31 @@ class HttpBase:
 
     @timer
     def do_post(self, path, data):
+        response = ""
         if self.port is None:
             url = self.protocol + "://" + self.domain + path
         else:
             url = self.protocol + "://" + self.domain + self.port + path
 
-        self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url,self.headers,self.json_format(data)))
+        self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url, self.headers, self.json_format(data)))
 
-        response = requests.post(url, data=json.dumps(data), headers = self.headers)
-        self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(
-            url, self.json_format(dict(response.headers)), self.json_format(json.loads(response.text))))
+        if "json" in self.headers["Content-Type"]:
+            response = requests.post(url, data=json.dumps(data), headers=self.headers)
+        elif "urlencoded" in self.headers["Content-Type"] or self.headers == None:
+            response = requests.post(url, data=urlencode(data), headers=self.headers)
 
-        # self.logger.info(self.json_format(response.headers))
-        return response
+        if response.status_code == 200:
+            if "json" in response.headers["Content-Type"]:
+                self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(
+                    url, self.json_format(dict(response.headers)), self.json_format(json.loads(response.text))))
+                return response.json()
+            else:
+                self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(
+                    url, response.headers, response.text))
+                return response.text
+        else:
+            self.logger.error("请求失败，响应内容为：{}".format(response))
+            return False
 
     def do_get(self, path):
         requests.get(self.protocol+self.domain+self.port+path)

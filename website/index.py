@@ -20,11 +20,13 @@ from flask import flash
 import datetime
 import time
 from website import in_storage
+from website.home import home_blue
 
 
 app = Flask(__name__, static_url_path="/s",
             static_folder="static_files", template_folder="templates")
 
+app.register_blueprint(home_blue)
 app.config.from_object("setting")       # 引入.py的配置文件
 # app.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
 
@@ -226,7 +228,14 @@ def error(e):
     error_text = "不存在的页面：<br>{}".format(e)
     return error_text
 
-
+# 此过滤器功能：过滤掉列表中大于3的元素
+@app.template_filter('filter_large')  # 自定义过滤器，参数为装装饰器的名称，也就是我们在模板中用的名字
+def filter_large(my_list):
+    new_list = []  # 定义空列表
+    for i in range(len(my_list)):  # 遍历传递过来的列表
+        if my_list[i] <= 10:  # 判断每个元素的值是否小于等于3
+            new_list.append(my_list[i])  # 如果小于等于3则追加到新列表中
+    return new_list  # 返回新列表
 # Jinja2模板引擎
 
 

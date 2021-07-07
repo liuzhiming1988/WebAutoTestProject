@@ -2,7 +2,13 @@
 <!--定义顶部代码块-->
 {% block top %}
      <hr color="green">
-    顶部
+    当期时间：
+<!-- 定义一个id为cg -->
+<span id="cg">2016-12-20 上午12:00:00</span>
+<script>
+<!--这个cg就是span的id，初始化Date时间并转化为字符string类型,每1000毫秒，setInterval() 就会调用函数，直到被关闭。-->
+setInterval("cg.innerHTML=new Date().toLocaleString()",1000);
+</script>
 
 <hr>
 {% endblock top %}

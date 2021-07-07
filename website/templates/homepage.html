@@ -41,8 +41,8 @@ int列表:{{my_int_list}} <br>
     {{ my_list | sort }} <br>  <!--对列表元素进行排序-->
     {{ [6,2,3,1,5,4] | sort }} <br>  <!--对列表元素进行排序-->
 
-<h4>自定义过滤器,过滤出列表中大于10的数</h4>
-{{my_int_list | filter_large}}
+<!--<h4>自定义过滤器,过滤出列表中大于10的数</h4>-->
+<!--{{my_int_list | filter_large}}-->
 
 
 <h4>宏的应用</h4>
@@ -58,7 +58,7 @@ int列表:{{my_int_list}} <br>
         <!--宏名称(传递值到宏中)-->
         {{ input('用户名：', 'username') }}
         {{ input('密码：', 'pwd', 'password') }}
-        {{ input('提交：', 'sub-btn', 'submit', '登录') }}
+        {{ input(name='sub-btn', type='submit', value='登录') }}
     </form>
 
 <h2>test包含</h2>
@@ -69,7 +69,7 @@ int列表:{{my_int_list}} <br>
 {{config.SECRET_KEY }} <br>
 {{request.url }}
 <h3>
-    <a href="{{ url_for('home') }}">跳转到index页面</a>
+    <a href="{{ url_for('index') }}">跳转到index页面</a>
 </h3>
 
 {% endblock content %}

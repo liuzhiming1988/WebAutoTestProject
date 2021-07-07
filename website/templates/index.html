@@ -5,7 +5,8 @@
     <title>自动化测试主页</title>
 </head>
 <body>
-<h1>{{name}},欢迎使用自动化测试平台</h1>
+<h2>{{name}},欢迎使用自动化测试平台</h2>
+<h3>一、入库处理</h3>
 <h4>请输入已检测的商品条码，多个条码用英文逗号隔开</h4>
 <form action="" method="POST">
 
@@ -30,5 +31,16 @@
         -->
     </label>
 </form>
+<br><br>
+<h3>二、出库处理</h3>
+<form>
+    <label>
+        <textarea type="text" name="bar_code" rows="10" cols="60">
+        </textarea>
+
+    </label>
+    <button>确 定</button>
+</form>
+
 </body>
 </html>
