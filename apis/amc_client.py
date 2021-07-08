@@ -31,11 +31,11 @@ class AmcClient:
             "password": password
         }
         res = self.amc_client.do_post(path, forms)
-        amc_token = res["body"]["data"]["login_token"]
-        amc_user_id = res["body"]["data"]["user_id"]
+        loginToken = res["body"]["data"]["login_token"]
+        loginUserId = res["body"]["data"]["user_id"]
         login_info = {
-            "amc_token": amc_token,
-            "amc_user_id": amc_user_id
+            "loginToken": loginToken,
+            "loginUserId": loginUserId
         }
         print("返回结果是：{}".format(login_info))
         return login_info
