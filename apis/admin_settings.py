@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : amc_settings.py
+@File    : admin_settings.py
 @Author  : liuzhiming
 @Time    : 2021/7/7 16:22
 """
@@ -18,7 +18,7 @@ HEADERS_JSON = {
     "Content-Type": "application/json;charset=UTF-8"
 }
 
-# amc userinfo
+# amc user info
 USERNAME_AMC = """test_liuzhiming@huishoubao.com.cn"""
 PASSWORD_AMC = "f6758a4e"
 
@@ -31,3 +31,7 @@ DOMAIN_AMC = "api-amc.huishoubao.com.cn"
 # wms
 PROTOCAL_WMS = "http"
 DOMAIN_WMS = "wms-wwwapi.huishoubao.com.cn"
+
+# detection
+PROTOCAL_DETECTION = "http"
+DOMAIN_DETECTION = "detection-wwwapi.huishoubao.com/api"

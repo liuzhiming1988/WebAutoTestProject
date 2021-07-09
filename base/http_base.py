@@ -83,9 +83,15 @@ class HttpBase:
         self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url, self.headers, self.json_format(data)))
 
         if "json" in self.headers["Content-Type"]:
-            response = requests.post(url, data=json.dumps(data), headers=self.headers)
+            data = json.dumps(data)
         elif "urlencoded" in self.headers["Content-Type"] or self.headers == None:
-            response = requests.post(url, data=urlencode(data), headers=self.headers)
+            data = urlencode(data)
+        try:
+            response = requests.post(url, data=data, headers=self.headers)
+        except requests.exceptions.ConnectionError:
+            text = "URL:{};域名连接失败，请检查服务域名和端口信息是否正确".format(url)
+            self.logger.error(text)
+            return False
 
         if response.status_code == 200:
             if "json" in response.headers["Content-Type"]:

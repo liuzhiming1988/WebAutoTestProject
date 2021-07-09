@@ -9,7 +9,7 @@
 from base.http_base import HttpBase
 from urllib.parse import urlencode
 import requests
-from apis.amc_settings import *
+from apis.admin_settings import *
 import json
 import time
 
@@ -59,8 +59,12 @@ class AmcClient:
         }
         res = self.amc_client.do_post(path, body)
         user_name = res["body"]["data"]["user_info"]["real_name"]
-
-        return user_name
+        email = res["body"]["data"]["user_info"]["username"]
+        dict_info = {
+            "user_name": user_name,
+            "email": email
+        }
+        return dict_info
 
 
 if __name__ == '__main__':

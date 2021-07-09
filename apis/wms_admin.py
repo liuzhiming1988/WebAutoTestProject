@@ -11,28 +11,38 @@ import requests
 import json
 from base.http_base import HttpBase
 from urllib.parse import urlencode
-from apis.amc_settings import *
+from apis.admin_settings import *
 from apis.amc_client import AmcClient
 import time
+from utils.logger import Logger
+import copy
 
 
 class WmsClient:
 
-    wms_client = HttpBase()
-    wms_client.headers = HEADERS_JSON
-    wms_client.protocol = PROTOCAL_WMS
-    wms_client.domain = DOMAIN_WMS
+    def __init__(self):
+        self.logger = Logger().logger
+        self.wms_client = HttpBase()
+        self.wms_client.headers = HEADERS_JSON
+        self.wms_client.protocol = PROTOCAL_WMS
+        self.wms_client.domain = DOMAIN_WMS
+        self.times = str(int(time.time()))
+        self.wms_path = "/admin/handle"
+        # 定义接口返回字典格式，各接口使用时可deep copy后再进行赋值
+        self.result = {
+            "test_result": "success",  # 测试结果：success or fail
+            "mark_text": "",        # 提示语
+            "raw_data": ""  # 原始响应信息
+        }
+        # 定义一个字典，来接收临时变量
+        self.g = {}
 
-    # 定义一个字典，来接收临时变量
-    # g = {}
-
-    ac = AmcClient()
-    g = ac.login()    # login()返回的是一个字典
-    g["user_name"] = ac.get_user_info(g["loginToken"], g["loginUserId"])
-
-    times = str(int(time.time()))
-
-    wms_path = "/admin/handle"
+    def get_auth(self):
+        """从amc系统获取loginToken，userId，userName信息"""
+        ac = AmcClient()
+        auth_info = ac.login()    # login()返回的是一个字典
+        self.g = dict(self.g, **auth_info)
+        self.g["user_name"] = ac.get_user_info(self.g["loginToken"], self.g["loginUserId"])
 
     def get_user_info(self):
         path = "/admin/getLoginUserInfo"
@@ -69,7 +79,7 @@ class WmsClient:
                 "_remark": ""
             },
             "_param": {
-                "loginUserId": "1930",
+                "loginUserId": self.g["loginUserId"],
                 "loginToken": self.g["loginToken"],
                 "depotId": "1",
                 "logisticsId": "1",
@@ -79,9 +89,25 @@ class WmsClient:
                 "userName": self.g["user_name"]
             }
         }
-        self.wms_client.do_post(self.wms_path, body)
+        res = self.wms_client.do_post(self.wms_path, body)
+        if res:
+            result = copy.deepcopy(self.result)
+            result["raw_data"] = res
+            err_str = res["_data"]["_errStr"]
+            if err_str == "success":
+                text = "物流单号：【{0}】签收成功！".format(logistics_num)
+                result["mark_text"] = text
+            else:
+                text = "物流单号：【{0}】,{1}".format(logistics_num, err_str)
+                result["mark_text"] = text
+                result["test_result"] = "fail"
+            result = json.dumps(result, indent=5, ensure_ascii=False)
+            # print(result)
+            return result
+        else:
+            return False
 
-    def unpack(self, logistics_num):
+    def unpack(self, logistics_num, num=1):
         body = {
             "_head": {
                 "_version": "0.01",
@@ -96,7 +122,7 @@ class WmsClient:
                 "depotId":"1",
                 "logisticsNum": logistics_num,
                 "productType": "1",
-                "num": "1",
+                "num": num,
                 "userId": self.g["loginUserId"],
                 "userName": self.g["user_name"]
             }
@@ -104,6 +130,7 @@ class WmsClient:
         self.wms_client.do_post(self.wms_path, body)
 
     def receive_search(self, logistics_num):
+        """按物流单号搜索，从返回的多条记录中找出对应的回收单，如果返回结果是0，则提示"""
         body = {
             "_head": {
                 "_version": "0.01",
@@ -126,25 +153,24 @@ class WmsClient:
         }
         res = self.wms_client.do_post(self.wms_path, body)
         total = res["_data"]["_data"]["pageInfo"]["total"]
+        text = "待收货物流单号：【{}】".format(logistics_num)
         if int(total) > 0:
             for x in range(int(total)):
                 number = res["_data"]["_data"]["orderList"][x]["logisticsNumber"]
 
                 if number == logistics_num:
                     res_final = res["_data"]["_data"]["orderList"][x]    # 取出符合条件的订单的信息
-                    parcelId = res["_data"]["_data"]["parcelId"]
+                    self.g["parcelId"] = res["_data"]["_data"]["parcelId"]
                     # 将第一条订单的信息拼接到g变量中
                     self.g = dict(self.g, **res_final)
-                    self.g["parcelId"] = parcelId
-                    text = "已搜索到订单：{}".format(res_final)
-                    print(text)
-                    return text
+                    text += "，已匹配到订单：{}".format(res_final)
         else:
-            text = "可回收收货订单为0，无法进行回收，请检查！！！"
-            print(text)
-            return text
+            text += "匹配到可收货订单为0，无法进行回收，请检查！！！"
+        self.logger.info(text)
+        return text
 
     def get_order_product(self, order_id=None):
+        """获取订单对应的产品信息"""
         if order_id is None:
             order_id = self.g["orderId"]
         body = {
@@ -196,6 +222,7 @@ class WmsClient:
         self.g = dict(self.g, **res)
 
     def bind_order(self):
+        """无配件收货"""
         product_info = {
             "productId": self.g["productId"],
             "productCode": self.g["productCode"],
@@ -234,23 +261,27 @@ class WmsClient:
                 "productInfo": product_info,
                 "partsCode": "",
                 "partsInfo": "",
-                "userName": "刘志明_TEST",
-                "userId": "1930"
+                "userName": self.g["userName"],
+                "userId": self.g["loginUserId"]
             }
         }
         res = self.wms_client.do_post(self.wms_path, body)
         err_str = res["_data"]["_errStr"]
-        print("物流单号【{}】的测试结果为：{}".format(self.g["logisticsNumber"], err_str))
+        text = "物流单号【{}】的测试结果为：{}".format(self.g["logisticsNumber"], err_str)
+        self.logger.info(text)
+        return text
+
 
 
 
 if __name__ == '__main__':
     wms = WmsClient()
-    sf = "SF1020091936096"
+    sf = "SF1040395538340"
+    wms.get_auth()
     wms.sign(sf)
-    wms.unpack(sf)
-    wms.receive_search(sf)
-    wms.get_order_product()
-    wms.get_product_code()
-    wms.bind_order()
-    # print(wms.g)
+    # wms.unpack(sf)
+    # wms.receive_search(sf)
+    # wms.get_order_product()
+    # wms.get_product_code()
+    # wms.bind_order()
+    # # print(wms.g)
