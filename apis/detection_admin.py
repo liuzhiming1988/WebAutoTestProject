@@ -114,12 +114,10 @@ class DetectionClient:
             return False
 
 
-
-
 if __name__ == '__main__':
     series_num = "ZY0101210708000027"
     detection = DetectionClient()
     detection.get_auth()
     info = detection.get_detect_info(series_num)
-    detection.clear_option(series_num)
-    print(info)
+    # detection.clear_option(series_num)
+    # print(info)

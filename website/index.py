@@ -228,6 +228,7 @@ def error(e):
     error_text = "不存在的页面：<br>{}".format(e)
     return error_text
 
+
 # 此过滤器功能：过滤掉列表中大于3的元素
 @app.template_filter('filter_large')  # 自定义过滤器，参数为装装饰器的名称，也就是我们在模板中用的名字
 def filter_large(my_list):

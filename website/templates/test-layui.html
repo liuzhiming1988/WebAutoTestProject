@@ -1,101 +1,121 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>测试 - layui</title>
-  <link rel="stylesheet" href="layui/css/layui.css">
+<!--  自闭和标签-->
+  <meta charset="UTF-8"/>
+<!--  <meta http-equiv="Refresh" content="2"/>-->
+<!--  <meta http-equiv="Refresh" content="30; URL = https://www.baidu.com/"/>-->
+  <meta name="keyword" content="自动化 平台"/>
+  <title>
+     自动化调度平台
+  </title>
+  <link rel="shortcut icon" href="image/facicon.ico">
 </head>
 <body>
+<h1>自动化调度平台</h1>
 
-<div class="layui-container">
-  <div class="layui-progress" style="margin: 15px 0 30px;">
-    <div class="layui-progress-bar" lay-percent="100%"></div>
+  <div>
+
+    <form action="http://www.baidu.com/s" method="get" target="_blank">
+      <p>百度搜索，请输入关键字</p>
+    <input type="text" name="wd">
+      <input type="submit" value="开始搜索">
+    </form>
   </div>
-  
-  
-  <div class="layui-btn-container">
-    <button class="layui-btn" test-active="test-form">一个按钮</button>
-    <button class="layui-btn layui-btn-normal" id="test2">当前日期</button>
-  </div>
-  
-  <blockquote class="layui-elem-quote" style="margin-top: 30px;">
-    <div class="layui-text">
-      <ul>
-        <li>你当前预览的是：<span>layui-v<span id="version"></span></span></li>
-        <li>layui 是一套开源的 Web UI（界面）组件库。这是一个极其简洁的演示页面</li>
-      </ul>
-    </div>
-  </blockquote>
+
+  <span></span>
+
+<p>段落一：<br />2sgsfsdfsgsdg</p>
+<p>段落一：<br /></p>
+<p>段落一：<br /></p>
+<p>段落一：</p>
+
+<a href="http://www.baidu.com">跳转到百度</a>
+<a href="http://www.baidu.com" target="_blank">新标签页打开百度</a>
+
+<div style="border: 1px solid green;">
+  <form>
+  <p>用户名：<input type="text" /></p>
+  <p>密  码：<input type="password" /></p>
+    <p>邮箱：<input type="email" /></p>
+  <p><input type="button" value="登录"></p>
+  <p><input type="radio">勾选用户协议</p>
+  <p>是否记住密码：<br />
+    <input type="radio" name="mm" value="1" />yes
+    <input type="radio" name="mm" value="2" />no
+  </p>
+
+  <p>其它可选：<br />
+    <input name="other" type="checkbox" value="1" />帮助改进用户体验
+    <input name="other" type="checkbox" value="2" />允许发送个人信息
+    <input name="other" type="checkbox" value="3" />5天后自动清除访问记录
+  </p>
+
+  <p style="font-size: 20px">访问站点：
+    <select style="font-size: large">
+      <option>深圳</option>
+      <option>广州</option>
+      <option>上海</option>
+      <option>北京</option>
+
+    </select>
+    <select style="font-size: large">
+      <optgroup label="一线城市">
+        <option>深圳</option>
+        <option>广州</option>
+        <option>上海</option>
+        <option>北京</option>
+      </optgroup>
+      <optgroup label="二线城市">
+        <option>深圳</option>
+        <option>广州</option>
+        <option>上海</option>
+        <option>北京</option>
+      </optgroup>
+    </select>
+    <select multiple style="font-size: large">
+      <option>深圳</option>
+      <option>广州</option>
+      <option>上海</option>
+      <option>北京</option>
+
+    </select>
+  </p>
+  <p>上传文件：
+    <input type="file">
+
+  </p>
+
+  <p>
+    <textarea> 反馈你碰到的问题 </textarea>
+    <br />
+
+    <input type="submit" value="submit">
+    <input type="button" value="button">
+    <input type="reset" value="reset">
+
+  </p>
+</form>
 </div>
+<h1>a</h1>
+<h2>a</h2>
+<h3>a</h3>
+<h4>a</h4>
+<h5>a</h5>
+<h6 style="font-size: 20px">a</h6>
+
+<a href="#i1">第一章</a>
+<a href="#i2">第二章</a>
+<a href="#i3">第三章</a>
 
 
-<!-- 引入 layui.js 的 <script> 标签最好放置在 html 末尾 -->
-<script src="layui/layui.js"></script>
-<script>
-layui.use(function(){
-  var layer = layui.layer
-  ,form = layui.form
-  ,laypage = layui.laypage
-  ,element = layui.element
-  ,laydate = layui.laydate
-  ,util = layui.util;
-  
-  //欢迎信息
-  layer.msg('Hello World');
-  
-  //输出版本号
-  lay('#version').html(layui.v);
-  
-  //日期
-  laydate.render({
-    elem: '#test2'
-    ,value: new Date()
-    ,isInitValue: true
-  });
-  
-  //触发事件
-  util.event('test-active', {
-    'test-form': function(){
-      layer.open({
-        type: 1
-        ,resize: false
-        ,shadeClose: true
-        ,area: '350px'
-        ,title: 'layer + form'
-        ,content: ['<ul class="layui-form layui-form-pane" style="margin: 15px;">'
-          ,'<li class="layui-form-item">'
-            ,'<label class="layui-form-label">输入框</label>'
-            ,'<div class="layui-input-block">'
-              ,'<input class="layui-input" lay-verify="required" name="field1">'
-            ,'</div>'
-          ,'</li>'
-          ,'<li class="layui-form-item">'
-            ,'<label class="layui-form-label">选择框</label>'
-            ,'<div class="layui-input-block">'
-              ,'<select name="field2">'
-                ,'<option value="A">A</option>'
-                ,'<option value="B">B</option>'
-              ,'<select>'
-            ,'</div>'
-          ,'</li>'
-          ,'<li class="layui-form-item" style="text-align:center;">'
-            ,'<button type="submit" lay-submit lay-filter="*" class="layui-btn">提交</button>'
-          ,'</li>'
-        ,'</ul>'].join('')
-        ,success: function(layero, index){
-          layero.find('.layui-layer-content').css('overflow', 'visible');
-          
-          form.render().on('submit(*)', function(data){
-            layer.msg(JSON.stringify(data.field), {icon: 1});
-            //layer.close(index); //关闭层
-          });
-        }
-      });
-    }
-  });
-});
-</script>
+<div id="i1" style="height: 500px">第一章内容</div>
+<div id="i2" style="height: 500px">第二章内容</div>
+<div id="i3" style="height: 500px">第三章内容</div>
+<div style="height: 50px">回到顶部</div>
+
 </body>
+
 </html>
