@@ -3,44 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>自动化测试主页</title>
+    <style>
+        .textarea{
+            font-size: 20px;
+            width: 600px;
+            height: 300px;
+            border: 1px solid steelblue;
+        }
+        .nav{
+            color: #0000FF;
+            font-size: larger;
+        }
+    </style>
+    <style>
+        .btn{
+            background-color: #3CB371;
+            color:  #000000;
+            width: 80px;
+            height: 40px;
+            border: 0;
+            font-size: 20px;
+        }
+    </style>
+    <style>
+        .mark{
+            color:  #20B2AA;
+            font-size: small;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
-<h2>{{name}},欢迎使用自动化测试平台</h2>
-<h3>一、入库处理</h3>
-<h4>请输入已检测的商品条码，多个条码用英文逗号隔开</h4>
-<form action="" method="POST">
-
-<label>商品条码：
-    <textarea type="text" name="bar_code" rows="10" cols="60"> </textarea>
-    <!-- 
-    <input type="text" name="bar_code" >
-    -->
-</label>
-    <button type="submit" >确 定</button>
+<h2>{{name}},欢迎访问回收宝自动化测试平台</h2>
+<p>快速导航</p>
+<p>
+<a class="nav" href="#p1">【巨沃-入库处理】</a>
+<a class="nav" href="#p2">【巨沃-出库处理】</a>
+<a class="nav" href="#p3">【WMS签收-拆包-收货】</a>
+<a class="nav" href="#p4">【新标准检测】</a>
+<a class="nav">【商家自检(手动检)下单】</a>
+</p>
+<h3 id="p1">一、入库处理</h3>
+<form action="" method="post">
+    <p>
+        <textarea type="text" name="bar_code" class="textarea" placeholder="请输入已检测的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
+    </p>
+    <button type="submit" class="btn">确 定</button>
 </form>
-{% for message in get_flashed_messages() %}
-        <h3>{{ message }}</h3>
-    {% endfor %}
-<form>
-    <label>使用说明：<br>
+<!--<div>-->
+<!--    {% for message in get_flashed_messages() %}-->
+<!--        <h3>{{ message }}</h3>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+    <p>
+        <label class="mark">使用说明：<br>
         1. 每个条码必须输入18位，否则无法通过；<br>
         2. 每个条码完成入库操作需要三分钟左右，无论最后是否入库成功，都会在网页上显示执行结果；<br>
         3. 进行入库处理时会根据商品条码搜索，若查不到对应的来源单号，则不会继续执行入库操作。<br>
-        <!-- 
-        <textarea rows="10" cols="60"> {{res_text}}</textarea>
-        -->
-    </label>
-</form>
-<br><br>
-<h3>二、出库处理</h3>
-<form>
-    <label>
-        <textarea type="text" name="bar_code" rows="10" cols="60">
-        </textarea>
+        </label>
+    </p>
+<br />
+<h3 id="p2">二、出库处理(功能暂不可用)</h3>
+<form action="/out_code" method="post">
+    <p>
+        <textarea type="text" name="out_code_list" class="textarea" placeholder="请输入待出库的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
 
-    </label>
-    <button>确 定</button>
+    </p>
+    <button type="submit" class="btn">确 定</button>
 </form>
+    <p>
+        <label class="mark">使用说明：<br>
+        1. 每个条码必须输入18位，否则无法通过；<br>
+        2. 每个条码完成出库操作需要三分钟左右，无论最后是否入库成功，都会在网页上显示执行结果。<br>
+        </label>
+    </p>
+<br />
+
+<h3 id="p3">三、WMS签收-拆包-收货</h3>
+<form action="/wms_sign" method="post">
+    <p>
+        <textarea type="text" name="logistics_num_list" class="textarea" placeholder="请输入待签收的物流单号，多个单号之间需使用英文逗号隔开"></textarea>
+    </p>
+    <button type="submit" class="btn">确 定</button>
+</form>
+    <p>
+        <label class="mark">使用说明：<br>
+        1. 完成操作： 签收->拆包->收货；<br />
+        2. 可以批量进行签收,多个物流单号之间需使用英文逗号隔开。
+        </label>
+    </p>
+<br />
+<h3 id="p4">四、新标准检测</h3>
+<form action="/new_standard_detect" method="post">
+    <p>
+        <textarea type="text" name="detect_code_list" class="textarea" placeholder="请输入需检测的商品条码，多个条码之间用英文逗号隔开"></textarea>
+    </p>
+    <button type="submit" class="btn">确 定</button>
+</form>
+    <p>
+        <label class="mark">使用说明：<br>
+        1. 每个条码必须输入18位，否则无法通过；<br>
+        2. 每个条码完成检测需15秒左右，请耐心等待。<br>
+        </label>
+    </p>
+<br />
 
 </body>
 </html>

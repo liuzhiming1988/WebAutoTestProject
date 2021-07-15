@@ -2440,14 +2440,49 @@ options_final = str_final["_param"]["engineerOptions"]
 # print(json.dumps(options_final,indent=5,ensure_ascii=False))
 
 for x in options:
-  y = len(x["item"])
-  raw_list = x["item"]
-  del raw_list[1:y]
-  # print(raw_list)
-print(json.dumps(options, indent=6, ensure_ascii=False))
+    y = len(x["item"])
+    raw_list = x["item"]
+    del raw_list[1:y]
+    item_son=raw_list[0]
+    del item_son["item"]
+    del item_son["singleFlag"]
 
+    # print(raw_list)
+# print(json.dumps(options, indent=6, ensure_ascii=False))
 
+uDetOptions=["12","34","44","1083","83","79","3244","3247","61","6930","55","59","53","65","223","23","3246","2171","21","5535","7641"]
+
+detect_select = []
+for x in options:
+    y = len(x["item"])
+    for i in range(y):
+        value = x["item"][i]["id"]
+        detect_select.append(value)
+
+# print(detect_select)
+# get sku list
+# print(detect_select[3:10])
 # print(len(options))
 
+new_list = []
+for x in uDetOptions:
+    for y in detect_select:
+        if x==y:
+            new_list.append(x)
+        else:
+            pass
+# print(new_list)
+# print(new_list[0:2])
+
+
+sku_list = ["1083","42","34","2233","124","17","12"]
+test = "adbcsdre"
+# print(test[:-2])
+
+import time
+time_str = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
+print(time_str)
+print(type(time_str))
 
 

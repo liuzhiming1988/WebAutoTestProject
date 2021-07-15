@@ -48,7 +48,5 @@ class LoginGwms:
         print(res_login)
 
 
-
-
 if __name__ == '__main__':
     LoginGwms().login()
