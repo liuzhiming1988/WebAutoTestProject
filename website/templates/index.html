@@ -26,30 +26,58 @@
         }
     </style>
     <style>
-        .mark{
-            color:  #20B2AA;
-            font-size: small;
+        .nav_home{
+            color:  #d73a49;
+            font-size: x-large;
             font-weight: bolder;
         }
+        .mark{
+            color: #838383;
+            font-size: medium;
+        }
     </style>
+    <style type="text/css">
+#returntop{
+    display: none;
+    width: 25px;     /*调整显示块的宽width和高height*/
+    height: 100px;
+    padding: 5px 0;
+    /*background-image: url(1.png);*/     /*可用背景图片*/
+    background-color: #51a7e8;            /*背景颜色*/
+    background-repeat: no-repeat;
+    position: fixed;
+    _position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+    .top_font{
+        color: #00FFFF;
+        font-size: x-large;
+    }
+</style>
 </head>
 <body>
 <h2>{{name}},欢迎访问回收宝自动化测试平台</h2>
-<p>快速导航</p>
+<a class="nav_home">快速导航</a>
 <p>
-<a class="nav" href="#p1">【巨沃-入库处理】</a>
-<a class="nav" href="#p2">【巨沃-出库处理】</a>
-<a class="nav" href="#p3">【WMS签收-拆包-收货】</a>
-<a class="nav" href="#p4">【新标准检测】</a>
-<a class="nav">【商家自检(手动检)下单】</a>
+    <a class="nav" href="#p1">【巨沃-入库处理】</a>
+    <a class="nav" href="#p2">【巨沃-出库处理】</a>
+    <a class="nav" href="#p3">【WMS签收-拆包-收货】</a>
+    <a class="nav" href="#p4">【新标准检测】</a>
+    <a class="nav">【官方下单-邮寄回收】</a>
+    <a class="nav">【官方下单-上门回收】</a>
+    <a class="nav">【官方下单-门店回收】</a>
+    <a class="nav">【商家自检(手动检)下单】</a>
 </p>
 <h3 id="p1">一、入库处理</h3>
+<div>
 <form action="" method="post">
     <p>
         <textarea type="text" name="bar_code" class="textarea" placeholder="请输入已检测的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
     </p>
     <button type="submit" class="btn">确 定</button>
 </form>
+</div>
 <!--<div>-->
 <!--    {% for message in get_flashed_messages() %}-->
 <!--        <h3>{{ message }}</h3>-->
@@ -64,7 +92,7 @@
     </p>
 <br />
 <h3 id="p2">二、出库处理(功能暂不可用)</h3>
-<form action="/out_code" method="post">
+<form action="/outboundDeliveryOrder" method="post">
     <p>
         <textarea type="text" name="out_code_list" class="textarea" placeholder="请输入待出库的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
 
@@ -108,5 +136,38 @@
     </p>
 <br />
 
+
+<div id="returntop" class="top_font">返回顶部</div>
+<script type="text/javascript">
+/*javascript函数，控制显示块的位置和显隐，此函数只要在body标签之间即可*/
+var getDiv=document.getElementById('returntop');
+getDiv.onclick=function(){
+    window.scrollTo(0,0);
+}
+window.onscroll=function(){
+    if(document.documentElement.scrollTop){
+        getDiv.style.display="block";
+    }else if(document.body.scrollTop){
+        getDiv.style.display="block";
+    }else{
+        getDiv.style.display="none";
+    }
+}
+function getWinSize(){
+    var winHeight=window.innerHeight,winWidth=window.innerWidth;
+    if(document.documentElement.clientHeight){
+        winHeight=document.documentElement.clientHeight;
+        winWidth=document.documentElement.clientWidth;
+    }else{
+        winHeight=document.body.clientHeight;
+        winWidth=document.body.clientWidth;
+    }
+    getDiv.style.bottom=20+"px";  /*距离浏览器底部10px*/
+    getDiv.style.right=100+"px";  /*距离浏览器右边框100px*/
+    /*修改显示块的位置，有四个方向：top,bottom,left,right*/
+}
+getWinSize();
+window.onresize=getWinSize;
+</script>
 </body>
 </html>

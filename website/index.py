@@ -18,21 +18,26 @@ from flask import g
 from flask import current_app
 from flask import flash
 import datetime
-import time
-from website import in_storage
-from website.home import home_blue
-from website.new_standard_detect import detect_blue
-from website.wms_sign import wms_sign_blue
-
+from website.app import in_storage
+from website.app.home import home_blue
+from website.app.new_standard_detect import detect_blue
+from website.app.wms_sign import wms_sign_blue
+from website.app.outbound_delivery_order import outbound_delivery_order_blue
+from website.app.own_place_order import own_place_order_blue
 
 app = Flask(__name__, static_url_path="/s",
             static_folder="static_files", template_folder="templates")
 
+app.config.from_object("setting")       # 引入.py的配置文件
+# app.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
+
 app.register_blueprint(home_blue)
 app.register_blueprint(detect_blue)
 app.register_blueprint(wms_sign_blue)
-app.config.from_object("setting")       # 引入.py的配置文件
-# app.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
+app.register_blueprint(outbound_delivery_order_blue)
+app.register_blueprint(own_place_order_blue)
+
+
 
 # https://blog.csdn.net/lingjiphp/category_8707067.html
 @app.route("/", methods=['GET', 'POST'])
@@ -62,19 +67,7 @@ def index():
 
     return render_template("index.html", name=name, res_text=res_text)
 
-@app.route("/out_code", methods=['GET', 'POST'])
-def out_code():
-    text = ""
-    if request.method == "POST":
-        out_code_raw = request.form.get("out_code_list")
-        out_code_list = out_code_raw.strip().split(",")
-        for out_code in out_code_list:
-            if len(out_code) > 0:
-                text = "输入正确"
-            else:
-                text = "请输入正确的数据，不能为空！"
-            return text
-    return text
+
 
 # # http://127.0.0.1:5000/user_info/88892
 # @app.route("/user_info/<int:id>")

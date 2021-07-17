@@ -10,8 +10,7 @@
 from flask import Flask
 from flask import request
 from flask import render_template
-from website import in_storage
-
+from website.app import in_storage
 
 app = Flask(__name__, static_url_path="/s", static_folder="static_files", template_folder="templates")
 

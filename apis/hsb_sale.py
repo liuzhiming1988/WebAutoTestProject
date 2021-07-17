@@ -6,7 +6,7 @@
 @Author  : liuzhiming
 @Time    : 2021/6/7 19:47
 """
-from base.own_api_base import HsbApiBase
+from base.own_api_base import OwnApiBase
 import requests
 import json
 from urllib import parse
@@ -14,7 +14,7 @@ from utils.pmysql import Pmysql
 import time
 
 
-class HsbSale(HsbApiBase):
+class HsbSale(OwnApiBase):
 
     def sale_post(self, url, data):
         res = requests.post

@@ -73,9 +73,9 @@ class OwnApi:
         # print("获取到的验证码是：{0}".format(smsCode))
         return smsCode
 
-    def own_login(self, phone, sms_code="auto"):
+    def own_login(self, phone, sms_code=None):
         """"""
-        if sms_code == "auto":
+        if sms_code is None:
             sms_code = self.get_login_smscode(phone)
         path = self.domain + "/api/user/login"
         data = {
@@ -98,7 +98,7 @@ class OwnApi:
 
 phone = "13049368516"
 oa = OwnApi()
-res = oa.own_login(phone)
+res = oa.own_login(phone,sms_code="666666")
 
 
 @pytest.fixture(scope="module", autouse=True)
@@ -112,13 +112,6 @@ def get_uid():
     uid = res[1]
     return uid
 
-
-    # path = "D:\\work\\WebAutoTestProject\\testcase\\api\\hsb_ordercenter\\ownApi.yaml"
-    # logintoken={"loginToken": token}
-    # with open(path, "w", encoding="utf-8") as f:
-    #     yaml.dump(logintoken, f)
-    # with open(path, "r", encoding="utf-8") as f:
-    #     print(yaml.safe_load(f)["token"])
 
 
 

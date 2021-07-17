@@ -12,6 +12,7 @@ from flask import Blueprint
 from flask import Flask
 from flask import request
 import json
+from flask import render_template
 
 detect_blue = Blueprint("new_standard_detect", __name__)
 
@@ -82,5 +83,5 @@ def new_standard_detect():
                     text += detect_code_result+"<br /><hr />"
             else:
                 text += "条码输入错误，请输入正确的数据，不能为空！<br /><hr />"
-        return text
+        # return text
     return text

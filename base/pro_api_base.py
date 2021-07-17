@@ -18,9 +18,14 @@ class ProApiBase(HttpBase):
         super().__init__()
         self.timestamp = str(int(time.time()))
 
-    def getProData(self, _interface, _param):
-        # 构建字典请求体
-        formData = {
+    def merge_param(self, _interface, _param):
+        """
+        构建字典请求体,传入接口名称和param部分
+        :param _interface: 接口名称
+        :param _param: 业务参数
+        :return:
+        """
+        body = {
             "_head": {
                 "_remark": "",
                 "_appVersion": "5.0.0",
@@ -38,7 +43,20 @@ class ProApiBase(HttpBase):
             "_param": _param
         }
 
-        return formData
+        return body
+
+    def pro_post(self, interface, param):
+        """
+        封装适合专业版api的请求方法
+        :param interface: 接口名
+        :param param: 业务参数字典
+        :return:
+        """
+        path = "/hsbpro"
+        body = self.merge_param(interface, param)
+        # self.logger.info(json.dumps(body, indent=5, ensure_ascii=False))
+        response = self.do_post(path, body)
+        return response
 
 
 if __name__ == '__main__':

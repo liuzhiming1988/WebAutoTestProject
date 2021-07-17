@@ -2,20 +2,57 @@
 # -*- coding: utf-8 -*-
 
 """
-@File    : hsb_pro.py
+@File    : hsb_pro_api.py
 @Author  : liuzhiming
 @Time    : 2021/6/7 18:50
 """
 
-from base.own_api_base import OwnApiBase
+from utils.common import *
+from base.pro_api_base import ProApiBase
 import requests
 import json
+from urllib.parse import urlencode
 from urllib import parse
 from utils.pmysql import Pmysql
+from utils.logger import Logger
 import time
 
 
-class HsbPro(OwnApiBase):
+class HsbProApi:
+
+    def __init__(self):
+        self.logger = Logger().logger
+        self.mark = True
+        self.temp = {}
+
+        # 实例化专业版api client
+        self.pro_client = ProApiBase()
+        self.pro_client.protocol = "https"
+        self.pro_client.domain = "hsbpro.huishoubao.com"
+        self.pro_client.headers = {
+        "Content-Type": "application/json; charset=utf-8"
+    }
+
+    def login(self, phone=None, sms_code=None):
+        if phone is None:
+            phone = "18676702152"
+            sms_code = "666666"
+
+        interface = "login_captcha"
+        param = {
+            "phone": phone,
+            "captcha": sms_code,
+            "permissions": "0"
+        }
+        res = self.pro_client.pro_post(interface, param)
+        if res["_data"]["_errCode"] == "0":
+            self.temp = merge_dict(self.temp, res["_data"]["data"])
+        else:
+            self.mark = False
+            self.logger.error("登录失败，_errCode：{} _errStr：{}".format(res["_data"]["_errCode"], res["_data"]["_errStr"]))
+
+
+
 
     def pro_get_login_captcha(self, phone):
         url = "https://hsbpro.huishoubao.com/hsbpro"
@@ -68,7 +105,6 @@ class HsbPro(OwnApiBase):
 
 
 if __name__ == '__main__':
-    p = "13049368516"
-    pro = HsbPro()
-    pro.get_message_list(p)
-    pro.pro_login(p)
+    pro = HsbProApi()
+    pro.login()
+

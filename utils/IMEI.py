@@ -28,7 +28,7 @@ def generate_imei():
     :param number:
     :return:
     """
-    num = randint(10000000000000,99999999999999)
+    num = randint(10000000000000, 99999999999999)
     st = str(num)
     odd_sum = 0  # 奇数
     ten_digit = 0  # 个位数之和

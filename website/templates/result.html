@@ -1,10 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>回到顶部</title>
+<style type="text/css">
+#returntop{
+    display: none;
+    width: 25px;     /*调整显示块的宽width和高height*/
+    height: 110px;
+    padding: 5px 0;
+    /*background-image: url(1.png);*/     /*可用背景图片*/
+    background-color: #51a7e8;            /*背景颜色*/
+    background-repeat: no-repeat;
+    position: fixed;
+    _position: absolute;
+    cursor: pointer;
+}
+    .top_font{
+        color: #00FFFF;
+        font-size: x-large;
+    }
+</style>
+
 </head>
 <body>
-
+<!--<div style="height:2000px">这是顶部</div>-->
+<div id="returntop" class="top_font">返回顶部</div>
+<script type="text/javascript">
+/*javascript函数，控制显示块的位置和显隐，此函数只要在body标签之间即可*/
+var getDiv=document.getElementById('returntop');
+getDiv.onclick=function(){
+    window.scrollTo(0,0);
+}
+window.onscroll=function(){
+    if(document.documentElement.scrollTop){
+        getDiv.style.display="block";
+    }else if(document.body.scrollTop){
+        getDiv.style.display="block";
+    }else{
+        getDiv.style.display="none";
+    }
+}
+function getWinSize(){
+    var winHeight=window.innerHeight,winWidth=window.innerWidth;
+    if(document.documentElement.clientHeight){
+        winHeight=document.documentElement.clientHeight;
+        winWidth=document.documentElement.clientWidth;
+    }else{
+        winHeight=document.body.clientHeight;
+        winWidth=document.body.clientWidth;
+    }
+    getDiv.style.bottom=10+"px";  /*距离浏览器底部10px*/
+    getDiv.style.right=100+"px";  /*距离浏览器右边框100px*/
+    /*修改显示块的位置，有四个方向：top,bottom,left,right*/
+}
+getWinSize();
+window.onresize=getWinSize;
+</script>
 </body>
 </html>

@@ -16,11 +16,14 @@ import inspect
 from utils.logger import Logger
 
 
+
+DATE_NOW = time.strftime("%Y-%m-%d", time.localtime())
+
+
 def timer(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
         res = func(*args, **kwargs)
-        time.sleep(1)
         end_time = time.time()
         run_time = round(end_time-start_time, 2)
         # print("{}--执行耗时：{}".format(func.__name__, run_time))
@@ -131,6 +134,7 @@ def get_error_info():
     content = traceback.format_exc()
     return content
 
+
 def md5_encrypt(str):
     m = hashlib.md5()
     m.update(str.encode("utf-8"))
@@ -151,28 +155,6 @@ def get_header_json(body, secret_key="ohHmcePiHr2hkXIeBlvleHyfuuSkPP2h", server_
                "HSB-OPENAPI-CALLERSERVICEID": server_id}
     return headers
 
-def get_signData(data):
-    """
-    回收宝自有sign规则，将所有的参数名进行排序，然后按照参数名+参数值进行拼接，最后拼接上key值，再进行sha1加密（utf-8编码），再hexdigest加密
-    :param data: 传入一个字典，不包含签名
-    :return:
-    签名
-    """
-    signKey = 'b7cab12b2b81385dd2cccb8ce67e4998'
-    str1 = ""
-    # 将传入的字典进行排序并拼接
-    for i in sorted(data):
-        # print(i)
-        str1 += i+str(data[i])
-    # 拼接上key
-    str1 += signKey
-    # 进行加密
-    s = hashlib.sha1()
-    s.update(str1.encode("utf-8"))
-    sign = s.hexdigest()
-    data["sign"]=sign
-    return data
-
 
 def get_method_name():
     """
@@ -182,10 +164,26 @@ def get_method_name():
     return inspect.stack()[1][3]
 
 
+def merge_dict(dict_raw, dict_new):
+    try:
+        dict_final = dict(dict_raw, **dict_new)
+        return dict_final
+    except TypeError as e:
+        Logger().logger.error("合并字典异常，异常信息：TypeError\n{}".format(e))
+
+
+def test(x):
+    if x < 0:
+        return "2"
+    if x < 10:
+        return "4"
+    print("x")
+    return x+x
+
+
 if __name__ == '__main__':
-    get_time()
+    # get_time()
+    # print("{} 17:00-18:00".format(DATE_NOW))
     # is_exists_path("/Users/liuzhiming/Documents")
-
+    test(20)
     # get_signData({"fds":"trewt"})
-
-

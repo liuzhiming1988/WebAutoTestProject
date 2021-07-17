@@ -13,17 +13,19 @@ from urllib import parse
 from urllib.parse import urlencode
 from utils.logger import Logger
 from utils.common import *
+from urllib3 import encode_multipart_formdata
+import random
 
 
 class HttpBase:
-
-    logger = Logger().logger
-
+    """封装http基础方法"""
     def __init__(self):
         self.__HEADERS = None
         self.__PROTOCOL = None
         self.__DOMAIN = None
         self.__PORT = None
+        self.__BOUNDARY = None
+        self.logger = Logger().logger
 
     @property
     def protocol(self):
@@ -41,7 +43,7 @@ class HttpBase:
 
     @property
     def domain(self):
-        return  self.__DOMAIN
+        return self.__DOMAIN
 
     @domain.setter
     def domain(self, value):
@@ -72,22 +74,40 @@ class HttpBase:
         else:
             print("Error: 不是dict类型")
 
+    # @property
+    # def boundary(self):
+    #     return self.__BOUNDARY
+    #
+    # @boundary.setter
+    # def boundary(self, value):
+    #     if isinstance(value, str):
+    #         self.__BOUNDARY = value.lower()
+    #     else:
+    #         print("Error：类型错误，请输入str类型")
+
     @timer
-    def do_post(self, path, data):
-        response = ""
+    def do_post(self, path, data, headers_=None):
+        # response = ""
         if self.port is None:
             url = self.protocol + "://" + self.domain + path
         else:
             url = self.protocol + "://" + self.domain + self.port + path
 
-        self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url, self.headers, self.json_format(data)))
+        if headers_ is None:
+            headers_ = self.headers
 
-        if "json" in self.headers["Content-Type"]:
-            data = json.dumps(data)
-        elif "urlencoded" in self.headers["Content-Type"] or self.headers == None:
+        if "json" in headers_["Content-Type"]:
+            data = json.dumps(data, indent=5)
+        elif "multipart" in headers_["Content-Type"]:
+            pass
+        # elif "urlencoded" in headers_["Content-Type"] or self.headers is None:
+        else:
             data = urlencode(data)
+
+        self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url, headers_, data))
+
         try:
-            response = requests.post(url, data=data, headers=self.headers)
+            response = requests.post(url, data=data, headers=headers_)
         except requests.exceptions.ConnectionError:
             text = "URL:{};域名连接失败，请检查服务域名和端口信息是否正确".format(url)
             self.logger.error(text)
@@ -99,14 +119,21 @@ class HttpBase:
                     url, self.json_format(dict(response.headers)), self.json_format(json.loads(response.text))))
                 return response.json()
             else:
-                self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(
-                    url, response.headers, response.text))
-                return response.text
+                try:
+                    self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(
+                        url, self.json_format(dict(response.headers)), self.json_format(json.loads(response.text))))
+                    return response.json()
+                except Exception as e:
+                    self.logger.warning("尝试以json格式打印返回数据时出错，异常信息：\n{}".format(e))
+                    self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(
+                        url, response.headers, response.text))
+                    return response.text
         else:
             self.logger.error("请求失败，响应内容为：{}".format(response))
             return False
 
     def do_get(self, path):
+
         requests.get(self.protocol+self.domain+self.port+path)
 
     @staticmethod
@@ -116,7 +143,7 @@ class HttpBase:
         :param body:
         :return:
         """
-        return json.dumps(body, sort_keys=True, indent=2, ensure_ascii=False)
+        return json.dumps(body, sort_keys=True, indent=4, ensure_ascii=False)
 
 
 class HttpException:

@@ -9,7 +9,7 @@
 
 import allure
 import pytest
-from apis.own_order import OwnOrder
+from apis.hsb_app_api import OwnOrder
 
 
 @allure.feature("【回收宝APP】自有回收订单测试")

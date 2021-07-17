@@ -28,6 +28,7 @@ class TestInStorage:
         options = webdriver.ChromeOptions()
         options.add_experimental_option("excludeSwitches", ["enable-logging"])
         get_driver = webdriver.Chrome(options=options)
+
         login_page_ = login_page.GwmsLoginPage(get_driver)
         menu_page_ = menu_page.GwmsMenuPage(get_driver)
         in_storage_page = in_storage_orders_page.InStoragePage(get_driver)
