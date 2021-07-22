@@ -16,9 +16,10 @@ from flask import render_template
 
 detect_blue = Blueprint("new_standard_detect", __name__)
 
+
 @detect_blue.route("/new_standard_detect", methods=['GET', 'POST'])
 def new_standard_detect():
-    text = "<h2>测试结果：</h2>"
+    text = ""
     if request.method == "POST":
         detect_code_raw = request.form.get("detect_code_list")
         detect_code_list = detect_code_raw.strip()
@@ -83,5 +84,5 @@ def new_standard_detect():
                     text += detect_code_result+"<br /><hr />"
             else:
                 text += "条码输入错误，请输入正确的数据，不能为空！<br /><hr />"
-        # return text
-    return text
+    # return text
+    return render_template("tips.html", text=text)

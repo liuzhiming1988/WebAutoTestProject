@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>自动化测试主页</title>
+    <title>回收宝测试主页</title>
     <style>
         .textarea{
-            font-size: 20px;
+            font-size: 15px;
             width: 600px;
-            height: 300px;
+            height: 150px;
+            border: 1px solid steelblue;
+        }
+        .input{
+            font-size: 10px;
+            width: 200px;
+            height: 30px;
             border: 1px solid steelblue;
         }
         .nav{
@@ -34,16 +40,21 @@
         .mark{
             color: #838383;
             font-size: medium;
+            margin-left: 110px;
+        }
+        .mark_product{
+            color: #838383;
+            font-size: medium;
         }
     </style>
     <style type="text/css">
 #returntop{
     display: none;
-    width: 25px;     /*调整显示块的宽width和高height*/
-    height: 100px;
+    width: 50px;     /*调整显示块的宽width和高height*/
+    height: 65px;
     padding: 5px 0;
     /*background-image: url(1.png);*/     /*可用背景图片*/
-    background-color: #51a7e8;            /*背景颜色*/
+    background-color: grey;            /*背景颜色*/
     background-repeat: no-repeat;
     position: fixed;
     _position: absolute;
@@ -55,89 +66,306 @@
         font-size: x-large;
     }
 </style>
+<link rel="stylesheet" href="../static_files/frame/layui/css/layui.css">
+<link rel="stylesheet" href="../static_files/frame/static/css/style.css">
+<link rel="icon" href="../static_files/frame/static/image/code.png">
 </head>
-<body>
-<h2>{{name}},欢迎访问回收宝自动化测试平台</h2>
-<a class="nav_home">快速导航</a>
-<p>
-    <a class="nav" href="#p1">【巨沃-入库处理】</a>
-    <a class="nav" href="#p2">【巨沃-出库处理】</a>
-    <a class="nav" href="#p3">【WMS签收-拆包-收货】</a>
-    <a class="nav" href="#p4">【新标准检测】</a>
-    <a class="nav">【官方下单-邮寄回收】</a>
-    <a class="nav">【官方下单-上门回收】</a>
-    <a class="nav">【官方下单-门店回收】</a>
-    <a class="nav">【商家自检(手动检)下单】</a>
-</p>
-<h3 id="p1">一、入库处理</h3>
-<div>
-<form action="" method="post">
-    <p>
-        <textarea type="text" name="bar_code" class="textarea" placeholder="请输入已检测的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
-    </p>
-    <button type="submit" class="btn">确 定</button>
-</form>
+<body class="body">
+
+<blockquote class="layui-elem-quote">{{name}},欢迎访问回收宝测试工具平台</blockquote>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>快速导航</legend>
+</fieldset>
+
+<div class="layui-btn-container">
+    <a class="layui-btn layui-btn-primary" href="#p1">【巨沃-入库处理】</a>
+    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p2">【巨沃-出库处理】</a>
 </div>
+
+<div class="layui-btn-container">
+    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p3">【WMS签收-拆包-收货】</a>
+    <a class="layui-btn layui-btn-primary" href="#p4">【新标准检测】</a>
+    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p5">【官方下单-邮寄回收】</a>
+    <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p6">【商家自检(手动检)下单】</a>
+</div>
+
+<fieldset id="p1" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>巨沃-入库处理</legend>
+</fieldset>
+
+<form action="" method="post">
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">商品条码</label>
+        <div class="layui-input-block">
+            <textarea name="bar_code" class="layui-textarea" placeholder="请输入已检测的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
+        </div>
+
+    </div>
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+
 <!--<div>-->
 <!--    {% for message in get_flashed_messages() %}-->
 <!--        <h3>{{ message }}</h3>-->
 <!--    {% endfor %}-->
 <!--</div>-->
-    <p>
-        <label class="mark">使用说明：<br>
+    <br />
+        <div class="mark">使用说明：<br>
         1. 每个条码必须输入18位，否则无法通过；<br>
         2. 每个条码完成入库操作需要三分钟左右，无论最后是否入库成功，都会在网页上显示执行结果；<br>
         3. 进行入库处理时会根据商品条码搜索，若查不到对应的来源单号，则不会继续执行入库操作。<br>
-        </label>
-    </p>
-<br />
-<h3 id="p2">二、出库处理(功能暂不可用)</h3>
-<form action="/outboundDeliveryOrder" method="post">
-    <p>
-        <textarea type="text" name="out_code_list" class="textarea" placeholder="请输入待出库的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
+        </div>
 
-    </p>
-    <button type="submit" class="btn">确 定</button>
+<br />
+<fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>巨沃-出库处理（敬请期待）</legend>
+</fieldset>
+<form action="/outbound_delivery_order" method="post">
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">商品条码</label>
+        <div class="layui-input-block">
+            <textarea name="out_code_list" class="layui-textarea" placeholder="请输入待出库的商品条码，多个条码之间需使用英文逗号隔开"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
 </form>
-    <p>
-        <label class="mark">使用说明：<br>
+<br />
+    <div class="mark">
+        <label>使用说明：<br>
         1. 每个条码必须输入18位，否则无法通过；<br>
         2. 每个条码完成出库操作需要三分钟左右，无论最后是否入库成功，都会在网页上显示执行结果。<br>
         </label>
-    </p>
+    </div>
 <br />
 
-<h3 id="p3">三、WMS签收-拆包-收货</h3>
+<fieldset id="p3" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>WMS签收-拆包-收货</legend>
+</fieldset>
 <form action="/wms_sign" method="post">
-    <p>
-        <textarea type="text" name="logistics_num_list" class="textarea" placeholder="请输入待签收的物流单号，多个单号之间需使用英文逗号隔开"></textarea>
-    </p>
-    <button type="submit" class="btn">确 定</button>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">物流单号</label>
+        <div class="layui-input-block">
+            <textarea name="logistics_num_list" class="layui-textarea" placeholder="请输入待签收的物流单号，多个单号之间需使用英文逗号隔开"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
 </form>
-    <p>
-        <label class="mark">使用说明：<br>
+<br />
+    <div class="mark">
+        <label>使用说明：<br>
         1. 完成操作： 签收->拆包->收货；<br />
         2. 可以批量进行签收,多个物流单号之间需使用英文逗号隔开。
         </label>
-    </p>
+    </div>
 <br />
-<h3 id="p4">四、新标准检测</h3>
+<fieldset id="p4" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>新标准检测</legend>
+</fieldset>
 <form action="/new_standard_detect" method="post">
-    <p>
-        <textarea type="text" name="detect_code_list" class="textarea" placeholder="请输入需检测的商品条码，多个条码之间用英文逗号隔开"></textarea>
-    </p>
-    <button type="submit" class="btn">确 定</button>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">商品条码</label>
+        <div class="layui-input-block">
+            <textarea name="detect_code_list" class="layui-textarea" placeholder="请输入需检测的商品条码，多个条码之间用英文逗号隔开"></textarea>
+        </div>
+    </div>
+
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
 </form>
-    <p>
-        <label class="mark">使用说明：<br>
+<br />
+    <div class="mark">
+        <label>使用说明：<br>
         1. 每个条码必须输入18位，否则无法通过；<br>
         2. 每个条码完成检测需15秒左右，请耐心等待。<br>
         </label>
-    </p>
+    </div>
 <br />
 
+<fieldset id="p5" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>官方下单-邮寄回收</legend>
+</fieldset>
+
+<form class="layui-form layui-form-pane" action="/own_recycle_sf" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">手机号</label>
+
+        <div class="layui-input-inline">
+            <input type="text" name="phone"  placeholder="请输入手机号" autocomplete="off"
+                   class="layui-input">
+        </div>
+        <label class="layui-form-label">短信验证码</label>
+
+        <div class="layui-input-inline">
+            <input type="password" name="sms_code" placeholder="请输入短信验证码" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">提示：手机号可不填，默认使用18676702152账号</div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">商品ID</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="product_id" id="p_id" autocomplete="off" class="layui-input" placeholder="商品ID参考下方">
+            </div>
+        <div class="layui-form-mid layui-word-aux">可不填，默认下单商品为iPhone 8</div>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">下单数量</label>
+
+            <div class="layui-input-inline">
+                <input type="number" name="num" autocomplete="off" class="layui-input" placeholder="可不填，默认为1">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="layui-form-item">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+
+    <div class="mark_product">
+        <label>商品信息：<br />
+            产品ID   产品名称 <br />
+            "64494": "iPhone 12",<br />
+         "64495": "iPhone 12 Pro",<br />
+         "64493": "iPhone 12 mini",<br />
+         "63330": "iPhone 11",<br />
+         "63328": "iPhone 11 Pro",<br />
+         "54791": "iPhone XR",<br />
+         "38200": "iPhone 8",<br />
+         "38201": "iPhone 8 Plus",<br />
+         "30831": "iPhone 7",<br />
+         "30832": "iPhone 7 Plus",<br />
+         "30748": "iPhone 6",<br />
+         "65783": "华为 P40",<br />
+         "64000": "华为 P40（5G）",<br />
+         "64001": "华为 P40 Pro（5G）",<br />
+         "64247": "华为 P40 Pro+（5G）",<br />
+         "2071": "OPPO A57",<br />
+         "30742": "华为 Y300",<br />
+         "30746": "华为 Y540",<br />
+         "30833": "iPhone 6s Plus",<br />
+         "30749": "iPhone 5s",<br />
+         "30752": "iPhone 4s",<br />
+         "59939": "小米 9",<br />
+         "64201": "魅族 17 Pro（5G）",<br />
+         "4087": "荣耀 3X Pro",<br />
+         "4157": "华为 OPhone",<br />
+         "4189": "荣耀 3C 畅玩版",<br />
+         "64272": "华为 畅享20 Pro（5G）",<br />
+         "62790": "荣耀 20",<br />
+         "46517": "vivo X21",<br />
+         "63904": "vivo iQOO 3（5G）"
+        </label>
+    </div>
+
+<fieldset id="p6" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>商家自检(手动检)下单</legend>
+</fieldset>
+
+<form class="layui-form layui-form-pane" action="/merchant_check" method="post">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">手机号</label>
+
+        <div class="layui-input-inline">
+            <input type="text" name="phone"  placeholder="请输入手机号" autocomplete="off" class="layui-input">
+        </div>
+        <label class="layui-form-label">短信验证码</label>
+
+        <div class="layui-input-inline">
+            <input type="password" name="sms_code" placeholder="请输入短信验证码" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">提示：手机号可不填，默认使用18676702152账号</div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">品牌ID</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="brand_id" autocomplete="off" class="layui-input" placeholder="品牌ID参考下方">
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">商品ID</label>
+
+            <div class="layui-input-inline">
+                <input type="text" name="product_id" autocomplete="off" class="layui-input" placeholder="商品ID参考下方">
+            </div>
+        <div class="layui-form-mid layui-word-aux">品牌ID和商品ID可不填，默认下单商品为iPhone 8</div>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">下单数量</label>
+
+            <div class="layui-input-inline">
+                <input type="number" name="num" autocomplete="off" class="layui-input" placeholder="可不填，默认为1">
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+
+    <div class="mark_product">
+        <label>
+            品牌ID    产品ID    商品名称<br />
+            2 64494 iPhone 12<br />
+            2 64495 iPhone 12 Pro<br />
+            2 64493 iPhone 12 mini<br />
+            2 63330 iPhone 11<br />
+            2 63328 iPhone 11 Pro<br />
+            2 54791 iPhone XR<br />
+            2 38200 iPhone 8<br />
+            2 38201 iPhone 8 Plus<br />
+            2 30831 iPhone 7<br />
+            2 30832 iPhone 7 Plus<br />
+            2 30748 iPhone 6<br />
+            1 65783 华为 P40<br />
+            1 64000 华为 P40（5G）<br />
+            1 64001 华为 P40 Pro（5G）<br />
+            1 64247 华为 P40 Pro+（5G）<br />
+            5 2071 OPPO A57<br />
+            1 30742 华为 Y300<br />
+            1 30746 华为 Y540<br />
+            2 30833 iPhone 6s Plus<br />
+            2 30749 iPhone 5s<br />
+        </label>
+    </div>
+<br />
 
 <div id="returntop" class="top_font">返回顶部</div>
+<!--<ul class="layui-fixbar">-->
+<!--    <li id="returntop" class="layui-icon layui-fixbar-top" lay-type="top" style="display: list-item;">返回顶部</li>-->
+<!--</ul>-->
 <script type="text/javascript">
 /*javascript函数，控制显示块的位置和显隐，此函数只要在body标签之间即可*/
 var getDiv=document.getElementById('returntop');

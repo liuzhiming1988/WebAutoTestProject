@@ -24,22 +24,23 @@ from website.app.new_standard_detect import detect_blue
 from website.app.wms_sign import wms_sign_blue
 from website.app.outbound_delivery_order import outbound_delivery_order_blue
 from website.app.own_place_order import own_place_order_blue
+from website.app.merchant_check import merchant_check_blue
 
-app = Flask(__name__, static_url_path="/s",
+app = Flask(__name__, static_url_path="/static_files",
             static_folder="static_files", template_folder="templates")
 
 app.config.from_object("setting")       # 引入.py的配置文件
 # app.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
 
+# 注册蓝图
 app.register_blueprint(home_blue)
 app.register_blueprint(detect_blue)
 app.register_blueprint(wms_sign_blue)
 app.register_blueprint(outbound_delivery_order_blue)
 app.register_blueprint(own_place_order_blue)
+app.register_blueprint(merchant_check_blue)
 
 
-
-# https://blog.csdn.net/lingjiphp/category_8707067.html
 @app.route("/", methods=['GET', 'POST'])
 @app.route("/index", methods=['GET', 'POST'])
 def index():
@@ -57,7 +58,7 @@ def index():
                 test = in_storage.TestInStorage()
                 res_text += test.test_add_storage_order(barCode)
                 # 将这个结果返回到页面上
-                flash(res_text)
+                # flash(res_text)
             else:
                 res_text += "错误提示：商品条码的长度应为18，" \
                             "你輸入的条码长度为 {}，输入有误,请检查后重新提交".format(len(barCode))
@@ -234,9 +235,8 @@ def get_last_time():
 # 异常捕获，捕获404返回码
 @app.errorhandler(404)
 def error(e):
-    print(e)
     error_text = "不存在的页面：<br>{}".format(e)
-    return error_text
+    return render_template("404.html")
 
 
 # 此过滤器功能：过滤掉列表中大于3的元素

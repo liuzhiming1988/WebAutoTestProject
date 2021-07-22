@@ -58,6 +58,19 @@ class ProApiBase(HttpBase):
         response = self.do_post(path, body)
         return response
 
+    def xz_post(self, interface, param):
+        """
+        封装适合专业版api的请求方法
+        :param interface: 接口名
+        :param param: 业务参数字典
+        :return:
+        """
+        path = "/api/xianyu"
+        body = self.merge_param(interface, param)
+        # self.logger.info(json.dumps(body, indent=5, ensure_ascii=False))
+        response = self.do_post(path, body)
+        return response
+
 
 if __name__ == '__main__':
     pro_client = ProApiBase()

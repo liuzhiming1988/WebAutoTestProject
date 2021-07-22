@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回收宝APP接口测试</title>
+    <link rel="stylesheet" href="../static_files/frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../static_files/frame/static/css/style.css">
+    <link rel="icon" href="../static_files/frame/static/image/code.png">
+</head>
+<body class="body">
+
+<fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>回收宝APP接口测试</legend>
+</fieldset>
+
+<form action="" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">接口地址</label>
+
+        <div class="layui-input-block">
+            <input type="number" name="number" autocomplete="off" class="layui-input" placeholder="无需输入域名，如：">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">业务参数</label>
+        <div class="layui-input-block">
+            <textarea name="bar_code" class="layui-textarea" placeholder="请输入业务参数，只输入param部分例如："></textarea>
+        </div>
+
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+
+
+<script src="../static_files/frame/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['form', 'layedit', 'laydate', 'element'], function () {
+        var form = layui.form
+                , layer = layui.layer
+                , layedit = layui.layedit
+                , laydate = layui.laydate
+                , element = layui.element;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题至少得5个字符啊';
+                }
+            }
+            , pass: [/(.+){6,12}$/, '密码必须6到12位']
+            , content: function (value) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听提交
+        form.on('submit(sub)', function (data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            });
+            return false;
+        });
+
+        // you code ...
+
+
+    });
+</script>
+
+</body>
+</html>

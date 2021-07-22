@@ -29,4 +29,4 @@ def outbound_delivery_order():
                 text = "<hr /><hr />输入正确"
             else:
                 text = "请输入正确的数据，不能为空！"
-    return render_template("result.html", text=text)
+    return render_template("tips.html", text=text)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>结果提示页面</title>
+    <link rel="stylesheet" href="../static_files/frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../static_files/frame/static/css/style.css">
+    <link rel="icon" href="../static_files/frame/static/image/code.png">
+</head>
+<body class="body">
+
+<div class="my-page-box">
+    <i class="layui-icon">&#xe60c;</i>
+<!--    <p class="msg">执行结果：</p>-->
+    <fieldset class="layui-elem-field" style="margin-top: 50px;">
+        <legend>执行结果：</legend>
+        <div class="layui-field-box">{{text | safe}}</div>
+    </fieldset>
+<!--    <p class="text">{{text | safe}}</p>-->
+    <div class="my-btn-box">
+        <a class="layui-btn layui-btn-small" href="/">返回首页</a>
+        <a class="layui-btn layui-btn-danger layui-btn-small " href="/index">返回上页</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../static_files/frame/layui/layui.js"></script>
+<script type="text/javascript">
+    // you code ...
+
+
+</script>
+</body>
+</html>

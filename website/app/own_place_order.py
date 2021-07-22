@@ -7,7 +7,7 @@
 @Time    : 2021/7/16 19:36
 """
 
-from apis.hsb_app_api import OwnOrder
+from apis.hsb_app_api import HsbAppApi
 from flask import Blueprint
 from flask import Flask
 from flask import request
@@ -18,25 +18,43 @@ from flask import render_template
 own_place_order_blue = Blueprint("own_place_order", __name__)
 
 
-@own_place_order_blue.route("/own_place_order", methods=['GET', 'POST'])
-def own_place_order():
-    text = ""
+@own_place_order_blue.route("/own_recycle_sf", methods=['GET', 'POST'])
+def own_recycle_sf():
+    text = "<h3>官方下单-邮寄回收:</h3><br />"
     if request.method == "POST":
-        phone = request.form.get("out_code_list")
-        sms_code = request.form.get("out_code_list")
-        num = int(request.form.get("out_code_list"))
-        if num < 0 or num > 10:
-            text = "订单数量需大于0且不能超过10"
-        if len(phone) > 0:
-            if len(phone) != 11 or phone[0] != 1:
-                text = "手机号的长度为11位，且为1开头，请重新输入"
-                return text
-            if len(sms_code) != 6:
-                text = "短信验证码长度应为6位，请重新输入"
-                return text
-            # 使用输入的账号进行登录下单
+        phone = request.form.get("phone")
+        sms_code = request.form.get("sms_code")
+        num = request.form.get("num")
+        product_id = request.form.get("product_id")
+        # 对用户提交数据进行基本检查
+        if len(phone) == 0 or len(sms_code) == 0:
+            phone = "18676702152"
+            sms_code = "666666"
+        if len(product_id) == 0:
+            # 如果没输入品牌ID，则取默认值
+            product_id = "38200"
+        if len(num) == 0:
+            num = 1
         else:
-            # 使用默认账号下单
-            pass
+            num = int(num)
 
-    return render_template("result.html", text=text)
+        own = HsbAppApi()
+        own.login(phone, sms_code)
+        if own.mark:
+            own.get_service_time()
+            own.get_address()
+            own.get_store_list()
+            for x in range(num):
+                own.get_product_param(product_id)
+                own.get_select()
+                own.get_evaluate(product_id)
+                own.get_allow_coupon_list(product_id,5)
+                own.get_price_history(product_id)
+                own.get_evaluate_result()
+                own.place_order_sending()
+                text += "{}<br /><hr />".format(own.mark_text)
+        else:
+            text = own.mark_text
+        # return text
+
+    return render_template("tips.html", text=text)

@@ -1,0 +1,2506 @@
+2021-07-22 10:59:27,539 - D:\work\WebAutoTestProject\base\own_api_base.py - own_post[line:63] - DEBUG: 自有服务：/api/user/login，请求参数信息：
+{
+    "loginType": "2",
+    "tel": "123",
+    "code": "321",
+    "token": "",
+    "pid": "1260",
+    "platform": "7",
+    "timestamp": "1626922767",
+    "uuid": "28887EA52156419080B8B873FF258772",
+    "version": "4007002",
+    "versionName": "15",
+    "sign": "cb8222be8329855f26dbb33a6b5f7050dc5d865e"
+}
+2021-07-22 10:59:27,557 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://api.huishoubao.com/api/user/login请求信息：
+headers={'Content-Type': 'multipart/form-data; boundary=Boundary+30F6D62471EF6282'}
+body=b'--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="loginType"\r\n\r\n2\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="tel"\r\n\r\n123\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="code"\r\n\r\n321\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="token"\r\n\r\n\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="pid"\r\n\r\n1260\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="platform"\r\n\r\n7\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="timestamp"\r\n\r\n1626922767\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="uuid"\r\n\r\n28887EA52156419080B8B873FF258772\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="version"\r\n\r\n4007002\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="versionName"\r\n\r\n15\r\n--Boundary+30F6D62471EF6282\r\nContent-Disposition: form-data; name="sign"\r\n\r\ncb8222be8329855f26dbb33a6b5f7050dc5d865e\r\n--Boundary+30F6D62471EF6282--\r\n'
+2021-07-22 10:59:27,813 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 22 Jul 2021 02:59:26 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+2021-07-22 10:59:27,813 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": [],
+    "_errCode": "200004",
+    "_errStr": "手机号码错误或者为空"
+}
+2021-07-22 10:59:27,813 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:123] - INFO: https://api.huishoubao.com/api/user/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 22 Jul 2021 02:59:26 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+response_body={
+    "_data": [],
+    "_errCode": "200004",
+    "_errStr": "手机号码错误或者为空"
+}
+2021-07-22 10:59:27,813 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.26秒
+
+
+2021-07-22 10:59:27,814 - D:\work\WebAutoTestProject\utils\common.py - merge_dict[line:172] - WARNING: 合并字典异常，异常信息：TypeError
+dict() argument after ** must be a mapping, not list
+2021-07-22 10:59:27,814 - D:\work\WebAutoTestProject\apis\hsb_app_api.py - login[line:68] - ERROR: 登录失败，_errCode：200004 _errStr：手机号码错误或者为空
+2021-07-22 10:59:37,894 - D:\work\WebAutoTestProject\base\own_api_base.py - own_post[line:63] - DEBUG: 自有服务：/api/user/login，请求参数信息：
+{
+    "loginType": "2",
+    "tel": "3213",
+    "code": "3213",
+    "token": "",
+    "pid": "1260",
+    "platform": "7",
+    "timestamp": "1626922777",
+    "uuid": "28887EA52156419080B8B873FF258772",
+    "version": "4007002",
+    "versionName": "15",
+    "sign": "319a2465bcc504ad2c57d3d207be39a0af28aad4"
+}
+2021-07-22 10:59:37,895 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://api.huishoubao.com/api/user/login请求信息：
+headers={'Content-Type': 'multipart/form-data; boundary=Boundary+30F6D62471EF9295'}
+body=b'--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="loginType"\r\n\r\n2\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="tel"\r\n\r\n3213\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="code"\r\n\r\n3213\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="token"\r\n\r\n\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="pid"\r\n\r\n1260\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="platform"\r\n\r\n7\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="timestamp"\r\n\r\n1626922777\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="uuid"\r\n\r\n28887EA52156419080B8B873FF258772\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="version"\r\n\r\n4007002\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="versionName"\r\n\r\n15\r\n--Boundary+30F6D62471EF9295\r\nContent-Disposition: form-data; name="sign"\r\n\r\n319a2465bcc504ad2c57d3d207be39a0af28aad4\r\n--Boundary+30F6D62471EF9295--\r\n'
+2021-07-22 10:59:37,948 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 22 Jul 2021 02:59:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+2021-07-22 10:59:37,948 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": [],
+    "_errCode": "200004",
+    "_errStr": "手机号码错误或者为空"
+}
+2021-07-22 10:59:37,948 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:123] - INFO: https://api.huishoubao.com/api/user/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 22 Jul 2021 02:59:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+response_body={
+    "_data": [],
+    "_errCode": "200004",
+    "_errStr": "手机号码错误或者为空"
+}
+2021-07-22 10:59:37,949 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.05秒
+
+
+2021-07-22 10:59:37,949 - D:\work\WebAutoTestProject\utils\common.py - merge_dict[line:172] - WARNING: 合并字典异常，异常信息：TypeError
+dict() argument after ** must be a mapping, not list
+2021-07-22 10:59:37,949 - D:\work\WebAutoTestProject\apis\hsb_app_api.py - login[line:68] - ERROR: 登录失败，_errCode：200004 _errStr：手机号码错误或者为空
+2021-07-22 11:32:50,623 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://api-amc.huishoubao.com.cn/login请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "system_id": "32",
+     "jump_url": "",
+     "username": "test_liuzhiming@huishoubao.com.cn",
+     "password": "f6758a4e"
+}
+2021-07-22 11:32:50,747 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:49 GMT",
+    "Server": "nginx/1.16.0",
+    "Set-Cookie": "login_token=think%3A%7B%22user_id%22%3A%221930%22%2C%22token%22%3A%2204cc829decf322b2d64203f866e5b82a%22%2C%22username%22%3A%22test_liuzhiming%2540huishoubao.com.cn%22%2C%22oa_user_id%22%3A0%7D; expires=Thu, 22-Jul-2021 10:32:49 GMT; Max-Age=25200; path=/",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:32:50,747 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "body": {
+        "data": {
+            "jump_url": "http://wms.huishoubao.com.cn?login_token=04cc829decf322b2d64203f866e5b82a&user_id=1930",
+            "login_token": "04cc829decf322b2d64203f866e5b82a",
+            "system_info": {
+                "name": "WMS系统",
+                "system_desc": "仓库",
+                "system_id": "32",
+                "url": "http://wms.huishoubao.com.cn"
+            },
+            "user_id": "1930"
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "登录系统成功"
+    },
+    "head": {
+        "interface": "login",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:32:50,747 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://api-amc.huishoubao.com.cn/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:49 GMT",
+    "Server": "nginx/1.16.0",
+    "Set-Cookie": "login_token=think%3A%7B%22user_id%22%3A%221930%22%2C%22token%22%3A%2204cc829decf322b2d64203f866e5b82a%22%2C%22username%22%3A%22test_liuzhiming%2540huishoubao.com.cn%22%2C%22oa_user_id%22%3A0%7D; expires=Thu, 22-Jul-2021 10:32:49 GMT; Max-Age=25200; path=/",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "jump_url": "http://wms.huishoubao.com.cn?login_token=04cc829decf322b2d64203f866e5b82a&user_id=1930",
+            "login_token": "04cc829decf322b2d64203f866e5b82a",
+            "system_info": {
+                "name": "WMS系统",
+                "system_desc": "仓库",
+                "system_id": "32",
+                "url": "http://wms.huishoubao.com.cn"
+            },
+            "user_id": "1930"
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "登录系统成功"
+    },
+    "head": {
+        "interface": "login",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:32:50,748 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-07-22 11:32:50,748 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://api-amc.huishoubao.com.cn/logininfo请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "head": {
+          "version": "0.01",
+          "msgtype": "request",
+          "interface": "logininfo",
+          "remark": ""
+     },
+     "params": {
+          "login_system_id": "1",
+          "login_token": "04cc829decf322b2d64203f866e5b82a",
+          "login_user_id": "1930"
+     }
+}
+2021-07-22 11:32:50,857 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:49 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:32:50,858 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "body": {
+        "data": {
+            "menu": [
+                {
+                    "access_flags": "-",
+                    "authority_id": "58",
+                    "name": "系统设置",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [
+                        {
+                            "access_flags": "/System",
+                            "authority_id": "60",
+                            "name": "系统管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PermissionsManage",
+                            "authority_id": "61",
+                            "name": "模块管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/RoleManage",
+                            "authority_id": "62",
+                            "name": "角色管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/DepartmentManage",
+                            "authority_id": "63",
+                            "name": "部门管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PositionManage",
+                            "authority_id": "64",
+                            "name": "职位管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/UserMnage",
+                            "authority_id": "65",
+                            "name": "用户管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        }
+                    ],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "716",
+                    "name": "账号信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "964",
+                    "name": "修改个人信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                }
+            ],
+            "system_list": [
+                {
+                    "category_id": "7",
+                    "name": "2B机型映射与估价",
+                    "system_desc": "机型库，机型映射，估价问题选项过滤",
+                    "system_id": "20",
+                    "url": "https://evamap.huanjixia.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售系统",
+                    "system_desc": "销售系统",
+                    "system_id": "21",
+                    "url": "https://bid-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B渠道中心",
+                    "system_desc": "2B换机侠渠道中心",
+                    "system_id": "23",
+                    "url": "http://mba.huanjixia.com/channel_center"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服检测系统",
+                    "system_desc": "客服检测系统",
+                    "system_id": "24",
+                    "url": "http://oms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B帮助中心系统",
+                    "system_desc": "帮助中心系统",
+                    "system_id": "25",
+                    "url": "http://mba.huanjixia.com/help_center/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B客服系统",
+                    "system_desc": "客服系统",
+                    "system_id": "26",
+                    "url": "kf.huanjixia.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "经营数据分析系统",
+                    "system_desc": "经营数据分析系统",
+                    "system_id": "28",
+                    "url": "http://bdas.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "配置中心",
+                    "system_desc": "配置中心",
+                    "system_id": "29",
+                    "url": "pz.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B新Dplus审批系统",
+                    "system_desc": "新Dplus后台审批操作",
+                    "system_id": "31",
+                    "url": "http://mba.huanjixia.com/ndp/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "WMS系统",
+                    "system_desc": "仓库",
+                    "system_id": "32",
+                    "url": "http://wms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品检测系统",
+                    "system_desc": "优品检测系统",
+                    "system_id": "33",
+                    "url": "http://upin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理系统",
+                    "system_desc": "回收宝运营管理后台",
+                    "system_id": "34",
+                    "url": "https://op.huishoubao.com"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维自动化平台",
+                    "system_desc": "运维自动化平台",
+                    "system_id": "35",
+                    "url": "http://devops.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "图书管理后台",
+                    "system_desc": "",
+                    "system_id": "36",
+                    "url": "https://books.huishoubao.com/admin.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "数据仓库",
+                    "system_desc": "估价项目数据组仓库",
+                    "system_id": "37",
+                    "url": "http://edw.huishoubao.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "用户管理中心",
+                    "system_desc": "用户管理中心",
+                    "system_id": "38",
+                    "url": "https://user.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心2.0",
+                    "system_desc": "估价系统",
+                    "system_id": "39",
+                    "url": "http://evaluation.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售检测系统",
+                    "system_desc": "销售检测系统",
+                    "system_id": "40",
+                    "url": "http://detect-sales.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "云检测系统",
+                    "system_desc": "云检测系统",
+                    "system_id": "41",
+                    "url": "http://detect-clouds.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机",
+                    "system_desc": "就那个闲鱼的项目",
+                    "system_id": "48",
+                    "url": "http://detection.huishoubao.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品商城",
+                    "system_desc": "优品商城",
+                    "system_id": "49",
+                    "url": "https://mall-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "销售检测系统（一检二检）",
+                    "system_desc": "销售检测系统（一检二检合并）",
+                    "system_id": "55",
+                    "url": "http://detect-sales-online.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理平台",
+                    "system_desc": "C++运营后台接入层",
+                    "system_id": "56",
+                    "url": "https://oss.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心 (新)",
+                    "system_desc": "估价配置后台",
+                    "system_id": "57",
+                    "url": "http://evaadmin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "设备中心",
+                    "system_desc": "设备中心后台管理系统",
+                    "system_id": "63",
+                    "url": "http://device-center.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "以旧换新后台系统",
+                    "system_desc": "以旧换新后台",
+                    "system_id": "64",
+                    "url": "http://replace-f2e.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "定价配置后台系统",
+                    "system_desc": "定价配置后台系统",
+                    "system_id": "66",
+                    "url": "http://baseprice.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营管理系统",
+                    "system_desc": "2B运营管理系统 - 首页",
+                    "system_id": "100",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营活动中心",
+                    "system_desc": "2B运营活动中心",
+                    "system_id": "101",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机WMS",
+                    "system_desc": "闲鱼验机WMS测试版",
+                    "system_id": "104",
+                    "url": "http://xywms.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "自动巡检测试系统",
+                    "system_desc": "",
+                    "system_id": "106",
+                    "url": "http://autotest.huishoubao.com/"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维版本管理系统",
+                    "system_desc": "",
+                    "system_id": "107",
+                    "url": "http://devops-new.huishoubao.com"
+                },
+                {
+                    "category_id": "0",
+                    "name": "日志报表系统",
+                    "system_desc": "",
+                    "system_id": "108",
+                    "url": "http://lrolap.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服工单系统",
+                    "system_desc": "客服工单系统",
+                    "system_id": "115",
+                    "url": "http://csr.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "阿里FT后台系统",
+                    "system_desc": "阿里FT后台系统",
+                    "system_id": "116",
+                    "url": "http://ali-op.huishoubao.com.cn/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "coco",
+                    "system_desc": "运营营销系统",
+                    "system_id": "119",
+                    "url": "https://coco_admin.keleyoupin.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "营销中台",
+                    "system_desc": "活动运营配置系统",
+                    "system_id": "129",
+                    "url": "http://market-f2e.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "促收系统",
+                    "system_desc": "",
+                    "system_id": "132",
+                    "url": "https://op.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "公共运营平台",
+                    "system_desc": "",
+                    "system_id": "133",
+                    "url": "http://mp.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "OPMS",
+                    "system_desc": "老管理系统（2020年9月接入AMC）",
+                    "system_id": "134",
+                    "url": "http://opms.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "价格系统-估价工具",
+                    "system_desc": "估价工具后台",
+                    "system_id": "135",
+                    "url": "http://evamapping.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格系统-商品库",
+                    "system_desc": "商品库后台",
+                    "system_id": "136",
+                    "url": "http://baseproduct.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "闲鱼优品商品上架工具",
+                    "system_desc": "项目启动产品经理：曾斐",
+                    "system_id": "137",
+                    "url": "http://taobao-goods-tool.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "竞拍",
+                    "system_desc": "",
+                    "system_id": "138",
+                    "url": "https://bid-admin.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格渠道调价配置系统",
+                    "system_desc": "",
+                    "system_id": "140",
+                    "url": "http://price-adjustment-conf.huishoubao.com.cn"
+                }
+            ],
+            "user_info": {
+                "city_id": "",
+                "department_id": "52",
+                "department_name": "研发部",
+                "email": "test_liuzhiming@huishoubao.com.cn",
+                "is_lock": "1",
+                "lock_time": "",
+                "login_times": "0",
+                "oa_user_desc": "",
+                "oa_user_id": "0",
+                "phone": "13049368516",
+                "photo": "",
+                "position_id": "57",
+                "position_name": "研发经理",
+                "real_name": "刘志明_TEST",
+                "reset_password": "1",
+                "user_desc": "刘志明",
+                "user_id": "1930",
+                "username": "test_liuzhiming@huishoubao.com.cn"
+            }
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "请求成功"
+    },
+    "head": {
+        "interface": "logininfo",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:32:50,863 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://api-amc.huishoubao.com.cn/logininfo响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:49 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "menu": [
+                {
+                    "access_flags": "-",
+                    "authority_id": "58",
+                    "name": "系统设置",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [
+                        {
+                            "access_flags": "/System",
+                            "authority_id": "60",
+                            "name": "系统管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PermissionsManage",
+                            "authority_id": "61",
+                            "name": "模块管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/RoleManage",
+                            "authority_id": "62",
+                            "name": "角色管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/DepartmentManage",
+                            "authority_id": "63",
+                            "name": "部门管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PositionManage",
+                            "authority_id": "64",
+                            "name": "职位管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/UserMnage",
+                            "authority_id": "65",
+                            "name": "用户管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        }
+                    ],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "716",
+                    "name": "账号信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "964",
+                    "name": "修改个人信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                }
+            ],
+            "system_list": [
+                {
+                    "category_id": "7",
+                    "name": "2B机型映射与估价",
+                    "system_desc": "机型库，机型映射，估价问题选项过滤",
+                    "system_id": "20",
+                    "url": "https://evamap.huanjixia.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售系统",
+                    "system_desc": "销售系统",
+                    "system_id": "21",
+                    "url": "https://bid-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B渠道中心",
+                    "system_desc": "2B换机侠渠道中心",
+                    "system_id": "23",
+                    "url": "http://mba.huanjixia.com/channel_center"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服检测系统",
+                    "system_desc": "客服检测系统",
+                    "system_id": "24",
+                    "url": "http://oms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B帮助中心系统",
+                    "system_desc": "帮助中心系统",
+                    "system_id": "25",
+                    "url": "http://mba.huanjixia.com/help_center/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B客服系统",
+                    "system_desc": "客服系统",
+                    "system_id": "26",
+                    "url": "kf.huanjixia.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "经营数据分析系统",
+                    "system_desc": "经营数据分析系统",
+                    "system_id": "28",
+                    "url": "http://bdas.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "配置中心",
+                    "system_desc": "配置中心",
+                    "system_id": "29",
+                    "url": "pz.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B新Dplus审批系统",
+                    "system_desc": "新Dplus后台审批操作",
+                    "system_id": "31",
+                    "url": "http://mba.huanjixia.com/ndp/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "WMS系统",
+                    "system_desc": "仓库",
+                    "system_id": "32",
+                    "url": "http://wms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品检测系统",
+                    "system_desc": "优品检测系统",
+                    "system_id": "33",
+                    "url": "http://upin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理系统",
+                    "system_desc": "回收宝运营管理后台",
+                    "system_id": "34",
+                    "url": "https://op.huishoubao.com"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维自动化平台",
+                    "system_desc": "运维自动化平台",
+                    "system_id": "35",
+                    "url": "http://devops.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "图书管理后台",
+                    "system_desc": "",
+                    "system_id": "36",
+                    "url": "https://books.huishoubao.com/admin.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "数据仓库",
+                    "system_desc": "估价项目数据组仓库",
+                    "system_id": "37",
+                    "url": "http://edw.huishoubao.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "用户管理中心",
+                    "system_desc": "用户管理中心",
+                    "system_id": "38",
+                    "url": "https://user.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心2.0",
+                    "system_desc": "估价系统",
+                    "system_id": "39",
+                    "url": "http://evaluation.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售检测系统",
+                    "system_desc": "销售检测系统",
+                    "system_id": "40",
+                    "url": "http://detect-sales.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "云检测系统",
+                    "system_desc": "云检测系统",
+                    "system_id": "41",
+                    "url": "http://detect-clouds.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机",
+                    "system_desc": "就那个闲鱼的项目",
+                    "system_id": "48",
+                    "url": "http://detection.huishoubao.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品商城",
+                    "system_desc": "优品商城",
+                    "system_id": "49",
+                    "url": "https://mall-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "销售检测系统（一检二检）",
+                    "system_desc": "销售检测系统（一检二检合并）",
+                    "system_id": "55",
+                    "url": "http://detect-sales-online.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理平台",
+                    "system_desc": "C++运营后台接入层",
+                    "system_id": "56",
+                    "url": "https://oss.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心 (新)",
+                    "system_desc": "估价配置后台",
+                    "system_id": "57",
+                    "url": "http://evaadmin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "设备中心",
+                    "system_desc": "设备中心后台管理系统",
+                    "system_id": "63",
+                    "url": "http://device-center.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "以旧换新后台系统",
+                    "system_desc": "以旧换新后台",
+                    "system_id": "64",
+                    "url": "http://replace-f2e.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "定价配置后台系统",
+                    "system_desc": "定价配置后台系统",
+                    "system_id": "66",
+                    "url": "http://baseprice.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营管理系统",
+                    "system_desc": "2B运营管理系统 - 首页",
+                    "system_id": "100",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营活动中心",
+                    "system_desc": "2B运营活动中心",
+                    "system_id": "101",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机WMS",
+                    "system_desc": "闲鱼验机WMS测试版",
+                    "system_id": "104",
+                    "url": "http://xywms.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "自动巡检测试系统",
+                    "system_desc": "",
+                    "system_id": "106",
+                    "url": "http://autotest.huishoubao.com/"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维版本管理系统",
+                    "system_desc": "",
+                    "system_id": "107",
+                    "url": "http://devops-new.huishoubao.com"
+                },
+                {
+                    "category_id": "0",
+                    "name": "日志报表系统",
+                    "system_desc": "",
+                    "system_id": "108",
+                    "url": "http://lrolap.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服工单系统",
+                    "system_desc": "客服工单系统",
+                    "system_id": "115",
+                    "url": "http://csr.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "阿里FT后台系统",
+                    "system_desc": "阿里FT后台系统",
+                    "system_id": "116",
+                    "url": "http://ali-op.huishoubao.com.cn/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "coco",
+                    "system_desc": "运营营销系统",
+                    "system_id": "119",
+                    "url": "https://coco_admin.keleyoupin.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "营销中台",
+                    "system_desc": "活动运营配置系统",
+                    "system_id": "129",
+                    "url": "http://market-f2e.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "促收系统",
+                    "system_desc": "",
+                    "system_id": "132",
+                    "url": "https://op.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "公共运营平台",
+                    "system_desc": "",
+                    "system_id": "133",
+                    "url": "http://mp.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "OPMS",
+                    "system_desc": "老管理系统（2020年9月接入AMC）",
+                    "system_id": "134",
+                    "url": "http://opms.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "价格系统-估价工具",
+                    "system_desc": "估价工具后台",
+                    "system_id": "135",
+                    "url": "http://evamapping.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格系统-商品库",
+                    "system_desc": "商品库后台",
+                    "system_id": "136",
+                    "url": "http://baseproduct.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "闲鱼优品商品上架工具",
+                    "system_desc": "项目启动产品经理：曾斐",
+                    "system_id": "137",
+                    "url": "http://taobao-goods-tool.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "竞拍",
+                    "system_desc": "",
+                    "system_id": "138",
+                    "url": "https://bid-admin.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格渠道调价配置系统",
+                    "system_desc": "",
+                    "system_id": "140",
+                    "url": "http://price-adjustment-conf.huishoubao.com.cn"
+                }
+            ],
+            "user_info": {
+                "city_id": "",
+                "department_id": "52",
+                "department_name": "研发部",
+                "email": "test_liuzhiming@huishoubao.com.cn",
+                "is_lock": "1",
+                "lock_time": "",
+                "login_times": "0",
+                "oa_user_desc": "",
+                "oa_user_id": "0",
+                "phone": "13049368516",
+                "photo": "",
+                "position_id": "57",
+                "position_name": "研发经理",
+                "real_name": "刘志明_TEST",
+                "reset_password": "1",
+                "user_desc": "刘志明",
+                "user_id": "1930",
+                "username": "test_liuzhiming@huishoubao.com.cn"
+            }
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "请求成功"
+    },
+    "head": {
+        "interface": "logininfo",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:32:50,868 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-07-22 11:32:50,868 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1626924770",
+          "_interface": "PlatWms.Parcel.Sign",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "04cc829decf322b2d64203f866e5b82a",
+          "depotId": "1",
+          "logisticsId": "1",
+          "paymentMethod": "1",
+          "logisticsNum": "123",
+          "userId": "1930",
+          "userName": "\u5218\u5fd7\u660e_TEST"
+     }
+}
+2021-07-22 11:32:51,080 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:49 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "dc74805bbbe2b6ea",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:32:51,080 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": {
+        "_data": [],
+        "_errCode": "200102000",
+        "_errStr": "该物流单号不可重复签收,请检查!",
+        "_ret": "1"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.Sign",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1626924769",
+        "_version": "0.01"
+    }
+}
+2021-07-22 11:32:51,080 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:49 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "dc74805bbbe2b6ea",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": [],
+        "_errCode": "200102000",
+        "_errStr": "该物流单号不可重复签收,请检查!",
+        "_ret": "1"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.Sign",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1626924769",
+        "_version": "0.01"
+    }
+}
+2021-07-22 11:32:51,080 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.21秒
+
+
+2021-07-22 11:32:51,096 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1626924770",
+          "_interface": "PlatWms.Parcel.Unpack",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "04cc829decf322b2d64203f866e5b82a",
+          "depotId": "1",
+          "logisticsNum": "123",
+          "productType": "1",
+          "num": 1,
+          "userId": "1930",
+          "userName": "\u5218\u5fd7\u660e_TEST"
+     }
+}
+2021-07-22 11:32:51,972 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:50 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "9bb4158959c168e7",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:32:51,972 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": {
+        "_data": "success",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.Unpack",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1626924770",
+        "_version": "0.01"
+    }
+}
+2021-07-22 11:32:51,972 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:50 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "9bb4158959c168e7",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": "success",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.Unpack",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1626924770",
+        "_version": "0.01"
+    }
+}
+2021-07-22 11:32:51,973 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.89秒
+
+
+2021-07-22 11:32:51,973 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1626924770",
+          "_interface": "PlatWms.Parcel.ReceiveSearch",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "04cc829decf322b2d64203f866e5b82a",
+          "receiveType": "1",
+          "depotId": "1",
+          "orderSystemId": "1",
+          "orderSystemType": "1",
+          "logisticsNum": "123",
+          "searchType": "0",
+          "keywords": ""
+     }
+}
+2021-07-22 11:32:52,283 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:51 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "e2719121cdaf9a02",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:32:52,283 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": {
+        "_data": [],
+        "_errCode": "200102008",
+        "_errStr": "该仓库内没有找到此包裹!",
+        "_ret": "1"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.ReceiveSearch",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1626924771",
+        "_version": "0.01"
+    }
+}
+2021-07-22 11:32:52,284 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:32:51 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "e2719121cdaf9a02",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": [],
+        "_errCode": "200102008",
+        "_errStr": "该仓库内没有找到此包裹!",
+        "_ret": "1"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.ReceiveSearch",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1626924771",
+        "_version": "0.01"
+    }
+}
+2021-07-22 11:32:52,284 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.31秒
+
+
+2021-07-22 11:33:19,684 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://api-amc.huishoubao.com.cn/login请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "system_id": "32",
+     "jump_url": "",
+     "username": "test_liuzhiming@huishoubao.com.cn",
+     "password": "f6758a4e"
+}
+2021-07-22 11:33:19,781 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:33:18 GMT",
+    "Server": "nginx/1.16.0",
+    "Set-Cookie": "login_token=think%3A%7B%22user_id%22%3A%221930%22%2C%22token%22%3A%2204cc829decf322b2d64203f866e5b82a%22%2C%22username%22%3A%22test_liuzhiming%2540huishoubao.com.cn%22%2C%22oa_user_id%22%3A0%7D; expires=Thu, 22-Jul-2021 10:33:18 GMT; Max-Age=25200; path=/",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:33:19,781 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "body": {
+        "data": {
+            "jump_url": "http://wms.huishoubao.com.cn?login_token=04cc829decf322b2d64203f866e5b82a&user_id=1930",
+            "login_token": "04cc829decf322b2d64203f866e5b82a",
+            "system_info": {
+                "name": "WMS系统",
+                "system_desc": "仓库",
+                "system_id": "32",
+                "url": "http://wms.huishoubao.com.cn"
+            },
+            "user_id": "1930"
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "登录系统成功"
+    },
+    "head": {
+        "interface": "login",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:33:19,781 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://api-amc.huishoubao.com.cn/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:33:18 GMT",
+    "Server": "nginx/1.16.0",
+    "Set-Cookie": "login_token=think%3A%7B%22user_id%22%3A%221930%22%2C%22token%22%3A%2204cc829decf322b2d64203f866e5b82a%22%2C%22username%22%3A%22test_liuzhiming%2540huishoubao.com.cn%22%2C%22oa_user_id%22%3A0%7D; expires=Thu, 22-Jul-2021 10:33:18 GMT; Max-Age=25200; path=/",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "jump_url": "http://wms.huishoubao.com.cn?login_token=04cc829decf322b2d64203f866e5b82a&user_id=1930",
+            "login_token": "04cc829decf322b2d64203f866e5b82a",
+            "system_info": {
+                "name": "WMS系统",
+                "system_desc": "仓库",
+                "system_id": "32",
+                "url": "http://wms.huishoubao.com.cn"
+            },
+            "user_id": "1930"
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "登录系统成功"
+    },
+    "head": {
+        "interface": "login",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:33:19,782 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-07-22 11:33:19,782 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: http://api-amc.huishoubao.com.cn/logininfo请求信息：
+headers={'Content-Type': 'application/json;charset=UTF-8'}
+body={
+     "head": {
+          "version": "0.01",
+          "msgtype": "request",
+          "interface": "logininfo",
+          "remark": ""
+     },
+     "params": {
+          "login_system_id": "1",
+          "login_token": "04cc829decf322b2d64203f866e5b82a",
+          "login_user_id": "1930"
+     }
+}
+2021-07-22 11:33:19,894 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:33:18 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+2021-07-22 11:33:19,895 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "body": {
+        "data": {
+            "menu": [
+                {
+                    "access_flags": "-",
+                    "authority_id": "58",
+                    "name": "系统设置",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [
+                        {
+                            "access_flags": "/System",
+                            "authority_id": "60",
+                            "name": "系统管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PermissionsManage",
+                            "authority_id": "61",
+                            "name": "模块管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/RoleManage",
+                            "authority_id": "62",
+                            "name": "角色管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/DepartmentManage",
+                            "authority_id": "63",
+                            "name": "部门管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PositionManage",
+                            "authority_id": "64",
+                            "name": "职位管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/UserMnage",
+                            "authority_id": "65",
+                            "name": "用户管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        }
+                    ],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "716",
+                    "name": "账号信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "964",
+                    "name": "修改个人信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                }
+            ],
+            "system_list": [
+                {
+                    "category_id": "7",
+                    "name": "2B机型映射与估价",
+                    "system_desc": "机型库，机型映射，估价问题选项过滤",
+                    "system_id": "20",
+                    "url": "https://evamap.huanjixia.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售系统",
+                    "system_desc": "销售系统",
+                    "system_id": "21",
+                    "url": "https://bid-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B渠道中心",
+                    "system_desc": "2B换机侠渠道中心",
+                    "system_id": "23",
+                    "url": "http://mba.huanjixia.com/channel_center"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服检测系统",
+                    "system_desc": "客服检测系统",
+                    "system_id": "24",
+                    "url": "http://oms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B帮助中心系统",
+                    "system_desc": "帮助中心系统",
+                    "system_id": "25",
+                    "url": "http://mba.huanjixia.com/help_center/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B客服系统",
+                    "system_desc": "客服系统",
+                    "system_id": "26",
+                    "url": "kf.huanjixia.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "经营数据分析系统",
+                    "system_desc": "经营数据分析系统",
+                    "system_id": "28",
+                    "url": "http://bdas.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "配置中心",
+                    "system_desc": "配置中心",
+                    "system_id": "29",
+                    "url": "pz.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B新Dplus审批系统",
+                    "system_desc": "新Dplus后台审批操作",
+                    "system_id": "31",
+                    "url": "http://mba.huanjixia.com/ndp/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "WMS系统",
+                    "system_desc": "仓库",
+                    "system_id": "32",
+                    "url": "http://wms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品检测系统",
+                    "system_desc": "优品检测系统",
+                    "system_id": "33",
+                    "url": "http://upin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理系统",
+                    "system_desc": "回收宝运营管理后台",
+                    "system_id": "34",
+                    "url": "https://op.huishoubao.com"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维自动化平台",
+                    "system_desc": "运维自动化平台",
+                    "system_id": "35",
+                    "url": "http://devops.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "图书管理后台",
+                    "system_desc": "",
+                    "system_id": "36",
+                    "url": "https://books.huishoubao.com/admin.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "数据仓库",
+                    "system_desc": "估价项目数据组仓库",
+                    "system_id": "37",
+                    "url": "http://edw.huishoubao.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "用户管理中心",
+                    "system_desc": "用户管理中心",
+                    "system_id": "38",
+                    "url": "https://user.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心2.0",
+                    "system_desc": "估价系统",
+                    "system_id": "39",
+                    "url": "http://evaluation.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售检测系统",
+                    "system_desc": "销售检测系统",
+                    "system_id": "40",
+                    "url": "http://detect-sales.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "云检测系统",
+                    "system_desc": "云检测系统",
+                    "system_id": "41",
+                    "url": "http://detect-clouds.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机",
+                    "system_desc": "就那个闲鱼的项目",
+                    "system_id": "48",
+                    "url": "http://detection.huishoubao.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品商城",
+                    "system_desc": "优品商城",
+                    "system_id": "49",
+                    "url": "https://mall-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "销售检测系统（一检二检）",
+                    "system_desc": "销售检测系统（一检二检合并）",
+                    "system_id": "55",
+                    "url": "http://detect-sales-online.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理平台",
+                    "system_desc": "C++运营后台接入层",
+                    "system_id": "56",
+                    "url": "https://oss.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心 (新)",
+                    "system_desc": "估价配置后台",
+                    "system_id": "57",
+                    "url": "http://evaadmin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "设备中心",
+                    "system_desc": "设备中心后台管理系统",
+                    "system_id": "63",
+                    "url": "http://device-center.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "以旧换新后台系统",
+                    "system_desc": "以旧换新后台",
+                    "system_id": "64",
+                    "url": "http://replace-f2e.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "定价配置后台系统",
+                    "system_desc": "定价配置后台系统",
+                    "system_id": "66",
+                    "url": "http://baseprice.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营管理系统",
+                    "system_desc": "2B运营管理系统 - 首页",
+                    "system_id": "100",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营活动中心",
+                    "system_desc": "2B运营活动中心",
+                    "system_id": "101",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机WMS",
+                    "system_desc": "闲鱼验机WMS测试版",
+                    "system_id": "104",
+                    "url": "http://xywms.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "自动巡检测试系统",
+                    "system_desc": "",
+                    "system_id": "106",
+                    "url": "http://autotest.huishoubao.com/"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维版本管理系统",
+                    "system_desc": "",
+                    "system_id": "107",
+                    "url": "http://devops-new.huishoubao.com"
+                },
+                {
+                    "category_id": "0",
+                    "name": "日志报表系统",
+                    "system_desc": "",
+                    "system_id": "108",
+                    "url": "http://lrolap.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服工单系统",
+                    "system_desc": "客服工单系统",
+                    "system_id": "115",
+                    "url": "http://csr.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "阿里FT后台系统",
+                    "system_desc": "阿里FT后台系统",
+                    "system_id": "116",
+                    "url": "http://ali-op.huishoubao.com.cn/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "coco",
+                    "system_desc": "运营营销系统",
+                    "system_id": "119",
+                    "url": "https://coco_admin.keleyoupin.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "营销中台",
+                    "system_desc": "活动运营配置系统",
+                    "system_id": "129",
+                    "url": "http://market-f2e.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "促收系统",
+                    "system_desc": "",
+                    "system_id": "132",
+                    "url": "https://op.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "公共运营平台",
+                    "system_desc": "",
+                    "system_id": "133",
+                    "url": "http://mp.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "OPMS",
+                    "system_desc": "老管理系统（2020年9月接入AMC）",
+                    "system_id": "134",
+                    "url": "http://opms.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "价格系统-估价工具",
+                    "system_desc": "估价工具后台",
+                    "system_id": "135",
+                    "url": "http://evamapping.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格系统-商品库",
+                    "system_desc": "商品库后台",
+                    "system_id": "136",
+                    "url": "http://baseproduct.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "闲鱼优品商品上架工具",
+                    "system_desc": "项目启动产品经理：曾斐",
+                    "system_id": "137",
+                    "url": "http://taobao-goods-tool.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "竞拍",
+                    "system_desc": "",
+                    "system_id": "138",
+                    "url": "https://bid-admin.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格渠道调价配置系统",
+                    "system_desc": "",
+                    "system_id": "140",
+                    "url": "http://price-adjustment-conf.huishoubao.com.cn"
+                }
+            ],
+            "user_info": {
+                "city_id": "",
+                "department_id": "52",
+                "department_name": "研发部",
+                "email": "test_liuzhiming@huishoubao.com.cn",
+                "is_lock": "1",
+                "lock_time": "",
+                "login_times": "0",
+                "oa_user_desc": "",
+                "oa_user_id": "0",
+                "phone": "13049368516",
+                "photo": "",
+                "position_id": "57",
+                "position_name": "研发经理",
+                "real_name": "刘志明_TEST",
+                "reset_password": "1",
+                "user_desc": "刘志明",
+                "user_id": "1930",
+                "username": "test_liuzhiming@huishoubao.com.cn"
+            }
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "请求成功"
+    },
+    "head": {
+        "interface": "logininfo",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:33:19,898 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: http://api-amc.huishoubao.com.cn/logininfo响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 22 Jul 2021 03:33:18 GMT",
+    "Server": "nginx/1.16.0",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "menu": [
+                {
+                    "access_flags": "-",
+                    "authority_id": "58",
+                    "name": "系统设置",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [
+                        {
+                            "access_flags": "/System",
+                            "authority_id": "60",
+                            "name": "系统管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PermissionsManage",
+                            "authority_id": "61",
+                            "name": "模块管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/RoleManage",
+                            "authority_id": "62",
+                            "name": "角色管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/DepartmentManage",
+                            "authority_id": "63",
+                            "name": "部门管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PositionManage",
+                            "authority_id": "64",
+                            "name": "职位管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/UserMnage",
+                            "authority_id": "65",
+                            "name": "用户管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        }
+                    ],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "716",
+                    "name": "账号信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "964",
+                    "name": "修改个人信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                }
+            ],
+            "system_list": [
+                {
+                    "category_id": "7",
+                    "name": "2B机型映射与估价",
+                    "system_desc": "机型库，机型映射，估价问题选项过滤",
+                    "system_id": "20",
+                    "url": "https://evamap.huanjixia.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售系统",
+                    "system_desc": "销售系统",
+                    "system_id": "21",
+                    "url": "https://bid-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B渠道中心",
+                    "system_desc": "2B换机侠渠道中心",
+                    "system_id": "23",
+                    "url": "http://mba.huanjixia.com/channel_center"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服检测系统",
+                    "system_desc": "客服检测系统",
+                    "system_id": "24",
+                    "url": "http://oms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B帮助中心系统",
+                    "system_desc": "帮助中心系统",
+                    "system_id": "25",
+                    "url": "http://mba.huanjixia.com/help_center/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B客服系统",
+                    "system_desc": "客服系统",
+                    "system_id": "26",
+                    "url": "kf.huanjixia.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "经营数据分析系统",
+                    "system_desc": "经营数据分析系统",
+                    "system_id": "28",
+                    "url": "http://bdas.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "配置中心",
+                    "system_desc": "配置中心",
+                    "system_id": "29",
+                    "url": "pz.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B新Dplus审批系统",
+                    "system_desc": "新Dplus后台审批操作",
+                    "system_id": "31",
+                    "url": "http://mba.huanjixia.com/ndp/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "WMS系统",
+                    "system_desc": "仓库",
+                    "system_id": "32",
+                    "url": "http://wms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品检测系统",
+                    "system_desc": "优品检测系统",
+                    "system_id": "33",
+                    "url": "http://upin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理系统",
+                    "system_desc": "回收宝运营管理后台",
+                    "system_id": "34",
+                    "url": "https://op.huishoubao.com"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维自动化平台",
+                    "system_desc": "运维自动化平台",
+                    "system_id": "35",
+                    "url": "http://devops.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "图书管理后台",
+                    "system_desc": "",
+                    "system_id": "36",
+                    "url": "https://books.huishoubao.com/admin.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "数据仓库",
+                    "system_desc": "估价项目数据组仓库",
+                    "system_id": "37",
+                    "url": "http://edw.huishoubao.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "用户管理中心",
+                    "system_desc": "用户管理中心",
+                    "system_id": "38",
+                    "url": "https://user.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心2.0",
+                    "system_desc": "估价系统",
+                    "system_id": "39",
+                    "url": "http://evaluation.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售检测系统",
+                    "system_desc": "销售检测系统",
+                    "system_id": "40",
+                    "url": "http://detect-sales.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "云检测系统",
+                    "system_desc": "云检测系统",
+                    "system_id": "41",
+                    "url": "http://detect-clouds.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机",
+                    "system_desc": "就那个闲鱼的项目",
+                    "system_id": "48",
+                    "url": "http://detection.huishoubao.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品商城",
+                    "system_desc": "优品商城",
+                    "system_id": "49",
+                    "url": "https://mall-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "销售检测系统（一检二检）",
+                    "system_desc": "销售检测系统（一检二检合并）",
+                    "system_id": "55",
+                    "url": "http://detect-sales-online.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理平台",
+                    "system_desc": "C++运营后台接入层",
+                    "system_id": "56",
+                    "url": "https://oss.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心 (新)",
+                    "system_desc": "估价配置后台",
+                    "system_id": "57",
+                    "url": "http://evaadmin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "设备中心",
+                    "system_desc": "设备中心后台管理系统",
+                    "system_id": "63",
+                    "url": "http://device-center.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "以旧换新后台系统",
+                    "system_desc": "以旧换新后台",
+                    "system_id": "64",
+                    "url": "http://replace-f2e.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "定价配置后台系统",
+                    "system_desc": "定价配置后台系统",
+                    "system_id": "66",
+                    "url": "http://baseprice.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营管理系统",
+                    "system_desc": "2B运营管理系统 - 首页",
+                    "system_id": "100",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营活动中心",
+                    "system_desc": "2B运营活动中心",
+                    "system_id": "101",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机WMS",
+                    "system_desc": "闲鱼验机WMS测试版",
+                    "system_id": "104",
+                    "url": "http://xywms.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "自动巡检测试系统",
+                    "system_desc": "",
+                    "system_id": "106",
+                    "url": "http://autotest.huishoubao.com/"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维版本管理系统",
+                    "system_desc": "",
+                    "system_id": "107",
+                    "url": "http://devops-new.huishoubao.com"
+                },
+                {
+                    "category_id": "0",
+                    "name": "日志报表系统",
+                    "system_desc": "",
+                    "system_id": "108",
+                    "url": "http://lrolap.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服工单系统",
+                    "system_desc": "客服工单系统",
+                    "system_id": "115",
+                    "url": "http://csr.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "阿里FT后台系统",
+                    "system_desc": "阿里FT后台系统",
+                    "system_id": "116",
+                    "url": "http://ali-op.huishoubao.com.cn/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "coco",
+                    "system_desc": "运营营销系统",
+                    "system_id": "119",
+                    "url": "https://coco_admin.keleyoupin.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "营销中台",
+                    "system_desc": "活动运营配置系统",
+                    "system_id": "129",
+                    "url": "http://market-f2e.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "促收系统",
+                    "system_desc": "",
+                    "system_id": "132",
+                    "url": "https://op.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "公共运营平台",
+                    "system_desc": "",
+                    "system_id": "133",
+                    "url": "http://mp.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "OPMS",
+                    "system_desc": "老管理系统（2020年9月接入AMC）",
+                    "system_id": "134",
+                    "url": "http://opms.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "价格系统-估价工具",
+                    "system_desc": "估价工具后台",
+                    "system_id": "135",
+                    "url": "http://evamapping.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格系统-商品库",
+                    "system_desc": "商品库后台",
+                    "system_id": "136",
+                    "url": "http://baseproduct.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "闲鱼优品商品上架工具",
+                    "system_desc": "项目启动产品经理：曾斐",
+                    "system_id": "137",
+                    "url": "http://taobao-goods-tool.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "竞拍",
+                    "system_desc": "",
+                    "system_id": "138",
+                    "url": "https://bid-admin.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格渠道调价配置系统",
+                    "system_desc": "",
+                    "system_id": "140",
+                    "url": "http://price-adjustment-conf.huishoubao.com.cn"
+                }
+            ],
+            "user_info": {
+                "city_id": "",
+                "department_id": "52",
+                "department_name": "研发部",
+                "email": "test_liuzhiming@huishoubao.com.cn",
+                "is_lock": "1",
+                "lock_time": "",
+                "login_times": "0",
+                "oa_user_desc": "",
+                "oa_user_id": "0",
+                "phone": "13049368516",
+                "photo": "",
+                "position_id": "57",
+                "position_name": "研发经理",
+                "real_name": "刘志明_TEST",
+                "reset_password": "1",
+                "user_desc": "刘志明",
+                "user_id": "1930",
+                "username": "test_liuzhiming@huishoubao.com.cn"
+            }
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "请求成功"
+    },
+    "head": {
+        "interface": "logininfo",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+2021-07-22 11:33:19,911 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.13秒
+
+
+2021-07-22 11:33:29,136 - D:\work\WebAutoTestProject\base\own_api_base.py - own_post[line:63] - DEBUG: 自有服务：/api/user/login，请求参数信息：
+{
+    "loginType": "2",
+    "tel": "123",
+    "code": "32",
+    "token": "",
+    "pid": "1260",
+    "platform": "7",
+    "timestamp": "1626924809",
+    "uuid": "28887EA52156419080B8B873FF258772",
+    "version": "4007002",
+    "versionName": "15",
+    "sign": "aaa5dcd3891d8f47744d2264d83a3e5d059a7db2"
+}
+2021-07-22 11:33:29,136 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://api.huishoubao.com/api/user/login请求信息：
+headers={'Content-Type': 'multipart/form-data; boundary=Boundary+30F6D62471EF7106'}
+body=b'--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="loginType"\r\n\r\n2\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="tel"\r\n\r\n123\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="code"\r\n\r\n32\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="token"\r\n\r\n\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="pid"\r\n\r\n1260\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="platform"\r\n\r\n7\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="timestamp"\r\n\r\n1626924809\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="uuid"\r\n\r\n28887EA52156419080B8B873FF258772\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="version"\r\n\r\n4007002\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="versionName"\r\n\r\n15\r\n--Boundary+30F6D62471EF7106\r\nContent-Disposition: form-data; name="sign"\r\n\r\naaa5dcd3891d8f47744d2264d83a3e5d059a7db2\r\n--Boundary+30F6D62471EF7106--\r\n'
+2021-07-22 11:33:29,193 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 22 Jul 2021 03:33:28 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+2021-07-22 11:33:29,193 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": [],
+    "_errCode": "200004",
+    "_errStr": "手机号码错误或者为空"
+}
+2021-07-22 11:33:29,193 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:123] - INFO: https://api.huishoubao.com/api/user/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Encoding": "gzip",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 22 Jul 2021 03:33:28 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+response_body={
+    "_data": [],
+    "_errCode": "200004",
+    "_errStr": "手机号码错误或者为空"
+}
+2021-07-22 11:33:29,193 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-07-22 11:33:29,194 - D:\work\WebAutoTestProject\utils\common.py - merge_dict[line:172] - WARNING: 合并字典异常，异常信息：TypeError
+dict() argument after ** must be a mapping, not list
+2021-07-22 11:33:29,194 - D:\work\WebAutoTestProject\apis\hsb_app_api.py - login[line:68] - ERROR: 登录失败，_errCode：200004 _errStr：手机号码错误或者为空
+2021-07-22 11:33:38,551 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={'Content-Type': 'application/json; charset=utf-8'}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1626924818",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1626924818",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "123",
+          "captcha": "3213",
+          "permissions": "0"
+     }
+}
+2021-07-22 11:33:38,600 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Thu, 22 Jul 2021 03:33:37 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+2021-07-22 11:33:38,600 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "_data": {
+        "_errCode": "501",
+        "_errStr": "验证码失效",
+        "_ret": "1",
+        "data": {}
+    }
+}
+2021-07-22 11:33:38,600 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Thu, 22 Jul 2021 03:33:37 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "501",
+        "_errStr": "验证码失效",
+        "_ret": "1",
+        "data": {}
+    }
+}
+2021-07-22 11:33:38,600 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.05秒
+
+
+2021-07-22 11:33:38,600 - D:\work\WebAutoTestProject\apis\hsb_pro_api.py - login[line:65] - WARNING: 登录失败，_errCode：501 _errStr：验证码失效

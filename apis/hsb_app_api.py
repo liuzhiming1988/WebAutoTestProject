@@ -31,6 +31,7 @@ class HsbAppApi:
         self.logger = Logger().logger
         self.time = "{} 17:00-18:00".format(DATE_NOW)
         self.mark = True
+        self.mark_text = ""
 
     def get_select(self):
         """从itemList中获取选中项,默认选中第一条"""
@@ -63,7 +64,8 @@ class HsbAppApi:
         self.temp = merge_dict(self.temp, res["_data"])
         if res["_errCode"] != "0":
             self.mark = False
-            self.logger.error("登录失败，_errCode：{} _errStr：{}".format(res["_errCode"],res["_errStr"]))
+            self.mark_text = "登录失败，_errCode：{} _errStr：{}".format(res["_errCode"],res["_errStr"])
+            self.logger.error(self.mark_text)
 
     def get_balance_info(self):
         """
@@ -242,9 +244,16 @@ class HsbAppApi:
         }
         res = self.http_client.own_post(path, body)
         self.temp = dict(self.temp, **res["_data"])
+        err_code = res["_errCode"]
+        if err_code == "0":
+            order_id = res["_data"]["orderid"]
+            order_num = res["_data"]["orderNum"]
+            self.mark_text = "下单成功，订单ID：【{}】订单编号：【{}】".format(order_id, order_num)
+        else:
+            self.mark_text = "下单失败，请检查日志"
         self.logger.debug(json.dumps(self.temp, indent=4, ensure_ascii=False))
 
-    def place_order(self, loginToken, uuid):
+    def place_order_door(self, loginToken, uuid):
         """上门回收"""
         if loginToken is None:
             loginToken = self.temp["token"]
@@ -291,16 +300,16 @@ if __name__ == '__main__':
     own.get_balance_info()
     own.get_procduct_list()
     own.extract_product()
-    if own.mark:
-        own.get_service_time()
-        own.get_address()
-        own.get_store_list()
-        for x in range(num):
-            own.get_product_param(product_id)
-            own.get_select()
-            own.get_evaluate(product_id)
-            own.get_allow_coupon_list(product_id,5)
-            own.get_price_history(product_id)
-            own.get_evaluate_result()
-            own.place_order_sending()
+    # if own.mark:
+    #     own.get_service_time()
+    #     own.get_address()
+    #     own.get_store_list()
+    #     for x in range(num):
+    #         own.get_product_param(product_id)
+    #         own.get_select()
+    #         own.get_evaluate(product_id)
+    #         own.get_allow_coupon_list(product_id,5)
+    #         own.get_price_history(product_id)
+    #         own.get_evaluate_result()
+    #         own.place_order_sending()
 

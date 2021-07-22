@@ -136,14 +136,15 @@ class HttpBase:
 
         requests.get(self.protocol+self.domain+self.port+path)
 
-    @staticmethod
-    def json_format(body):
+    def json_format(self, body):
         """
         格式化json字符串，并显示汉字字符，格式缩进更美观
         :param body:
         :return:
         """
-        return json.dumps(body, sort_keys=True, indent=4, ensure_ascii=False)
+        str = json.dumps(body, sort_keys=True, indent=4, ensure_ascii=False)
+        self.logger.info(str)
+        return str
 
 
 class HttpException:

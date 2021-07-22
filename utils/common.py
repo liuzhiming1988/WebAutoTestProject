@@ -169,7 +169,7 @@ def merge_dict(dict_raw, dict_new):
         dict_final = dict(dict_raw, **dict_new)
         return dict_final
     except TypeError as e:
-        Logger().logger.error("合并字典异常，异常信息：TypeError\n{}".format(e))
+        Logger().logger.warning("合并字典异常，异常信息：TypeError\n{}".format(e))
 
 
 def test(x):

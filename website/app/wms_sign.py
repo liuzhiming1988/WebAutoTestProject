@@ -10,6 +10,7 @@
 from apis.wms_admin import WmsClient
 from flask import Blueprint
 from flask import Flask
+from flask import render_template
 from flask import request
 import json
 
@@ -18,7 +19,7 @@ wms_sign_blue = Blueprint("wms_sign", __name__)
 
 @wms_sign_blue.route("/wms_sign", methods=['GET', 'POST'])
 def wms_sign():
-    text = "<h2>测试结果：</h2>"
+    text = ""
     if request.method == "POST":
         logistics_raw = request.form.get("logistics_num_list")
         if len(logistics_raw) > 0:
@@ -45,6 +46,7 @@ def wms_sign():
                     text += "物流单号输入错误，不能为空！<br /><hr />"
         else:
             text += "请输入正确的数据，不能为空！<br /><hr />"
-    return text
+
+    return render_template("tips.html", text=text)
 
 
