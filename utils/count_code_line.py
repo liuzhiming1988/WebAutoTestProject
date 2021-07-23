@@ -106,5 +106,5 @@ class CountCodeLines:
 
 if __name__ == '__main__':
     cc = CountCodeLines()
-    cc.base_dir = "D:\\work\\WebAutoTestProject"
+    cc.base_dir = "D:\\work\\autotest"
     cc.count_lines()
