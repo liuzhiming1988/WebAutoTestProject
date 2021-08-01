@@ -20,7 +20,7 @@ import time
 
 
 home_blue = Blueprint("home", __name__)
-# app.config.from_object("setting")
+# views.config.from_object("setting")
 
 @home_blue.route("/homepage")
 def homepage():

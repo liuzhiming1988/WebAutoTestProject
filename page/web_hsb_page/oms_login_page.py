@@ -16,9 +16,9 @@ class OmsLoginPage(BasePage):
 
     """OMS系统后台登录页面"""
     url = ConfigRead().get_value("url", "oms")
-    username = ('xpath', ".//*[@id='app']/form/div[1]/div/div/input")
-    passwd = ('xpath', ".//*[@id='app']/form/div[2]/div/div/input")
-    submit = ('xpath', ".//*[@id='app']/form/div[3]/div/button")
+    username = ('xpath', ".//*[@id='views']/form/div[1]/div/div/input")
+    passwd = ('xpath', ".//*[@id='views']/form/div[2]/div/div/input")
+    submit = ('xpath', ".//*[@id='views']/form/div[3]/div/button")
 
     config = ConfigRead()
 

@@ -6,18 +6,40 @@
 @Author  : liuzhiming
 @Time    : 2021/6/30 上午12:18
 """
-import os
 
-DEBUG = False
-PORT = 8056
-DOMAIN = "10.0.11.172"
-# DOMAIN = "127.0.0.1"
-SECRET_KEY = "sessKKW234ERGF781413"
 
+class BaseConfig:
+    pass
+
+
+class TestConfig(BaseConfig):
+    # 服务相关
+    DEBUG = False
+    PORT = "8888"
+    SECRET_KEY = "sessKKW234ERGF781413"
+
+    # 数据库相关配置mysql
+    HOSTNAME = '10.0.11.14'
+    DB_PORT = '3306'
+    DATABASE = 'autotest'
+    USERNAME = 'root'
+    PASSWORD = '123456'
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{host}:{port}/{db}?charset=utf8mb4".format(
+        username=USERNAME, password=PASSWORD, host=HOSTNAME, port=DB_PORT, db=DATABASE)
+    SQLALCHEMY_ECHO = False  # 调试开关
+    SQLALCHEMY_POOL_SIZE = 10  # 数据库池的大小
+    SQLALCHEMY_POOL_TIMEOUT = 15  # 连接超时时间
+    SQLALCHEMY_POOL_RECYCLE = 6000  # 自动回收连接的秒数
+    SQLALCHEMY_MAX_OVERFLOW = 10  # 控制在连接池达到最大值后可以创建的连接数。当这些额外的 连接回收到连接池后将会被断开和抛弃。
+    SQLALCHEMY_TRACK_MODIFICATIONS = False  # 如果设置成 True (默认情况)，Flask-SQLAlchemy 将会追踪对象的修改并且发送信号。这需要额外的内存， 如果不必要的可以禁用它。
+
+
+class WorkConfig(BaseConfig):
+    pass
 
 # class Config:
 #     # mysql+pymysql://user:password@hostip:port/databasename
-#     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@127.0.0.1:3306/study'
+#     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://hjx:123456@118.89.43.123:3306/test_temp'
 #     SQLALCHEMY_TRACK_MODIFICATIONS = False
 #     SQLALCHEMY_ECHO = True
 #     # secret_key
