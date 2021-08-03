@@ -16,9 +16,9 @@ import json
 
 honor_blue = Blueprint("honor_test", __name__)
 
-# @honor_blue.route("/honor", methods=["get","post"])
-# def honor_index():
-#     return render_template("honor_test.html")
+@honor_blue.route("/honor", methods=["get","post"])
+def honor_index():
+    return render_template("honor_test.html")
 
 
 @honor_blue.route("/honor_test", methods=["GET", "POST"])

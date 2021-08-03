@@ -17,32 +17,32 @@
 </head>
 <body class="body">
 
-<p>
-    <fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+
+<fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
     <legend>荣耀保值换新接口测试</legend>
-    </fieldset>
-</p>
+</fieldset>
 
 
-<form action="/honor_test" method="post">
+
+<form class="layui-form" action="/honor_test" method="post">
     <div class="layui-form-item">
         <label class="layui-form-label">接口地址</label>
 
         <div class="layui-input-block">
-            <input type="text" name="interface" autocomplete="on" class="layui-input" placeholder="请求地址，如：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo">
+            <input type="text" name="interface" autocomplete="on" lay-verify="required" class="layui-input" placeholder="请求地址，如：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo">
         </div>
     </div>
 
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">业务参数</label>
         <div class="layui-input-block">
-            <textarea name="param" class="layui-textarea" placeholder="请输入业务参数，json格式"></textarea>
+            <textarea name="param" lay-verify="required" class="layui-textarea" placeholder="请输入业务参数，json格式"></textarea>
         </div>
 
     </div>
 
     <div class="layui-input-block">
-        <button class="layui-btn">提交</button>
+        <button class="layui-btn" lay-submit="" lay-filter="sub">提交</button>
     </div>
 </form>
 
@@ -64,21 +64,22 @@
 
         //自定义验证规则
         form.verify({
-            title: function (value) {
-                if (value.length < 5) {
+            interface: function (value) {
+                if (value.length < 1) {
                     return '标题至少得5个字符啊';
                 }
-            }
-            , pass: [/(.+){6,12}$/, '密码必须6到12位']
-            , content: function (value) {
-                layedit.sync(editIndex);
+            },
+            param: function (value) {
+                if (value.length < 1) {
+                    return '标题至少得5个字符啊';
+                }
             }
         });
 
         //监听提交
         form.on('submit(sub)', function (data) {
             layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
+                title: document.getElementByName("param").innerHTML
             });
             return false;
         });
