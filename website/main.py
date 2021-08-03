@@ -27,8 +27,10 @@ from website.views.own_place_order import own_place_order_blue
 from website.views.merchant_check import merchant_check_blue
 from website.views.jw_view import in_storage_blue
 from website.views.base_service import base_blue
+from website.views.honor_test import honor_blue
 from website.setting import TestConfig
 from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__, static_url_path="/static_files",
             static_folder="static_files", template_folder="templates")
@@ -47,6 +49,7 @@ app.register_blueprint(own_place_order_blue)
 app.register_blueprint(merchant_check_blue)
 app.register_blueprint(in_storage_blue)
 app.register_blueprint(base_blue)
+app.register_blueprint(honor_blue)
 
 
 @app.route("/", methods=['GET', 'POST'])

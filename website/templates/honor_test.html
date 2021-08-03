@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回收宝测试工具平台</title>
+    <link rel="stylesheet" href="../static_files/frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../static_files/frame/static/css/style.css">
+    <link rel="icon" href="../static_files/frame/static/image/code.png">
+    <style>
+    pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+    .string { color: green; }        /*字符串的样式*/
+    .number { color: darkorange; }    /*数字的样式*/
+    .boolean { color: blue; }        /*布尔型数据的样式*/
+    .null { color: magenta; }        /*null值的样式*/
+    .key { color: red; }            /*key值的样式*/
+    </style>
+</head>
+<body class="body">
+
+<p>
+    <fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>荣耀保值换新接口测试</legend>
+    </fieldset>
+</p>
+
+
+<form action="/honor_test" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">接口地址</label>
+
+        <div class="layui-input-block">
+            <input type="text" name="interface" autocomplete="on" class="layui-input" placeholder="请求地址，如：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">业务参数</label>
+        <div class="layui-input-block">
+            <textarea name="param" class="layui-textarea" placeholder="请输入业务参数，json格式"></textarea>
+        </div>
+
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+
+<div>
+    <pre id="result">{{res | safe}}</pre>
+</div>
+
+<script src="../static_files/frame/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['form', 'layedit', 'laydate', 'element'], function () {
+        var form = layui.form
+                , layer = layui.layer
+                , layedit = layui.layedit
+                , laydate = layui.laydate
+                , element = layui.element;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题至少得5个字符啊';
+                }
+            }
+            , pass: [/(.+){6,12}$/, '密码必须6到12位']
+            , content: function (value) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听提交
+        form.on('submit(sub)', function (data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            });
+            return false;
+        });
+
+        // you code ...
+
+
+    });
+</script>
+
+
+<script>
+    // 格式化json方法
+    function showGeoJsonTxt(){
+	    $('#result').html(JsonFormat());
+    }
+
+    function JsonFormat() {
+        var json = document.getElementById("result").innerHTML
+        if (typeof json != 'string') {
+            json = JSON.stringify(json, undefined, 2);
+        }
+        json = json.replace(/&/g, '&').replace(/</g, '<').replace(/>/g, '>');
+        return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+            function(match) {
+                var cls = 'number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'key';
+                    } else {
+                        cls = 'string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'null';
+                }
+                return '<span class="' + cls + '">' + match + '</span>';
+            }
+        );
+    }
+
+</script>
+
+</body>
+</html>
