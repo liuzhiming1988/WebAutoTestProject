@@ -264,13 +264,16 @@ getHonorOrderInfo = {
      }
 }
 
-param_eg = ["接口参数示例："]
-param_eg.append(buyHonorMaintainValueService)
-param_eg.append(placeOrder)
-param_eg.append(submitHonorNewMachinOrder)
-param_eg.append(getHonorOrderList)
-param_eg.append(getHonorMaintainValueService)
-param_eg.append(getHonorOrderInfo)
+
+def param_list():
+    param_eg = ["接口参数示例："]
+    param_eg.append(buyHonorMaintainValueService)
+    param_eg.append(placeOrder)
+    param_eg.append(submitHonorNewMachinOrder)
+    param_eg.append(getHonorOrderList)
+    param_eg.append(getHonorMaintainValueService)
+    param_eg.append(getHonorOrderInfo)
+    return param_eg
 
 
 dict_honor = {
@@ -303,4 +306,5 @@ def get_eg_url(index):
 def get_eg_param(index):
     if not isinstance(index, int):
         index = int(index)
+    param_eg = param_list()
     return param_eg[index]

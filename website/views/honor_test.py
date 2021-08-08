@@ -25,11 +25,20 @@ def honor_index():
 @honor_blue.route("/get_eg", methods=["get","post"])
 def get_eg():
     if request.method == "POST":
+        times13 = str(int(time.time() * 1000))
         index = request.form.get("eg_index")
         url_eg = get_eg_url(index)
         param = get_eg_param(index)
-        param = json.dumps(param,indent=4,ensure_ascii=False)
-        return render_template("honor_test_02.html", url=url_eg, param=param)
+        if param["_head"]["_timestamps"]:
+            param["_head"]["_timestamps"]=times13
+        param = json.dumps(param, indent=4, ensure_ascii=False)
+        response = {
+            "url": url_eg,
+            "param": param
+        }
+        # return render_template("honor_test_02.html", url=url_eg, param=param)
+        return response
+
     else:
         return render_template("honor_test.html")
 
@@ -51,9 +60,9 @@ def honor_test():
         else:
             response = "接口地址和接口参数不能为空！"
 
-        return render_template("json_response.html", res=response)
+        # return render_template("json_response.html", res=response)
         # return render_template("honor_test.html", res=response)
-        # return response
+        return response
         # return render_template("tips.html", text=response)
     else:
         return render_template("honor_test.html")
