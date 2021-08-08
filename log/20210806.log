@@ -1,0 +1,2167 @@
+2021-08-06 14:08:25,528 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 14:08:25,534 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8016c6f92e426c60da88dbb2f94127e4', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 14:08:25,537 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628217014220",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628217014220",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming1628217014",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 14:08:25,706 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "216049015",
+        "_errStr": "保值换新服务已存在",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628230105",
+        "_version": "0.01"
+    }
+}
+2021-08-06 14:08:25,707 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 14:09:32,987 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 14:09:32,987 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8b2eadb7101efc3e382abd5ccf60fb08', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 14:09:32,987 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628217014220",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628217014220",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming16282170141",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170142",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170143",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170144",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170145",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170146",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170147",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170148",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170149",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170140",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               },
+               {
+                    "maintainValueServiceOrderId": "ming16282170114",
+                    "orderType": "1",
+                    "serialnum": "num1628217014",
+                    "imei": "431892795267532",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 14:09:33,040 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628230173",
+        "_version": "0.01"
+    }
+}
+2021-08-06 14:09:33,040 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 14:31:36,997 - D:\work\WebAutoTestProject\base\own_api_base.py - own_post[line:63] - DEBUG: 自有服务：/openapi/honorOrder/orderList，请求参数信息：
+{
+    "pageIndex": "1",
+    "pageSize": "10",
+    "openId": "123456",
+    "pid": "1260",
+    "platform": "7",
+    "timestamp": "1628231496",
+    "uuid": "28887EA52156419080B8B873FF258772",
+    "version": "4007002",
+    "versionName": "15",
+    "sign": "13d62ff56b216b64f67d2832bf33a0ced450f574"
+}
+2021-08-06 14:31:37,004 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://api.huishoubao.com/openapi/honorOrder/orderList请求信息：
+headers={'Content-Type': 'multipart/form-data; boundary=Boundary+30F6D62471EF7559'}
+body=b'--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="pageIndex"\r\n\r\n1\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="pageSize"\r\n\r\n10\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="openId"\r\n\r\n123456\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="pid"\r\n\r\n1260\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="platform"\r\n\r\n7\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="timestamp"\r\n\r\n1628231496\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="uuid"\r\n\r\n28887EA52156419080B8B873FF258772\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="version"\r\n\r\n4007002\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="versionName"\r\n\r\n15\r\n--Boundary+30F6D62471EF7559\r\nContent-Disposition: form-data; name="sign"\r\n\r\n13d62ff56b216b64f67d2832bf33a0ced450f574\r\n--Boundary+30F6D62471EF7559--\r\n'
+2021-08-06 14:31:37,247 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Fri, 06 Aug 2021 06:31:37 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+2021-08-06 14:31:37,247 - D:\work\WebAutoTestProject\base\http_base.py - json_format[line:146] - INFO: {
+    "data": {},
+    "info": "参数不合法",
+    "resultCode": "4400000"
+}
+2021-08-06 14:31:37,247 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:118] - INFO: https://api.huishoubao.com/openapi/honorOrder/orderList响应信息：
+headers={
+    "Access-Control-Allow-Headers": "Origin, Group-Header,  X-Requested-With, Content-Type, Accept",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Fri, 06 Aug 2021 06:31:37 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.33",
+    "X-Test-Group": "0"
+}
+response_body={
+    "data": {},
+    "info": "参数不合法",
+    "resultCode": "4400000"
+}
+2021-08-06 14:31:37,247 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.25秒
+
+
+2021-08-06 15:56:21,441 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-06 15:56:21,441 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '57631a04182dfbb942c58e8efdd1bf0c', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 15:56:21,441 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628236352867",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "recycleOrderId": "7635288",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628236352",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628236352867"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628236352867"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628236352867"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628236352867"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628236352867"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-06 15:56:21,541 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "submitHonorNewMachinOrder",
+        "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628236581",
+        "_version": "0.01"
+    }
+}
+2021-08-06 15:56:21,541 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-06 16:00:52,007 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-06 16:00:52,007 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '44eaa0b0b0d44d4f20e23e8fb28f7684', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:00:52,007 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "0",
+          "pageSize": "10",
+          "userId": "602809907"
+     }
+}
+2021-08-06 16:00:52,027 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList】Response Body:
+{
+    "_data": {
+        "_data": {
+            "orderList": [],
+            "pageIndex": "0",
+            "pageNum": "0",
+            "pageSize": "10",
+            "totalCnt": "0"
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorOrderList",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628236851",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:00:52,027 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-06 16:01:12,260 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-06 16:01:12,260 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '9b51b80e672c5a07dabec62a00508048', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:01:12,260 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "0",
+          "pageSize": "10",
+          "userId": "602809996"
+     }
+}
+2021-08-06 16:01:12,307 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList】Response Body:
+{
+    "_data": {
+        "_data": {
+            "orderList": [
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "",
+                        "orderCreateTime": "2021-08-06 14:47:27",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "10",
+                        "orderStatusDesc": "已下单",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635295",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "333344445555",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "65980",
+                        "productImage": "388656_1625284641844.jpg",
+                        "productName": "荣耀 50（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "1891"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                },
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "",
+                        "orderCreateTime": "2021-08-06 14:16:29",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "10",
+                        "orderStatusDesc": "已下单",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635293",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "333344445555",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "65980",
+                        "productImage": "388656_1625284641844.jpg",
+                        "productName": "荣耀 50（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "1891"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                },
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "",
+                        "orderCreateTime": "2021-08-06 11:36:39",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "10",
+                        "orderStatusDesc": "已下单",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635291",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "333344445555",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "65980",
+                        "productImage": "388656_1625284641844.jpg",
+                        "productName": "荣耀 50（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "1929"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                },
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "",
+                        "orderCreateTime": "2021-08-06 11:33:58",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "10",
+                        "orderStatusDesc": "已下单",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635289",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "333344445555",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "65980",
+                        "productImage": "388656_1625284641844.jpg",
+                        "productName": "荣耀 50（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "1929"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                },
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "",
+                        "orderCreateTime": "2021-08-06 11:33:04",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "520",
+                        "orderStatusDesc": "新机已发货",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635288",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "333344445555",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "65980",
+                        "productImage": "388656_1625284641844.jpg",
+                        "productName": "荣耀 50（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "1929"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                },
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "",
+                        "orderCreateTime": "2021-08-04 11:04:06",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "10",
+                        "orderStatusDesc": "已下单",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635162",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "563456265",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "64167",
+                        "productImage": "892196_1588145486724.jpg",
+                        "productName": "荣耀 30 Pro+（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "2535"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                },
+                {
+                    "basicInfo": {
+                        "arrivalType": "2",
+                        "maintainValueType": "0",
+                        "orderCreateTime": "2021-08-03 15:14:49",
+                        "orderFinishTime": "",
+                        "orderId": "",
+                        "orderStatus": "10",
+                        "orderStatusDesc": "已下单",
+                        "recycleType": "2",
+                        "recyleOrderId": "7635123",
+                        "userId": "602809996"
+                    },
+                    "oldMachineInfo": {
+                        "detectionMD5Num": "",
+                        "imei": "563456265",
+                        "productClassId": "1",
+                        "productCont": "1",
+                        "productId": "64167",
+                        "productImage": "892196_1588145486724.jpg",
+                        "productName": "荣耀 30 Pro+（5G）",
+                        "serialNum": ""
+                    },
+                    "payInfo": {
+                        "payAmount": "",
+                        "payMethod": "",
+                        "payTime": "",
+                        "payType": ""
+                    },
+                    "priceInfo": {
+                        "maintainValueAmount": "279930",
+                        "maintainValueServiceFee": "0",
+                        "transPrice": "",
+                        "userEvaluatePrice": "2535"
+                    },
+                    "settleInfo": {
+                        "chargeAmount": "",
+                        "chargedAmount": "",
+                        "lastAmount": "",
+                        "payedLastAmount": "",
+                        "paystatus": "",
+                        "prepayedAmount": ""
+                    }
+                }
+            ],
+            "pageIndex": "0",
+            "pageNum": "1",
+            "pageSize": "10",
+            "totalCnt": "7"
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorOrderList",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628236872",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:01:12,313 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-06 16:02:23,292 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-06 16:02:23,293 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'baf4072e6ff54a5183970032f78d2518', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:02:23,293 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "1",
+          "pageSize": "10",
+          "userId": "602809996"
+     }
+}
+2021-08-06 16:02:23,312 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList】Response Body:
+{
+    "_data": {
+        "_data": {
+            "orderList": [],
+            "pageIndex": "1",
+            "pageNum": "1",
+            "pageSize": "10",
+            "totalCnt": "7"
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorOrderList",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628236943",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:02:23,313 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-06 16:03:08,144 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo
+2021-08-06 16:03:08,144 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3ec872ec6fc45777bef4cd278e423808', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:03:08,144 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderInfo",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "orderId": "",
+          "operatorlog": "0",
+          "recycleOrderId": "7635288"
+     }
+}
+2021-08-06 16:03:08,197 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo】Response Body:
+{
+    "_data": {
+        "_data": {
+            "basicInfo": {
+                "isMatchMaintainValue": "0",
+                "orderId": "",
+                "orderStatus": "520",
+                "orderStatusDesc": " 新机已发货",
+                "orderTime": "2021-08-06 11:33:04",
+                "predictMaintainValueType": "0",
+                "realMaintainValueType": "0",
+                "recycleOrderId": "7635288",
+                "recycleType": "2"
+            },
+            "maintainValueServiceInfo": {
+                "maintainValueBeginTime": "",
+                "maintainValueEndTime": ""
+            },
+            "newMachineInfo": {
+                "color": "",
+                "productId": "0",
+                "salesPrice": "3999",
+                "serialNum": "",
+                "trackingNo": "",
+                "version": ""
+            },
+            "newMachineTradeInfo": {
+                "finishTime": "",
+                "receivedTime": "1970-01-01 00:00:00",
+                "sentTime": "2021-08-06 15:56:21"
+            },
+            "oldMachineInfo": {
+                "detectOpt": "",
+                "detectPrice": "0",
+                "evaOpt": "[\"1062\",\"12\",\"63\",\"71\",\"73\",\"77\",\"9\",\"65\",\"59\",\"55\",\"223\",\"3246\",\"53\",\"2171\",\"5535\",\"23\",\"6702\",\"6931\",\"21\",\"7641\"]",
+                "evaPrice": "1929",
+                "evaluateID": "210866269",
+                "imei": "333344445555",
+                "productCount": "1",
+                "productId": "65980",
+                "productImage": "388656_1625284641844.jpg",
+                "productName": "荣耀 50（5G）",
+                "serialNum": "num1628236352",
+                "transPrice": ""
+            },
+            "operateLog": [
+                {
+                    "operatorID": "602809996",
+                    "operatorName": "",
+                    "orderStatus": "10",
+                    "remark": "已下单",
+                    "statusName": "已下单",
+                    "txnID": "",
+                    "updateTime": "2021-08-06 11:33:04"
+                },
+                {
+                    "operatorID": "-1",
+                    "operatorName": "业务方",
+                    "orderStatus": "520",
+                    "remark": "新机已发货",
+                    "statusName": "新机已发货",
+                    "txnID": "",
+                    "updateTime": "2021-08-06 15:56:21"
+                }
+            ],
+            "settleInfo": {
+                "maintainValueAmount": "279930",
+                "prepayedDiffPriceAmount": "0",
+                "realDiffPriceAmount": "0",
+                "refundSerivceFee": "0",
+                "salePrice": "3999"
+            },
+            "userInfo": {
+                "userAddress": "",
+                "userName": "",
+                "userPhone": ""
+            }
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorOrderInfo",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628236988",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:03:08,197 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo
+2021-08-06 16:04:06,143 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo
+2021-08-06 16:04:06,144 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3f1b13de400a2dab2ee5280eec6817e5', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:04:06,144 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderInfo",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "orderId": "75410002462",
+          "operatorlog": "0",
+          "recycleOrderId": ""
+     }
+}
+2021-08-06 16:04:06,161 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo】Response Body:
+{
+    "_data": {
+        "_ret": "1",
+        "_retcode": "281050",
+        "_retinfo": "获取保值换新订单详情失败"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorOrderInfo",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628237046",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:04:06,161 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo
+2021-08-06 16:54:23,274 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:23,274 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd19d79fc1285a11a937f56784a3551e8', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:54:23,274 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "1",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:54:23,303 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240063",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:54:23,303 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:41,976 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:41,976 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '70f7b1bb73023095c992b13a42af1307', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:54:41,977 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:54:41,997 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240081",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:54:41,997 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:45,137 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:45,137 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '70f7b1bb73023095c992b13a42af1307', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:54:45,137 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:54:45,156 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240085",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:54:45,157 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:48,368 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:48,368 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '70f7b1bb73023095c992b13a42af1307', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:54:48,369 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:54:48,387 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240088",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:54:48,388 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:53,961 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:54:53,961 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '70f7b1bb73023095c992b13a42af1307', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:54:53,961 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:54:53,979 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240093",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:54:53,979 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:56:10,879 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:56:10,879 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ac23b236abbbd28a56d68c4df5dbd58f', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:56:10,880 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352817",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352817",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:56:10,911 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240170",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:56:10,911 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:56:28,871 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:56:28,871 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '68089bf2f61ae9efc3dcfb23bcef99ac', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:56:28,871 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352217",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352217",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:56:28,901 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240188",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:56:28,901 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:56:44,241 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 16:56:44,241 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '1842fc04c17b7df91a77a44e3f865879', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 16:56:44,241 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352247",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352247",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 16:56:44,262 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "216049014",
+        "_errStr": "保值换新服务已取消",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628240204",
+        "_version": "0.01"
+    }
+}
+2021-08-06 16:56:44,262 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:53:37,525 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:53:37,525 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd19d79fc1285a11a937f56784a3551e8', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:53:37,526 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "1",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:53:37,547 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243617",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:53:37,547 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:53:54,676 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:53:54,676 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'a8e71eb35328d1cc5438af659c9d9adc', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:53:54,676 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236351867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:53:54,699 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "216049014",
+        "_errStr": "保值换新服务已取消",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243634",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:53:54,699 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:54:13,132 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:54:13,132 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'abb76a2f3e20bf0071342a37d1a1d2c5', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:54:13,132 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236351867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:54:13,157 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "216049014",
+        "_errStr": "保值换新服务已取消",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243653",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:54:13,157 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:54:31,412 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:54:31,412 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd19d79fc1285a11a937f56784a3551e8', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:54:31,412 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236352",
+                    "orderType": "1",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:54:31,428 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243671",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:54:31,428 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:54:58,906 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:54:58,907 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd74cf74405dc02d0d8f3addef0e7ce56', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:54:58,907 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352867",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352867",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming1628236351",
+                    "orderType": "1",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:54:58,926 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243698",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:54:58,926 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:56:54,787 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:56:54,787 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'f4641d633da4c37ec3909425e685a838', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:56:54,787 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352367",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352167",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming162823222",
+                    "orderType": "1",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:56:54,813 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243814",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:56:54,813 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:57:15,153 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService
+2021-08-06 17:57:15,153 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '5f8106b6c5e698f001afac00257bff94', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-06 17:57:15,153 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628236352317",
+          "_version": "0.01"
+     },
+     "_param": {
+          "createTime": "1628236352117",
+          "maintainValueServiceList": [
+               {
+                    "maintainValueServiceOrderId": "ming162823222",
+                    "orderType": "2",
+                    "imei": "467593823561808",
+                    "serialnum": "num1628236352",
+                    "productName": "honor p50",
+                    "productSku": "honor p50 pro",
+                    "salesPrice": "560000",
+                    "maintainValueServiceName": "Honor50 old4new",
+                    "maintainValueServiceSkuCode": "oldsku12345678",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "2",
+                    "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
+                    "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
+                    "maintainValueRatio": "70",
+                    "orderFinishTime": "",
+                    "orderRefundTime": "",
+                    "orderRefundNo": ""
+               }
+          ]
+     }
+}
+2021-08-06 17:57:15,180 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628243835",
+        "_version": "0.01"
+    }
+}
+2021-08-06 17:57:15,180 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/buyHonorMaintainValueService

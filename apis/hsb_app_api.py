@@ -15,6 +15,7 @@ import random
 from utils.logger import Logger
 import json
 import time
+import requests
 
 
 class HsbAppApi:
@@ -291,15 +292,16 @@ class HsbAppApi:
 
 
 if __name__ == '__main__':
-    num = 10
-    product_id = "30749"
+    # num = 10
+    # product_id = "30749"
     # 所有机型的id列表
     # 校验登录成功或失败
     own = HsbAppApi()
+    # own.get_honor_order_list()
     own.login()
-    own.get_balance_info()
-    own.get_procduct_list()
-    own.extract_product()
+    # own.get_balance_info()
+    # own.get_procduct_list()
+    # own.extract_product()
     # if own.mark:
     #     own.get_service_time()
     #     own.get_address()

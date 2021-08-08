@@ -13,12 +13,25 @@ from flask import render_template
 from flask import request
 from flask import jsonify
 import json
+import time
+from apis.honor_data import *
 
 honor_blue = Blueprint("honor_test", __name__)
 
 @honor_blue.route("/honor", methods=["get","post"])
 def honor_index():
     return render_template("honor_test.html")
+
+@honor_blue.route("/get_eg", methods=["get","post"])
+def get_eg():
+    if request.method == "POST":
+        index = request.form.get("eg_index")
+        url_eg = get_eg_url(index)
+        param = get_eg_param(index)
+        param = json.dumps(param,indent=4,ensure_ascii=False)
+        return render_template("honor_test_02.html", url=url_eg, param=param)
+    else:
+        return render_template("honor_test.html")
 
 
 @honor_blue.route("/honor_test", methods=["GET", "POST"])
