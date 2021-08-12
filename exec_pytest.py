@@ -20,28 +20,30 @@ def exec_command(command):
     # 防止在cmd中显示乱码
     os.system('CHCP 65001')
     os.system("{0} && {1} ".format(venv_path, command))
+    # os.popen("{0} && {1} ".format(venv_path, command))
 
 
 def gen_allure(mark=None, kw=None):
 
-    res_path = path_join(["report", "data"])
-    report_path = path_join(["report", "allure_html"])
+    xml_path = path_join(["report", "allure-xml"])
+    result_path = path_join(["report", "allure-result"])
     # 主动清理历史数据，--clean不生效，不知道原因
-    os.system("rmdir /s/q {0}".format(report_path))   # 清理报告数据
-    os.system("rmdir /s/q {0}".format(res_path))   # 清理结果数据
-    generate_command = "allure generate {0} -o {1} --clean".format(res_path, report_path)
+    os.system("rmdir /s/q {0}".format(result_path))   # 清理报告数据
+    os.system("rmdir /s/q {0}".format(xml_path))   # 清理结果数据
+    # generate_command = "allure generate {0} -o {1} --clean".format(xml_path, result_path)
+    generate_command = "allure generate {0} -o {1}".format(xml_path, result_path)
     # allure serve data_path = allure open
-    open_command = "allure open {0}".format(report_path)
+    open_command = "allure open {0}".format(result_path)
     html_name = "./report/{0}".format(get_time())
 
-    command = "pytest -v -s --alluredir={0} && {1}".format(res_path, generate_command)
+    test_command = "pytest -v -s --alluredir={0}".format(xml_path)
     if mark is not None:   # 执行某个标签的用例
-        command = "pytest -v -s -m {2} --alluredir={0} && {1}".format(res_path, generate_command, mark)
+        test_command = "pytest -v -s -m {} --alluredir={}".format(mark, xml_path)
     elif kw is not None:    # 执行包含某个关键字的用例
-        command = 'pytest -v -s -k "{2}" --alluredir={0} && {1}'.format(res_path, generate_command, kw)
+        test_command = 'pytest -v -s -k "{}" --alluredir={}'.format(kw, xml_path)
 
-    print(command)
-    exec_command(command)
+    exec_command(test_command)
+    exec_command(generate_command)
     exec_command(open_command)
 
 
@@ -61,4 +63,4 @@ def gen_html(mark=None, kw=None):
 
 if __name__ == '__main__':
     # gen_html()
-    gen_allure(mark="webtest")
+    gen_allure(mark="demo")

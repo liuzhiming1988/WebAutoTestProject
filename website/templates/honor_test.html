@@ -188,6 +188,9 @@
             if (xmlhttp.readyState==4 && xmlhttp.status==200) {
                 document.getElementById("result").innerHTML=xmlhttp.responseText;
             }
+            if (xmlhttp.readyState==4 && xmlhttp.status==500) {
+                document.getElementById("result").innerHTML="服务器500错误，请联系管理员！！！"
+            }
         }
         xmlhttp.open("POST","/honor_test",true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");

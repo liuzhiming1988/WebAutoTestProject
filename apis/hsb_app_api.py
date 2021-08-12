@@ -68,17 +68,21 @@ class HsbAppApi:
             self.mark_text = "登录失败，_errCode：{} _errStr：{}".format(res["_errCode"],res["_errStr"])
             self.logger.error(self.mark_text)
 
-    def get_balance_info(self):
+    def get_balance_info(self, login_token=None, user_id=None):
         """
         获取钱包信息
         :return:
         """
-        path = "/api/wallet/getBalanceInfo"
+        if login_token is None:
+            login_token = self.temp["token"]
+            user_id = self.temp["eid"]
+        path = "/case/wallet/getBalanceInfo"
         body = {
-            "token": self.temp["token"],
-            "uid": self.temp["eid"]
+            "token": login_token,
+            "uid": user_id
         }
         res = self.http_client.own_post(path, body)
+        return
 
     def get_address(self, x=0):
         """获取收货地址,x代表取第几条地址，默认取第一条地址信息"""

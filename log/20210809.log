@@ -1,0 +1,1015 @@
+2021-08-09 14:07:29,176 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:29,176 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:29,176 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:07:35,676 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:35,676 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:35,676 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:07:36,487 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:36,487 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:36,488 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:07:36,665 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:36,666 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:36,666 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:07:36,873 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:36,873 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:36,874 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:07:37,087 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:37,087 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:37,088 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:07:37,889 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:07:37,889 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8fe87690e01272c49539478c75a1ff22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:07:37,889 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489237191",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor16284722116",
+               "recycleOrderId": "84782116",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628478232",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628478232116"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628478232116"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:08:22,369 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:08:22,369 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'b1b727e883c983d7b7b741016eb3ef22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:08:22,369 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489300279",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor1628489287817",
+               "recycleOrderId": "8489287817",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628489287",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628489287817"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:09:59,232 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:09:59,232 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'b1b727e883c983d7b7b741016eb3ef22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:09:59,232 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489300279",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor1628489287817",
+               "recycleOrderId": "8489287817",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628489287",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628489287817"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:09:59,253 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder】Response Body:
+{
+    "_data": {
+        "_errCode": "216050012",
+        "_errStr": "获取订单的基本信息失败",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "submitHonorNewMachinOrder",
+        "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628489398",
+        "_version": "0.01"
+    }
+}
+2021-08-09 14:09:59,253 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:25:49,270 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-08-09 14:25:49,271 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'b1b727e883c983d7b7b741016eb3ef22', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:25:49,271 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628489300279",
+          "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "honor1628489287817",
+               "recycleOrderId": "8489287817",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "num1628489287",
+               "skuCode": "0086011001290100201"
+          },
+          "newGoodsInfo": [
+               {
+                    "qty": "1",
+                    "skuCode": "0086011001290100201",
+                    "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000301",
+                    "skuName": "荣耀商城保值换新服务",
+                    "logisticsCompany": "韵达",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "00860116090000302",
+                    "skuName": "延保商品",
+                    "logisticsCompany": "京东",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "301006C",
+                    "skuName": "phone",
+                    "logisticsCompany": "圆通",
+                    "trackingNo": "SF1628489287817"
+               },
+               {
+                    "qty": "1",
+                    "skuCode": "1001010007701001",
+                    "skuName": "赠品1",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "SF1628489287817"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "600",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东省",
+               "city": "深圳市",
+               "area": "南山区",
+               "street": "高新南九道光明路888号",
+               "address": "金地威新科技园18楼168号",
+               "userName": "刘志明",
+               "phone": "18676702152"
+          },
+          "customData": {
+               "orderName": "下单联系人",
+               "orderPhone": "18886668888",
+               "address": "南山区",
+               "longitude": "116.794345",
+               "latitude": "33.959893",
+               "areaId": "3583"
+          }
+     }
+}
+2021-08-09 14:26:16,095 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo
+2021-08-09 14:26:16,095 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3d1f967b4f9fd6a192b171ef23204f79', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:26:16,095 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderInfo",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628490374415",
+          "_version": "0.01"
+     },
+     "_param": {
+          "orderId": "",
+          "operatorlog": "0",
+          "recycleOrderId": "7635189"
+     }
+}
+2021-08-09 14:37:19,214 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-09 14:37:19,214 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'f6c9b635cb0df0fe5403f5360ec1034e', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:37:19,214 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628491037677",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "0",
+          "pageSize": "10",
+          "userId": "602809907"
+     }
+}
+2021-08-09 14:37:52,933 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-09 14:37:52,933 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '4587b9c905ba1e7cd955d56db5cfaa68', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:37:52,933 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628491071662",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "0",
+          "pageSize": "10",
+          "userId": "602809907"
+     }
+}
+2021-08-09 14:38:50,974 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-09 14:38:50,975 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'a8c4ed947b19877aacff35ad56f060bf', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:38:50,975 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628491129520",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "0",
+          "pageSize": "10",
+          "userId": "602809907"
+     }
+}
+2021-08-09 14:39:20,358 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList
+2021-08-09 14:39:20,358 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'a8c4ed947b19877aacff35ad56f060bf', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-09 14:39:20,358 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderList",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1628491129520",
+          "_version": "0.01"
+     },
+     "_param": {
+          "pageIndex": "0",
+          "pageSize": "10",
+          "userId": "602809907"
+     }
+}
+2021-08-09 14:39:20,379 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList】Response Body:
+{
+    "_data": {
+        "_data": {
+            "orderList": [],
+            "pageIndex": "0",
+            "pageNum": "0",
+            "pageSize": "10",
+            "totalCnt": "0"
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorOrderList",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1628491159",
+        "_version": "0.01"
+    }
+}
+2021-08-09 14:39:20,379 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList

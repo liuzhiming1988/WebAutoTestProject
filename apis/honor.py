@@ -59,6 +59,7 @@ class HonorTestApi:
             res = json.dumps(res.json(), indent=4, ensure_ascii=False)
             self.logger.debug("【{}】Response Body:\n{}".format(url, res))
             self.logger.debug("【End The Request】：{}".format(url))
+            # res = json.loads(res)
         except Exception as e:
             res = e
         return res

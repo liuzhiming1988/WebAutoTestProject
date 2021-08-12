@@ -30,7 +30,7 @@ def get_eg():
         url_eg = get_eg_url(index)
         param = get_eg_param(index)
         if param["_head"]["_timestamps"]:
-            param["_head"]["_timestamps"]=times13
+            param["_head"]["_timestamps"] = times13
         param = json.dumps(param, indent=4, ensure_ascii=False)
         response = {
             "url": url_eg,

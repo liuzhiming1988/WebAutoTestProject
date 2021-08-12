@@ -28,7 +28,7 @@ class TestOmsLogin:
 
     @allure.story("订单系统-登录用例")
     @allure.title("{case_name}")
-    @pytest.mark.webtest
+    @pytest.mark.demo
     @pytest.mark.parametrize("login_data, expect, case_name",login_test_data)
     def test_oms_login(self, get_driver, login_data, expect, case_name):
         # allure中，用例的描述部分

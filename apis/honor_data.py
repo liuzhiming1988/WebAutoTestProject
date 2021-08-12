@@ -14,265 +14,261 @@ def times_13():
     times_13 = str(int(time.time()*1000))
     return times_13
 
-maintainValueServiceOrderId = "ming"+times_13()[:10]
-serialnum = "num"+times_13()[:10]
-imei = generate_imei()
-externalOrderNo = "MT"+times_13()
-orderCode = "honor"+times_13()
-trackingNo = "SF"+times_13()
-user_id = "602809907"
-phone = "18676702152"
-open_id = "fhjkdaler"
 
-new_sku_code = "0086011001290100201"
-new_product_id = "64537"
-new_product_name = "荣耀50 Pro"
-old_sku_code = "0086011001290100201"
-old_product_id = "64537"
-old_product_name = "荣耀40"
+
+# imei = generate_imei()
+
+user_id = "602810010"
+phone = "18676702152"
+open_id = "MDFAMjEwNzk3NDM1QDFkMjU0NDI1YjcwMTVkMmRhOWY2NjhmNDg0MzY3OTJkQGY2MDAxNjg4MTNmNDI3MzAzMjRlNzNjY2Q2OTQ2MGE5N2NhZjFiaNWIzOGZmMzg5MDMxZDYzNGI2"
+
+# 临时变量
+tmp = {}
 
 recycle_order_id = times_13()[3:]
 
-
-buyHonorMaintainValueService = {
-    "_head": {
-        "_callerServiceId": "110001",
-        "_groupNo": "1",
-        "_interface": "/order_center/old4new/buyHonorMaintainValueService",
-        "_invokeId": "7940480c99334bff09dae5d16b133559",
-        "_msgType": "request",
-        "_remark": "",
-        "_timestamps": times_13(),
-        "_version": "0.01"
-    },
-    "_param": {
-        "createTime": times_13(),
-        "maintainValueServiceList": [
-            {
-                "maintainValueServiceOrderId": maintainValueServiceOrderId,
-                "orderType": "1",
-                "imei": imei,
-                "serialnum": serialnum,
-                "productName": "honor p50",
-                "productSku": "honor p50 pro",
-                "salesPrice": "560000",
-                "maintainValueServiceName": "Honor50 old4new",
-                "maintainValueServiceSkuCode": "oldsku12345678",
-                "maintainValueServicePrice": "9900",
-                "maintainValueServiceCount": "2",
-                "maintainValueServiceEffectTime": "2021-08-01 12:00:15+0800",
-                "maintainValueServiceExpireTime": "2022-08-01 00:00:00+0800",
-                "maintainValueRatio": "70",
-                "orderFinishTime": "",
-                "orderRefundTime": "",
-                "orderRefundNo": ""
-            }
-        ]
-    }
-}
-
-placeOrder = {
-     "_head": {
-          "_callerServiceId": "110001",
-          "_groupNo": "1",
-          "_interface": "/order_center/old4new/placeOrder",
-          "_invokeId": "7940480c99334bff09dae5d16b133559",
-          "_msgType": "request",
-          "_remark": "",
-          "_timestamps": times_13(),
-          "_version": "0.01"
-     },
-     "_param": {
-          "externalOrderNo": externalOrderNo,
-          "channelInfo": {
-               "pid": "1001",
-               "channelId": "40000001"
-          },
-          "fourTupleInfo": {
-               "businessAttribute": "14",
-               "deliveryMode": "3",
-               "paymentMode": "4",
-               "businessType": "15",
-               "arrivalType": "2",
-               "accessBusiness": "1",
-               "recycleType": "2",
-               "maintainValueType": "0"
-          },
-          "oldGoodsInfo": {
-               "productId": old_product_id,
-               "serialNum": serialnum,
-               "imei": imei
-          },
-          "newGoodsInfo": {
-               "productId": new_product_id,
-               "productName": new_product_name,
-               "productPrice": "666600",
-               "productImage": "123.jpg",
-              "skuName": "65980",
-              "skuId": "65980"
-          },
-          "userInfo": {
-               "userId": user_id,
-               # "userName": "liuzhiming",
-               "userPhone": phone,
-               "userOpenId": open_id
-          },
-          "priceInfo": {
-               "isMatchMaintainValue": "1",
-               "maintainValueAmount": "100000",
-               "maintainValueServiceFee": "19900",
-               "userEvaluatePrice": "500000",
-               # "newSalesPrice": "650000",
-               "evaRecordId": "210722088"
-          }
-     }
-}
-
-submitHonorNewMachinOrder = {
-    "_head": {
-        "_interface": "submitHonorNewMachinOrder",
-        "_msgType": "request",
-        "_remark": "",
-        "_version": "0.01",
-        "_timestamps": times_13(),
-        "_invokeId": "beb1496652ef7e39d3c9ee0af3ed4d63",
-        "_callerServiceId": "110001",
-        "_groupNo": "1"
-    },
-    "_param": {
-        "basicInfo": {
-            #"orderId": orderCode,
-            "recycleOrderId": recycle_order_id,
-            "recycleType": "1"
+def buyHonorMaintainValueService():
+    old_order_id = "888" + times_13()[5:]
+    buyHonorMaintainValueService = {
+        "_head": {
+            "_interface": "buyHonorMaintainValueService",
+            "_msgType": "request",
+            "_remark": "",
+            "_version": "0.01",
+            "_timestamps": times_13(),
+            "_invokeId": "2625ec9525882fca77984083bdaf59ef",
+            "_callerServiceId": "110001",
+            "_groupNo": "1"
         },
-        "oldGoodsInfo": {
-            "serialNum": serialnum,
-            "skuCode": old_sku_code,
-            # "skuName": "内存"
-        },
-        "newGoodsInfo": [
-            {
-                "qty": "1",
-                "skuCode": "0086011001290100201",
-                "skuName": "荣耀50 1亿像素超清影像 （初雪水晶）",
-                "logisticsCompany": "顺丰快递",
-                "trackingNo": trackingNo
-            },
-            {
-                "qty": "1",
-                "skuCode": "00860116090000301",
-                "skuName": "荣耀商城保值换新服务",
-                "logisticsCompany": "韵达",
-                "trackingNo": trackingNo
-            },
-            {
-                "qty": "1",
-                "skuCode": "00860116090000302",
-                "skuName": "延保商品",
-                "logisticsCompany": "京东",
-                "trackingNo": trackingNo
-            },
-            {
-                "qty": "1",
-                "skuCode": "301006C",
-                "skuName": "phone",
-                "logisticsCompany": "圆通",
-                "trackingNo": trackingNo
-            },
-            {
-                "qty": "1",
-                "skuCode": "1001010007701001",
-                "skuName": "赠品1",
-                "logisticsCompany": "顺丰快递",
-                "trackingNo": trackingNo
-            }
-        ],
-        "priceInfo": {
-            "recycleAmount": "600",
-            "recycleRemain": "0.00"
-        },
-        "userVisitInfo": {
-            "province": "广东省",
-            "city": "深圳市",
-            "area": "南山区",
-            "street": "高新南九道光明路888号",
-            "address": "金地威新科技园18楼168号",
-            "userName": "刘志明",
-            "phone": phone
-        },
-        "customData": {
-            "orderName": "下单联系人",
-            "orderPhone": "18886668888",
-            "address": "南山区",
-            "longitude": "116.794345",
-            "latitude": "33.959893",
-            "areaId": "3583"
+        "_param": {
+            "createTime": times_13(),
+            "maintainValueServiceList": [
+                {
+                    "orderType": "1",
+                    "maintainValueServiceOrderId": old_order_id,
+                    "productName": "荣耀 50",
+                    "productSku": "2601010213601",
+                    "salesPrice": "389900",
+                    "maintainValueServiceName": "保值换新服务99元ming",
+                    "maintainValueServiceSkuCode": "0086013201170000201",
+                    "maintainValueServicePrice": "9900",
+                    "maintainValueServiceCount": "1",
+                    #"imei": "",
+                    #"serialnum": "",
+                    "maintainValueServiceEffectTime": "2021-07-31 09:22:08+0800",
+                    "maintainValueServiceExpireTime": "2022-08-31 10:06:36+0800",
+                    "maintainValueRatio": "70",
+                    "orderRefundNo": "",
+                    "orderFinishTime": "2021-08-10 14:06:38+0800",
+                    "orderRefundTime": ""
+                }
+            ]
         }
     }
-}
+    tmp["old_order"] = old_order_id
 
-getHonorOrderList = {
-     "_head": {
-          "_callerServiceId": "110001",
-          "_groupNo": "1",
-          "_interface": "/order_center/old4new/getHonorOrderList",
-          "_invokeId": "7940480c99334bff09dae5d16b133559",
-          "_msgType": "request",
-          "_remark": "",
-          "_timestamps": times_13(),
-          "_version": "0.01"
-     },
-     "_param": {
-          "pageIndex": "0",
-          "pageSize": "10",
-          "userId": user_id
-     }
-}
+    return buyHonorMaintainValueService
 
-getHonorMaintainValueService = {
-     "_head": {
-          "_callerServiceId": "110001",
-          "_groupNo": "1",
-          "_interface": "/order_center/old4new/getHonorMaintainValueService",
-          "_invokeId": "7940480c99334bff09dae5d16b133559",
-          "_msgType": "request",
-          "_remark": "",
-          "_timestamps": times_13(),
-          "_version": "0.01"
-     },
-     "_param": {
-          "userId": user_id,
-          "honorOrderId": "honor00010"
-     }
-}
+def placeOrder():
+    serialnum = "msn" + times_13()[3:]
+    placeOrder = {
+        "_head": {
+            "_interface": "placeOrder",
+            "_msgType": "request",
+            "_remark": "",
+            "_version": "0.01",
+            "_timestamps": times_13(),
+            "_invokeId": "0fa04f37a588ce0df348851df2340a48",
+            "_callerServiceId": "110001",
+            "_groupNo": "1"
+        },
+        "_param": {
+            "externalOrderNo": times_13(),
+            "fourTupleInfo": {
+                "businessAttribute": "14",
+                "deliveryMode": "3",
+                "paymentMode": "4",
+                "businessType": "15",
+                "arrivalType": "2",
+                "accessBusiness": "1",
+                "recycleType": "2",
+                "maintainValueType": "0"
+            },
+            "channelInfo": {
+                "pid": "3483",
+                "channelId": "10000876"
+            },
+            "userInfo": {
+                "userId": user_id,
+                "userOpenId": "MDFAMjEwNzk3NDM1QDFkMjU0NDI1YjcwMTVkMmRhOWY2NjhmNDg0MzY3OTJkQGY2MDAxNjg4MTNmNDI3MzAzMjRlNzNjY2Q2OTQ2MGE5N2NhZjFiaNWIzOGZmMzg5MDMxZDYzNGI2",
+                "userPhone": "18888889999"
+            },
+            "oldGoodsInfo": {
+                "productId": "65980",
+                "serialNum": serialnum,
+                "imei": ""
+            },
+            "newGoodsInfo": {
+                "productId": "65979",
+                "productName": "荣耀 50 pro",
+                "productPrice": "5000.00",
+                "productImage": "https:\\/\\/picuat.test.hihonor.com\\/pimages\\/omstestpms\\/product\\/SSSSB2CtestGBOM01\\/\\/142_142_532F2778A3709F8D991A0BDFA8BA2279C2EAB9D1AE4EF76Cmp.JPG",
+                "skuName": "65979",
+                "skuId": "65979"
+            },
+            "logisticInfo": {
+                "province": "广东",
+                "city": "深圳",
+                "area": "南山区",
+                "address": "科苑地铁站ABCming"
+            },
+            "priceInfo": {
+                "isMatchMaintainValue": "1",
+                "maintainValueAmount": "279930",
+                "maintainValueServiceFee": "0",
+                "userEvaluatePrice": "1929.00",
+                "newSalesPrice": "5000.00",
+                "evaRecordId": "2108123961"
+            },
+            "customData": {
+                "orderName": "钢铁侠",
+                "orderPhone": phone,
+                "address": "好莱坞8888号ming",
+                "longitude": "113.946925",
+                "latitude": "22.547326",
+                "areaId": "3871"
+            },
+            "storeInfo":{
+                "storeId":"78456",
+                "store":"测试小店ming"
+            }
+        }
+    }
+    tmp["sn"] = serialnum
 
-getHonorOrderInfo = {
-     "_head": {
-          "_callerServiceId": "110001",
-          "_groupNo": "1",
-          "_interface": "/order_center/old4new/getHonorOrderInfo",
-          "_invokeId": "7940480c99334bff09dae5d16b133559",
-          "_msgType": "request",
-          "_remark": "",
-          "_timestamps": times_13(),
-          "_version": "0.01"
-     },
-     "_param": {
-          "orderId": "",
-          "operatorlog": "0",
-          "recycleOrderId": "7635189"
-     }
-}
+    return placeOrder
+
+def submitHonorNewMachinOrder():
+    trackingNo = "msf" + times_13()
+    new_order_id = "99" + times_13()[5:]
+    submitHonorNewMachinOrder = {
+        "_head": {
+            "_interface": "submitHonorNewMachinOrder",
+            "_msgType": "request",
+            "_remark": "",
+            "_version": "0.01",
+            "_timestamps": times_13(),
+            "_invokeId": "7b0b9bf78622d651ef9c31fa07af3a73",
+            "_callerServiceId": "110001",
+            "_groupNo": "1"
+        },
+        "_param": {
+            "basicInfo": {
+                # "orderId": "75300003638",
+                "orderId": new_order_id,
+                "recycleOrderId": "",
+                "recycleType": "1"
+            },
+            "oldGoodsInfo": {
+                "serialNum": tmp["sn"],
+                "skuCode": "2601010213601"
+            },
+            "newGoodsInfo": [
+                {
+                    "skuName": "荣耀 50 pro",
+                    "qty": "1",
+                    "skuCode": "008601137010000201",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": trackingNo
+                }
+            ],
+            "priceInfo": {
+                "recycleAmount": "2799.30",
+                "recycleRemain": "0.00"
+            },
+            "userVisitInfo": {
+                "province": "广东",
+                "city": "深圳",
+                "area": "南山区",
+                "street": "粤海街道",
+                "address": "深圳湾科技生态园",
+                "userName": "回收宝小豹哥",
+                "phone": "13612833088"
+            }
+        }
+    }
+
+    return submitHonorNewMachinOrder
+
+
+def getHonorOrderList():
+    getHonorOrderList = {
+         "_head": {
+              "_callerServiceId": "110001",
+              "_groupNo": "1",
+              "_interface": "/order_center/old4new/getHonorOrderList",
+              "_invokeId": "7940480c99334bff09dae5d16b133559",
+              "_msgType": "request",
+              "_remark": "",
+              "_timestamps": times_13(),
+              "_version": "0.01"
+         },
+         "_param": {
+              "pageIndex": "0",
+              "pageSize": "10",
+              "userId": user_id
+         }
+    }
+    return getHonorOrderList
+
+def getHonorMaintainValueService():
+    getHonorMaintainValueService = {
+         "_head": {
+              "_callerServiceId": "110001",
+              "_groupNo": "1",
+              "_interface": "/order_center/old4new/getHonorMaintainValueService",
+              "_invokeId": "7940480c99334bff09dae5d16b133559",
+              "_msgType": "request",
+              "_remark": "",
+              "_timestamps": times_13(),
+              "_version": "0.01"
+         },
+         "_param": {
+              "userId": user_id,
+              "honorOrderId": "75320003880"
+         }
+    }
+    return getHonorMaintainValueService
+
+def getHonorOrderInfo():
+    getHonorOrderInfo = {
+         "_head": {
+              "_callerServiceId": "110001",
+              "_groupNo": "1",
+              "_interface": "/order_center/old4new/getHonorOrderInfo",
+              "_invokeId": "7940480c99334bff09dae5d16b133559",
+              "_msgType": "request",
+              "_remark": "",
+              "_timestamps": times_13(),
+              "_version": "0.01"
+         },
+         "_param": {
+              "orderId": "75300003638",
+              "operatorlog": "0",
+              "recycleOrderId": "7635440"
+         }
+    }
+    return getHonorOrderInfo
 
 
 def param_list():
     param_eg = ["接口参数示例："]
-    param_eg.append(buyHonorMaintainValueService)
-    param_eg.append(placeOrder)
-    param_eg.append(submitHonorNewMachinOrder)
-    param_eg.append(getHonorOrderList)
-    param_eg.append(getHonorMaintainValueService)
-    param_eg.append(getHonorOrderInfo)
+    param_eg.append(buyHonorMaintainValueService())
+    param_eg.append(placeOrder())
+    param_eg.append(submitHonorNewMachinOrder())
+    param_eg.append(getHonorOrderList())
+    param_eg.append(getHonorMaintainValueService())
+    param_eg.append(getHonorOrderInfo())
     return param_eg
 
 

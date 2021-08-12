@@ -65,7 +65,7 @@ class ProApiBase(HttpBase):
         :param param: 业务参数字典
         :return:
         """
-        path = "/api/xianyu"
+        path = "/apicase/xianyu"
         body = self.merge_param(interface, param)
         # self.logger.info(json.dumps(body, indent=5, ensure_ascii=False))
         response = self.do_post(path, body)
