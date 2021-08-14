@@ -25,7 +25,7 @@ PASSWORD_AMC = "f6758a4e"
 
 # amc
 PROTOCAL_AMC = "http"
-DOMAIN_AMC = "apicase-amc.huishoubao.com.cn"
+DOMAIN_AMC = "api-amc.huishoubao.com.cn"
 
 
 # wms
@@ -34,4 +34,4 @@ DOMAIN_WMS = "wms-wwwapi.huishoubao.com.cn"
 
 # detection
 PROTOCAL_DETECTION = "http"
-DOMAIN_DETECTION = "detection-wwwapi.huishoubao.com/apicase"
+DOMAIN_DETECTION = "detection-wwwapi.huishoubao.com/api"

@@ -37,6 +37,7 @@ class DetectionClient:
         # 定义一个字典，来接收临时变量
         self.temp = {}
         self.mark = True
+        self.mark_text = ""
 
     def get_auth(self):
         """从amc系统获取loginToken，userId，userName信息"""
@@ -192,10 +193,14 @@ class DetectionClient:
             }
         }
         res = self.detection_client.do_post(path, body)
-        res_final = self.result_creator("获取估价ID", res)
-        if res_final:
+        err_code = res["_data"]["_errCode"]
+        if err_code == "0":
+            res_final = self.result_creator("获取估价ID", res)
             self.temp = dict(self.temp, ** res["_data"]["_data"])
-        return res_final
+        else:
+            self.mark = False
+            self.mark_text = res["_data"]["_errStr"]
+
 
     def get_sku_id(self, sku_list):
         """获取sku id"""

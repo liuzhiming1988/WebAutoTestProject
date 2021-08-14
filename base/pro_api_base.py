@@ -65,7 +65,7 @@ class ProApiBase(HttpBase):
         :param param: 业务参数字典
         :return:
         """
-        path = "/apicase/xianyu"
+        path = "/api/xianyu"
         body = self.merge_param(interface, param)
         # self.logger.info(json.dumps(body, indent=5, ensure_ascii=False))
         response = self.do_post(path, body)
@@ -87,7 +87,7 @@ if __name__ == '__main__':
             "permissions": "0",
             "queryType": "tagInfo"
     }
-    data = pro_client.getProData(_interface, _param)
+    data = pro_client.merge_param(_interface, _param)
 
     pro_client.do_post(path, data)
 

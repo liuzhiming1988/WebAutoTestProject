@@ -16,7 +16,7 @@ import requests
 class GetBalanceInfo(OwnApiBase):
 
     def get_balance_info(self, loginToken, uid):
-        path = self.domain + "/apicase/wallet/getBalanceInfo"
+        path = self.domain + "/api/wallet/getBalanceInfo"
         data = {
             "token": loginToken,
             "uid": uid

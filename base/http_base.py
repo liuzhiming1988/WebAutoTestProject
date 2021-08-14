@@ -143,7 +143,7 @@ class HttpBase:
         :return:
         """
         str = json.dumps(body, sort_keys=True, indent=4, ensure_ascii=False)
-        self.logger.info(str)
+        # self.logger.info(str)
         return str
 
 

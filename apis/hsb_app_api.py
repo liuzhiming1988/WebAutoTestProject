@@ -248,15 +248,15 @@ class HsbAppApi:
             "userName": self.temp["userName"]
         }
         res = self.http_client.own_post(path, body)
-        self.temp = dict(self.temp, **res["_data"])
         err_code = res["_errCode"]
         if err_code == "0":
+            self.temp = dict(self.temp, **res["_data"])
             order_id = res["_data"]["orderid"]
             order_num = res["_data"]["orderNum"]
             self.mark_text = "下单成功，订单ID：【{}】订单编号：【{}】".format(order_id, order_num)
         else:
             self.mark_text = "下单失败，请检查日志"
-        self.logger.debug(json.dumps(self.temp, indent=4, ensure_ascii=False))
+        # self.logger.debug(json.dumps(self.temp, indent=4, ensure_ascii=False))
 
     def place_order_door(self, loginToken, uuid):
         """上门回收"""

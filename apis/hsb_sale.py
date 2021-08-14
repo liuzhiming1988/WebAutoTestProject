@@ -16,10 +16,6 @@ import time
 
 class HsbSale(OwnApiBase):
 
-    def sale_post(self, url, data):
-        res = requests.post
-
-
     def login(self, phone, passwd):
         """
         曲线救国，从竞拍PC网站登录，获取token，然后给小程序中的接口使用
@@ -105,7 +101,6 @@ class HsbSale(OwnApiBase):
         res = requests.post(url, data=json.dumps(data), headers=self.headers_json).text
         res_data = json.loads(res)
         print(self.json_format(res_data))
-
 
 
 if __name__ == '__main__':

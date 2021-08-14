@@ -45,6 +45,9 @@ def new_standard_detect():
                     sku_list = detection.get_sku_list(select_ids)
                     detection.get_sku_id(sku_list)
                     detection.get_product_evaluate(engineer_options, sku_list)
+                    if detection.mark is False:
+                        text+=detection.mark_text+"<br /><hr />"
+                        continue
                     detection.get_level(select_ids)
                     # print(detection.temp["level"])
                     product_info = detection.temp["product_info"]
