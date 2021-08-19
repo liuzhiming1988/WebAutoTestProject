@@ -1,0 +1,22 @@
+2021-08-18 18:46:24,782 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderInfo
+2021-08-18 18:46:24,782 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'e4f5fdaf731f3e445210e2976a208524', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-18 18:46:24,782 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorOrderInfo",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629283583246",
+          "_version": "0.01"
+     },
+     "_param": {
+          "orderId": "75300003638",
+          "operatorlog": "0",
+          "recycleOrderId": "7635440"
+     }
+}

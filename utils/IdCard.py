@@ -68,7 +68,7 @@ class IDCard:
         """
         year = randint(1900, 2021)
         month = random.choice(self.month_list)
-        month = "02"
+        # month = "02"
         if month == "02":
             if self.check_leap_year(year):
                 x = randint(0, 28)
