@@ -25,9 +25,10 @@ from website.views.wms_sign import wms_sign_blue
 from website.views.outbound_delivery_order import outbound_delivery_order_blue
 from website.views.own_place_order import own_place_order_blue
 from website.views.merchant_check import merchant_check_blue
-from website.views.jw_view import in_storage_blue
+from website.views.jw_view import jw_blue
 from website.views.base_service import base_blue
 from website.views.honor_test import honor_blue
+from website.views.yiyanhuo_v import fish_blue
 from website.setting import TestConfig
 from flask_sqlalchemy import SQLAlchemy
 
@@ -47,9 +48,10 @@ app.register_blueprint(wms_sign_blue)
 app.register_blueprint(outbound_delivery_order_blue)
 app.register_blueprint(own_place_order_blue)
 app.register_blueprint(merchant_check_blue)
-app.register_blueprint(in_storage_blue)
+app.register_blueprint(jw_blue)
 app.register_blueprint(base_blue)
 app.register_blueprint(honor_blue)
+app.register_blueprint(fish_blue)
 
 
 @app.route("/", methods=['GET', 'POST'])

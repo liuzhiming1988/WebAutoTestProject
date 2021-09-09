@@ -11,6 +11,7 @@ import json
 import hashlib
 from utils.logger import Logger
 
+
 class HonorTestApi:
     """
     荣耀保值换新API
@@ -22,7 +23,6 @@ class HonorTestApi:
         self.OS = requests.session()
         self.DOMAIN = "http://ordserver.huishoubao.com"
         self.logger = Logger().logger
-
 
     @staticmethod
     def get_md5(str):
@@ -59,73 +59,10 @@ class HonorTestApi:
             res = json.dumps(res.json(), indent=4, ensure_ascii=False)
             self.logger.debug("【{}】Response Body:\n{}".format(url, res))
             self.logger.debug("【End The Request】：{}".format(url))
-            # res = json.loads(res)
+            # res = json.loads(res)   # 开启此行代码后，前端不能格式化显示json
         except Exception as e:
             res = e
         return res
-
-    def buyHonorMaintainValueService(self):
-        """
-        用户购买荣耀保值服务接口
-        :return:
-        """
-        # body = {
-        #     "createTime": "",
-        #     "maintainValueServiceList": [
-        #         {
-        #             "maintainValueServiceOrderId":,
-        #             "orderType":,
-        #             "imei":,
-        #             "serialnum":,
-        #             "productName":,
-        #             "productSku":,
-        #             "salesPrice":,
-        #             "maintainValueServiceName":,
-        #             "maintainValueServiceSkuCode":,
-        #             "maintainValueServicePrice":,
-        #             "maintainValueServiceCount":,
-        #             "maintainValueServiceEffectTime":,
-        #             "maintainValueServiceExpireTime":,
-        #             "maintainValueRatio":,
-        #             "orderFinishTime":,
-        #             "orderRefundTime":,
-        #             "orderRefundNo":,
-        #
-        # }
-        #     ]
-        # }
-
-
-
-    def GetHonorOrderList(self):
-        url = "http://ordserver.huishoubao.com/order_center/old4new/getHonorOrderList"
-        param = {
-            "_head": {
-                "_callerServiceId": "110001",
-                "_groupNo": "1",
-                "_interface": "/order_center/old4new/getHonorOrderList",
-                "_invokeId": "7940480c99334bff09dae5d16b133559",
-                "_msgType": "request",
-                "_remark": "",
-                "_timestamps": "1623830616",
-                "_version": "0.01"
-            },
-            "_param": {
-                "pageIndex": "0",
-                "pageSize": "10",
-                "userId": "609419571"
-            }
-        }
-        param = json.dumps(param)
-        m = hashlib.md5()
-        m.update((param+self.KEY).encode("utf-8"))
-        print(len(m.hexdigest()))
-        headers = {"Content-Type": "application/json;charset=UTF-8",
-                   "HSB-OPENAPI-SIGNATURE": m.hexdigest(),
-                   "HSB-OPENAPI-CALLERSERVICEID": "110001"}
-        res = requests.post(url, data=param, headers=headers)
-        res.encoding = res.apparent_encoding
-        print(json.dumps(res.json(),indent=4,ensure_ascii=False))
 
 
 if __name__ == '__main__':

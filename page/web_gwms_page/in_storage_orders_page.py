@@ -67,9 +67,7 @@ class InStoragePage(BasePage):
             self.click(self.t_order_bill)
             self.sleep(time_)
             self.click(self.s_submit_button)
-            self.sleep(time_)
             self.alert_accept()
-            self.sleep(time_)
             self.alert_accept()
 
             self.refresh()
@@ -93,7 +91,6 @@ class InStoragePage(BasePage):
         self.sleep(time_)
         self.switch_to_frame(self.frame)
         self.click(self.saveBtn)
-        self.sleep(time_)
         self.alert_accept()
         self.click(self.barCodeSearch)
         self.sleep(time_)
@@ -107,15 +104,13 @@ class InStoragePage(BasePage):
         self.sleep(time_)
         self.sleep(time_)
         self.click(self.saveBillBtn)
-        print("保存单据成功")
-        self.sleep(time_)
+        self.logger.info("保存单据成功")
         self.alert_accept()
         self.sleep(time_)
-        print("点击审核单据")
+        self.logger.info("点击审核单据")
         self.click(self.auditBtn)
         self.alert_accept()
-        self.sleep(time_)
-        text = "恭喜！！！\n商品条码：【{}】，入库成功啦！！！"
+        text = "3. 恭喜你！！！入库成功！！！"
         return text
 
     def test_button(self):

@@ -44,7 +44,7 @@ class TestInStorage:
         # source_order = "A2106301833432E12"
 
         # 判断来源单号是否获取到，获取到则进行入库操作
-        if source_order is not False:
+        if source_order:
 
             text = "1. 入库处理：单据审核成功，来源单号为：{}<br>".format(source_order)
 

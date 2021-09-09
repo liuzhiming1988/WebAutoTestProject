@@ -132,7 +132,7 @@ class PublishMQ:
         # 定义授权信息
         self.auth = pika.PlainCredentials(self.username, self.pwd)
 
-    def producer_mq(self, exchange_name, message, num):
+    def producer_mq(self, exchange_name, message, num=1):
         with pika.BlockingConnection(pika.ConnectionParameters(self.ip_addr, self.port_num, "/", self.auth)) as conn:
             channel = conn.channel()
             channel.exchange_declare(exchange=exchange_name, exchange_type="fanout")    # 创建exchange，类型为fanout
@@ -145,7 +145,7 @@ class PublishMQ:
                 channel.basic_publish(
                     exchange=exchange_name,
                     routing_key="",  # 写明将消息发送给队列
-                    body=message+str(i)  # 要发送的消息
+                    body=message  # 要发送的消息
                 )
                 # 向消息队列发送一条消息
                 time.sleep(0.5)

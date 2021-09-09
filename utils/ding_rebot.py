@@ -55,7 +55,7 @@ class DingRebot:
         }
 
         res = requests.post(self.get_url(), data=json.dumps(data), headers=self.HEADERS)
-        print(res.text)
+        # print(res.text)
 
     def send_link(self, link):
         """

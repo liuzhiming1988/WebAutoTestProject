@@ -1,0 +1,2780 @@
+2021-08-31 11:33:09,677 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 11:33:09,856 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 11:33:09,882 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 11:33:09,933 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:33:09,933 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 11:33:09,957 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 11:33:10,017 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:33:10,017 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 11:33:10,037 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 11:33:15,437 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：5.42秒
+
+
+2021-08-31 11:33:20,459 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 11:33:20,459 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 11:33:20,481 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 11:33:20,528 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:33:20,529 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 11:33:21,058 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 11:33:21,101 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 11:33:21,101 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 11:33:38,833 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 11:33:38,833 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 11:33:38,869 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ7840004271974584】
+2021-08-31 11:33:38,955 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-08-31 11:33:38,955 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 11:33:38,984 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 11:33:39,050 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:33:39,051 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:33:44,051 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 11:33:44,083 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【 】
+2021-08-31 11:33:44,083 - D:\work\WebAutoTestProject\page\web_gwms_page\in_storage_orders_page.py - audit_order[line:79] - ERROR: 没有返回数据，请检查此商品是否有对应的入库订单号
+2021-08-31 11:33:44,084 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ7840004271974584】对应的来源单号为：【False】
+2021-08-31 11:33:44,084 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:61] - ERROR: 1. 没有来源单号，无法入库，请检查，商品编码【SJ7840004271974584】
+2021-08-31 11:34:41,503 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 11:34:41,677 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 11:34:41,703 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 11:34:41,746 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:34:41,746 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 11:34:41,770 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 11:34:41,828 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:34:41,829 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 11:34:41,849 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 11:34:44,469 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：2.64秒
+
+
+2021-08-31 11:34:49,489 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 11:34:49,489 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 11:34:49,509 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 11:34:49,557 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:34:49,557 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 11:34:50,110 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 11:34:50,151 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.59秒
+
+
+2021-08-31 11:34:50,151 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 11:34:57,869 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 11:34:57,869 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 11:34:57,901 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ2840004273114580】
+2021-08-31 11:34:57,987 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-08-31 11:34:57,988 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 11:34:58,013 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 11:34:58,078 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:34:58,078 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:35:03,079 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 11:35:03,113 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA210830150059D21_1630306862138】
+2021-08-31 11:35:03,113 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 11:35:03,143 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA210830150059D21_1630306862138】
+2021-08-31 11:35:03,144 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_soco_1']】
+2021-08-31 11:35:03,175 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【A210830150059D21】
+2021-08-31 11:35:03,175 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 11:35:03,192 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='gtable_biid_1']】
+2021-08-31 11:35:03,778 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.6秒
+
+
+2021-08-31 11:35:03,778 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:35:08,779 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:submitMBut']】
+2021-08-31 11:35:08,801 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:submitMBut']】
+2021-08-31 11:35:08,858 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:35:08,859 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:35:13,860 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:35:15,861 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 11:35:15,862 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:35:17,866 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【确定要审核单据吗？】
+2021-08-31 11:35:17,874 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:35:19,876 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:35:24,876 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:35:26,877 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 11:35:26,879 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:35:28,881 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 11:35:28,883 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:35:33,708 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 11:35:35,709 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:35:40,711 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ2840004273114580】对应的来源单号为：【A210830150059D21】
+2021-08-31 11:35:40,731 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 11:35:40,731 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='SYS']/span】
+2021-08-31 11:35:40,754 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='SYS']/span】
+2021-08-31 11:35:40,800 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:35:40,801 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoserv']/span[2]】
+2021-08-31 11:35:41,332 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoserv']/span[2]】
+2021-08-31 11:35:41,370 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 11:35:41,370 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoIncoSet_span']】
+2021-08-31 11:35:41,895 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoIncoSet_span']】
+2021-08-31 11:35:41,938 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 11:35:41,939 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 11:35:55,721 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 11:35:55,722 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='list:saveButton']】
+2021-08-31 11:35:55,757 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='list:saveButton']】
+2021-08-31 11:35:55,822 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 11:35:55,822 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:cotl']】
+2021-08-31 11:35:55,845 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01】
+2021-08-31 11:35:55,911 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:35:55,912 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:inco']】
+2021-08-31 11:35:55,936 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【all】
+2021-08-31 11:35:55,993 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:35:55,993 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:boty']/option】
+2021-08-31 11:35:56,035 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:baty']/option】
+2021-08-31 11:35:56,080 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:saveid']】
+2021-08-31 11:35:56,105 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:saveid']】
+2021-08-31 11:35:56,156 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:35:56,157 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='message_alert_id']/table/tbody/tr/td[2]/span】
+2021-08-31 11:35:59,747 - D:\work\WebAutoTestProject\page\web_gwms_page\shipper_allocation_page.py - show_message[line:54] - INFO: 添加成功!
+2021-08-31 11:35:59,748 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='button_alert_id']/input】
+2021-08-31 11:35:59,769 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='button_alert_id']/input】
+2021-08-31 11:35:59,813 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 11:36:00,480 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 11:36:02,481 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 3 秒
+2021-08-31 11:36:05,503 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 11:36:05,503 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 11:36:05,522 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 11:36:05,566 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 11:36:05,566 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='poin_span']】
+2021-08-31 11:36:06,093 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='poin_span']】
+2021-08-31 11:36:06,132 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 11:36:06,132 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 11:36:08,091 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 11:36:08,091 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:j_id_jsp_107150791_2】
+2021-08-31 11:36:08,124 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:j_id_jsp_107150791_2】
+2021-08-31 11:36:08,181 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:36:08,181 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【orid_img】
+2021-08-31 11:36:08,707 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【orid_img】
+2021-08-31 11:36:08,747 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 11:36:08,747 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:15,178 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_selectTask42】
+2021-08-31 11:36:15,178 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:soco_po】
+2021-08-31 11:36:15,198 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【A210830150059D21】
+2021-08-31 11:36:15,271 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:36:15,272 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:sid】
+2021-08-31 11:36:15,292 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:sid】
+2021-08-31 11:36:15,378 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.11秒
+
+
+2021-08-31 11:36:15,378 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:20,380 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 11:36:20,400 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 11:36:20,468 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:36:20,468 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:25,490 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 11:36:25,490 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addId】
+2021-08-31 11:36:25,509 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addId】
+2021-08-31 11:36:25,558 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:36:25,558 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:30,559 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:36:32,560 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 11:36:32,565 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:36:34,567 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【单据添加成功!】
+2021-08-31 11:36:34,570 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:36:36,571 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【inty_img_baco】
+2021-08-31 11:36:36,594 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【inty_img_baco】
+2021-08-31 11:36:36,638 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:36:36,639 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:41,662 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_inve59】
+2021-08-31 11:36:41,662 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 11:36:41,677 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 11:36:41,744 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 11:36:41,744 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:46,759 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 11:36:46,759 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:qty】
+2021-08-31 11:36:46,778 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【1】
+2021-08-31 11:36:46,823 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 11:36:46,823 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:dwhid】
+2021-08-31 11:36:46,843 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01A01-A-01-01】
+2021-08-31 11:36:46,912 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 11:36:46,912 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addDBut】
+2021-08-31 11:36:46,931 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addDBut】
+2021-08-31 11:36:46,980 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:36:46,980 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:51,981 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:36:56,981 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:updateId】
+2021-08-31 11:36:57,009 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:updateId】
+2021-08-31 11:36:57,054 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 11:36:57,054 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:37:02,056 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:37:04,056 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 11:37:04,057 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:37:06,060 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【修改成功!】
+2021-08-31 11:37:06,062 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:37:08,063 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 11:37:13,063 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:submitMBut】
+2021-08-31 11:37:13,082 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:submitMBut】
+2021-08-31 11:37:13,128 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 11:37:13,129 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:37:15,130 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 11:37:15,139 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:37:17,141 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 11:37:17,144 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 11:37:19,144 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 14:10:23,653 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:10:23,653 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '2db8d0f73e3ee42a0bc708c9b1451f63', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:10:23,653 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ9840004297914600",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:10:23,723 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:10:23,723 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:02,819 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:02,820 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '21dce81cbb697c2403348047f0c8d059', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:02,820 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ5840004244264601",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:02,890 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:02,890 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:20,690 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:20,690 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'a0df495eabecf7d8fc1012078bdaa14e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:20,690 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ1840004280054602",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:20,738 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:20,738 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:23,083 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:23,083 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'a0df495eabecf7d8fc1012078bdaa14e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:23,083 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ1840004280054602",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:23,105 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "该条码已绑定过其他商品，请更换"
+    }
+}
+2021-08-31 14:11:23,105 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:30,058 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:30,058 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd6628f2b79ddf96782ff06204fa6e7d8', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:30,058 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ2840004248504603",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:30,105 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:30,105 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:36,387 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:36,387 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd4aeeff22b9c3b6bdb0446be1dbff2a0', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:36,387 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ5840004231174604",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:36,444 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:36,444 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:42,730 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:42,730 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'e834185855c7626375a3089aad9e4ec9', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:42,730 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ3840004223824605",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:42,795 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:42,795 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:50,466 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:50,466 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3ba764e75ae3b7905601552d673d9962', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:50,466 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ9840004214734606",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:50,740 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:50,740 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:56,162 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:11:56,162 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd89312f6bb4c85fe8da08fde6334b531', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:11:56,162 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ6840004211624607",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:11:56,215 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:11:56,215 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:12:02,098 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:12:02,098 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ef71d46b3964bbbb9e0b316852997d11', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:12:02,098 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ7840004267904608",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:12:02,152 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:12:02,152 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:12:08,364 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:12:08,364 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ee2e09105b4da716b7886bc2b2be8f81', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:12:08,364 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ1840004249864609",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:12:08,412 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:12:08,412 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:12:15,644 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:12:15,644 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '70458b89f36f2f0a8e5f2829cde29741', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:12:15,644 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ8840004217664610",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-31 14:12:15,691 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:12:15,691 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:24:32,365 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:24:32,366 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'bf355a243e07d9a86b60d7d46e847039', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:24:32,366 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "123",
+          "returnNum": "101111",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 14:24:32,393 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "data": {}
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:24:32,393 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:24:41,067 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:24:41,067 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '816089995e173a48fdabae25ce621e1b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:24:41,067 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "1",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 14:24:41,089 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "许柳",
+                "receiverPhone": "18871392494",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "许柳",
+                "returnTime": "2021-08-30 17:18:39",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-30 16:42:12",
+                    "goodName": "【全新】 苹果 iPhone XS 银色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ2840004259314512",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/54790_20180922111211_884.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:24:41,089 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:31:47,910 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:31:47,910 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ff5819653bf9310340da4bd52c0e1b70', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:31:47,910 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "goodsId": "132",
+          "returnAddressConfigId": "258"
+     }
+}
+2021-08-31 14:31:47,969 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 14:31:47,969 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:39:55,998 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:39:55,998 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ff5819653bf9310340da4bd52c0e1b70', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:39:55,998 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "goodsId": "132",
+          "returnAddressConfigId": "258"
+     }
+}
+2021-08-31 14:39:56,023 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "当前状态不允许退回"
+    }
+}
+2021-08-31 14:39:56,024 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:40:10,140 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:40:10,141 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ff5819653bf9310340da4bd52c0e1b70', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:40:10,141 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "goodsId": "132",
+          "returnAddressConfigId": "258"
+     }
+}
+2021-08-31 14:40:10,160 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "当前状态不允许退回"
+    }
+}
+2021-08-31 14:40:10,161 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:40:11,220 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 14:40:11,220 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ff5819653bf9310340da4bd52c0e1b70', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 14:40:11,220 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "goodsId": "132",
+          "returnAddressConfigId": "258"
+     }
+}
+2021-08-31 14:40:11,244 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "当前状态不允许退回"
+    }
+}
+2021-08-31 14:40:11,244 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:16:08,252 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:16:08,252 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:16:08,253 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 15:16:08,280 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 15:16:08,280 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:36,787 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:36,787 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:31:36,787 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 15:31:36,866 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 15:31:36,866 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:37,634 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:37,634 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:31:37,634 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 15:31:37,660 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 15:31:37,660 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:37,817 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:37,817 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:31:37,818 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 15:31:37,842 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 15:31:37,843 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:38,009 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:38,009 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:31:38,010 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 15:31:38,045 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 15:31:38,045 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:44,009 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:31:44,009 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:31:44,010 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 15:31:44,033 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 15:31:44,033 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:34:25,828 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 15:34:25,829 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'beaa4c5fa3f91ca1aa53f503660fe4cd', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 15:34:25,829 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "goodsId": "133",
+          "returnAddressConfigId": "260"
+     }
+}
+2021-08-31 15:34:25,875 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "您的已验货预存资金余额不足，请充值后再进行申请"
+    }
+}
+2021-08-31 15:34:25,876 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 16:15:28,213 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 16:15:28,397 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 16:15:28,429 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:15:28,476 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:15:28,476 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 16:15:28,498 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:15:28,556 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:15:28,556 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 16:15:28,575 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 16:15:39,195 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：10.64秒
+
+
+2021-08-31 16:15:44,220 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:15:44,220 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:15:44,241 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:15:44,287 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:15:44,287 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 16:15:44,813 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 16:15:44,861 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:15:44,861 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:16:48,973 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:16:48,973 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 16:16:49,007 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ6840004239524585】
+2021-08-31 16:16:49,076 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:16:49,076 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 16:16:49,105 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 16:16:49,166 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:16:49,166 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:16:54,167 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 16:16:54,198 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA2108311419171CDD_1630390759396】
+2021-08-31 16:16:54,198 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:16:54,230 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA2108311419171CDD_1630390759396】
+2021-08-31 16:16:54,230 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_soco_1']】
+2021-08-31 16:16:54,260 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【A2108311419171CDD】
+2021-08-31 16:16:54,260 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:16:54,277 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='gtable_biid_1']】
+2021-08-31 16:16:55,099 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.84秒
+
+
+2021-08-31 16:16:55,100 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:17:00,101 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:submitMBut']】
+2021-08-31 16:17:00,121 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:submitMBut']】
+2021-08-31 16:17:00,172 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:17:00,172 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:17:05,173 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:17:07,174 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:17:07,175 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:17:09,177 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【确定要审核单据吗？】
+2021-08-31 16:17:09,178 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:17:11,179 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:17:16,180 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:17:18,181 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:17:18,182 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:17:20,185 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:17:20,187 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:17:23,019 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:17:25,020 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:17:30,020 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ6840004239524585】对应的来源单号为：【A2108311419171CDD】
+2021-08-31 16:17:30,042 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:17:30,043 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='SYS']/span】
+2021-08-31 16:17:30,064 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='SYS']/span】
+2021-08-31 16:17:30,111 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:17:30,111 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:17:30,638 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:17:30,678 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:17:30,678 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:17:31,206 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:17:31,250 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:17:31,251 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:17:44,421 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:17:44,421 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='list:saveButton']】
+2021-08-31 16:17:44,448 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='list:saveButton']】
+2021-08-31 16:17:44,514 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:17:44,514 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:cotl']】
+2021-08-31 16:17:44,537 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01】
+2021-08-31 16:17:44,597 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:17:44,597 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:inco']】
+2021-08-31 16:17:44,621 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【all】
+2021-08-31 16:17:44,674 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:17:44,674 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:boty']/option】
+2021-08-31 16:17:44,717 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:baty']/option】
+2021-08-31 16:17:44,754 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:saveid']】
+2021-08-31 16:17:44,776 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:saveid']】
+2021-08-31 16:17:44,826 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:17:44,826 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='message_alert_id']/table/tbody/tr/td[2]/span】
+2021-08-31 16:17:49,960 - D:\work\WebAutoTestProject\page\web_gwms_page\shipper_allocation_page.py - show_message[line:54] - INFO: 添加成功!
+2021-08-31 16:17:49,961 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='button_alert_id']/input】
+2021-08-31 16:17:49,983 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='button_alert_id']/input】
+2021-08-31 16:17:50,029 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:17:51,386 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:17:53,387 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 3 秒
+2021-08-31 16:17:56,411 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:17:56,411 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:17:56,432 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:17:56,478 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:17:56,478 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='poin_span']】
+2021-08-31 16:17:57,007 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='poin_span']】
+2021-08-31 16:17:57,052 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:17:57,052 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:17:57,958 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:17:57,959 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:j_id_jsp_107150791_2】
+2021-08-31 16:17:57,980 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:j_id_jsp_107150791_2】
+2021-08-31 16:17:58,035 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:17:58,035 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【orid_img】
+2021-08-31 16:17:58,565 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【orid_img】
+2021-08-31 16:17:58,610 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.58秒
+
+
+2021-08-31 16:17:58,610 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:03,632 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_selectTask42】
+2021-08-31 16:18:03,632 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:soco_po】
+2021-08-31 16:18:03,651 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【A2108311419171CDD】
+2021-08-31 16:18:03,704 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:18:03,704 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:sid】
+2021-08-31 16:18:03,726 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:sid】
+2021-08-31 16:18:03,798 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:18:03,798 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:08,799 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:18:08,823 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:18:08,910 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.11秒
+
+
+2021-08-31 16:18:08,910 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:13,932 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:18:13,932 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addId】
+2021-08-31 16:18:13,954 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addId】
+2021-08-31 16:18:14,002 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:18:14,002 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:19,003 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:18:21,004 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:18:21,005 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:18:23,007 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【单据添加成功!】
+2021-08-31 16:18:23,009 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:18:25,009 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【inty_img_baco】
+2021-08-31 16:18:25,029 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【inty_img_baco】
+2021-08-31 16:18:25,072 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:18:25,072 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:30,096 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_inve59】
+2021-08-31 16:18:30,096 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:18:30,113 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:18:30,188 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:18:30,188 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:35,202 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:18:35,203 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:qty】
+2021-08-31 16:18:35,223 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【1】
+2021-08-31 16:18:35,260 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:18:35,260 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:dwhid】
+2021-08-31 16:18:35,279 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01A01-A-01-01】
+2021-08-31 16:18:35,331 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:18:35,331 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addDBut】
+2021-08-31 16:18:35,352 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addDBut】
+2021-08-31 16:18:35,399 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:18:35,399 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:40,399 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:45,401 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:updateId】
+2021-08-31 16:18:45,423 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:updateId】
+2021-08-31 16:18:45,469 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:18:45,469 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:18:50,470 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:18:52,470 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:18:52,471 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:18:54,474 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【修改成功!】
+2021-08-31 16:18:54,475 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:18:56,476 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:19:01,477 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:submitMBut】
+2021-08-31 16:19:01,497 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:submitMBut】
+2021-08-31 16:19:01,543 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:19:01,543 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:19:03,545 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:22:09,538 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 16:22:09,743 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 16:22:09,768 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:22:09,817 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:22:09,817 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 16:22:09,837 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:22:09,893 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:22:09,893 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 16:22:09,912 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 16:22:23,607 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：13.71秒
+
+
+2021-08-31 16:22:28,630 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:22:28,631 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:22:28,651 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:22:28,699 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:22:28,699 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 16:22:29,224 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 16:22:29,270 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:22:29,270 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:22:48,707 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:22:48,707 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 16:22:48,734 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ6840004239524585】
+2021-08-31 16:22:48,819 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.11秒
+
+
+2021-08-31 16:22:48,819 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 16:22:48,845 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 16:22:48,907 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:22:48,908 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:22:53,909 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 16:22:53,938 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【 】
+2021-08-31 16:22:53,938 - D:\work\WebAutoTestProject\page\web_gwms_page\in_storage_orders_page.py - audit_order[line:79] - ERROR: 没有返回数据，请检查此商品是否有对应的入库订单号
+2021-08-31 16:22:53,938 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ6840004239524585】对应的来源单号为：【False】
+2021-08-31 16:22:53,938 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:61] - ERROR: 1. 没有来源单号，无法入库，请检查，商品编码【SJ6840004239524585】
+2021-08-31 16:22:57,114 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 16:22:57,292 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 16:22:57,322 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:22:57,371 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:22:57,371 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 16:22:57,394 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:22:57,448 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:22:57,448 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 16:22:57,469 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 16:22:59,664 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：2.22秒
+
+
+2021-08-31 16:23:04,688 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:23:04,688 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:23:04,707 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:23:04,755 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:23:04,756 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 16:23:05,279 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 16:23:05,321 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.56秒
+
+
+2021-08-31 16:23:05,321 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:23:11,005 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:23:11,005 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 16:23:11,042 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ8840004254855220】
+2021-08-31 16:23:11,129 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-08-31 16:23:11,129 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 16:23:11,162 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 16:23:11,230 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:23:11,230 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:23:16,231 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 16:23:16,264 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA2108271815483BB2_1630059350385】
+2021-08-31 16:23:16,265 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:23:16,294 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA2108271815483BB2_1630059350385】
+2021-08-31 16:23:16,294 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_soco_1']】
+2021-08-31 16:23:16,323 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【A2108271815483BB2】
+2021-08-31 16:23:16,323 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:23:16,342 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='gtable_biid_1']】
+2021-08-31 16:23:16,705 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.38秒
+
+
+2021-08-31 16:23:16,705 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:23:21,707 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:submitMBut']】
+2021-08-31 16:23:21,729 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:submitMBut']】
+2021-08-31 16:23:21,779 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:23:21,779 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:23:26,780 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:23:28,781 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:23:28,782 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:23:30,783 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【确定要审核单据吗？】
+2021-08-31 16:23:30,785 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:23:32,786 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:23:37,787 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:23:39,788 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:23:39,793 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:23:41,797 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:23:41,803 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:23:44,358 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:23:46,360 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:23:51,360 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ8840004254855220】对应的来源单号为：【A2108271815483BB2】
+2021-08-31 16:23:51,382 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:23:51,382 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='SYS']/span】
+2021-08-31 16:23:51,404 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='SYS']/span】
+2021-08-31 16:23:51,451 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:23:51,451 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:23:51,979 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:23:52,019 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:23:52,019 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:23:52,566 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:23:52,612 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.59秒
+
+
+2021-08-31 16:23:52,612 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:23:58,281 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:23:58,281 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='list:saveButton']】
+2021-08-31 16:23:58,314 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='list:saveButton']】
+2021-08-31 16:23:58,379 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:23:58,379 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:cotl']】
+2021-08-31 16:23:58,409 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01】
+2021-08-31 16:23:58,477 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:23:58,477 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:inco']】
+2021-08-31 16:23:58,502 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【all】
+2021-08-31 16:23:58,558 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:23:58,558 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:boty']/option】
+2021-08-31 16:23:58,602 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:baty']/option】
+2021-08-31 16:23:58,640 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:saveid']】
+2021-08-31 16:23:58,662 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:saveid']】
+2021-08-31 16:23:58,709 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:23:58,709 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='message_alert_id']/table/tbody/tr/td[2]/span】
+2021-08-31 16:24:01,825 - D:\work\WebAutoTestProject\page\web_gwms_page\shipper_allocation_page.py - show_message[line:54] - INFO: 添加成功!
+2021-08-31 16:24:01,825 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='button_alert_id']/input】
+2021-08-31 16:24:01,845 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='button_alert_id']/input】
+2021-08-31 16:24:01,887 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:24:02,448 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:24:04,449 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 3 秒
+2021-08-31 16:24:07,471 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:24:07,471 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:24:07,492 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:24:07,539 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:24:07,539 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='poin_span']】
+2021-08-31 16:24:08,064 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='poin_span']】
+2021-08-31 16:24:08,107 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:24:08,107 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:24:13,845 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:24:13,845 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:j_id_jsp_107150791_2】
+2021-08-31 16:24:13,875 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:j_id_jsp_107150791_2】
+2021-08-31 16:24:13,929 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:24:13,929 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【orid_img】
+2021-08-31 16:24:14,462 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【orid_img】
+2021-08-31 16:24:14,508 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.58秒
+
+
+2021-08-31 16:24:14,509 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:19,535 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_selectTask42】
+2021-08-31 16:24:19,535 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:soco_po】
+2021-08-31 16:24:19,562 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【A2108271815483BB2】
+2021-08-31 16:24:19,635 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:24:19,636 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:sid】
+2021-08-31 16:24:19,657 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:sid】
+2021-08-31 16:24:19,732 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:24:19,733 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:24,734 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:24:24,755 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:24:24,827 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:24:24,827 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:29,848 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:24:29,848 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addId】
+2021-08-31 16:24:29,872 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addId】
+2021-08-31 16:24:29,920 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:24:29,921 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:34,922 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:24:36,922 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:24:36,923 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:24:38,926 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【单据添加成功!】
+2021-08-31 16:24:38,928 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:24:40,929 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【inty_img_baco】
+2021-08-31 16:24:40,951 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【inty_img_baco】
+2021-08-31 16:24:40,997 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:24:40,997 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:46,021 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_inve59】
+2021-08-31 16:24:46,021 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:24:46,038 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:24:46,107 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:24:46,107 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:51,127 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:24:51,127 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:qty】
+2021-08-31 16:24:51,148 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【1】
+2021-08-31 16:24:51,191 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:24:51,191 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:dwhid】
+2021-08-31 16:24:51,212 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01A01-A-01-01】
+2021-08-31 16:24:51,278 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:24:51,279 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addDBut】
+2021-08-31 16:24:51,298 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addDBut】
+2021-08-31 16:24:51,349 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:24:51,349 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:24:56,351 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:25:01,351 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:updateId】
+2021-08-31 16:25:01,372 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:updateId】
+2021-08-31 16:25:01,419 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:25:01,420 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:25:06,421 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:25:08,422 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:25:08,423 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:25:10,425 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【修改成功!】
+2021-08-31 16:25:10,428 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:25:12,429 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:25:17,430 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:submitMBut】
+2021-08-31 16:25:17,452 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:submitMBut】
+2021-08-31 16:25:17,498 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:25:17,499 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:25:22,500 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:25:24,501 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:25:24,502 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:25:26,503 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:25:26,505 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:25:31,703 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 16:25:31,873 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 16:25:31,902 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:25:31,947 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:25:31,947 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 16:25:31,969 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:25:32,024 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:25:32,024 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 16:25:32,045 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 16:25:33,298 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：1.27秒
+
+
+2021-08-31 16:25:38,333 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:25:38,333 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:25:38,354 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:25:38,403 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:25:38,403 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 16:25:38,929 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 16:25:38,972 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:25:38,972 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:25:44,629 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:25:44,630 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 16:25:44,660 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ9840004269014581】
+2021-08-31 16:25:44,749 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-08-31 16:25:44,750 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 16:25:44,773 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 16:25:44,836 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:25:44,836 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:25:49,837 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 16:25:49,869 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA210830153356285A_1630308837440】
+2021-08-31 16:25:49,869 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:25:49,898 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA210830153356285A_1630308837440】
+2021-08-31 16:25:49,898 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_soco_1']】
+2021-08-31 16:25:49,929 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【A210830153356285A】
+2021-08-31 16:25:49,929 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:25:49,947 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='gtable_biid_1']】
+2021-08-31 16:25:50,370 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.44秒
+
+
+2021-08-31 16:25:50,370 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:25:55,371 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:submitMBut']】
+2021-08-31 16:25:55,392 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:submitMBut']】
+2021-08-31 16:25:55,440 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:25:55,440 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:26:00,441 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:26:02,442 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:26:02,443 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:26:04,447 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【确定要审核单据吗？】
+2021-08-31 16:26:04,462 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:26:06,464 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:26:11,465 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:26:13,466 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:26:13,467 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:26:15,469 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:26:15,471 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:26:20,418 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:26:22,419 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:26:27,420 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ9840004269014581】对应的来源单号为：【A210830153356285A】
+2021-08-31 16:26:27,467 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:26:27,467 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='SYS']/span】
+2021-08-31 16:26:27,490 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='SYS']/span】
+2021-08-31 16:26:27,538 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:26:27,539 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:26:28,067 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:26:28,107 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:26:28,107 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:26:28,635 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:26:28,678 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:26:28,678 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:26:37,085 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:26:37,085 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='list:saveButton']】
+2021-08-31 16:26:37,111 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='list:saveButton']】
+2021-08-31 16:26:37,182 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:26:37,182 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:cotl']】
+2021-08-31 16:26:37,206 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01】
+2021-08-31 16:26:37,273 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:26:37,273 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:inco']】
+2021-08-31 16:26:37,297 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【all】
+2021-08-31 16:26:37,350 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:26:37,350 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:boty']/option】
+2021-08-31 16:26:37,393 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:baty']/option】
+2021-08-31 16:26:37,438 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:saveid']】
+2021-08-31 16:26:37,459 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:saveid']】
+2021-08-31 16:26:37,508 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:26:37,508 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='message_alert_id']/table/tbody/tr/td[2]/span】
+2021-08-31 16:26:40,597 - D:\work\WebAutoTestProject\page\web_gwms_page\shipper_allocation_page.py - show_message[line:54] - INFO: 添加成功!
+2021-08-31 16:26:40,597 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='button_alert_id']/input】
+2021-08-31 16:26:40,624 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='button_alert_id']/input】
+2021-08-31 16:26:40,668 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:26:41,120 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:26:43,122 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 3 秒
+2021-08-31 16:26:46,143 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:26:46,143 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:26:46,163 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:26:46,209 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:26:46,209 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='poin_span']】
+2021-08-31 16:26:46,768 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='poin_span']】
+2021-08-31 16:26:46,812 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.6秒
+
+
+2021-08-31 16:26:46,812 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:26:47,352 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:26:47,352 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:j_id_jsp_107150791_2】
+2021-08-31 16:26:47,383 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:j_id_jsp_107150791_2】
+2021-08-31 16:26:47,442 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:26:47,442 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【orid_img】
+2021-08-31 16:26:47,972 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【orid_img】
+2021-08-31 16:26:48,013 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:26:48,013 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:26:53,035 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_selectTask42】
+2021-08-31 16:26:53,035 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:soco_po】
+2021-08-31 16:26:53,055 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【A210830153356285A】
+2021-08-31 16:26:53,127 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:26:53,127 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:sid】
+2021-08-31 16:26:53,147 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:sid】
+2021-08-31 16:26:53,219 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:26:53,220 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:26:58,221 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:26:58,244 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:26:58,323 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:26:58,323 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:03,346 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:27:03,346 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addId】
+2021-08-31 16:27:03,366 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addId】
+2021-08-31 16:27:03,412 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:27:03,413 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:08,414 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:10,415 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:27:10,416 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:12,418 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【单据添加成功!】
+2021-08-31 16:27:12,421 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:14,423 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【inty_img_baco】
+2021-08-31 16:27:14,445 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【inty_img_baco】
+2021-08-31 16:27:14,491 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:27:14,491 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:19,513 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_inve59】
+2021-08-31 16:27:19,513 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:27:19,530 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:27:19,602 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:27:19,602 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:24,618 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:27:24,618 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:qty】
+2021-08-31 16:27:24,637 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【1】
+2021-08-31 16:27:24,678 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:27:24,678 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:dwhid】
+2021-08-31 16:27:24,698 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01A01-A-01-01】
+2021-08-31 16:27:24,765 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:27:24,765 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addDBut】
+2021-08-31 16:27:24,785 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addDBut】
+2021-08-31 16:27:24,831 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:27:24,831 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:29,832 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:34,833 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:updateId】
+2021-08-31 16:27:34,853 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:updateId】
+2021-08-31 16:27:34,900 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:27:34,901 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:39,902 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:41,902 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:27:41,913 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:43,915 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【修改成功!】
+2021-08-31 16:27:43,917 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:45,918 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:50,919 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:submitMBut】
+2021-08-31 16:27:50,946 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:submitMBut】
+2021-08-31 16:27:50,991 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:27:50,991 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:27:55,992 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:27:57,994 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:27:57,999 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:00,002 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:28:00,004 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:05,191 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:155] - INFO: 打开网址：【http://119.23.17.189:8090/gwms_test/main.jsf】
+2021-08-31 16:28:05,362 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:nv_userid】
+2021-08-31 16:28:05,393 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:28:05,439 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:28:05,439 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:passWord】
+2021-08-31 16:28:05,462 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【030】
+2021-08-31 16:28:05,518 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:28:05,518 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【form1:loginBtn】
+2021-08-31 16:28:05,536 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【form1:loginBtn】
+2021-08-31 16:28:12,155 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：6.64秒
+
+
+2021-08-31 16:28:17,177 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:28:17,177 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:28:17,200 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:28:17,246 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:28:17,246 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='PO_span']】
+2021-08-31 16:28:17,776 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='PO_span']】
+2021-08-31 16:28:17,818 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:28:17,818 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:28:25,968 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:28:25,968 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sk_inna']】
+2021-08-31 16:28:26,003 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【SJ7840004271974584】
+2021-08-31 16:28:26,084 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-08-31 16:28:26,085 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:sid']】
+2021-08-31 16:28:26,108 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:sid']】
+2021-08-31 16:28:26,177 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:28:26,177 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:28:31,177 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_table']/tbody/tr[2]/td[5]】
+2021-08-31 16:28:31,207 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA21083114193217DA_1630390772575】
+2021-08-31 16:28:31,207 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:28:31,236 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【01_JA21083114193217DA_1630390772575】
+2021-08-31 16:28:31,236 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_soco_1']】
+2021-08-31 16:28:31,265 - D:\work\WebAutoTestProject\base\base_page.py - get_elem_text[line:161] - DEBUG: 获取到的文本为：【A21083114193217DA】
+2021-08-31 16:28:31,265 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='gtable_biid_1']】
+2021-08-31 16:28:31,282 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='gtable_biid_1']】
+2021-08-31 16:28:31,857 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.59秒
+
+
+2021-08-31 16:28:31,857 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:28:36,858 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:submitMBut']】
+2021-08-31 16:28:36,881 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:submitMBut']】
+2021-08-31 16:28:36,927 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:28:36,927 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:28:41,928 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:43,929 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:28:43,930 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:45,930 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【确定要审核单据吗？】
+2021-08-31 16:28:45,932 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:47,934 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:28:52,935 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:54,936 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:28:54,938 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:56,939 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:28:56,942 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:28:59,606 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:29:01,608 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:29:06,609 - D:\work\WebAutoTestProject\website\views\in_storage.py - test_add_storage_order[line:42] - DEBUG: 【SJ7840004271974584】对应的来源单号为：【A21083114193217DA】
+2021-08-31 16:29:06,630 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:29:06,630 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='SYS']/span】
+2021-08-31 16:29:06,651 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='SYS']/span】
+2021-08-31 16:29:06,699 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:29:06,699 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:29:07,224 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoserv']/span[2]】
+2021-08-31 16:29:07,261 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.56秒
+
+
+2021-08-31 16:29:07,261 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:29:07,796 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='owcoIncoSet_span']】
+2021-08-31 16:29:07,847 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.58秒
+
+
+2021-08-31 16:29:07,847 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:29:58,953 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:29:58,953 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='list:saveButton']】
+2021-08-31 16:29:58,984 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='list:saveButton']】
+2021-08-31 16:29:59,047 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:29:59,047 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:cotl']】
+2021-08-31 16:29:59,078 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01】
+2021-08-31 16:29:59,148 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:29:59,148 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:inco']】
+2021-08-31 16:29:59,170 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【all】
+2021-08-31 16:29:59,226 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-08-31 16:29:59,226 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:boty']/option】
+2021-08-31 16:29:59,269 - D:\work\WebAutoTestProject\base\base_page.py - find_elements[line:61] - DEBUG: 定位元素：方法【xpath】，值【.//*[@id='edit:baty']/option】
+2021-08-31 16:29:59,308 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='edit:saveid']】
+2021-08-31 16:29:59,333 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='edit:saveid']】
+2021-08-31 16:29:59,380 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:29:59,380 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='message_alert_id']/table/tbody/tr/td[2]/span】
+2021-08-31 16:30:13,138 - D:\work\WebAutoTestProject\page\web_gwms_page\shipper_allocation_page.py - show_message[line:54] - INFO: 添加成功!
+2021-08-31 16:30:13,138 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='button_alert_id']/input】
+2021-08-31 16:30:13,160 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='button_alert_id']/input】
+2021-08-31 16:30:13,204 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:30:19,128 - D:\work\WebAutoTestProject\base\base_page.py - refresh[line:186] - DEBUG: 【refresh】刷新当前页面
+2021-08-31 16:30:21,129 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 3 秒
+2021-08-31 16:30:24,150 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【folderForm】
+2021-08-31 16:30:24,151 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='INSYS']/span】
+2021-08-31 16:30:24,171 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='INSYS']/span】
+2021-08-31 16:30:24,220 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:30:24,220 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='poin_span']】
+2021-08-31 16:30:24,745 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【xpath】>>【.//*[@id='poin_span']】
+2021-08-31 16:30:24,790 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:30:24,790 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_default_frame[line:195] - DEBUG: 跳转回默认的frame
+2021-08-31 16:30:27,853 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:30:27,853 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:j_id_jsp_107150791_2】
+2021-08-31 16:30:27,883 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:j_id_jsp_107150791_2】
+2021-08-31 16:30:27,940 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:30:27,940 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【orid_img】
+2021-08-31 16:30:28,470 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【orid_img】
+2021-08-31 16:30:28,513 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.57秒
+
+
+2021-08-31 16:30:28,514 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:30:33,537 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_selectTask42】
+2021-08-31 16:30:33,538 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:soco_po】
+2021-08-31 16:30:33,556 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【A21083114193217DA】
+2021-08-31 16:30:33,635 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:30:33,635 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:sid】
+2021-08-31 16:30:33,656 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:sid】
+2021-08-31 16:30:33,732 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:30:33,732 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:30:38,733 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:30:38,762 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:30:38,834 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-08-31 16:30:38,834 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:30:43,857 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:30:43,857 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addId】
+2021-08-31 16:30:43,878 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addId】
+2021-08-31 16:30:43,925 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:30:43,925 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:30:48,927 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:30:50,928 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:30:50,929 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:30:52,931 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【单据添加成功!】
+2021-08-31 16:30:52,933 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:30:54,935 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【inty_img_baco】
+2021-08-31 16:30:54,953 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【inty_img_baco】
+2021-08-31 16:30:54,999 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:30:54,999 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:00,023 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【iframe_Gwin_inve59】
+2021-08-31 16:31:00,023 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【gtable_rowid_1】
+2021-08-31 16:31:00,040 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【gtable_rowid_1】
+2021-08-31 16:31:00,111 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:31:00,111 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:05,126 - D:\work\WebAutoTestProject\base\base_page.py - switch_to_frame[line:191] - DEBUG: 进入frame:【tab1_frame】
+2021-08-31 16:31:05,126 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:qty】
+2021-08-31 16:31:05,147 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【1】
+2021-08-31 16:31:05,191 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+
+2021-08-31 16:31:05,191 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:dwhid】
+2021-08-31 16:31:05,212 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:143] - DEBUG: 输入数据：【01A01-A-01-01】
+2021-08-31 16:31:05,279 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.09秒
+
+
+2021-08-31 16:31:05,279 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:addDBut】
+2021-08-31 16:31:05,300 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:addDBut】
+2021-08-31 16:31:05,350 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:31:05,350 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:10,351 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:15,352 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:updateId】
+2021-08-31 16:31:15,373 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:updateId】
+2021-08-31 16:31:15,423 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:31:15,424 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:20,425 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:31:22,426 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:31:22,427 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:31:24,428 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【修改成功!】
+2021-08-31 16:31:24,430 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:31:26,431 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:31,432 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【id】，值【edit:submitMBut】
+2021-08-31 16:31:31,454 - D:\work\WebAutoTestProject\base\base_page.py - click[line:151] - DEBUG: 点击元素：【id】>>【edit:submitMBut】
+2021-08-31 16:31:31,502 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.07秒
+
+
+2021-08-31 16:31:31,502 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 5 秒
+2021-08-31 16:31:36,503 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:31:38,504 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:229] - DEBUG: 在弹出框中点击【确定】按钮
+2021-08-31 16:31:38,505 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:31:40,507 - D:\work\WebAutoTestProject\base\base_page.py - alert_accept[line:232] - INFO: 弹窗中的文本内容为：【审核成功!】
+2021-08-31 16:31:40,509 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:217] - INFO: 强制等待 2 秒
+2021-08-31 16:46:08,924 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 16:46:08,924 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '6a2fb4266c46edb6762300727a39280e', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 16:46:08,925 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "5",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 16:46:08,951 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "0"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:13:55",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 14:38:22",
+                    "goodName": "小米 小米 9 黑色 6GB+128GB 8成新 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004254855220",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png"
+                },
+                {
+                    "applyTime": "2021-08-31 14:32:53",
+                    "goodName": "【良品】【7成新】 小米 小米 5 白色 4GB+32GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ9840004269014581",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/MI_XM5_32G.jpg"
+                },
+                {
+                    "applyTime": "2021-08-31 14:33:03",
+                    "goodName": "【99成新】 苹果 iPhone 11 白色 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ7840004271974584",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63330_20191106155429_525.png"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 16:46:08,951 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 16:46:51,188 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-31 16:46:51,188 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '44f2f87dc1f5316067c1a9ab91ca4833', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-31 16:46:51,188 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "returnId": "6",
+          "returnNum": "",
+          "merchantId": "6721"
+     }
+}
+2021-08-31 16:46:51,211 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getReturnDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "returnWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "",
+                "returnStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "测试",
+                "receiverPhone": "18867983461",
+                "receiverAddress": "北京市北京市东城区测试一天不到的时候"
+            },
+            "returnInfo": {
+                "returnNum": "测试",
+                "returnTime": "2021-08-31 15:45:42",
+                "receiveTime": "0000-00-00 00:00:00"
+            },
+            "returnGoods": [
+                {
+                    "applyTime": "2021-08-31 15:45:34",
+                    "goodName": "【9成新】 苹果 iPhone 11 Pro 4GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ6840004239524585",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/63328_20191106155004_685.jpg"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-31 16:46:51,211 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com

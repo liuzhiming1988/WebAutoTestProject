@@ -1,0 +1,456 @@
+2021-08-25 14:37:46,104 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 14:37:46,114 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '97acc860920e28e1abe246eb9ae6d837', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 14:37:46,114 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629873462045",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 14:38:21,909 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 14:38:21,909 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '97acc860920e28e1abe246eb9ae6d837', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 14:38:21,909 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629873462045",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 14:38:42,630 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 14:38:42,630 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '97acc860920e28e1abe246eb9ae6d837', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 14:38:42,630 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629873462045",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 14:38:42,694 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_data": {
+            "address": "",
+            "area": "",
+            "city": "",
+            "imei": "",
+            "maintainValueRatio": "70",
+            "maintainValueServiceCount": "5",
+            "maintainValueServiceEffectTime": "2021-07-31 09:22:08",
+            "maintainValueServiceExpireTime": "2022-08-31 10:06:36",
+            "maintainValueServiceName": "IDEAL真实GBOM保值换新服务商品SBOM",
+            "maintainValueServiceOrderId": "75320003880",
+            "maintainValueServicePrice": "9900",
+            "maintainValueServiceReturnCount": "0",
+            "maintainValueServiceUsedCount": "0",
+            "maintainValueStatus": "0",
+            "orderType": "1",
+            "productName": "荣耀 50",
+            "productSku": "2601010213601",
+            "province": "",
+            "salesPrice": "389900",
+            "serialnum": "",
+            "userID": "0",
+            "userName": "",
+            "userPhone": ""
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1629873521",
+        "_version": "0.01"
+    }
+}
+2021-08-25 14:38:42,694 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:24:41,925 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:24:41,925 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '35c3d9c9906384f2f4624b2d44d96e3a', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:24:41,926 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:57] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629876280571",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 15:25:02,141 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:25:02,141 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '35c3d9c9906384f2f4624b2d44d96e3a', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:25:02,141 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:57] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629876280571",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 15:25:02,162 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService】Response Body:
+{
+    "_data": {
+        "_data": {
+            "address": "",
+            "area": "",
+            "city": "",
+            "imei": "",
+            "maintainValueRatio": "70",
+            "maintainValueServiceCount": "5",
+            "maintainValueServiceEffectTime": "2021-07-31 09:22:08",
+            "maintainValueServiceExpireTime": "2022-08-31 10:06:36",
+            "maintainValueServiceName": "IDEAL真实GBOM保值换新服务商品SBOM",
+            "maintainValueServiceOrderId": "75320003880",
+            "maintainValueServicePrice": "9900",
+            "maintainValueServiceReturnCount": "0",
+            "maintainValueServiceUsedCount": "0",
+            "maintainValueStatus": "0",
+            "orderType": "1",
+            "productName": "荣耀 50",
+            "productSku": "2601010213601",
+            "province": "",
+            "salesPrice": "389900",
+            "serialnum": "",
+            "userID": "0",
+            "userName": "",
+            "userPhone": ""
+        },
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "/order_center/old4new/getHonorMaintainValueService",
+        "_invokeId": "7940480c99334bff09dae5d16b133559",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1629876301",
+        "_version": "0.01"
+    }
+}
+2021-08-25 15:25:02,162 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:62] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:41:51,482 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:41:51,482 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'cb349d3f101e1f33ed84f6d60f631ddd', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:41:51,482 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629877294456",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 15:43:24,050 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://orderserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:43:24,050 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'cb349d3f101e1f33ed84f6d60f631ddd', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:43:24,050 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629877294456",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 15:44:40,172 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/getHonorMaintainValueService
+2021-08-25 15:44:40,172 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'cb349d3f101e1f33ed84f6d60f631ddd', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:44:40,172 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_callerServiceId": "110001",
+          "_groupNo": "1",
+          "_interface": "/order_center/old4new/getHonorMaintainValueService",
+          "_invokeId": "7940480c99334bff09dae5d16b133559",
+          "_msgType": "request",
+          "_remark": "",
+          "_timestamps": "1629877294456",
+          "_version": "0.01"
+     },
+     "_param": {
+          "userId": "602810010",
+          "honorOrderId": "75320003880"
+     }
+}
+2021-08-25 15:56:48,527 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 15:56:48,528 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:56:48,528 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 15:58:11,680 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 15:58:11,680 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:58:11,680 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 15:59:11,264 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 15:59:11,265 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:59:11,265 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 15:59:25,873 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 15:59:25,873 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 15:59:25,873 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 15:59:25,892 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo】Response Body:
+{
+    "_data": {
+        "_data": "",
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "getOrderInfoByExternalOrderNo",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1629878364",
+        "_version": "0.01"
+    }
+}
+2021-08-25 15:59:25,893 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 16:01:15,505 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 16:01:15,505 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 16:01:15,505 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 16:01:15,579 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo】Response Body:
+{
+    "_data": {
+        "_data": "",
+        "_ret": "0",
+        "_retcode": "0",
+        "_retinfo": "success"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "getOrderInfoByExternalOrderNo",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1629878474",
+        "_version": "0.01"
+    }
+}
+2021-08-25 16:01:15,579 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:62] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 16:01:23,721 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 16:01:23,721 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 16:01:23,721 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 16:02:01,104 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 16:02:01,104 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 16:02:01,105 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}
+2021-08-25 16:03:14,433 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/getOrderInfoByExternalOrderNo
+2021-08-25 16:03:14,433 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd7d0a0d0da611aeb2d00f06b55520418', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-08-25 16:03:14,433 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "getOrderInfoByExternalOrderNo",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "46794641"
+     }
+}

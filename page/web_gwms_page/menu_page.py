@@ -17,11 +17,9 @@ import traceback
 # 写一个装饰器，打开父模块以及最后跳出frame,装饰器修饰类并调用类中的方法
 def swi_frame(func):
     def wrapper(self, *args, **kwargs):
-        # print("跳进frame：{}".format(self.frame))
         self.switch_to_frame(self.frame)
         res = func(self, *args, **kwargs)
         self.switch_to_default_frame()
-        # print("跳出frame，返回默认frame")
         return func
     return wrapper
 
@@ -39,6 +37,16 @@ class GwmsMenuPage(BasePage):
     in_storage_orders = ("xpath", ".//*[@id='PO_span']")   # 入库订单
     arrival_list = ("xpath", ".//*[@id='ARRIVE_span']")    # 到货清单
     in_storage_bill = ("xpath", ".//*[@id='poin_span']")   # 入库单
+
+    # 出库处理
+    outbound_index = ("xpath", ".//*[@id='OUTSYS']/span")    # 出库主菜单
+    order_menu = ("xpath", ".//*[@id='ORDERDEAL']/span[2]")      # 订单子菜单
+    sale_order_menu = ("xpath", ".//*[@id='OUTORDER_span']")    # 销售订单子菜单
+    picking_menu = ("xpath", ".//*[@id='PICKDWDEAL']/span[2]")     # 拣货
+    pick_down_menu = ("xpath", ".//*[@id='PICKDOWN_span']")    # 拣货下架
+    review_menu = ("xpath", ".//*[@id='OQCDEAL']/span[2]")      # 复核
+    outbound_review_menu = ("xpath", ".//*[@id='oqc_span']")     # 出库复核
+
 
     # "基础资料"--父菜单
     basic_data = ("xpath", "")   # 基础资料
@@ -71,4 +79,31 @@ class GwmsMenuPage(BasePage):
         self.click(self.system_management)
         self.click(self.shipper_allocation)
         self.click(self.shipper_material_allocation)
+
+    @swi_frame
+    def open_sale_order(self):
+        """
+        打开出库处理->订单->销售订单菜单
+        """
+        self.click(self.outbound_index)
+        self.click(self.order_menu)
+        self.click(self.sale_order_menu)
+
+    @swi_frame
+    def open_picking(self):
+        """
+        打开出库处理->拣货->拣货下架
+        """
+        self.click(self.outbound_index)
+        self.click(self.picking_menu)
+        self.click(self.pick_down_menu)
+
+    @swi_frame
+    def open_outbound_review(self):
+        """
+        打开出库处理->复核->出库复核菜单
+        """
+        self.click(self.outbound_index)
+        self.click(self.review_menu)
+        self.click(self.outbound_review_menu)
 

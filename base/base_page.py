@@ -102,24 +102,25 @@ class BasePage:
                 WebDriverWait(self.driver, self.timeout, 0.5).until(
                     EC.visibility_of_element_located((FIND_LIST[key], value)))
                 elem = self.driver.find_element(FIND_LIST[key], value)
+                return elem
             except TimeoutException as t:
                 self.save_img(get_current_function_name())
                 # filename = os.path.split(os.path.abspath(__file__))
                 ec = traceback.format_exc()
-                ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3}".format(
+                ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} 结束".format(
                     self.timeout, key, value, ec)
-                DingRebot().send_text(ex_text)
+                # DingRebot().send_text(ex_text)
                 self.logger.error(ex_text)
+                return False
             except Exception as e:
                 self.save_img(get_current_function_name())
                 ec = traceback.format_exc()
                 self.logger.error("在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} \nInfo：{4}".format(
                     self.timeout, key, value, e.__class__, ec))
-
+                return False
         else:
             self.logger.error("请检查定位方法，目前仅支持：{0}".format(FIND_LIST.values()))
-
-        return elem
+            return False
 
     # def loctor(self, loc, timeout=15):
     #     """
@@ -190,6 +191,10 @@ class BasePage:
         self.driver.switch_to.frame(frame)
         self.logger.debug("进入frame:【{}】".format(frame))
 
+    def switch_to_parent_frame(self):
+        self.driver.switch_to.parent_frame()
+        self.logger.debug("切换到上一级iframe")
+
     def switch_to_default_frame(self):
         """返回默认的frame"""
         self.logger.debug("跳转回默认的frame")
@@ -218,6 +223,7 @@ class BasePage:
         time.sleep(sleep_time)
 
     def get_alert_text(self):
+        self.sleep(2)
         alert = self.driver.switch_to.alert
         self.sleep(2)
         self.logger.info("弹窗中的文本内容为：【{}】".format(alert.text))
@@ -225,12 +231,22 @@ class BasePage:
 
     def alert_accept(self):
         """在弹出框中点确定，处理alert窗口是不要开多个浏览器，偶尔会导致失败"""
-        self.logger.debug("在弹出框中点击【确定】按钮")
-        alert = self.driver.switch_to.alert
-        self.sleep(3)
-        self.logger.info("弹窗中的文本内容为：【{}】".format(alert.text))
-        alert.accept()
+        # 尝试操作弹出框，重试3次，若还失败，捕捉异常，并返回错误
         self.sleep(2)
+        self.logger.debug("定位弹出框，点击【确定】按钮")
+        for i in range(3):
+            try:
+                alert = self.driver.switch_to.alert
+                self.sleep(1)
+                # self.logger.info("弹窗内容：【{}】".format(alert.text))
+                alert.accept()
+                # self.logger.info("")
+                break
+            except Exception as e:
+                self.logger.error("第{}次在弹出框中点击【确定】按钮失败".format(i))
+                self.logger.error("".format(e))
+                self.sleep(2)
+                i+=1
 
     def alert_dismiss(self):
         """在弹出框中点取消"""

@@ -112,7 +112,6 @@ class HttpBase:
             text = "URL:{};域名连接失败，请检查服务域名和端口信息是否正确".format(url)
             self.logger.error(text)
             return False
-
         if response.status_code == 200:
             if "json" in response.headers["Content-Type"]:
                 self.logger.info("{}响应信息：\nheaders={}\nresponse_body={}".format(

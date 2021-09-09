@@ -1,0 +1,2582 @@
+2021-08-28 10:44:54,911 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:44:54,912 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3411d8d3e336e0d5b7d0a6db0db221d4', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:44:54,912 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1. getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:44:59,338 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:44:59,338 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'c3f6aa2f1402c63602252fd5e062828b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:44:59,338 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:44:59,371 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "sendWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "466464646565656868",
+                "deliveryStatus": "3"
+            },
+            "receiverInfo": {
+                "receiverName": "已验货",
+                "receiverPhone": "15766604351",
+                "receiverAddress": "深圳市龙华新区观东路28号a栋4楼",
+                "detectCenterName": "龙华质检中心"
+            },
+            "deliveryInfo": {
+                "deliveryNum": "1629961287155066",
+                "deliveryTime": "2021-08-26 15:01:27",
+                "senderName": "许柳",
+                "receiveTime": "2021-08-26 15:09:53",
+                "detectedTime": "2021-08-26 15:51:45"
+            },
+            "deliveryGoods": [
+                {
+                    "goodsId": "18",
+                    "detectedTime": "2021-08-26 15:51:45",
+                    "addTime": "2021-08-26 15:01:16",
+                    "goodName": "【良品】全新 苹果 iPhone X 银色 3GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ0840004220444233",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/41567_20191106154719_960.jpg",
+                    "classId": "1",
+                    "receiveStatus": "2",
+                    "detectStatus": "1"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:44:59,372 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:45:56,213 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:45:56,213 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'c3f6aa2f1402c63602252fd5e062828b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:45:56,213 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:45:56,241 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "sendWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "466464646565656868",
+                "deliveryStatus": "3"
+            },
+            "receiverInfo": {
+                "receiverName": "已验货",
+                "receiverPhone": "15766604351",
+                "receiverAddress": "深圳市龙华新区观东路28号a栋4楼",
+                "detectCenterName": "龙华质检中心"
+            },
+            "deliveryInfo": {
+                "deliveryNum": "1629961287155066",
+                "deliveryTime": "2021-08-26 15:01:27",
+                "senderName": "许柳",
+                "receiveTime": "2021-08-26 15:09:53",
+                "detectedTime": "2021-08-26 15:51:45"
+            },
+            "deliveryGoods": [
+                {
+                    "goodsId": "18",
+                    "detectedTime": "2021-08-26 15:51:45",
+                    "addTime": "2021-08-26 15:01:16",
+                    "goodName": "【良品】全新 苹果 iPhone X 银色 3GB+64GB 二手手机 ",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ0840004220444233",
+                    "imei": "",
+                    "mainPicture": "https://s1.huishoubao.com/img/phone/41567_20191106154719_960.jpg",
+                    "classId": "1",
+                    "receiveStatus": "2",
+                    "detectStatus": "1"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:45:56,241 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:52:32,910 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:52:32,910 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'eee45c3bc10b8865f5eea251ea4c97da', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:52:32,910 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "37",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:52:32,934 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "sendWay": "2",
+                "expressCompany": "顺丰",
+                "expressNo": "SF1231237844667",
+                "deliveryStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "收件人",
+                "receiverPhone": "18888888888",
+                "receiverAddress": "收件地址",
+                "detectCenterName": "龙华质检中心"
+            },
+            "deliveryInfo": {
+                "deliveryNum": "1630050949361420",
+                "deliveryTime": "2021-08-27 15:55:49",
+                "senderName": "刘志明",
+                "receiveTime": "0000-00-00 00:00:00",
+                "detectedTime": "0000-00-00 00:00:00"
+            },
+            "deliveryGoods": [
+                {
+                    "goodsId": "91",
+                    "detectedTime": "0000-00-00 00:00:00",
+                    "addTime": "2021-08-27 15:51:11",
+                    "goodName": "",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ2840004246554280",
+                    "imei": "",
+                    "mainPicture": "",
+                    "classId": "0",
+                    "receiveStatus": "1",
+                    "detectStatus": "0"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:52:32,934 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:52:51,035 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:52:51,035 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '93d67b6296be111a5f9e97b9572f0799', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:52:51,035 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "51",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:52:51,057 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {},
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:52:51,057 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:53:05,181 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:53:05,181 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'b1e86a8f283d4514f61db645045f747d', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:53:05,182 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "50",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:53:05,206 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "sendWay": "1",
+                "expressCompany": "顺丰",
+                "expressNo": "sf123458",
+                "deliveryStatus": "2"
+            },
+            "receiverInfo": {
+                "receiverName": "已验货",
+                "receiverPhone": "15766604351",
+                "receiverAddress": "深圳市龙华新区观东路28号a栋4楼",
+                "detectCenterName": "龙华质检中心"
+            },
+            "deliveryInfo": {
+                "deliveryNum": "1630061308944865",
+                "deliveryTime": "2021-08-27 18:48:28",
+                "senderName": "张财华",
+                "receiveTime": "2021-08-27 18:48:58",
+                "detectedTime": "0000-00-00 00:00:00"
+            },
+            "deliveryGoods": [
+                {
+                    "goodsId": "105",
+                    "detectedTime": "0000-00-00 00:00:00",
+                    "addTime": "2021-08-27 18:47:32",
+                    "goodName": "",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ8840004278955219",
+                    "imei": "",
+                    "mainPicture": "",
+                    "classId": "0",
+                    "receiveStatus": "2",
+                    "detectStatus": "0"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:53:05,206 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:54:02,551 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:54:02,551 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'eee45c3bc10b8865f5eea251ea4c97da', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:54:02,551 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "37",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:54:02,591 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "sendWay": "2",
+                "expressCompany": "顺丰",
+                "expressNo": "SF1231237844667",
+                "deliveryStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "收件人",
+                "receiverPhone": "18888888888",
+                "receiverAddress": "收件地址",
+                "detectCenterName": "龙华质检中心"
+            },
+            "deliveryInfo": {
+                "deliveryNum": "1630050949361420",
+                "deliveryTime": "2021-08-27 15:55:49",
+                "senderName": "刘志明",
+                "receiveTime": "0000-00-00 00:00:00",
+                "detectedTime": "0000-00-00 00:00:00"
+            },
+            "deliveryGoods": [
+                {
+                    "goodsId": "91",
+                    "detectedTime": "0000-00-00 00:00:00",
+                    "addTime": "2021-08-27 15:51:11",
+                    "goodName": "",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ2840004246554280",
+                    "imei": "",
+                    "mainPicture": "",
+                    "classId": "0",
+                    "receiveStatus": "1",
+                    "detectStatus": "0"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:54:02,591 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:54:29,051 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:54:29,051 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'bd3b738e6a13769ed00eaa560b6630d1', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:54:29,052 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "42",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:54:29,076 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "logisticsInfo": {
+                "sendWay": "2",
+                "expressCompany": "",
+                "expressNo": "",
+                "deliveryStatus": "1"
+            },
+            "receiverInfo": {
+                "receiverName": "收件人",
+                "receiverPhone": "18888888888",
+                "receiverAddress": "收件地址",
+                "detectCenterName": "龙华质检中心"
+            },
+            "deliveryInfo": {
+                "deliveryNum": "1630052158749284",
+                "deliveryTime": "2021-08-27 16:15:58",
+                "senderName": "刘志明",
+                "receiveTime": "0000-00-00 00:00:00",
+                "detectedTime": "0000-00-00 00:00:00"
+            },
+            "deliveryGoods": [
+                {
+                    "goodsId": "97",
+                    "detectedTime": "0000-00-00 00:00:00",
+                    "addTime": "2021-08-27 15:52:18",
+                    "goodName": "",
+                    "goodDesc": "",
+                    "merchantGoodsNo": "SJ4840004270254285",
+                    "imei": "",
+                    "mainPicture": "",
+                    "classId": "0",
+                    "receiveStatus": "1",
+                    "detectStatus": "0"
+                }
+            ]
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:54:29,077 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:11,904 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:11,904 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '0f8d0b965b2bac8333281a74672d17d9', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:57:11,904 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "412",
+          "merchantId": "6721",
+          "returnId": ""
+     }
+}
+2021-08-28 10:57:11,928 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {},
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:57:11,928 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:22,306 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:22,306 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '91f52041cfbdb0ee625b55369f559b96', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:57:22,306 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "412",
+          "merchantId": "67211",
+          "returnId": ""
+     }
+}
+2021-08-28 10:57:22,327 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {},
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:57:22,327 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:31,010 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:31,010 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '7257266860ed61bf2661840a608a9710', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:57:31,011 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "37",
+          "merchantId": "67211",
+          "returnId": ""
+     }
+}
+2021-08-28 10:57:31,033 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {},
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:57:31,033 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:31,483 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:57:31,483 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '7257266860ed61bf2661840a608a9710', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:57:31,483 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "deliveryId": "37",
+          "merchantId": "67211",
+          "returnId": ""
+     }
+}
+2021-08-28 10:57:31,509 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.getDeliveryDetail",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {},
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:57:31,509 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:17,245 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:17,247 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'f0f3f4a6d5fa2703f6b96d7bd874a83d', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:59:17,247 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ7840004235514250",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 10:59:17,316 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:59:17,317 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:26,011 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:26,011 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'a7e8fba15e03df7e365420f035548e72', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:59:26,011 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ7840004287794251",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 10:59:26,037 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "该条码已绑定过其他商品，请更换"
+    }
+}
+2021-08-28 10:59:26,037 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:34,235 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:34,235 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '5fae036a1a219e777e687a156d523643', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:59:34,235 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ8840004231724252",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 10:59:34,270 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "该条码已绑定过其他商品，请更换"
+    }
+}
+2021-08-28 10:59:34,270 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:48,543 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:48,543 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'e932a06422a395e648116be88a31a155', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:59:48,544 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ0840004223384537",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 10:59:48,607 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:59:48,607 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:56,387 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 10:59:56,388 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '1c8e24c6680bec9602d807f0ad5c46e0', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 10:59:56,388 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ0840004248524536",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 10:59:56,454 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 10:59:56,454 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:03,355 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:03,355 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '9d9680940bc16f08b87ce148c8e981ca', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:03,355 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ5840004259734535",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:03,426 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:00:03,426 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:09,451 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:09,451 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'b428049412cf1cf622a8394db6ec6f52', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:09,451 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ6840004218864534",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:09,502 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:00:09,503 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:15,268 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:15,268 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '784cdb2d26ce6038a342dfe595987adb', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:15,268 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ9840004249934533",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:15,325 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:00:15,325 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:21,656 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:21,656 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '288c823b71aed77f59515d0a5acbd6f6', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:21,656 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ7840004272534532",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:21,712 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:00:21,712 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:27,540 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:27,540 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'e212426e06252f0c583ef6102e18d15b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:27,540 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ8840004229584531",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:27,596 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:00:27,596 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:27,979 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:27,979 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'e212426e06252f0c583ef6102e18d15b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:27,979 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ8840004229584531",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:28,003 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "该条码已绑定过其他商品，请更换"
+    }
+}
+2021-08-28 11:00:28,003 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:35,572 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:35,572 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '89ec14929b001d7ca7c377e641ced6d6', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:35,572 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ1840004225854530",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:35,624 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:00:35,625 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:44,356 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:44,356 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '1c8e24c6680bec9602d807f0ad5c46e0', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:44,356 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ0840004248524536",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:44,386 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "该条码已绑定过其他商品，请更换"
+    }
+}
+2021-08-28 11:00:44,386 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:55,931 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:00:55,931 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'e932a06422a395e648116be88a31a155', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:00:55,931 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ0840004223384537",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:00:55,979 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "该条码已绑定过其他商品，请更换"
+    }
+}
+2021-08-28 11:00:55,979 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:01:03,978 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:01:03,978 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'b72d709a5d0fe196fa0d72a713e57bb4', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:01:03,978 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ5840004252774538",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:01:04,237 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:01:04,237 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:01:11,787 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:01:11,787 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '26b5ca887fc42bccf26be05acf864f5b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:01:11,787 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.AddGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "merchantName": "test_ming",
+          "merchantGoodsNo": "SJ2840004224584539",
+          "shopName": "mingtest",
+          "staffId": "mingtestID",
+          "staffName": "mingtestName",
+          "shopId": "669"
+     }
+}
+2021-08-28 11:01:11,832 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.AddGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:01:11,832 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:06:52,327 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:06:52,328 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'efddc949303bcc884a0ea7f4f1f9da41', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:06:52,328 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "receiverName": "收件人",
+          "receiverPhone": "18888888888",
+          "receiverAddress": "收件地址",
+          "detectCenterName": "龙华质检中心",
+          "sendWay": "1",
+          "expressCompany": "顺丰快递",
+          "expressNo": "SF1231237842801",
+          "goodsIds": [
+               "110"
+          ],
+          "createUserId": "1002059",
+          "createUserName": "刘志明",
+          "merchantId": "6721",
+          "merchantName": "测试商户刘志明"
+     }
+}
+2021-08-28 11:06:52,401 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "deliveryNum": "1630120013597523"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:06:52,402 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:06:59,747 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:06:59,747 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '2ad74d740d32b584488d0e3e103dbf8d', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:06:59,747 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "receiverName": "收件人",
+          "receiverPhone": "18888888888",
+          "receiverAddress": "收件地址",
+          "detectCenterName": "龙华质检中心",
+          "sendWay": "1",
+          "expressCompany": "顺丰快递",
+          "expressNo": "SF1231237842801",
+          "goodsIds": [
+               "111"
+          ],
+          "createUserId": "1002059",
+          "createUserName": "刘志明",
+          "merchantId": "6721",
+          "merchantName": "测试商户刘志明"
+     }
+}
+2021-08-28 11:06:59,786 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1050200",
+        "_bizErrCode": "1050200",
+        "_errStr": "物流单号重复"
+    }
+}
+2021-08-28 11:06:59,786 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:07:04,995 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:07:04,995 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd192dc223bfa47e4ddb7f97ba6f06d80', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:07:04,996 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "receiverName": "收件人",
+          "receiverPhone": "18888888888",
+          "receiverAddress": "收件地址",
+          "detectCenterName": "龙华质检中心",
+          "sendWay": "1",
+          "expressCompany": "顺丰快递",
+          "expressNo": "SF1231237842802",
+          "goodsIds": [
+               "111"
+          ],
+          "createUserId": "1002059",
+          "createUserName": "刘志明",
+          "merchantId": "6721",
+          "merchantName": "测试商户刘志明"
+     }
+}
+2021-08-28 11:07:05,021 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "10501000",
+        "_bizErrCode": "10501000",
+        "_errStr": "请求过快"
+    }
+}
+2021-08-28 11:07:05,021 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:07:13,892 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:07:13,893 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'd192dc223bfa47e4ddb7f97ba6f06d80', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:07:13,893 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "receiverName": "收件人",
+          "receiverPhone": "18888888888",
+          "receiverAddress": "收件地址",
+          "detectCenterName": "龙华质检中心",
+          "sendWay": "1",
+          "expressCompany": "顺丰快递",
+          "expressNo": "SF1231237842802",
+          "goodsIds": [
+               "111"
+          ],
+          "createUserId": "1002059",
+          "createUserName": "刘志明",
+          "merchantId": "6721",
+          "merchantName": "测试商户刘志明"
+     }
+}
+2021-08-28 11:07:13,960 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "deliveryNum": "1630120034613255"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:07:13,960 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:08:29,435 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:08:29,435 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'cb8ab9a0ed9f935ffe055b464789a025', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:08:29,436 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "receiverName": "收件人",
+          "receiverPhone": "18888888888",
+          "receiverAddress": "收件地址",
+          "detectCenterName": "龙华质检中心",
+          "sendWay": "1",
+          "expressCompany": "顺丰快递",
+          "expressNo": "SF1231237842803",
+          "goodsIds": [
+               "111",
+               "112",
+               "113",
+               "114"
+          ],
+          "createUserId": "1002059",
+          "createUserName": "刘志明",
+          "merchantId": "6721",
+          "merchantName": "测试商户刘志明"
+     }
+}
+2021-08-28 11:08:29,464 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1050200",
+        "_bizErrCode": "1050200",
+        "_errStr": "商品111已经创建过寄货单"
+    }
+}
+2021-08-28 11:08:29,465 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:08:35,385 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 11:08:35,385 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'acf4501482654e66f963e0e5c3c9ebfc', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 11:08:35,386 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1439261904",
+          "_invokeId": "563447634257324435",
+          "_callerServiceId": "210015",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "receiverName": "收件人",
+          "receiverPhone": "18888888888",
+          "receiverAddress": "收件地址",
+          "detectCenterName": "龙华质检中心",
+          "sendWay": "1",
+          "expressCompany": "顺丰快递",
+          "expressNo": "SF1231237842803",
+          "goodsIds": [
+               "115",
+               "112",
+               "113",
+               "114"
+          ],
+          "createUserId": "1002059",
+          "createUserName": "刘志明",
+          "merchantId": "6721",
+          "merchantName": "测试商户刘志明"
+     }
+}
+2021-08-28 11:08:35,450 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.createDelivery",
+        "_invokeId": "563447634257324435",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "210015",
+        "_timestamps": "1439261904",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "deliveryNum": "1630120116668621"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 11:08:35,450 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:13:59,705 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:13:59,706 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'ffdc30ecb237ace1c72c82b29c8bed1f', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:13:59,706 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628758838",
+          "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "merchantId": "6721"
+     }
+}
+2021-08-28 14:13:59,732 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+        "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110001",
+        "_timestamps": "1628758838",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "total": "1",
+            "tobePayment": "0",
+            "paid": "1",
+            "shipped": "0",
+            "completed": "0",
+            "close": "0"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:13:59,732 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:34,480 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:34,480 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '8c0e0beff9023a7abebd19ab6cd1b84d', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:14:34,480 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628758838",
+          "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "merchantId": ""
+     }
+}
+2021-08-28 14:14:34,504 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+        "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110001",
+        "_timestamps": "1628758838",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "10501001",
+        "_bizErrCode": "10501001",
+        "_errStr": " param.merchant id 字段是必须的"
+    }
+}
+2021-08-28 14:14:34,504 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:50,893 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:50,893 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '4a90246b2d15b0dc145753e8dfd84c0b', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:14:50,893 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628758838",
+          "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "merchantId": "123123123"
+     }
+}
+2021-08-28 14:14:50,916 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+        "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110001",
+        "_timestamps": "1628758838",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "total": "0",
+            "tobePayment": "0",
+            "paid": "0",
+            "shipped": "0",
+            "completed": "0",
+            "close": "0"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:14:50,916 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:56,556 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:56,556 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3860853c65dbf47d285e6a7410a8c8da', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:14:56,556 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628758838",
+          "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "merchantId": "123123112321321323"
+     }
+}
+2021-08-28 14:14:56,578 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+        "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110001",
+        "_timestamps": "1628758838",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "total": "0",
+            "tobePayment": "0",
+            "paid": "0",
+            "shipped": "0",
+            "completed": "0",
+            "close": "0"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:14:56,578 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:57,260 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:57,260 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3860853c65dbf47d285e6a7410a8c8da', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:14:57,260 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628758838",
+          "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "merchantId": "123123112321321323"
+     }
+}
+2021-08-28 14:14:57,282 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+        "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110001",
+        "_timestamps": "1628758838",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "total": "0",
+            "tobePayment": "0",
+            "paid": "0",
+            "shipped": "0",
+            "completed": "0",
+            "close": "0"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:14:57,282 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:57,484 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:14:57,485 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '3860853c65dbf47d285e6a7410a8c8da', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:14:57,485 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1628758838",
+          "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "merchantId": "123123112321321323"
+     }
+}
+2021-08-28 14:14:57,506 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.StatusStatistics",
+        "_invokeId": "eda1c7c5c559a2661fa593a0974a2df1",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110001",
+        "_timestamps": "1628758838",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "total": "0",
+            "tobePayment": "0",
+            "paid": "0",
+            "shipped": "0",
+            "completed": "0",
+            "close": "0"
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:14:57,506 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:16:43,114 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:16:43,115 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '0ad5dccab4bceb3b4839b83abc196de3', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:16:43,115 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.List",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "status": "2",
+          "pageIndex": "0",
+          "pageSize": "15",
+          "login_token": "76871239752f79a13e1c1bf826a51645::7687::1::239::75",
+          "staffId": "239",
+          "staffName": "羊年",
+          "merchantId": "6721",
+          "merchantName": " 异地上拍开发联调商户",
+          "shopId": "54113",
+          "shopName": "开发联调门店1"
+     }
+}
+2021-08-28 14:16:43,141 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.List",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "pageInfo": {
+            "pageIndex": "0",
+            "pageSize": "15",
+            "total": "1"
+        },
+        "data": [
+            {
+                "orderId": "10",
+                "goodsName": "【良品】小米 小米 9 黑色 6GB+128GB 二手手机 ",
+                "goodsLogo": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png",
+                "skuDesc": "小米 9 黑色 国行 移动 6GB + 128GB",
+                "serialNo": "SJ8840004231724252",
+                "expressNo": "",
+                "buyerNick": "我很想爱他啊44949568",
+                "orderAmount": "1",
+                "payAmount": "1",
+                "status": "2",
+                "statusName": "已付款",
+                "createTime": "2021-08-27 18:36:22",
+                "payTime": "2021-08-27 18:36:31",
+                "deliveryTime": "",
+                "completeTime": ""
+            }
+        ],
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:16:43,141 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:17:13,635 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:17:13,635 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '4d25ff6940cf65b7587338d964a00283', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:17:13,635 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.List",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "status": "2",
+          "pageIndex": "0",
+          "pageSize": "15",
+          "login_token": "76871239752f79a13e1c1bf826a51645::7687::1::239::75",
+          "staffId": "239",
+          "staffName": "羊年",
+          "merchantId": "67211",
+          "merchantName": " 异地上拍开发联调商户",
+          "shopId": "54113",
+          "shopName": "开发联调门店1"
+     }
+}
+2021-08-28 14:17:13,662 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.List",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "pageInfo": {
+            "pageIndex": "0",
+            "pageSize": "15",
+            "total": "0"
+        },
+        "data": [],
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:17:13,662 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:17:21,119 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:17:21,119 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '0ad5dccab4bceb3b4839b83abc196de3', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:17:21,119 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.List",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "status": "2",
+          "pageIndex": "0",
+          "pageSize": "15",
+          "login_token": "76871239752f79a13e1c1bf826a51645::7687::1::239::75",
+          "staffId": "239",
+          "staffName": "羊年",
+          "merchantId": "6721",
+          "merchantName": " 异地上拍开发联调商户",
+          "shopId": "54113",
+          "shopName": "开发联调门店1"
+     }
+}
+2021-08-28 14:17:21,143 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.List",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "pageInfo": {
+            "pageIndex": "0",
+            "pageSize": "15",
+            "total": "1"
+        },
+        "data": [
+            {
+                "orderId": "10",
+                "goodsName": "【良品】小米 小米 9 黑色 6GB+128GB 二手手机 ",
+                "goodsLogo": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png",
+                "skuDesc": "小米 9 黑色 国行 移动 6GB + 128GB",
+                "serialNo": "SJ8840004231724252",
+                "expressNo": "",
+                "buyerNick": "我很想爱他啊44949568",
+                "orderAmount": "1",
+                "payAmount": "1",
+                "status": "2",
+                "statusName": "已付款",
+                "createTime": "2021-08-27 18:36:22",
+                "payTime": "2021-08-27 18:36:31",
+                "deliveryTime": "",
+                "completeTime": ""
+            }
+        ],
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:17:21,144 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:26,473 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:26,473 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '0a5df1c2e5c7d8750949f5dc93864a63', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:19:26,474 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "orderId": "3"
+     }
+}
+2021-08-28 14:19:26,503 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "orderId": "3",
+            "orderNum": "2108251529000003",
+            "xyOrderNum": "1381435107752441876",
+            "buyerNick": "狂追一只猪",
+            "status": "6",
+            "statusName": "已关闭",
+            "orderAmount": "50000",
+            "payAmount": "50000",
+            "createTime": "2021-08-25 15:29:10",
+            "payTime": "",
+            "deliveryTime": "",
+            "completeTime": "",
+            "expressName": "",
+            "expressNo": "",
+            "goodsId": "9",
+            "goodsName": "【良品】7成新 苹果 iPhone X 银色 3GB+64GB 二手手机 ",
+            "goodsLogo": "https://s1.huishoubao.com/img/phone/41567_20191106154719_960.jpg",
+            "skuDesc": "苹果 iPhone X 银色 国行 在保 全网 其他型号 64GB",
+            "serialNo": "SJ2840004087266896",
+            "imei": ""
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:19:26,503 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:33,053 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:33,053 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '9634702a8356539c25be20376bc283f1', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:19:33,053 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "orderId": "3111"
+     }
+}
+2021-08-28 14:19:33,075 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "10501002",
+        "_bizErrCode": "10501002",
+        "_errStr": "订单ID3111 不存在"
+    }
+}
+2021-08-28 14:19:33,075 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:35,693 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:35,693 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '9634702a8356539c25be20376bc283f1', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:19:35,693 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "orderId": "3111"
+     }
+}
+2021-08-28 14:19:35,717 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "10501002",
+        "_bizErrCode": "10501002",
+        "_errStr": "订单ID3111 不存在"
+    }
+}
+2021-08-28 14:19:35,718 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:52,820 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:19:52,821 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '38faa5ee89433c39eb89b8feed19ffd0', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:19:52,821 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "orderId": ""
+     }
+}
+2021-08-28 14:19:52,844 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "10501001",
+        "_bizErrCode": "10501001",
+        "_errStr": " param.order id 字段是必须的"
+    }
+}
+2021-08-28 14:19:52,844 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:20:34,537 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 14:20:34,538 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '81de7b25812e159999d57730fb98de95', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 14:20:34,538 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1629685350",
+          "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+          "_callerServiceId": "110030",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "orderId": "10"
+     }
+}
+2021-08-28 14:20:34,563 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.V1.XyOrder.Detail",
+        "_invokeId": "dde909b2c984988c2561ad33bf6c16f0",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "110030",
+        "_timestamps": "1629685350",
+        "_version": "0.01"
+    },
+    "_data": {
+        "data": {
+            "orderId": "10",
+            "orderNum": "2108271836000001",
+            "xyOrderNum": "2062543934485614518",
+            "buyerNick": "我很想爱他啊44949568",
+            "status": "2",
+            "statusName": "已付款",
+            "orderAmount": "1",
+            "payAmount": "1",
+            "createTime": "2021-08-27 18:36:22",
+            "payTime": "2021-08-27 18:36:31",
+            "deliveryTime": "",
+            "completeTime": "",
+            "expressName": "",
+            "expressNo": "",
+            "goodsId": "101",
+            "goodsName": "【良品】小米 小米 9 黑色 6GB+128GB 二手手机 ",
+            "goodsLogo": "https://s1.huishoubao.com/img/phone/_20190226161308_421.png",
+            "skuDesc": "小米 9 黑色 国行 移动 6GB + 128GB",
+            "serialNo": "SJ8840004231724252",
+            "imei": ""
+        },
+        "_ret": "0",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_bizErrCode": "0"
+    }
+}
+2021-08-28 14:20:34,563 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 17:33:39,300 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 17:33:39,300 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '9aabe5bdd98545b5675f3a1674b13474', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 17:33:39,301 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "goodsId": "115"
+     }
+}
+2021-08-28 17:33:39,328 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "returnAddressConfigId 必填"
+    }
+}
+2021-08-28 17:33:39,328 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 17:39:13,125 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-08-28 17:39:13,125 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': 'c869ac1ae7a2644283470e9e9f19c8b5', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-08-28 17:39:13,125 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_groupNo": "1",
+          "_remark": "",
+          "_timestamps": "1617241073",
+          "_invokeId": "16172410731445",
+          "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+          "_callerServiceId": "112002"
+     },
+     "_param": {
+          "merchantId": "6721",
+          "returnAddressConfigId": "1",
+          "goodsId": "115"
+     }
+}
+2021-08-28 17:39:13,152 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "XianYuYiYanHuo.Api.ReturnGoods",
+        "_invokeId": "16172410731445",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "112002",
+        "_timestamps": "1617241073",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "1",
+        "_bizErrCode": "1",
+        "_errStr": "您的已验货预存资金余额不足，请充值后再进行申请"
+    }
+}
+2021-08-28 17:39:13,153 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
