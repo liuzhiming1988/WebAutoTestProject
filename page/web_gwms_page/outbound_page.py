@@ -33,18 +33,22 @@ source_number_input = ("xpath", ".//*[@id='edit:soco']")     # 添加拣货下�
 save_btn = ("xpath", ".//*[@id='edit:addId']")     # 添加拣货下架单：保存按钮
 pick_task_quick = ("xpath", ".//*[@id='detail_ctrl']")     # 展开拣货下架任务明细
 quick_pick_btn = ("xpath", ".//*[@id='edit:addDBut']")     # 快捷拣货按钮
+frame_quick_pick = ("xpath", ".//*[@id='edit:countPage']/iframe")   # 快捷拣货列表的frame
 check_all = ("xpath", ".//*[@id='gtable1_checkboxall']")     # 全选按钮
 save_order_btn = ("xpath", ".//*[@id='edit:updateId']")     # 保存单据按钮
 audit_order_btn = ("xpath", ".//*[@id='edit:submitMBut']")     # 审核单据按钮
 
 # 出库复核定位对象
 review_add_btn = ("xpath", ".//*[@id='edit:j_id_jsp_1417180024_2']")     # 出库复核-添加单据按钮
-radio_code = ("xpath", ".//*[@id='edit:batp:2']")     # 明细复核，商品编码单选框
+radio_code = ("xpath", ".//*[@id='edit:batp']/tbody/tr/td[3]/label")     # 明细复核，商品编码单选框
 review_code = ".//*[@id='gtable2_inco_1']"     # 第一条明细的商品编码
 review_code_num = ".//*[@id='gtable2_tanu_1']"   # 第一条明细的数量
 review_code_input = ("xpath", ".//*[@id='edit:baco']")     # 条码输入框
-code_count = ("xpath", ".//*[@id='edit:qty']")     # 数量输入框
+code_count_input = ("xpath", ".//*[@id='edit:qty']")     # 数量输入框
+add_detail_btn = ("xpath", ".//*[@id='edit:addDBut']")       # 添加明细按钮
 record_count = ("xpath", ".//*[@id='gtable2_stotalRecords']")    # 待复核明细记录数
+frame_review = "orders"    # 待复核列表的子级iframe
+frame_detail = "ifoqcdetail"      # 出库复核单，已复核明细列表frame
 review_save_btn = ("xpath", ".//*[@id='edit:updateId']")    # 复核-保存单据按钮
 review_audit_btn = ("xpath", ".//*[@id='edit:appBut']")    # 复核-审核单据按钮
 
@@ -63,6 +67,8 @@ class OutboundPage(BasePage):
     mark_text = ""
     mark = True
 
+
+
     def create_express_number(self):
         """生成快递单号"""
 
@@ -73,6 +79,7 @@ class OutboundPage(BasePage):
         pass
 
     def create_task(self, p_code):
+        self.implicitly_wait(20)
         self.switch_to_frame(frame)
         # self.max_window()
         # 用商品编码搜索出对应的订单
@@ -101,6 +108,7 @@ class OutboundPage(BasePage):
         else:
             self.mark_text = "当前库存状态为【{}】，无法进行出库！<br>" \
                              "tip：库存状态需为已锁库存，才可以进行出库，建议检查当前单据包含的条码是否都已入库完成！"
+            self.mark = False
             return False
 
         # 获取是否单品
@@ -113,6 +121,7 @@ class OutboundPage(BasePage):
             pass
         else:
             self.mark_text = "当前订单状态为：{}；订单状态需为【正式单据】，才可以进行出库，请检查！！！".format(status)
+            self.mark = False
             return False
 
         # 获取物流单号
@@ -128,9 +137,12 @@ class OutboundPage(BasePage):
         self.click(("xpath", ".//*[@id='gtable_checkbox1']"))  # 选中
         self.switch_to_parent_frame()
         self.click(create_task)
+        self.alert_accept()
         self.mark = True
 
         # 获取备货任务单
+        self.switch_to_default_frame()
+        self.switch_to_frame(frame)
         self.switch_to_frame(frame_index)
         self.task_order = self.get_elem_text(picking_list)
 
@@ -147,17 +159,20 @@ class OutboundPage(BasePage):
         self.switch_to_frame(frame)
         # 添加单据
         self.click(add_btn)
+        self.sleep(2)
         self.send_key(source_number_input, self.task_order)
         self.click(save_btn)
         self.alert_accept()
 
         # 快捷拣货
         self.click(pick_task_quick)
+        self.switch_to_frame(self.find_element(frame_quick_pick))
         self.click(check_all)
         self.click(quick_pick_btn)
         self.alert_accept()
 
         # 保存、审核单据
+        self.switch_to_parent_frame()
         self.click(save_order_btn)
         self.alert_accept()
         self.click(audit_order_btn)
@@ -171,39 +186,56 @@ class OutboundPage(BasePage):
 
     def outbound_review(self):
         self.switch_to_frame(frame)
+        self.implicitly_wait(20)
 
         # 添加出库复核单据
         self.click(review_add_btn)
+        self.sleep(2)
         self.send_key(source_number_input, self.sale_order_num)
         self.click(save_btn)
         self.alert_accept()
 
         # 获取待复核的明细记录数，调用create_detail_element()方法生成明细对象
         # 商品编码xpath：".//*[@id='gtable2_inco_1']"     待复核数量xpath：".//*[@id='gtable2_tanu_1']"
+        self.switch_to_frame(frame_review)
         count = int(self.get_elem_text(record_count))
-        code_list = self.create_detail_element(review_code, count)
-        num_list = self.create_detail_element(review_code_num, count)
+        code_ob_list = self.create_detail_element(review_code, count)
+        num_ob_list = self.create_detail_element(review_code_num, count)
+
+        to_audit = {}
+        for x in range(count):
+            # 遍历明细，获取商品编码和待复核数量
+            code = self.get_elem_text(code_ob_list[x])
+            num = self.get_elem_text(num_ob_list[x])
+            to_audit[code] = num
+
+        self.logger.info("【待复核条码-字典】{}".format(to_audit))
+
+        self.switch_to_parent_frame()
+        self.switch_to_frame(frame_detail)
+        self.sleep(2)
         self.click(radio_code)  # 明细类型选择商品编码
 
-        for x in range(count):
+        for k, v in to_audit.items():
             # 遍历明细，循环添加明细
-            code = self.get_elem_text(code_list)
-            num = self.get_elem_text(num_list)
-            self.send_key(review_code_input, code)
-            self.send_key(review_code_num, num)
+            self.send_key(review_code_input, k)
+            self.send_key(code_count_input, v)
+            self.click(add_detail_btn)
+            self.sleep(1)
 
         # 保存单据、审核单据
+        self.switch_to_parent_frame()
         self.click(review_save_btn)
         self.alert_accept()
         self.click(review_audit_btn)
         self.alert_accept()
+        text_alert = self.get_alert_text()
+        self.alert_accept()
+        self.sleep(2)
 
-        text = "3. 【销售单号】{}出库完成".format(self.sale_order_num)
+        text = "3. 【销售单号】{}的出库结果是：{}".format(self.sale_order_num, text_alert)
         self.logger.debug(text)
         self.mark_text += text
-        self.refresh()
-
-
 
     @staticmethod
     def create_detail_element(element_name, count, index=-3):
@@ -222,6 +254,7 @@ class OutboundPage(BasePage):
             str_list[index] = str(i)
             ele_final = "".join(str_list)
             ob = ("xpath", ele_final)
+            print(ob)
             object_list.append(ob)
         return object_list
 

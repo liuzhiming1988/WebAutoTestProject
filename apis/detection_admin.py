@@ -165,7 +165,7 @@ class DetectionClient:
         res = self.detection_client.do_post(path, body)
         res_final = self.result_creator("获取检测选项", res)
         if res_final:
-            self.temp = common.merge_dict(self.temp, ** res["_data"]["_data"])
+            self.temp = common.merge_dict(self.temp, res["_data"]["_data"])
         return res_final
 
     def get_product_evaluate(self, options, sku_list):
@@ -246,7 +246,7 @@ class DetectionClient:
         res = self.detection_client.do_post(path, body)
         res_final = self.result_creator("获取上架标签warehouse_type", res)
         if res_final:
-            self.temp = common.merge_dict(self.temp, ** res["_data"]["_data"])
+            self.temp = common.merge_dict(self.temp, res["_data"]["_data"])
         return res_final
 
     def get_level(self, detect_select):
@@ -272,7 +272,7 @@ class DetectionClient:
         res = self.detection_client.do_post(path, body)
         res_final = self.result_creator("获取销售等级level info", res)
         if res_final:
-            self.temp = common.merge_dict(self.temp, ** res["_data"]["_data"])
+            self.temp = common.merge_dict(self.temp, res["_data"]["_data"])
         return res_final
 
     def add_detect_info(self, det_ids, detect_options, select_id_list, sku_li):
@@ -329,7 +329,7 @@ class DetectionClient:
                 "detType": self.temp["detType"],
                 "partnerCode": self.temp["partnerCode"],
                 "goodsLevel": {
-                    "level": self.temp.get()["goodsLevel"]["level"],
+                    "level": self.temp.get("goodsLevel","null").get("level","Null"),
                     "levelName": self.temp["goodsLevel"]["levelName"],
                     "levelDesc": self.temp["goodsLevel"]["levelDesc"],
                     "levelLabel": self.temp["goodsLevel"]["levelLabel"]

@@ -85,7 +85,7 @@ class V3AutoCheck:
                    "HSB-OPENAPI-CALLERSERVICEID": callerserviceid}
         respone = requests.post(url, json=param, headers=headers, proxies=self.proxies)
         respone.encoding = respone.apparent_encoding  # 编码设置
-        hsb_response_print(respone=respone)
+        # hsb_response_print(respone=respone)
 
         raw_json = json.loads(respone.text)
         if raw_json["_data"]["_errCode"] == "0":
@@ -141,7 +141,7 @@ if __name__ == '__main__':
     #         baseLevelTag.tagId：定价等级标签id  |  baseLevelTag.tagName：定价等级标签名称
     #         saleLevelTag：价格3.0-销售等级标签
     #         saleLevelTag.tagId：销售等级标签id  |  saleLevelTag.tagName：销售等级标签名称
-    productId = '63650'
+    productId = '23011'
     checkType = '2'
     freqLimitType = '1'
     ip = '127.0.0.1'

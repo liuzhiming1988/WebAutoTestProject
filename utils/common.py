@@ -170,6 +170,7 @@ def merge_dict(dict_raw, dict_new):
         return dict_final
     except TypeError as e:
         Logger().logger.warning("合并字典异常，异常信息：TypeError\n{}".format(e))
+        return False
 
 
 def test(x):
@@ -185,5 +186,9 @@ if __name__ == '__main__':
     # get_time()
     # print("{} 17:00-18:00".format(DATE_NOW))
     # is_exists_path("/Users/liuzhiming/Documents")
-    test(20)
+    # test(20)
     # get_signData({"fds":"trewt"})
+    a = {}
+    b = {"a":1,"options":"gfdf"}
+    ab = merge_dict(a,b)
+    print(b.get("a","null").get("fd","kkkk"))

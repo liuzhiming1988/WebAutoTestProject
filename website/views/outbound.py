@@ -41,16 +41,15 @@ class TestOutbound:
             if outbound.mark:
                 menu.open_picking()
                 outbound.picking_off()
-
+            if outbound.mark:
                 menu.open_outbound_review()
                 outbound.outbound_review()
 
-                return outbound.mark_text
-            else:
-                return outbound.mark_text
+            logger.info(outbound.mark_text)
+            return outbound.mark_text
+
         except Exception as e:
-            text = "出库失败，请登录系统检查日志信息"
-            outbound.mark = False
+            text = outbound.mark_text+"出库失败，请登录系统检查日志信息"
             return text
         finally:
             logger.info("{}测试完成".format(product_code))
@@ -58,6 +57,9 @@ class TestOutbound:
 
 
 if __name__ == '__main__':
-    out = TestOutbound()
+    # out = TestOutbound()
     # out.test_outbound("SJ5990003883073390")
-    out.test_outbound("SJ6840004239524585")
+    # out.test_outbound("SJ6840004239524585")
+    kv = {"A":"a","B":"b"}
+    for k,v in kv.items():
+        print(k+"="+v)

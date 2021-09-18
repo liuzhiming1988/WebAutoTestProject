@@ -67,16 +67,16 @@ class V3_Sales_Level_Generation:
 
 if __name__ == '__main__':
     v3_e6 = V3_Sales_Level_Generation()
-    v3_e6.v3_sales_level_generation(productId='1008', checkType='2', evaType='0')  # 34项苹果安卓定价模板v1（iPhone3G-3GS或低端安卓）(ID:13)
-    v3_e6.v3_sales_level_generation(productId='1132', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓简易无指纹）(ID:12)
-    v3_e6.v3_sales_level_generation(productId='6027', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓简易有指纹）(ID:11)
-    v3_e6.v3_sales_level_generation(productId='30780', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓无面容无指纹）(ID:10)
-    v3_e6.v3_sales_level_generation(productId='58960', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓-面容）(ID:9)
-    v3_e6.v3_sales_level_generation(productId='2063', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓指纹）(ID:8)
-    v3_e6.v3_sales_level_generation(productId='59998', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓面容+指纹）(ID:7)
-    v3_e6.v3_sales_level_generation(productId='30750', checkType='2', evaType='0')  # 34项苹果定价模板v1（iPhone4-5c）(ID:6)
-    v3_e6.v3_sales_level_generation(productId='38201', checkType='2', evaType='0')  # 34项苹果定价模板v1（iPhone5s-8P及以上）(ID:5)
-    v3_e6.v3_sales_level_generation(productId='41567', checkType='2', evaType='0')  # 34项苹果定价模板v1（iPhoneX及以上）(ID:4)
+    # v3_e6.v3_sales_level_generation(productId='1008', checkType='2', evaType='0')  # 34项苹果安卓定价模板v1（iPhone3G-3GS或低端安卓）(ID:13)
+    # v3_e6.v3_sales_level_generation(productId='1132', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓简易无指纹）(ID:12)
+    # v3_e6.v3_sales_level_generation(productId='6027', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓简易有指纹）(ID:11)
+    # v3_e6.v3_sales_level_generation(productId='30780', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓无面容无指纹）(ID:10)
+    # v3_e6.v3_sales_level_generation(productId='58960', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓-面容）(ID:9)
+    # v3_e6.v3_sales_level_generation(productId='2063', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓指纹）(ID:8)
+    # v3_e6.v3_sales_level_generation(productId='59998', checkType='2', evaType='0')  # 34项安卓定价模板v1（安卓面容+指纹）(ID:7)
+    # v3_e6.v3_sales_level_generation(productId='30750', checkType='2', evaType='0')  # 34项苹果定价模板v1（iPhone4-5c）(ID:6)
+    # v3_e6.v3_sales_level_generation(productId='38201', checkType='2', evaType='0')  # 34项苹果定价模板v1（iPhone5s-8P及以上）(ID:5)
+    v3_e6.v3_sales_level_generation(productId='38200', checkType='2', evaType='0')  # 34项苹果定价模板v1（iPhoneX及以上）(ID:4)
 
 '''
 【EvaluateConfV3】 【前提：定价等级模板 要切换到 定价等级标准】

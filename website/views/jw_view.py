@@ -55,7 +55,7 @@ def jw_outbound():
                 res_text += out_.test_outbound(code)
             else:
                 res_text += "错误提示：商品条码的长度应为18，" \
-                            "你輸入的条码长度为 {}，输入有误,请检查后重新提交 <hr>".format(len(code))
+                            "你輸入的条码长度为 {}，输入有误,请检查后重新提交!".format(len(code))
             res_text += "<br><hr>"
 
     return render_template("tips.html", text=res_text)

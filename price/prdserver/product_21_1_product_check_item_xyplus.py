@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# @Author:liuzhiming
+
+
+''' 产品服务 - 21.获取检测标准化产品信息【产品商品库sku信息 + 标准检测机况信息】【57】  - http://wiki.huishoubao.com/index.php?s=/105&page_id=3295
+
+    1-对应服务：server-evaluate_detect（服务器应用名：server-evaluate_detect）  |  2-对应URL http://codserver.huishoubao.com
+
+    一、标准检（多、细项，一般检测侧使用）
+    1、【标准检】产品商品库sku信息
+        1.1、后台界面路径：（新后台-product_lib_new-SPU列表）
+        1.2、调用接口：product_25-产品标准SKU的获取（pdt_sku_query）
+    2、【标准检】检测机况信息
+        2.1、后台界面路径：（新后台-机况检测模板）
+        2.2、调用接口：product_21-产品检测标准化信息【产品商品库sku信息+标准检测机况信息】  product_check_item
+
+    响应内容解析：
+    skuList：【产品商品库SKU信息】对应新后台，product_lib_new ——> SPU列表 ——> SKU选项管理
+    checkList：【标准检测机况信息】对应新后台，机况检测模板 ——> (搜索：类目-手机，状态-开启）
+'''
+
+
+
+if __name__ == '__main__':
+    # product_check_item(productId="1111111")
+    # product_check_item(productId="", orderId="7604918")
+    # product_check_item(productId="41567", orderId="7604918")
+    # product_check_item(productId="41567", orderId="")   # iPhone x   √
+    # product_check_item(productId="41567", orderId="")   # iPhone x   √
+    # product_check_item(productId="17", orderId="")   # iPhone x   √
+    # product_check_item(productId="30748", orderId="")   # iPhone x   √
+    # product_check_item(productId="63330", orderId="")    # iPhone 11   √
+    # product_check_item(productId="63398", orderId="")    # 华为 Mate 30   √
+    # product_check_item(productId="63399", orderId="")    # 华为 Mate 30 Pro   √
+    # product_check_item(productId="23009", orderId="")    # 小米1s
+    product_check_item(productId="38200")
+
+    # product_check_item(productId="64247", orderId="7604918")    # 错误数据机型，订单在保。 华为 P40 Pro+（5G） | "id":"32"
+    # product_check_item(productId="64001", orderId="7604922")    # 无错误数据机型，华为 P40 Pro（5G） | "id":"32"
+
+'''
+【57项标准检测】
+SELECT t.Fvalid,t.* from t_pdt_use_check_template t WHERE Fproduct_id = '65783';
+SELECT * from t_check_option_template b where b.Ftemplate_id = '20';
+SELECT pdt_use.Ftemplate_id, check_template.Ftemplate_id, check_template.Fitem_info 
+	FROM t_pdt_use_check_template AS pdt_use 
+	LEFT JOIN t_check_option_template AS check_template ON pdt_use.Ftemplate_id = check_template.Ftemplate_id 
+WHERE pdt_use.Fvalid = '1' and check_template.Fvalid = '1' and Fproduct_id = '65783';
+
+
+select Fid, Fname from t_check_question_item where Fid in(7263,7421,7424,7427,7431,7435,7441,7444,7448,7451,7454,7455,7456,7457,7458,7459,7480,7484,7485,7486,7498,7505,7509,7516,7521,7527,7531,7535,7540,7546,7549,7550,7551,7552,7569,7573,7576,7577,7582,7583,7598,7612);
+
+select Fid, Fname, Fweight, Fsingle_flag from t_check_answer_item where Fid in(7418,7419,7420,7422,7423,7425,7426,7428,7429,7430,7432,7433,7434,7436,7437,7438,7439,7440,7442,7443,7445,7446,7447,7449,7450,7452,7453,7460,7461,7462,7463,7464,7465,7466,7467,7468,7469,7470,7471,7472,7473,7474,7475,7476,7477,7478,7479,7481,7482,7483,7487,7488,7489,7490,7491,7492,7493,7494,7495,7496,7497,7499,7500,7501,7502,7503,7504,7506,7507,7508,7510,7511,7512,7513,7514,7515,7517,7518,7519,7520,7522,7523,7524,7525,7526,7528,7529,7530,7615,7532,7533,7534,7536,7537,7538,7539,7541,7542,7543,7544,7545,7547,7548,7553,7554,7555,7556,7557,7558,7559,7560,7561,7562,7563,7564,7565,7566,7570,7571,7572,7574,7575,7578,7579,7580,7581,7586,7587,7588,7589,7590,7591,7599,7600,7601,7602,7603,7604,7605,7606,7607,7608,7609,7610,7611,7613,7614);
+
+curl -H 'HSB-OPENAPI-SIGNATURE:0201ab72db42f629978c58ab2d243844' -H 'HSB-OPENAPI-CALLERSERVICEID:216008' -d '{"_head":{"_callerServiceId":"216008","_groupNo":"1","_interface":"pdt_sku_query","_invokeId":"8cf29bf42fe1871454c4c1d92ec70741","_msgType":"request","_remark":"","_timestamps":"1612494870","_version":"0.01"},"_param":{"info":{"combination":"0","productId":"41567"},"subInterface":"sku_option_combination_get"}}' http://prdserver.huishoubao.com/rpc/new_product_lib
+'''

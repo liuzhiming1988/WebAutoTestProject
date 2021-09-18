@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # v3_e133.v3_evaluate(channel_id='10000164', pid='1405', product_id='41567')
     # v3_e133.v3_evaluate(channel_id='10000165', pid='1406', product_id='41567')
     # v3_e133.v3_evaluate(channel_id='10000166', pid='1407', product_id='41567')
-    v3_e133.v3_evaluate(channel_id='10000167', pid='1408', product_id='41567')
+    v3_e133.v3_evaluate(channel_id='10000167', pid='1408', product_id='38200')
     # v3_e133.v3_evaluate(channel_id='10000168', pid='1409', product_id='41567')
 '''
 formParam: {ChannelId:40000001 Pid:1001 ProductId:41567 Select:[12 17 38 42 100049] Ip:127.0.0.1 UserId:测试 SkuItem:[] OptItem:[] Cookies:nihao FreqLimitType:}

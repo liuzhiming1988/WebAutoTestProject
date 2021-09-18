@@ -152,6 +152,11 @@ class BasePage:
         self.logger.debug("点击元素：【{}】>>【{}】".format(loc[0], loc[1]))
         element.click()
 
+    def implicitly_wait(self, second):
+        """隐式等待"""
+        self.logger.info("开启隐式等待，时间设置为{}秒".format(second))
+        self.driver.implicitly_wait(second)
+
     def get_url(self, url):
         self.logger.info("打开网址：【{}】".format(url))
         self.driver.get(url)
@@ -188,12 +193,14 @@ class BasePage:
         time.sleep(2)
 
     def switch_to_frame(self, frame):
-        self.driver.switch_to.frame(frame)
         self.logger.debug("进入frame:【{}】".format(frame))
+        self.driver.switch_to.frame(frame)
+        self.logger.debug("成功进入frame:【{}】".format(frame))
+
 
     def switch_to_parent_frame(self):
         self.driver.switch_to.parent_frame()
-        self.logger.debug("切换到上一级iframe")
+        self.logger.debug("切换到父级iframe")
 
     def switch_to_default_frame(self):
         """返回默认的frame"""
