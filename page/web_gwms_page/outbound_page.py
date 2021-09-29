@@ -260,39 +260,6 @@ class OutboundPage(BasePage):
 
 
 if __name__ == '__main__':
-    a = ["a1", "a2", "a3", "a4"]  # 单选
-    b = ["b1", "b2", "b3", "b4"]  # 单选
-    c = ["c1", "c2", "c3", "c4"]  # 第一个值为单选，其它可多选
-    d = ["d1", "d2", "d3"]    # 多选
-    # 从a、b、c、d里边挑选值进行排列组合，多选项以列表形式进行排列，如["a1","b2",[c2,c3],[d1,d2,d3]]
-    # 业务：有34个问题项，每个问题项对应若干答案，答案可能为单选或多选，将所有答案输出为一个列表，
-    # 作为参数去请求接口进行估价，验证估价算法是否正确。
-    def temp():
-        # finnal_list = []
-        count = 0
-        for x in a:
-            res_list = [1, 2, 3, 4]
-            res_list[0] = x
-            for y in b:
-                res_list[1] = y
-                for z in c:
-                    res_list[2] = z
-                    for s in d:
-                        res_list[3] = s
-                        print(res_list)
-                        count += 1
-        print(count)
 
-    temp()
-
-    # pass
-
-
-
-
-
-
-
-
-
+    pass
 

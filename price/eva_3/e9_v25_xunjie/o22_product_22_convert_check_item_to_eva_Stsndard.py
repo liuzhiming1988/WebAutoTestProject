@@ -42,13 +42,15 @@ class Convert_Check_Item_To_Eva:
         strSkuList = []
         for info in skuList:
             answerList = info['answerList']
-            index = random.randint(0, len(answerList) - 1)
+            # index = random.randint(0, len(answerList) - 1)
+            index = 0
             strSkuList.append(answerList[index]['answerId'])
 
         strCheckList = []
         for info in checkList:
             answerList = info['answerList']
-            index = random.randint(0, len(answerList) - 1)
+            # index = random.randint(0, len(answerList) - 1)
+            index = 0
             strCheckList.append(answerList[index]['answerId'])
 
         return strSkuList, strCheckList
@@ -104,7 +106,10 @@ if __name__ == '__main__':
 
     # skuList = ['6116', '471', '18', '2236', '38', '1091', '1773']     checkList = ["abc"]  or  checkList = [""]
     # "_errStr":"checkList 参数格式错误"
-    product_22.convert_check_item_to_eva(orderId="7633197", productId="41567", isOverInsurance='0') # 2021-05-25日订单
+    # product_22.convert_check_item_to_eva(orderId="7633197", productId="41567", isOverInsurance='1') # 2021-05-25日订单
+
+    # 迅捷单-获取3.0销售价
+    product_22.convert_check_item_to_eva(orderId="7636909", productId="30831", isOverInsurance='0')  # 2021-09-23日订单
 
 
 '''

@@ -25,9 +25,9 @@ class XYPlusAuto:
         self.aIdList = []
 
     def product_check_item(self, productId):
-        param = {"_head": { "_interface":"product_check_item_xyplus", "_msgType":"request", "_remark":"", "_version":"0.01", "_timestamps":"123456", "_invokeId":"123456", "_callerServiceId":"112006", "_groupNo":"1" },"_param": {"productId": productId}}
-
         url = "http://codserver.huishoubao.com/detect/product_check_item"
+        param = {"_head": {"_interface": "product_check_item_xyplus", "_msgType":"request", "_remark":"", "_version":"0.01", "_timestamps":"123456", "_invokeId":"123456", "_callerServiceId":"112006", "_groupNo":"1" },"_param": {"productId": productId}}
+
         md5value = json.dumps(param) + "_" + self.secret_key
         headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":self.callerserviceid}
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
@@ -39,14 +39,16 @@ class XYPlusAuto:
 
         for info in checkList:
             answerList = info['answerList']
-            index = random.randint(0, len(answerList) - 1)
+            # index = random.randint(0, len(answerList) - 1)
+            index = 0
             self.strCheckList.append(answerList[index]['answerId'])
             self.strCheckDesc += '"' + info['questionName'] + ":" + answerList[index]['answerName'] + '",'
         self.strCheckList = self.strCheckList[:-1]
 
         for info in skuList:
             answerList = info['answerList']
-            index = random.randint(0, len(answerList) - 1)
+            # index = random.randint(0, len(answerList) - 1)
+            index = 0
             self.strSkuList.append(answerList[index]['answerId'])
             self.strSkuDesc += '"' + info['questionName'] + ":" + answerList[index]['answerName'] + '",'
 
@@ -57,7 +59,7 @@ class XYPlusAuto:
         print('接口响应时长：{0} 秒'.format(respone.elapsed.total_seconds()))
 
     # 产品服务 | 22.检测标准化选项转换估价选项 | http://wiki.huishoubao.com/index.php?s=/105&page_id=3297
-    def convert_check_item_to_eva(self, productId, orderId="", isOverInsurance=1):
+    def convert_check_item_to_eva(self, productId, orderId="", isOverInsurance="1"):
         self.product_check_item(productId)
         param = {"_head": {"_interface": "convert_check_item_to_eva", "_msgType": "request", "_remark": "",
                            "_version": "0.01", "_timestamps": "123456", "_invokeId": "123456",
@@ -72,6 +74,8 @@ class XYPlusAuto:
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
         respone.encoding = respone.apparent_encoding  # 编码设置
         respone_dict = json.loads(respone.text)  # 转成字典
+
+        print(respone_dict)
 
         self.aIdList = respone_dict['_data']['_data']['select']
         print("======aIdList==============={}".format(self.aIdList))
@@ -110,7 +114,9 @@ class XYPlusAuto:
 if __name__ == '__main__':
     plus = XYPlusAuto()
     # plus.product_check_item("38200")     #
-    plus.sales_level_generation_xyplus(productId="38200", channelId="10000260", orderId="7636695")
+    # plus.sales_level_generation_xyplus(productId="38200", channelId="10000260", orderId="7636695")
+    # plus.sales_level_generation_xyplus(productId="38200", channelId="10000260", orderId="7636695")
+    plus.convert_check_item_to_eva("41567","7636932",isOverInsurance="1")
 
 
 

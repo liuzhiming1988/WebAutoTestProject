@@ -24,7 +24,7 @@ class V3_Evaluate:
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
         respone.encoding = respone.apparent_encoding  # 编码设置
         respone_dict = json.loads(respone.text)  # 转成字典
-        # print(respone_dict)
+        print(respone_dict)
         options_list = respone_dict['_body']['_data']['item_list']
 
         str_options_list = []
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     ''' 估价系统 与 定价系统 区分开理解，此处，不考虑机型的 定价状态'''
     v3_e133 = V3_Evaluate()
     '''1. 回收调价方案 | 自主调价 | 自动使用最新的回收定价版本 | 53'''
-    # v3_e133.v3_evaluate(channel_id='40000001', pid='1001', product_id='41567')
+    v3_e133.v3_evaluate(channel_id='40000001', pid='1001', product_id='41567')
     # v3_e133.v3_evaluate(channel_id='40000001', pid='1001', product_id='64000') #有聚合类SKU的机型
     # v3_e133.v3_evaluate(channel_id='40000001', pid='1001', product_id='3088') #没有编辑过SKU的机型
     # v3_e133.v3_evaluate(channel_id='40000001', pid='1001', product_id='30783') #没有编辑过SKU的机型
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # v3_e133.v3_evaluate(channel_id='10000164', pid='1405', product_id='41567')
     # v3_e133.v3_evaluate(channel_id='10000165', pid='1406', product_id='41567')
     # v3_e133.v3_evaluate(channel_id='10000166', pid='1407', product_id='41567')
-    v3_e133.v3_evaluate(channel_id='10000167', pid='1408', product_id='38200')
+    # v3_e133.v3_evaluate(channel_id='10000167', pid='1408', product_id='38200')
     # v3_e133.v3_evaluate(channel_id='10000168', pid='1409', product_id='41567')
 '''
 formParam: {ChannelId:40000001 Pid:1001 ProductId:41567 Select:[12 17 38 42 100049] Ip:127.0.0.1 UserId:测试 SkuItem:[] OptItem:[] Cookies:nihao FreqLimitType:}
