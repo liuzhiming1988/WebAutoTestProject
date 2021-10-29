@@ -60,6 +60,7 @@ class Base_Price_Evaluatee:
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
         respone.encoding = respone.apparent_encoding  # 编码设置
         respone_dict = json.loads(respone.text)  # 转成字典
+        print(respone_dict)
         options_list = respone_dict['_body']['_data']['itemList']
 
         str_options_list = []
@@ -102,7 +103,8 @@ if __name__ == '__main__':
     # strCheckList = ['82', '62', '66', '58', '236', '5530', '55', '78', '7642', '6931', '23', '5534', '224', '20', '1078', '2171', '3245']
 
     # 正常场景：渠道 - 命中：按类目+品牌+初始化价格范围调价 - 价格结果范围 - 按比例加成  |  正常
-    baseprice_23.base_price_evaluatee(channelId='40000001', pid='0', productId='41567', ip='127.0.0.1', freqLimitType='0')
+    baseprice_23.product_6_eva_option_get(channel_id='10000060', pid='1196', product_id='41567')
+    # baseprice_23.base_price_evaluatee(channelId='40000001', pid='0', productId='41567', ip='127.0.0.1', freqLimitType='0')
 
     # 正常场景：渠道 - 命中：按类目+品牌+初始化价格范围调价 - 价格结果范围 - 按金额加成  |  正常
     # baseprice_23.base_price_evaluatee(channelId='40000001', pid='0', productId='41567', evaType='3', ip='127.0.0.1', priceType='1', freqLimitType='0')

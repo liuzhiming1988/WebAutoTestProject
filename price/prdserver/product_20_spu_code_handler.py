@@ -18,6 +18,7 @@ def spu_code_handler(brandCode, spuCode):
     secret_key = "HKmTk03iDUCLIrFrrQkfOxPiGyGPqxb9"
     callerserviceid = "112002"
     url = "http://prdserver.huishoubao.com/rpc/new_product_lib"
+    print(json.dumps(param))
     md5value = json.dumps(param) + "_" + secret_key
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
     respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
@@ -49,7 +50,7 @@ if __name__ == '__main__':
     # spu_code_handler(brandCode='',spuCode='vivoiqoo3')
 
     # spu_code_handler(brandCode='',spuCode='honor荣耀 50')
-    spu_code_handler(brandCode='HONOR',spuCode='honor荣耀50')
+    spu_code_handler(brandCode='HONOR',spuCode='荣耀50pro')
     # spu_code_handler(brandCode='',spuCode='honor荣耀 50 Pro')
     # spu_code_handler(brandCode='Huawei',spuCode='honor荣耀50pro')
 

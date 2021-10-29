@@ -17,6 +17,12 @@ def hsb_amc_ipProxy_test():
     # print('\033[31m您调用的是『AMC-pre测试环境』，HOSTS指向IP为：『{0}』\033[0m'.format(hsb_amc_ipProxy['http']))
     return hsb_amc_ipProxy
 
+def hsb_ordserver_ipProxy_test():
+    '''1. 订单测试-环境'''
+    hsb_ordserver_ipProxy = {'http': '134.175.174.142'}
+    print('\033[31m您调用的是『订单FT-vpc测试环境』，HOSTS指向IP为：『{0}』\033[0m'.format(hsb_ordserver_ipProxy['http']))
+
+
 def hsb_eva_ipProxy_test():
     '''1. vpc测试-环境'''
     hsb_eva_ipProxy = {'http':'193.112.170.216'}
@@ -38,6 +44,7 @@ def hsb_eva_ipProxy_test():
 def hsb_eva_ipProxy_k8s_test():
     '''1. 测试K8S环境'''
     hsb_eva_ipProxy_k8s_test = {'http':'159.75.145.158'}
+    # hsb_eva_ipProxy_k8s_test = {'http': '42.194.181.175'}   # 开发环境
     print('\033[31m您调用的是『价格FT-测试K8S环境』，HOSTS指向IP为：『{0}』\033[0m'.format(hsb_eva_ipProxy_k8s_test['http']))
     return hsb_eva_ipProxy_k8s_test
 

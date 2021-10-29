@@ -121,7 +121,7 @@ class DetectionClient:
 
     def search_product(self, name=None):
         if name is None:
-            name = self.temp["productName"]
+            name = self.temp["productId"]
         path = "/getNoEvaProCommon"
         body = {
             "_head": {
@@ -329,10 +329,10 @@ class DetectionClient:
                 "detType": self.temp["detType"],
                 "partnerCode": self.temp["partnerCode"],
                 "goodsLevel": {
-                    "level": self.temp.get("goodsLevel","null").get("level","Null"),
-                    "levelName": self.temp["goodsLevel"]["levelName"],
-                    "levelDesc": self.temp["goodsLevel"]["levelDesc"],
-                    "levelLabel": self.temp["goodsLevel"]["levelLabel"]
+                    "level": self.temp.get("level","Null"),
+                    "levelName": self.temp["levelName"],
+                    "levelDesc": self.temp["levelDesc"],
+                    "levelLabel": self.temp["levelLabel"]
                 },
                 "chargedStatus": "1",
                 "chargedCount": "-1",

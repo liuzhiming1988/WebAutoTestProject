@@ -16,8 +16,10 @@ import hashlib, requests, json, os
 from price.hsb_MD5_Enerypt import Md5Enerypt
 from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
 
-def options_answer_get(classId, platformType, questionId, keyword):
-    param = { "_head":{ "_interface":"options_answer_get", "_msgType":"request", "_remark":"hello", "_version":"0.01", "_timestamps":"123", "_invokeId":"111", "_callerServiceId":"112002", "_groupNo":"1" }, "_param":{ "pageIndex":"0", "pageSize":"100", "classId":classId, "platformType":platformType, "questionId":questionId, "keyword":keyword } }
+def options_answer_get(classId, platformType, answerId, questionId, keyword):
+    param = { "_head":{ "_interface":"options_answer_get", "_msgType":"request", "_remark":"hello", "_version":"0.01",
+                        "_timestamps":"123", "_invokeId":"111", "_callerServiceId":"112002", "_groupNo":"1" },
+              "_param":{ "pageIndex":"0", "pageSize":"100", "classId":classId, "platformType":platformType, "answerId": answerId,"questionId":questionId, "keyword":keyword } }
 
     secret_key = "HKmTk03iDUCLIrFrrQkfOxPiGyGPqxb9"
     callerserviceid = "112002"
@@ -26,6 +28,16 @@ def options_answer_get(classId, platformType, questionId, keyword):
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
     respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
     hsb_response_print(respone=respone)
+    respone_dict = json.loads(respone.text)  # 转成字典
+    item_list = respone_dict["_body"]["_data"]["list"]   # 返回的选项列表
+    select_list = []     # 选中列表
+    if item_list:
+        for item in item_list:
+            aId, qId = item["aId"],item["qId"]
+            item_dict = {"aId": aId, "qId": qId}
+            select_list.append(item_dict)
+    print("选中选项为：\n{}".format(select_list))
+
 
 if __name__ == '__main__':
     # options_answer_get(classId='1', platformType='', questionId='11', keyword='')
@@ -36,4 +48,7 @@ if __name__ == '__main__':
     # options_answer_get(classId='1', platformType='1', questionId='', keyword='屏幕')
     # options_answer_get(classId='1', platformType='', questionId='2169', keyword='')
     # options_answer_get(classId='1', platformType='', questionId='2169', keyword='未更换')
-    options_answer_get(classId='1', platformType='', questionId='20210326', keyword='')
+    # options_answer_get(classId='1', platformType='', questionId='20210326', keyword='')
+
+    a_id = "21#23#55#59#65#223#1078#3246#2171#5535#6931#7641"
+    options_answer_get(classId='1', platformType='', answerId=a_id, questionId='', keyword='')

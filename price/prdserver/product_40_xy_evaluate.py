@@ -16,7 +16,8 @@ from price.hsb_MD5_Enerypt import Md5Enerypt
 from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
 
 def xy_evaluate(channelId, pid, productId, select):
-    param = {"_head":{"_callerServiceId":"110001","_groupNo":"1","_interface":"xy_evaluate","_invokeId":"11111","_msgType":"request","_remark":"","_timestamps":"1602671865","_version":"0.01"},"_param":{ "channelId":channelId, "pid":pid,"productId":productId, "select":select }}
+    param = {"_head":{"_callerServiceId":"110001","_groupNo":"1","_interface":"xy_evaluate","_invokeId":"11111","_msgType":"request","_remark":"","_timestamps":"1602671865","_version":"0.01"},
+             "_param":{ "channelId":channelId, "pid":pid,"productId":productId, "select":select }}
     secret_key = "c36691ced620bf82ad3fc4642f8a6427"
     callerserviceid = "110001"
     url = "http://bmserver.huishoubao.com/bangmai/xy_evaluate"
@@ -24,6 +25,7 @@ def xy_evaluate(channelId, pid, productId, select):
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
     respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
     hsb_response_print(respone=respone)
+    # print("请求参数：\n{}".format(param))
 
 if __name__ == '__main__':
     # xy_evaluate(channelId='10000207', pid='1533', productId='41567', select=[{"aId":"34","qId":"32"},{"aId":"1891","qId":"918"},{"aId":"246","qId":"999999"}])
@@ -34,7 +36,19 @@ if __name__ == '__main__':
     # xy_evaluate(channelId='10000164', pid='1405', productId='41567', select=[{'qId': '32', 'aId': '38'}, {'qId': '918', 'aId': '1083'}, {'qId': '16', 'aId': '18'}, {'qId': '999999', 'aId': '251'}])
     # xy_evaluate(channelId='10000164', pid='1405', productId='63328', select=[{'qId': '32', 'aId': '1853'}, {'qId': '16', 'aId': '17'}, {'qId': '918', 'aId': '1083'}, {'qId': '999999', 'aId': '247'}])
     # xy_evaluate(channelId='10000164', pid='', productId='30747', select=[{"qId":"918","aId":"1695"},{"qId":"16","aId":"17"},{"qId":"11","aId":"1124"},{"qId":"32","aId":"37"},{"qId":"39","aId":"1091"},{"qId":"999999","aId":"1"}])
-    xy_evaluate(channelId='10000207', pid='1533', productId='63328', select=[{"aId":"17","qId":"16"},{"aId":"38","qId":"32"},{"aId":"5567","qId":"918"},{"aId":"232","qId":"999999"}])
+    # xy_evaluate(channelId='10000207', pid='1533', productId='63328', select=[{"aId":"17","qId":"16"},{"aId":"38","qId":"32"},{"aId":"5567","qId":"918"},{"aId":"232","qId":"999999"}])
+
+    select_list = [{'aId': '21', 'qId': '19'}, {'aId': '23', 'qId': '22'}, {'aId': '55', 'qId': '54'}, {'aId': '59', 'qId': '57'}, {'aId': '65', 'qId': '64'}, {'aId': '223', 'qId': '222'}, {'aId': '1078', 'qId': '1076'}, {'aId': '2171', 'qId': '2169'}, {'aId': '3246', 'qId': '1461'}, {'aId': '5535', 'qId': '5533'}, {'aId': '6931', 'qId': '6929'}, {'aId': '7641', 'qId': '7640'}]
+
+    xy_evaluate(channelId='10000207', pid='1533', productId='63328',select=select_list)
+
+
+"""
+# 获取选项curl
+param='{"_head":{"_callerServiceId":"302018","_groupNo":"1","_interface":"options_answer_get","_invokeId":"1b6867864c55668bfcee70608f0b215f","_msgType":"request","_remark":"","_timestamps":"1634116277","_version":"0.01"},"_param":{"answerId":"21#23#55#59#65#223#1078#3246#2171#5535#6931#7641","classId":"1","keyword":"","pageIndex":"0","pageSize":"12","platformType":"1","questionId":""}}'
+md5value=`echo -n $param'_dk26kmdasnph0voz69fj0jpv7t3ixev8' | md5sum`; md5value=`echo ${md5value:0:32}`; curl  -H "HSB-OPENAPI-SIGNATURE:$md5value" -H 'HSB-OPENAPI-CALLERSERVICEID:302018' -d "$param" http://prdserver.huishoubao.com/rpc/new_product_lib
+"""
+
 
 '''
 流程

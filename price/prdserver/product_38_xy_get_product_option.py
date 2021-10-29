@@ -15,7 +15,8 @@ from price.hsb_MD5_Enerypt import Md5Enerypt
 from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
 
 def xy_get_product_option(productId, channelId,Funion_id):
-    param = {"_head":{"_interface":"xy_get_product_option","_msgType":"request","_remark":"hello","_version":"0.01","_timestamps":"123","_invokeId":"111","_callerServiceId":"110001","_groupNo":"1"},"_param":{ "productId":productId, "channelId":channelId }}
+    param = {"_head":{"_interface":"xy_get_product_option","_msgType":"request","_remark":"hello","_version":"0.01","_timestamps":"123","_invokeId":"111","_callerServiceId":"110001","_groupNo":"1"},
+             "_param":{ "productId":productId, "channelId":channelId }}
 
     secret_key = "c36691ced620bf82ad3fc4642f8a6427"
     callerserviceid = "110001"
@@ -24,10 +25,11 @@ def xy_get_product_option(productId, channelId,Funion_id):
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
     respone = requests.post(url, data=json.dumps(param), headers=headers, proxies=hsb_eva_ipProxy_test())
     respone.encoding = respone.apparent_encoding  # 编码设置
-    print(respone.text)
+    # print(respone.text)
     respone_dict = json.loads(respone.text)  # 转成字典
+    print(respone_dict)
     skuList = respone_dict['_data']['_data']['list']
-    print(json.dumps(skuList))
+    # print(json.dumps(skuList))
 
     str_Qid_List = [] # 用于存放响应数据中的 答案项id
     question_list_p = []  # 用于临时过渡性存放 答案项id（因为响应数据中，最后一个
@@ -63,7 +65,7 @@ if __name__ == '__main__':
     # xy_get_product_option(Funion_id='251', productId='41567', channelId='10000207')
     # xy_get_product_option(Funion_id='240', productId='46517', channelId='10000164')
     # xy_get_product_option(Funion_id='', productId='41567',channelId='10000164')
-    xy_get_product_option(Funion_id='12', productId='3121',channelId='10000207')
+    xy_get_product_option(Funion_id='', productId='63328',channelId='10000207')
 
 '''
 流程

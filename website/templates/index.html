@@ -91,6 +91,7 @@
     <a class="layui-btn layui-btn-primary" href="#p4">【新标准检测】</a>
     <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p5">【官方下单-邮寄回收】</a>
     <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p6">【商家自检(手动检)下单】</a>
+    <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p7">【价格2.0-2C估价-保存机型配置】</a>
 </div>
 
 <fieldset id="p1" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
@@ -124,7 +125,7 @@
 
 <br />
 <fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>巨沃-出库处理（敬请期待）</legend>
+    <legend>巨沃-出库处理</legend>
 </fieldset>
 <form action="/outbound" method="post">
 
@@ -361,6 +362,31 @@
             1 30746 华为 Y540<br />
             2 30833 iPhone 6s Plus<br />
             2 30749 iPhone 5s<br />
+        </label>
+    </div>
+<br />
+
+<fieldset id="p7" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>【价格2.0-2C估价-保存机型配置】</legend>
+</fieldset>
+<form action="/eva_2c_save" method="post">
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">机型ID</label>
+        <div class="layui-input-block">
+            <textarea name="products" class="layui-textarea" placeholder="请输入需要保存的机型ID，多个ID之间需使用英文逗号隔开"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+<br />
+    <div class="mark">
+        <label>使用说明：<br>
+        1. 请勿输入系统不存在的机型<br>
+        2. <br>
         </label>
     </div>
 <br />

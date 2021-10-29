@@ -68,7 +68,8 @@ if __name__ == '__main__':
     # eva_option_get(channel_id="", product_id="2068", pid="", platform_type='1')            #
     # eva_option_get(channel_id="10000164", product_id="63330", pid="", platform_type='')    #
     # eva_option_get(channel_id="10000164", product_id="64169", pid="1405", platform_type='')    #
-    eva_option_get(channel_id="10000190", product_id="64169", pid="1405", platform_type='')    #
+    # eva_option_get(channel_id="10000190", product_id="64169", pid="1405", platform_type='')    #
+    eva_option_get(channel_id="10000060", product_id="41567", pid="1196", platform_type='')
     # for i in range(10):
         # eva_option_get(channel_id="10000135", product_id="30752", pid="1365", platform_type='')    #
 

@@ -29,6 +29,7 @@ class Eva_Luateengineer:
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
         respone.encoding = respone.apparent_encoding  # 编码设置
         respone_dict = json.loads(respone.text)  # 转成字典
+        print(respone_dict)
         options_list = respone_dict['_body']['_data']['itemList']
 
         str_options_list = []
@@ -110,7 +111,10 @@ if __name__ == '__main__':
     # eva_luateengineer.evaluateengineer(orderid='7598459', product_id='4006', isOverInsurance='', channel_id='40000001', pid='', platform_type='')
     # eva_luateengineer.evaluateengineer(orderid='7607559', product_id='30749', isOverInsurance='0', channel_id='10000343', pid='', platform_type='')
 
-    eva_luateengineer.evaluateengineer(orderid='7629774', product_id='23036', isOverInsurance='0', channel_id='', pid='', platform_type='')
+    # eva_luateengineer.evaluateengineer(orderid='7629774', product_id='23036', isOverInsurance='0', channel_id='', pid='', platform_type='')
+
+    eva_luateengineer.evaluateengineer(orderid='7637433', product_id='41567', isOverInsurance='0', channel_id='40000001',
+                                       pid='', platform_type='')
 
     # for i in range(10):
     #     eva_luateengineer.evaluateengineer(orderid='7604918', product_id='64247', isOverInsurance='0', channel_id='40000001', pid='', platform_type='')

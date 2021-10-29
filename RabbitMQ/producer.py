@@ -17,12 +17,12 @@ message_str2 = "mq test-002: I will back!!!======"
 message_under = {"originalMessage":"{   \"item_id\" : 654679874118,   \"item_status\" : -2}","type":"1"}
 exchange_xianyu = "wuyougou_top_exchange"
 # 工作队列模式
-# work_mq = WorkQueuesMQ()
-# work_mq.producer_mq("TestMQ_C", message_str2, 10)
+work_mq = WorkQueuesMQ()
+work_mq.producer_mq("TestMQ_C", message_str2, 10)
 
 # 发布/订阅模式生产者
-publish_mq = PublishMQ()
-publish_mq.producer_mq(exchange_xianyu, message_str, 1)
+# publish_mq = PublishMQ()
+# publish_mq.producer_mq(exchange_xianyu, message_str1, 1)
 
 # 路由模式
 # route_mq = RouteMQ()

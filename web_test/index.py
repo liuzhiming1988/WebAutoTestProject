@@ -25,7 +25,7 @@ from flask import render_template
 
 app = Flask(__name__)
 manager = Manager(app)
-bootstrap = Bootstrap(app)
+# bootstrap = Bootstrap(app)
 
 
 @app.route("/")
@@ -107,4 +107,5 @@ if __name__ == '__main__':
     manager.run()
 
     # python index.py runserver --host 192.168.43.53
+    # python index.py runserver --host 127.0.0.1
 

@@ -1,0 +1,43 @@
+2021-10-20 19:37:27,940 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:161] - INFO: 打开网址：【http://evaadmin.huishoubao.com.cn/】
+2021-10-20 19:37:28,736 - D:\work\WebAutoTestProject\page\eva_admin_page\eva_admin_login.py - eva_login[line:29] - INFO: 开始输入用户名
+2021-10-20 19:37:28,736 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='username']】
+2021-10-20 19:37:28,767 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:144] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-10-20 19:37:28,865 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.13秒
+
+
+2021-10-20 19:37:28,865 - D:\work\WebAutoTestProject\page\eva_admin_page\eva_admin_login.py - eva_login[line:31] - INFO: 开始输入密码
+2021-10-20 19:37:28,865 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-10-20 19:37:28,888 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:144] - DEBUG: 输入数据：【f6758a4e】
+2021-10-20 19:37:28,940 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-10-20 19:37:28,940 - D:\work\WebAutoTestProject\page\eva_admin_page\eva_admin_login.py - eva_login[line:33] - INFO: 点击登录
+2021-10-20 19:37:28,941 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginBtn']】
+2021-10-20 19:37:28,957 - D:\work\WebAutoTestProject\base\base_page.py - click[line:152] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-10-20 19:37:28,982 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.04秒
+
+
+2021-10-20 19:40:19,062 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:161] - INFO: 打开网址：【http://evaadmin.huishoubao.com.cn/】
+2021-10-20 19:40:19,778 - D:\work\WebAutoTestProject\page\eva_admin_page\eva_admin_login.py - eva_login[line:29] - INFO: 开始输入用户名
+2021-10-20 19:40:19,778 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='username']】
+2021-10-20 19:40:19,816 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:144] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-10-20 19:40:19,925 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.15秒
+
+
+2021-10-20 19:40:19,926 - D:\work\WebAutoTestProject\page\eva_admin_page\eva_admin_login.py - eva_login[line:31] - INFO: 开始输入密码
+2021-10-20 19:40:19,926 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-10-20 19:40:19,946 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:144] - DEBUG: 输入数据：【f6758a4e】
+2021-10-20 19:40:20,005 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-10-20 19:40:20,006 - D:\work\WebAutoTestProject\page\eva_admin_page\eva_admin_login.py - eva_login[line:33] - INFO: 点击登录
+2021-10-20 19:40:20,006 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginBtn']】
+2021-10-20 19:40:20,024 - D:\work\WebAutoTestProject\base\base_page.py - click[line:152] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-10-20 19:40:20,047 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.04秒
+
+
+2021-10-20 19:40:22,049 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:98] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='app']/div/div[2]/div[1]/div[1]】
+2021-10-20 19:40:22,080 - D:\work\WebAutoTestProject\base\base_page.py - click[line:152] - DEBUG: 点击元素：【xpath】>>【.//*[@id='app']/div/div[2]/div[1]/div[1]】
+2021-10-20 19:40:22,108 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.06秒
+
+

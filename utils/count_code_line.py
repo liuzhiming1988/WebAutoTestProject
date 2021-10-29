@@ -56,7 +56,7 @@ class CountCodeLines:
         :param base_dir:
         :return: 筛选后的文件的列表
         """
-        if self.base_dir is None:
+        if not self.base_dir:
             text = "请指定统计目录"
             print(text)
             return False
@@ -107,5 +107,6 @@ class CountCodeLines:
 if __name__ == '__main__':
     cc = CountCodeLines()
     # cc.base_dir = "D:\\work\\autotest"
-    cc.base_dir = "D:\\work\\WebAutoTestProject"
+    cc.base_dir = "D:\\work\\github-pro\\leo-api-auto"
+    # cc.base_dir = "D:\\work\\WebAutoTestProject"
     cc.count_lines()

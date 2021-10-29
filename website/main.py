@@ -26,11 +26,13 @@ from website.views.outbound_delivery_order import outbound_delivery_order_blue
 from website.views.own_place_order import own_place_order_blue
 from website.views.merchant_check import merchant_check_blue
 from website.views.jw_view import jw_blue
+from website.views.eva_admin_view import eva_blue
 from website.views.base_service import base_blue
 from website.views.honor_test import honor_blue
 from website.views.yiyanhuo_v import fish_blue
 from website.setting import TestConfig
 from flask_sqlalchemy import SQLAlchemy
+from flask_script import Manager
 
 
 app = Flask(__name__, static_url_path="/static_files",
@@ -38,6 +40,7 @@ app = Flask(__name__, static_url_path="/static_files",
 
 app.config.from_object(TestConfig)       # 从setting.py文件中导入TestConfig类
 # views.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
+# manager = Manager(app)
 
 db = SQLAlchemy(app)
 
@@ -52,6 +55,7 @@ app.register_blueprint(jw_blue)
 app.register_blueprint(base_blue)
 app.register_blueprint(honor_blue)
 app.register_blueprint(fish_blue)
+app.register_blueprint(eva_blue)
 
 
 @app.route("/", methods=['GET', 'POST'])
@@ -68,4 +72,10 @@ def error(e):
 
 
 if __name__ == '__main__':
+    import sys
+    sys.path.append("D:\\work\\WebAutoTestProject\\website")
     app.run(port=TestConfig.PORT)
+
+    # python main.py runserver --host 192.168.43.53
+    # python main.py runserver --host 127.0.0.1
+    # sys.path.append("D:\\work\\WebAutoTestProject\\website")

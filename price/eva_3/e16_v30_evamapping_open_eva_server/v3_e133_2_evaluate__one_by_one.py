@@ -12,7 +12,7 @@
 
 import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print,hsb_eva_ipProxy_k8s_test
 
 def v3_evaluate(productid, pid, channel_id, select):
     param = {"_head":{"_interface":"evaluate","_msgType":"request","_remark":"zhangjinfa_autoTest","_version":"0.01","_timestamps":"123","_invokeId":"111","_callerServiceId":"816006","_groupNo":"1"},"_param":{"productid":productid, "ip":"127.0.0.1", "cookies":"zhangjinfa_autoTest", "userid":"1895", "select":select, "pid":pid, "channel_id":channel_id}}

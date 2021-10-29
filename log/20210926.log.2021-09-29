@@ -1,0 +1,192 @@
+2021-09-29 17:33:15,020 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:59] - DEBUG: 【Start Send Request url】:
+http://xianyu-yiyanhuo-api.hsb.com
+2021-09-29 17:33:15,022 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:60] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '93ce71af99121a7b33b4f97af8cb3891', 'HSB-OPENAPI-CALLERSERVICEID': '100001'}
+2021-09-29 17:33:15,022 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:61] - DEBUG: 【Request Body】:
+1
+2021-09-29 17:33:15,044 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:66] - DEBUG: 【http://xianyu-yiyanhuo-api.hsb.com】Response Body:
+{
+    "_head": {
+        "_groupNo": "1",
+        "_interface": "",
+        "_invokeId": "",
+        "_msgType": "response",
+        "_remark": "",
+        "_callerServiceId": "100001",
+        "_timestamps": "",
+        "_version": "0.01"
+    },
+    "_data": {
+        "_ret": "1",
+        "_errCode": "500",
+        "_bizErrCode": "500",
+        "_errStr": "System error"
+    }
+}
+2021-09-29 17:33:15,044 - D:\work\WebAutoTestProject\apis\idle_fish_api.py - _post[line:67] - DEBUG: 【End The Request】：http://xianyu-yiyanhuo-api.hsb.com
+2021-09-29 17:33:29,401 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/placeOrder
+2021-09-29 17:33:29,401 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '26d3d753f2eb064a2b1fccf0e216e8e6', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-09-29 17:33:29,401 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "placeOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1632908008279",
+          "_invokeId": "0fa04f37a588ce0df348851df2340a48",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "externalOrderNo": "1632908008280",
+          "fourTupleInfo": {
+               "businessAttribute": "14",
+               "deliveryMode": "3",
+               "paymentMode": "4",
+               "businessType": "15",
+               "arrivalType": "2",
+               "accessBusiness": "1",
+               "recycleType": "2",
+               "maintainValueType": "0"
+          },
+          "channelInfo": {
+               "pid": "3483",
+               "channelId": "10000876"
+          },
+          "userInfo": {
+               "userId": "602810010",
+               "userOpenId": "MDFAMjEwNzk3NDM1QDFkMjU0NDI1YjcwMTVkMmRhOWY2NjhmNDg0MzY3OTJkQGY2MDAxNjg4MTNmNDI3MzAzMjRlNzNjY2Q2OTQ2MGE5N2NhZjFiaNWIzOGZmMzg5MDMxZDYzNGI2",
+               "userPhone": "18888889999"
+          },
+          "oldGoodsInfo": {
+               "productId": "65980",
+               "serialNum": "msn2908008280",
+               "imei": ""
+          },
+          "newGoodsInfo": {
+               "productId": "65979",
+               "productName": "荣耀 50 pro",
+               "productPrice": "5000.00",
+               "productImage": "https:\\/\\/picuat.test.hihonor.com\\/pimages\\/omstestpms\\/product\\/SSSSB2CtestGBOM01\\/\\/142_142_532F2778A3709F8D991A0BDFA8BA2279C2EAB9D1AE4EF76Cmp.JPG",
+               "skuName": "65979",
+               "skuId": "65979"
+          },
+          "logisticInfo": {
+               "province": "广东",
+               "city": "深圳",
+               "area": "南山区",
+               "address": "科苑地铁站ABCming"
+          },
+          "priceInfo": {
+               "isMatchMaintainValue": "1",
+               "maintainValueAmount": "279930",
+               "maintainValueServiceFee": "0",
+               "userEvaluatePrice": "1929.00",
+               "newSalesPrice": "5000.00",
+               "evaRecordId": "2108123961"
+          },
+          "customData": {
+               "orderName": "钢铁侠",
+               "orderPhone": "18676702152",
+               "address": "好莱坞8888号ming",
+               "longitude": "113.946925",
+               "latitude": "22.547326",
+               "areaId": "3871"
+          },
+          "storeInfo": {
+               "storeId": "78456",
+               "store": "测试小店ming"
+          }
+     }
+}
+2021-09-29 17:33:29,417 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/placeOrder】Response Body:
+{
+    "_data": {
+        "_errCode": "1012",
+        "_errStr": "visitInfo is missing!",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "placeOrder",
+        "_invokeId": "0fa04f37a588ce0df348851df2340a48",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1632908007",
+        "_version": "0.01"
+    }
+}
+2021-09-29 17:33:29,417 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/placeOrder
+2021-09-29 17:33:43,473 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:54] - DEBUG: 【Start Send Request url】:
+http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder
+2021-09-29 17:33:43,473 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:55] - DEBUG: 【Request Headers】：
+{'Content-Type': 'application/json;charset=UTF-8', 'HSB-OPENAPI-SIGNATURE': '88ddf3beda3b10d85b64cc82037830c1', 'HSB-OPENAPI-CALLERSERVICEID': '110001'}
+2021-09-29 17:33:43,473 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:56] - DEBUG: 【Request Body】:
+{
+     "_head": {
+          "_interface": "submitHonorNewMachinOrder",
+          "_msgType": "request",
+          "_remark": "",
+          "_version": "0.01",
+          "_timestamps": "1632908021011",
+          "_invokeId": "7b0b9bf78622d651ef9c31fa07af3a73",
+          "_callerServiceId": "110001",
+          "_groupNo": "1"
+     },
+     "_param": {
+          "basicInfo": {
+               "orderId": "9908021011",
+               "recycleOrderId": "",
+               "recycleType": "1"
+          },
+          "oldGoodsInfo": {
+               "serialNum": "msn2908021011",
+               "skuCode": "2601010213601"
+          },
+          "newGoodsInfo": [
+               {
+                    "skuName": "荣耀 50 pro",
+                    "qty": "1",
+                    "skuCode": "008601137010000201",
+                    "logisticsCompany": "顺丰快递",
+                    "trackingNo": "msf1632908021011"
+               }
+          ],
+          "priceInfo": {
+               "recycleAmount": "2799.30",
+               "recycleRemain": "0.00"
+          },
+          "userVisitInfo": {
+               "province": "广东",
+               "city": "深圳",
+               "area": "南山区",
+               "street": "粤海街道",
+               "address": "深圳湾科技生态园",
+               "userName": "回收宝小豹哥",
+               "phone": "13612833088"
+          }
+     }
+}
+2021-09-29 17:33:43,494 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:60] - DEBUG: 【http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder】Response Body:
+{
+    "_data": {
+        "_errCode": "1012",
+        "_errStr": "recycleOrderId is empty! is empty!",
+        "_ret": "1"
+    },
+    "_head": {
+        "_callerServiceId": "110001",
+        "_groupNo": "1",
+        "_interface": "submitHonorNewMachinOrder",
+        "_invokeId": "7b0b9bf78622d651ef9c31fa07af3a73",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1632908022",
+        "_version": "0.01"
+    }
+}
+2021-09-29 17:33:43,494 - D:\work\WebAutoTestProject\apis\honor.py - _post[line:61] - DEBUG: 【End The Request】：http://ordserver.huishoubao.com/order_center/old4new/submitHonorNewMachinOrder

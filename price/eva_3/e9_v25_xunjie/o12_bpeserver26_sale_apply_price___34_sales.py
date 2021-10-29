@@ -84,12 +84,13 @@ class Sale_Apply_Price:
         md5value = json.dumps(param) + "_" + secret_key
         headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
+        print(respone.text)
 
         print('========>1.『{0}』 产品的『检测标准化选项-sku』(随机取)为：\n'.format(productId), strSkuList)
         print('\n========>2. 以上『检测标准化选项-sku』为：\n', '{' + strSkuDesc[:-1] + '}')
         print('\n========>3.『{0}』 产品的『检测标准化选项-机况-34』(随机取)为：\n'.format(productId), strCheckList)
         print('\n========>4. 以上『检测标准化选项-机况-34』为：\n', '{' + strCheckDesc[:-1] + '}')
-        hsb_response_print(respone=respone)
+        # hsb_response_print(respone=respone)
 
 if __name__ == '__main__':
     bpeserver_26 = Sale_Apply_Price()
@@ -102,7 +103,7 @@ if __name__ == '__main__':
     '''
 
     # 1. 正常场景
-    # bpeserver_26.sale_apply_price(planId='14', productId='41567', evaType='3', ip='127.0.0.1', freqLimitType='0')
+    bpeserver_26.sale_apply_price(planId='3', productId='41567', evaType='1', ip='127.0.0.1', freqLimitType='0')
 
     # 2. 3个价格加成规则均为空
     # "evaBasePrice":"73100","sellerPrice":"0","sellerMaxPrice":"0","buyerPrice":"0"  |  销售参考价，无加成规则，价格为0， | 正常

@@ -29,7 +29,7 @@ class MQSimple:
             pika.ConnectionParameters(self.ip_addr, self.port_num, "/", self.auth))
         self.channel = self.conn.channel()
 
-    def producer_mq(self, queue_name, message, num):
+    def producer_mq(self, queue_name, message, num=1):
 
         # 创建一个名为balance的队列，对queue进行durable持久化设为True(持久化第一步)
         self.channel.queue_declare(queue=queue_name, durable=True)
@@ -75,7 +75,7 @@ class WorkQueuesMQ:
         # 定义授权信息
         self.auth = pika.PlainCredentials(self.username, self.pwd)
 
-    def producer_mq(self, queue_name, message, num):
+    def producer_mq(self, queue_name, message, num=1):
 
         with pika.BlockingConnection(pika.ConnectionParameters(self.ip_addr,self.port_num, "/", self.auth)) as conn:
             # 创建一个队列，对queue进行durable持久化设为True(持久化第一步)
