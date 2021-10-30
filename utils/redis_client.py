@@ -80,7 +80,7 @@ class RedisConfig:
     PASSWORD = "hsb_redis_123"
 
 
-__author__ = "liuzhiming"
+__author__ = "liu zhi ming"
 
 
 class RedisClient(object):
