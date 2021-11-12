@@ -29,7 +29,7 @@ def product_check_item(productId, orderId):
 
     secret_key = "gYt8YHmZVUtq9BxHzmNBQ0Eo7oGi8IKU"
     callerserviceid = "112006"
-    url = "http://codserver.huishoubao.com/detect/product_check_item"
+    url = "http://codserver.huishoubao.com/"
     md5value = json.dumps(param) + "_" + secret_key
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
     respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())

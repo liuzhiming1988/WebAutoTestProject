@@ -64,6 +64,16 @@ class HsbProApi:
             self.mark_text = "登录失败，_errCode：{} _errStr：{}".format(res["_data"]["_errCode"], res["_data"]["_errStr"])
             self.logger.warning(self.mark_text)
 
+    def get_merchant_info(self):
+        interface = "get_merchant_info"
+        param = {
+            "merchantId": self.temp["merchant_id"],
+            "permissions": "0",
+            "login_token": self.temp["login_token"],
+            "queryType": "tagInfo"
+        }
+        res = self.pro_client.pro_post(interface, param)
+
     def get_login_captcha(self, phone):
         """
         获取登录短信验证码
@@ -92,7 +102,7 @@ class HsbProApi:
         print("获取到的验证码是：{0}".format(smsCode))
         return smsCode
 
-    def get_message_list(self, phone):
+    def get_message_list(self):
         """
         获取消息列表
         :param phone:
@@ -396,25 +406,26 @@ if __name__ == '__main__':
     product_id = "65783"
     pro = HsbProApi()
     pro.login()
+    pro.get_merchant_info()
     # pro.get_login_captcha("13049368516")
-    # pro.get_message_list("13049368516")
-    pro.get_store_list()
-    pro.detect_v3_get_sn()
-    pro.get_check_option(brand_id, product_id)
-    basic_selects = pro.get_basic_selects()
-    condition_selects = pro.get_condition_selects()
-    function_selects = pro.get_function_selects()
-    repair_selects = pro.get_repair_selects()
-    pro.save_update_check_result(basic_selects, 1)
-    pro.save_update_check_result(condition_selects, 2)
-    pro.save_update_check_result(function_selects, 3)
-    pro.save_update_check_result(repair_selects, 4)
-    pro.product_evaluate_merchant_check()
-    pro.get_photo_template()
-    pro.get_check_result()
-    pro.save_photo_merchant_check()
-    pro.apply_for_create_goods(product_id)
-    print(pro.mark_text)
+    # pro.get_message_list()
+    # pro.get_store_list()
+    # pro.detect_v3_get_sn()
+    # pro.get_check_option(brand_id, product_id)
+    # basic_selects = pro.get_basic_selects()
+    # condition_selects = pro.get_condition_selects()
+    # function_selects = pro.get_function_selects()
+    # repair_selects = pro.get_repair_selects()
+    # pro.save_update_check_result(basic_selects, 1)
+    # pro.save_update_check_result(condition_selects, 2)
+    # pro.save_update_check_result(function_selects, 3)
+    # pro.save_update_check_result(repair_selects, 4)
+    # pro.product_evaluate_merchant_check()
+    # pro.get_photo_template()
+    # pro.get_check_result()
+    # pro.save_photo_merchant_check()
+    # pro.apply_for_create_goods(product_id)
+    # print(pro.mark_text)
     # print(json.dumps(pro.temp, indent=5, ensure_ascii=False))
 
 

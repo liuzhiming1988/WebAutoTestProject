@@ -26,10 +26,11 @@ class MysqlClient:
         print("关闭conn连接")
 
     def insert(self, sql):
+        text = ""
         if "insert" in sql.lower()[:10]:
             pass
         else:
-            print("只允许传入查询语句，请检查：\n{}".format(sql))
+            print("只允许传入Insert语句，请检查：\n{}".format(sql))
             return False
 
         conn = self.conn
@@ -37,9 +38,11 @@ class MysqlClient:
             try:
                 conn.cursor().execute(sql)
                 conn.commit()
-                print("处理成功")
+                text = "处理成功"
             except pymysql.err.IntegrityError as ec:
-                print("插入失败，返回错误如下：\n{}".format(ec.__str__()))  # 打印异常信息
+                text = "插入失败，返回错误如下：\n{}".format(ec.__str__())  # 打印异常信息
+            print(text)
+            return text
 
     def select(self, sql):
         if "select" in sql.lower()[:10]:

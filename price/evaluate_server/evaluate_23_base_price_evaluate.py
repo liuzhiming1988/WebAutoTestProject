@@ -36,5 +36,6 @@ def base_price_evaluatee(channelId, pid, productId, evaType, skuItem, optItem, i
     respone_dict = json.loads(respone.text)  # 转成字典
     hsb_response_print(respone=respone)
 
+
 if __name__ == '__main__':
-    base_price_evaluatee(channelId='', pid='', productId='', evaType='', skuItem='', optItem='', priceType='', freqLimitType='')
+    base_price_evaluatee(channelId='1', pid='1196', productId='41567', evaType='3', skuItem=["2","12","76"], optItem=["2","12","76"], priceType='1', ip="0.0.0.0", freqLimitType='0')

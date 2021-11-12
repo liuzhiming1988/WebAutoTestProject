@@ -39,6 +39,14 @@ def v3_product_check_item(productId, checkType, freqLimitType, ip):
     respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
     respone.encoding = respone.apparent_encoding  # 编码设置
     hsb_response_print(respone=respone)
+    text = respone.text
+    items = ["9019","9015","9026","9031","9035","9039","9047","7481","9059","9071","9062","9067","9057","9074","7559","9077","9079","7574","7570","9082","9084","7586","9102","9098","9091","9094","9106","9120","9111","9116","12","2236","36","42","17","130","1083"]
+    for item in items:
+        if item in text:
+            pass
+        else:
+            print("未匹配到的选项：{}".format(item))
+
 
 if __name__ == '__main__':
     ''' 响应内容中："questWeight":"1" 是指检测问题项，在检测子模板中的排序； "answerWeight":"1" 是指检测答案项，在检测子模板中的排序 '''
@@ -54,7 +62,7 @@ if __name__ == '__main__':
 
     # 4. 未命中任何 检测子模板  |  "_errStr":"获取产品检测选项失败 [机型[41567]没有查询到检测子模板信息]"  |  正常
     # v3_product_check_item(productId='41567', checkType='10', freqLimitType='1', ip='127.0.0.1')
-    v3_product_check_item(productId='41567', checkType='16', freqLimitType='1', ip='127.0.0.1')
+    v3_product_check_item(productId='38201', checkType='10', freqLimitType='0', ip='127.0.0.1')
 
     # 5. 检测方式被禁用  | "_errStr":"获取产品检测选项失败 [检测类型为禁用状态]"  |  正常
     # v3_product_check_item(productId='41567', checkType='10', freqLimitType='1', ip='127.0.0.1')

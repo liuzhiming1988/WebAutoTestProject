@@ -35,8 +35,6 @@ class EvaLoginPage(BasePage):
         time.sleep(2)
 
 
-
-
 if __name__ == '__main__':
     from selenium import webdriver
 

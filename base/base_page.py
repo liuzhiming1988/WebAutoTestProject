@@ -41,14 +41,14 @@ FIND_LIST = {
 class BasePage:
     # 封装每个页面共同的属性和方法
 
-    def __init__(self, driver, timeout=20):
+    def __init__(self, driver, timeout=15):
         self.driver = driver
         self.logger = Logger().logger
         self.timeout = timeout
 
     def find_elements(self, loc):
         """
-
+        定位元素集合
         :param loc:
         :return:
         """
@@ -57,70 +57,72 @@ class BasePage:
         elements = None
 
         if key == "xpath":
-            try:
-                self.logger.debug("定位元素：方法【{0}】，值【{1}】".format(key, value))
-                WebDriverWait(self.driver, self.timeout, 0.5).until(
-                    EC.visibility_of_element_located((FIND_LIST[key], value)))
-                elements = self.driver.find_elements_by_xpath(value)
-            except TimeoutException as t:
-                self.save_img(get_current_function_name())
-                ec = traceback.format_exc()
-                ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：【{3}】".format(
-                    self.timeout, key, value, ec)
-                DingRebot().send_text(ex_text)
-                self.logger.error(ex_text)
-
-            except Exception as e:
-                self.save_img(get_current_function_name())
-                ec = traceback.format_exc()
-                err_text = "在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3}".format(
-                    self.timeout, key, value, e)
-                DingRebot().send_text(err_text)
-                self.logger.error(err_text)
+            pass
         else:
             self.logger.error("find_elements目前仅支持：xpath")
+
+        try:
+            self.logger.debug("定位元素：方法【{0}】，值【{1}】".format(key, value))
+            WebDriverWait(self.driver, self.timeout, 0.5).until(
+                EC.visibility_of_element_located((FIND_LIST[key], value)))
+            elements = self.driver.find_elements_by_xpath(value)
+        except TimeoutException as t:
+            self.save_img(get_current_function_name())
+            ec = traceback.format_exc()
+            ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：【{3}】".format(
+                self.timeout, key, value, ec)
+            DingRebot().send_text(ex_text)
+            self.logger.error(ex_text)
+
+        except Exception as e:
+            self.save_img(get_current_function_name())
+            ec = traceback.format_exc()
+            err_text = "在{0}秒内未定位到元素，定位方法{1}，值{2}\n异常信息：{3}".format(
+                self.timeout, key, value, e)
+            DingRebot().send_text(err_text)
+            self.logger.error(err_text)
 
         return elements
 
     # @timer
     def find_element(self, loc):
         """
-
+        定位单个元素
         :param loc:
         :param timeout:
         :return:
         """
-        key = loc[0]
-        value = loc[1]
+        time.sleep(0.5)   # 操作之间延时0.5秒，防止点击过快
+        key = loc[0]       # 定位方法名
+        value = loc[1]      # 元素值
         elem = None
 
         if key in FIND_LIST.keys():
-            self.logger.debug("定位元素:定位方法【{0}】，值【{1}】".format(key, value))
-            # filename = os.path.split(os.path.abspath(sys.argv[0]))
-            try:
-
-                WebDriverWait(self.driver, self.timeout, 0.5).until(
-                    EC.visibility_of_element_located((FIND_LIST[key], value)))
-                elem = self.driver.find_element(FIND_LIST[key], value)
-                return elem
-            except TimeoutException as t:
-                self.save_img(get_current_function_name())
-                # filename = os.path.split(os.path.abspath(__file__))
-                ec = traceback.format_exc()
-                ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} 结束".format(
-                    self.timeout, key, value, ec)
-                # DingRebot().send_text(ex_text)
-                self.logger.error(ex_text)
-                return False
-            except Exception as e:
-                self.save_img(get_current_function_name())
-                ec = traceback.format_exc()
-                self.logger.error("在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} \nInfo：{4}".format(
-                    self.timeout, key, value, e.__class__, ec))
-                return False
+            pass
         else:
             self.logger.error("请检查定位方法，目前仅支持：{0}".format(FIND_LIST.values()))
             return False
+
+        self.logger.debug("定位元素:定位方法【{0}】，值【{1}】".format(key, value))
+        # filename = os.path.split(os.path.abspath(sys.argv[0]))
+        try:
+            WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_LIST[key], value)))
+            elem = self.driver.find_element(FIND_LIST[key], value)
+
+        except TimeoutException as ec:
+            self.save_img(get_current_function_name())
+            ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3}".format(
+                self.timeout, key, value, repr(ec))
+            # DingRebot().send_text(ex_text)
+            self.logger.error(ex_text)
+            raise
+        except Exception as ec:
+            self.save_img(get_current_function_name())
+            self.logger.error("在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} \n".format(
+                self.timeout, key, value, repr(ec)))
+            raise
+        return elem
+
 
     # def loctor(self, loc, timeout=15):
     #     """
@@ -141,16 +143,18 @@ class BasePage:
         """输入方法"""
 
         element = self.find_element(loc)
-        self.logger.debug("输入数据：【{0}】".format(value))
-        element.clear()
-        element.send_keys(value)
+        if element:
+            self.logger.debug("输入数据：【{0}】".format(value))
+            element.clear()
+            element.send_keys(value)
 
     @timer
     def click(self, loc):
         """点击元素"""
         element = self.find_element(loc)
-        self.logger.debug("点击元素：【{}】>>【{}】".format(loc[0], loc[1]))
-        element.click()
+        if element:
+            self.logger.debug("点击元素：【{}】>>【{}】".format(loc[0], loc[1]))
+            element.click()
 
     def implicitly_wait(self, second):
         """隐式等待"""
@@ -163,9 +167,10 @@ class BasePage:
 
     def get_elem_text(self, loc):
         element = self.find_element(loc)
-        text = element.text
-        self.logger.debug("获取到的文本为：【{0}】".format(text))
-        return text
+        if element:
+            text = element.text
+            self.logger.debug("获取到的文本为：【{0}】".format(text))
+            return text
 
     def save_img(self, name="Img"):
         """
@@ -190,7 +195,7 @@ class BasePage:
     def refresh(self):
         self.driver.refresh()
         self.logger.debug("【refresh】刷新当前页面")
-        time.sleep(2)
+        # time.sleep(2)
 
     def switch_to_frame(self, frame):
         self.logger.debug("进入frame:【{}】".format(frame))

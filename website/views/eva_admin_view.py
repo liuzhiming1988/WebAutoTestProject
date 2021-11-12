@@ -19,7 +19,7 @@ eva_blue = Blueprint("eva_admin_view", __name__)
 
 @eva_blue.route("/eva_2c_save", methods=['GET', 'POST'])
 def eva_2c_save():
-    res_text = ""
+    res_text = "【价格2.0】2C估价：批量保存机型<br>"
     if request.method == "POST":
 
         options = webdriver.ChromeOptions()
@@ -38,8 +38,12 @@ def eva_2c_save():
         products = products.strip()          # 去除前后空格
         products = products.split(",")
         for product in products:
-            res = eva_2c.save_product(product)
-            res_text += res + "<br>"
+            try:
+                res = eva_2c.save_product(product)
+                res_text += res + "<br>"
+            except Exception as ec:
+                res_text += "机型【{}】审核失败：【{}】".format(product, repr(ec)) + "<br>"
+                print("测试过程出现错误，异常信息为：{}".format(repr(ec)))
 
         driver.quit()
         ding_rebot.send_text(res_text)

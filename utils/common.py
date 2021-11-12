@@ -16,7 +16,6 @@ import inspect
 from utils.logger import Logger
 
 
-
 DATE_NOW = time.strftime("%Y-%m-%d", time.localtime())
 
 
@@ -27,7 +26,7 @@ def timer(func):
         end_time = time.time()
         run_time = round(end_time-start_time, 2)
         # print("{}--执行耗时：{}".format(func.__name__, run_time))
-        Logger().logger.info("执行耗时：{}秒\n\n".format(run_time))
+        Logger().logger.info("执行耗时：{}秒\n".format(run_time))
         return res
     return wrapper
 

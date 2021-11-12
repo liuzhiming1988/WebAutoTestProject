@@ -30,37 +30,22 @@ class Eva2cPage(BasePage):
     def save_product(self, product_id):
         self.send_key(self.keyword, product_id)
         self.click(self.search_btn)
-        self.sleep(1)
         self.click(self.oper_btn)
-        self.sleep(5)
         self.click(self.bottom_btn)
         self.click(self.save_btn)
-        self.sleep(8)
         if self.find_element(self.save_title):
             result_message = "机型【{}】保存成功".format(product_id)
             # self.ding_rebot.send_text(result_message)
             self.logger.info(result_message)
-            self.sleep(3)
             self.click(self.close_message)
-            self.click(self.return_btn)
+            # self.click(self.return_btn)
+            self.refresh()    # 刷新当前页面，返回机型列表，减少定位返回按钮出现错误几率
         else:
             result_message = "机型【{}】结果未知，请手动检查或重试！".format(product_id)
         return result_message
 
 
 if __name__ == '__main__':
-    # copy和deepcopy
-    import copy
-    a = [1,2,[3,4,5],6,7]
-    b = copy.copy(a)
-    c = copy.deepcopy(a)
-    a.append(8)
-    a[2].append(9)
-    b.append("88")
-    b[2].append("66")
-
-    print("a=", a)
-    print("b=", b)
-    print("c=", c)
+    pass
 
 

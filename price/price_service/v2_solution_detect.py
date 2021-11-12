@@ -39,13 +39,17 @@ class DetectIssue:
                            "_timestamps": "1634866297", "_version": "0.01"},
                  "_param": {"containInfo": ["good", "basic", "evaluation"], "orderId": order_id}}
         res = requests.post(url, json=param, headers=get_price_headers(param), proxies=hsb_ordserver_ipProxy_test())
-        # res_print(res, 2)
+        res_print(res, 1)
+        # print(param)
         res_dict = res.json()
-        property = res_dict["_data"]["_data"]["basic"]["orderProperty"]
-        evaluation = res_dict["_data"]["_data"]["evaluation"]
-        print("订单属性：{}\n".format(property))
-        print("获取的价格信息为：{}".format(evaluation))
-        return evaluation
+        if res_dict["_data"]["_retinfo"] == "success":
+            property = res_dict["_data"]["_data"]["basic"]["orderProperty"]
+            evaluation = res_dict["_data"]["_data"]["evaluation"]
+            print("订单属性：{}\n".format(property))
+            print("获取的价格信息为：{}".format(evaluation))
+            return evaluation
+        else:
+            return False
 
     def get_eva_info(self, eva_id):  # 根据evaluateId 获取估价信息，返回platform_type和version信息
         pass

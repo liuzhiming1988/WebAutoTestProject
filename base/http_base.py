@@ -104,7 +104,7 @@ class HttpBase:
         else:
             data = urlencode(data)
 
-        self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url, headers_, data))
+        self.logger.info("{}请求信息：\nheaders={}\nbody={}".format(url, json.dumps(headers_), data))
 
         try:
             response = requests.post(url, data=data, headers=headers_)

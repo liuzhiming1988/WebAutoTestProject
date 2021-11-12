@@ -47,6 +47,7 @@ class V3EvaPrice:
                            "_version": "0.01", "_timestamps": "123", "_invokeId": "eva_product_v3",
                            "_callerServiceId": "112002", "_groupNo": "1"},
                  "_param": {"channel_id": channel_id, "product_id": product_id, "pid": pid}}
+        print("url：{}，请求参数\n{}".format(url, json.dumps(param)))
         res = requests.post(url, json=param, headers=get_price_headers(param), proxies=hsb_eva_ipProxy_test())
         res_print(res, "1")  # 打印输出响应结果，非1数字打印json格式
         questions = res.json()["_body"]["_data"]["itemList"]
@@ -145,6 +146,7 @@ class V3DetectGetRecyclePrice:
                  "_param": {"productId": product_id, "orderId": order_id, "checkType": check_type, "userId": "1895",
                             "freqLimitType": "1", "isOverInsurance": is_over, "ip": "127.0.0.1"}}
         url = "http://codserver.huishoubao.com/detect_v3/product_check_item"
+        print("url：{}  请求参数\n{}".format(url, json.dumps(param)))
         respone = requests.post(url, json=param, headers=get_price_headers(param), proxies=hsb_eva_ipProxy_test())
         res_print(respone)
         respone_dict = respone.json()

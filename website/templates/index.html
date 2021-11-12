@@ -92,6 +92,12 @@
     <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p5">【官方下单-邮寄回收】</a>
     <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p6">【商家自检(手动检)下单】</a>
     <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p7">【价格2.0-2C估价-保存机型配置】</a>
+    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p8">【修复检测失败问题（价格V2.0订单）】</a>
+</div>
+
+<div class="layui-btn-container">
+    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p9">【价格3.0-销售定价参数保存&审核】</a>
+    <a class="layui-btn layui-btn-primary" href="#p10">【价格3.0-回收定价参数保存&审核】</a>
 </div>
 
 <fieldset id="p1" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
@@ -390,6 +396,76 @@
         </label>
     </div>
 <br />
+
+<fieldset id="p8" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>修复检测失败问题-V2.0订单（获取产品保价估价选项失败,建议排查订单id是否存在）</legend>
+</fieldset>
+
+<form action="/v2_fixed_detect_failure" method="post">
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">订单ID</label>
+        <div class="layui-input-block">
+            <textarea name="v2_order_id" class="layui-textarea" placeholder="请输入对应的订单ID（非订单编号）"></textarea>
+        </div>
+
+    </div>
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+
+
+<fieldset id="p9" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>【价格3.0-销售定价参数保存&审核】</legend>
+</fieldset>
+<form action="/save_sale_price_v3" method="post">
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">机型ID</label>
+        <div class="layui-input-block">
+            <textarea name="sale_product_ids" class="layui-textarea" placeholder="请输入需要保存的机型ID，多个ID之间需使用英文逗号隔开"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+<br />
+    <div class="mark">
+        <label>使用说明：<br>
+        1. 请勿输入系统不存在的机型<br>
+        2. <br>
+        </label>
+    </div>
+<br />
+
+
+<fieldset id="p10" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>【价格3.0-回收定价参数保存&审核】</legend>
+</fieldset>
+<form action="/save_recycle_price_v3" method="post">
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">机型ID</label>
+        <div class="layui-input-block">
+            <textarea name="recycle_product_ids" class="layui-textarea" placeholder="请输入需要保存的机型ID，多个ID之间需使用英文逗号隔开"></textarea>
+        </div>
+    </div>
+
+    <div class="layui-input-block">
+        <button class="layui-btn">提交</button>
+    </div>
+</form>
+<br />
+    <div class="mark">
+        <label>使用说明：<br>
+        1. 请勿输入系统不存在的机型<br>
+        2. <br>
+        </label>
+    </div>
+<br />
+
 
 <div id="returntop" class="top_font">返回顶部</div>
 <!--<ul class="layui-fixbar">-->

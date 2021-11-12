@@ -12,7 +12,7 @@ import json
 import os
 from random import randint
 from price.hsb_MD5_Enerypt import get_price_headers, res_print
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print, hsb_eva_ipProxy_k8s_test
 import operator
 
 """
@@ -71,7 +71,6 @@ def recycle_current_evaluate(product_id, channel_id, pid, check_type, opts, skus
     print("======转换后的定价明细选项(带默认标识)为：\n{}\n".format(base_defualt_list))
 
 
-
 if __name__ == '__main__':
 
     skus = ['12', '17', '36', '42', '130', '1083', '2236']
@@ -80,6 +79,9 @@ if __name__ == '__main__':
             '7574', '9083', '9088', '9118', '9191']
 
     recycle_current_evaluate(product_id="41567", channel_id="10000060", pid="1196", check_type="3", opts=opts, skus=skus)
+    # 未定价或不支持估价状态机型
+    recycle_current_evaluate(product_id="38200", channel_id="10000060", pid="1196", check_type="3", opts=opts,
+                             skus=skus)
 
     """
     param='{"_head": {"_interface": "recycle_current_evaluate", "_msgType": "request", "_remark": "", "_version": "0.01", "_timestamps": "1525332832", "_invokeId": "152533283241636", "_callerServiceId": "216002", "_groupNo": "1"}, "_param": {"productId": "41567", "channelId": "10000060", "pid": "1196", "checkType": "1", "optItem": ["9031", "9035", "9042", "9053", "9769", "9086", "9090", "9094", "9098", "9103", "9110", "9112", "9015", "9022", "9025", "9056", "9058", "9059", "9065", "9068", "9072", "9074", "9076", "9077", "9080", "9081", "7574", "9083", "9088", "9118", "9191"], "skuItem": ["12", "17", "36", "42", "130", "1083", "2236"], "userId": "1895", "ip": "127.0.0.1", "freqLimitType": "0"}}'

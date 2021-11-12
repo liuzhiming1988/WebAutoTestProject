@@ -1,0 +1,1115 @@
+2021-11-02 16:10:36,556 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={'Content-Type': 'application/json; charset=utf-8'}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635840636",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635840636",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:10:37,317 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:10:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "4544751100210283169cbe48f7d9240a",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:10:37,317 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.76秒
+
+
+2021-11-02 16:10:37,318 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={'Content-Type': 'application/json; charset=utf-8'}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "get_message_list",
+          "_timestamps": "1635840636",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635840636",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "pageSize": "20",
+          "permissions": "0",
+          "pageIndex": "0"
+     }
+}
+2021-11-02 16:10:37,415 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:10:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "list": [
+                {
+                    "messageTxt": "aaaaaaaaaa",
+                    "operaterId": "449",
+                    "time": "2021-04-09 10:53:58"
+                },
+                {
+                    "messageTxt": "chenzhipdsg",
+                    "operaterId": "449",
+                    "time": "2020-12-03 17:30:13"
+                }
+            ],
+            "pageInfo": {
+                "pageIndex": "0",
+                "pageSize": "20",
+                "total": "2"
+            }
+        }
+    }
+}
+2021-11-02 16:10:37,415 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-11-02 16:12:01,868 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635840721",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635840721",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:12:03,071 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:12:02 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "45447511002102f82c7d78607af16335",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:12:03,071 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：1.2秒
+
+
+2021-11-02 16:12:03,072 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "get_message_list",
+          "_timestamps": "1635840721",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635840721",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "pageSize": "20",
+          "permissions": "0",
+          "pageIndex": "0"
+     }
+}
+2021-11-02 16:12:03,169 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:12:02 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "list": [
+                {
+                    "messageTxt": "aaaaaaaaaa",
+                    "operaterId": "449",
+                    "time": "2021-04-09 10:53:58"
+                },
+                {
+                    "messageTxt": "chenzhipdsg",
+                    "operaterId": "449",
+                    "time": "2020-12-03 17:30:13"
+                }
+            ],
+            "pageInfo": {
+                "pageIndex": "0",
+                "pageSize": "20",
+                "total": "2"
+            }
+        }
+    }
+}
+2021-11-02 16:12:03,170 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+
+2021-11-02 16:14:06,464 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "get_message_list",
+          "_timestamps": "1635840846",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635840846",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "pageSize": "20",
+          "permissions": "0",
+          "pageIndex": "0"
+     }
+}
+2021-11-02 16:14:06,572 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:14:05 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "list": [
+                {
+                    "messageTxt": "aaaaaaaaaa",
+                    "operaterId": "449",
+                    "time": "2021-04-09 10:53:58"
+                },
+                {
+                    "messageTxt": "chenzhipdsg",
+                    "operaterId": "449",
+                    "time": "2020-12-03 17:30:13"
+                }
+            ],
+            "pageInfo": {
+                "pageIndex": "0",
+                "pageSize": "20",
+                "total": "2"
+            }
+        }
+    }
+}
+2021-11-02 16:14:06,574 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.11秒
+
+
+2021-11-02 16:17:22,207 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635841042",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841042",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:17:22,809 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:17:21 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "45447511002102472d88d0912f9837bc",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:17:22,809 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.6秒
+
+
+2021-11-02 16:17:22,809 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "detect_v3_get_sn",
+          "_timestamps": "1635841042",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841042",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "orderNum": "merchant_onum_1002102_1635841042452",
+          "clerkId": "1002102",
+          "permissions": "0",
+          "detectMark": "1",
+          "login_token": "45447511002102472d88d0912f9837bc",
+          "version": "4"
+     }
+}
+2021-11-02 16:17:23,138 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:17:22 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "reviewStatus": "0",
+            "sn": "2021110216172120794"
+        }
+    }
+}
+2021-11-02 16:17:23,139 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.33秒
+
+
+2021-11-02 16:19:14,518 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635841154",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841154",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:19:15,041 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:19:13 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "454475110021024d7b70efef78a51133",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:19:15,041 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.52秒
+
+
+2021-11-02 16:19:15,042 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://xyxzapi.huishoubao.com/api/xianyu请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "get_store_list",
+          "_timestamps": "1635841154",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841154",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "pageSize": "10",
+          "productType": "0",
+          "userId": "1002102",
+          "roleId": "75",
+          "permissions": "0",
+          "pageIndex": "0",
+          "login_token": "454475110021024d7b70efef78a51133"
+     }
+}
+2021-11-02 16:19:15,160 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://xyxzapi.huishoubao.com/api/xianyu响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 02 Nov 2021 08:19:14 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "b46ece3a8683193d",
+    "X-Powered-By": "PHP/7.1.33"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0",
+        "data": {
+            "storeList": [
+                {
+                    "address": "广东省深圳市南山区科技南路九道威新软件园车2门 金地威新软件科技园",
+                    "storeId": "1054057",
+                    "storeName": "默认店铺-186****2152",
+                    "turnoverToday": ""
+                }
+            ]
+        }
+    },
+    "_head": {
+        "_appVersion": "5.0.0",
+        "_callerServiceId": "111111",
+        "_groupNo": "1",
+        "_interface": "get_store_list",
+        "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841154",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1635841154",
+        "_version": "0.01",
+        "channelStr": "appstore",
+        "latitude": 22.532460629273437,
+        "longitude": 113.94299928073816
+    }
+}
+2021-11-02 16:19:15,160 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.12秒
+
+
+2021-11-02 16:19:15,160 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "detect_v3_get_sn",
+          "_timestamps": "1635841154",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841154",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "orderNum": "merchant_onum_1002102_1635841154871",
+          "clerkId": "1002102",
+          "permissions": "0",
+          "detectMark": "1",
+          "login_token": "454475110021024d7b70efef78a51133",
+          "version": "4"
+     }
+}
+2021-11-02 16:19:15,336 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:19:14 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "reviewStatus": "0",
+            "sn": "2021110216191410911"
+        }
+    }
+}
+2021-11-02 16:19:15,336 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.18秒
+
+
+2021-11-02 16:25:17,930 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635841517",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841517",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:25:18,863 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:25:17 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "45447511002102f733c5843560295b9d",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:25:18,864 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.93秒
+
+
+2021-11-02 16:25:18,864 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "detect_v3_get_sn",
+          "_timestamps": "1635841517",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635841517",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "orderNum": "merchant_onum_1002102_1635841517203",
+          "clerkId": "1002102",
+          "permissions": "0",
+          "detectMark": "1",
+          "login_token": "45447511002102f733c5843560295b9d",
+          "version": "4"
+     }
+}
+2021-11-02 16:25:19,104 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:25:18 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "reviewStatus": "0",
+            "sn": "2021110216251796177"
+        }
+    }
+}
+2021-11-02 16:25:19,104 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.24秒
+
+
+2021-11-02 16:33:30,830 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635842010",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635842010",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:33:31,570 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:33:30 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "45447511002102bbea6ca94706debe03",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:33:31,571 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.74秒
+
+
+2021-11-02 16:33:31,571 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "detect_v3_get_sn",
+          "_timestamps": "1635842010",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635842010",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "merchantId": "220395871",
+          "permissions": "0",
+          "login_token": "45447511002102bbea6ca94706debe03",
+          "queryType": "tagInfo"
+     }
+}
+2021-11-02 16:33:31,650 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:33:30 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "40011002",
+        "_errStr": "参数错误!",
+        "_ret": "1",
+        "data": {}
+    }
+}
+2021-11-02 16:33:31,651 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.08秒
+
+
+2021-11-02 16:33:53,183 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "login_captcha",
+          "_timestamps": "1635842033",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635842033",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "phone": "18676702152",
+          "captcha": "666666",
+          "permissions": "0"
+     }
+}
+2021-11-02 16:33:53,676 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:33:52 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "BDname": "",
+            "BDphone": "",
+            "amc_id": "",
+            "amc_name": "",
+            "channel_user_id": "1002102",
+            "headPic": "",
+            "isNew": "0",
+            "login_token": "454475110021028999bc381be433285d",
+            "merchant_id": "220395871",
+            "permission": [
+                {
+                    "permissionId": "1",
+                    "permissionKey": "0",
+                    "permissionName": "门店TAB"
+                },
+                {
+                    "permissionId": "2",
+                    "permissionKey": "1",
+                    "permissionName": "上门TAB"
+                },
+                {
+                    "permissionId": "3",
+                    "permissionKey": "2",
+                    "permissionName": "后端TAB"
+                },
+                {
+                    "permissionId": "4",
+                    "permissionKey": "3",
+                    "permissionName": "小豹哥TAB"
+                }
+            ],
+            "phone": "18676702152",
+            "real_name": "",
+            "roleList": [
+                "75"
+            ],
+            "user_id": "4544",
+            "user_name": "18676702152"
+        }
+    }
+}
+2021-11-02 16:33:53,677 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.49秒
+
+
+2021-11-02 16:33:53,677 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:107] - INFO: https://hsbpro.huishoubao.com/hsbpro请求信息：
+headers={"Content-Type": "application/json; charset=utf-8"}
+body={
+     "_head": {
+          "_remark": "",
+          "_appVersion": "5.0.0",
+          "_version": "0.01",
+          "_groupNo": "1",
+          "longitude": 113.94299928073816,
+          "latitude": 22.532460629273437,
+          "_interface": "get_merchant_info",
+          "_timestamps": "1635842033",
+          "_invokeId": "iOS_C854F1C2-5E70-44D3-853C-655BBA17E54E_1635842033",
+          "_msgType": "request",
+          "channelStr": "appstore",
+          "_callerServiceId": "111111"
+     },
+     "_param": {
+          "merchantId": "220395871",
+          "permissions": "0",
+          "login_token": "454475110021028999bc381be433285d",
+          "queryType": "tagInfo"
+     }
+}
+2021-11-02 16:33:53,778 - D:\work\WebAutoTestProject\base\http_base.py - do_post[line:117] - INFO: https://hsbpro.huishoubao.com/hsbpro响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET,PUT",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Date": "Tue, 02 Nov 2021 08:33:52 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked"
+}
+response_body={
+    "_data": {
+        "_errCode": "0",
+        "_errStr": "SUCCEED",
+        "_ret": "0",
+        "data": {
+            "auditStatus": "1",
+            "buyerLevel": "sales_silver",
+            "goodsQuality": "0",
+            "jpMerchantAuth": "",
+            "jpMerchantSalesRanking": "0",
+            "jpMerchantWuyougou": "",
+            "jpPersonalAuth": "",
+            "jpSalesAmount3m": "0",
+            "jpSalesAmount6m": "0",
+            "jpSalesVolume30": "0",
+            "merchantName": "186****2152",
+            "regCityName": null,
+            "regProvinceName": null,
+            "scoreDelivery": "5",
+            "scoreHot": "5",
+            "scoreQuality": "5",
+            "sellerLevel": "sales_silver",
+            "starLevel": "0"
+        }
+    }
+}
+2021-11-02 16:33:53,778 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:30] - INFO: 执行耗时：0.1秒
+
+

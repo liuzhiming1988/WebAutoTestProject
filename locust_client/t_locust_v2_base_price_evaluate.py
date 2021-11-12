@@ -11,7 +11,7 @@ import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
 from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_eva_ipProxy_k8s_test
 from price.hsb_MD5_Enerypt import get_price_headers, res_print
-from locust import HttpLocust, task, between, TaskSet, FastHttpUser, HttpUser
+from locust import task, between, TaskSet, FastHttpUser, HttpUser
 import requests
 
 """
@@ -33,7 +33,7 @@ class SaleApplyPriceCase(TaskSet):
     """
     
     """
-    @task(1)
+    @task
     def sale_apply_price(self):
         planId = "3"
         productId = "41567"
@@ -71,7 +71,7 @@ class UserRun(HttpUser):
     host = "http://127.0.0.1"
     tasks = [SaleApplyPriceCase]   # 指定任务类名称
 
-    wait_time = between(0.1, 0.2)  # 用于确定模拟用户在执行任务之间将等待多长时间;单位秒
+    wait_time = between(0, 0)  # 用于确定模拟用户在执行任务之间将等待多长时间;单位秒
 
 
 if __name__ == '__main__':

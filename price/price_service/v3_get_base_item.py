@@ -11,7 +11,7 @@ import json
 import os
 from random import randint
 from price.hsb_MD5_Enerypt import get_price_headers, res_print
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print, hsb_eva_ipProxy_k8s_test
 import operator
 
 """
@@ -37,10 +37,10 @@ def v3_get_base_item(class_id, que_name="", index="0", size="10"):
              }
              }
     res = requests.post(url, json=param, headers=get_price_headers(param), proxies=hsb_eva_ipProxy_test())
-    res_print(res, "2")  # 打印输出响应结果，非1数字打印json格式
-    res_dict = res.json()
-    if res_dict["_data"]["_errCode"] == "0":
-        print("返回问题项数量：{}个".format(len(res_dict["_data"]["_data"]["itemList"])))
+    res_print(res, "1")  # 打印输出响应结果，非1数字打印json格式
+    # res_dict = res.json()
+    # if res_dict["_data"]["_errCode"] == "0":
+    #     print("返回问题项数量：{}个".format(len(res_dict["_data"]["_data"]["itemList"])))
 
 
 if __name__ == '__main__':

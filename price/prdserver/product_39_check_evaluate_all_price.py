@@ -16,7 +16,7 @@
 import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
 from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test
-from price.dingdingTalk_push_demo import dingdingTalk_push_run
+
 
 class Check_Evaluate_All_Price:
 	def product_21_product_check_item(self, productId, orderId):
@@ -51,6 +51,8 @@ class Check_Evaluate_All_Price:
 		# (skuList, checkList) = self.product_21_product_check_item(productId=productId,orderId=orderId)
 		skuList = ['15', '471', '18', '2236', '38', '1091', '1773']
 		checkList = ['7420', '7423', '7426', '7430', '7434', '7436', '7442', '7445', '7449', '7453', '7460', '7462']
+
+
 		param = {"_head": {"_interface": "check_evaluate_all_price", "_msgType": "request", "_remark": "hello","_version": "0.01", "_timestamps": "123", "_invokeId": "111", "_callerServiceId": "200001","_groupNo": "1"},"_param": {"orderId": orderId, "productId": productId,"skuList": skuList,"checkList": checkList,"channelId": channelId}}
 		secret_key = "dk26kmdasnph0voz69fj0jpv7t3ixev8"
 		callerserviceid = "200001"
@@ -59,6 +61,7 @@ class Check_Evaluate_All_Price:
 		headers = {"Content-Type": "application/json;charset=UTF-8", "HSB-OPENAPI-SIGNATURE": Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID": callerserviceid}
 		respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
 		respone.encoding = respone.apparent_encoding  # 编码设置
+		print(respone.json())
 
 		print('『{0}』 产品的『sku信息』(随机取)为：\n'.format(productId), skuList)
 		print('\n『{0}』 产品的『标准检测机况信息』(随机取)为：\n'.format(productId), checkList)

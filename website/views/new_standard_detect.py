@@ -9,10 +9,12 @@
 
 from apis.detection_admin import DetectionClient
 from flask import Blueprint
-from flask import Flask
 from flask import request
 import json
 from flask import render_template
+from price.price_service.v2_solution_detect import DetectIssue
+from utils.mysql_client import MysqlClient
+
 
 detect_blue = Blueprint("new_standard_detect", __name__)
 
@@ -88,4 +90,32 @@ def new_standard_detect():
             else:
                 text += "条码输入错误，请输入正确的数据，不能为空！<br /><hr />"
     # return text
+    return render_template("tips.html", text=text)
+
+
+@detect_blue.route("/v2_fixed_detect_failure", methods=['GET', 'POST'])
+def v2_fixed_detect_failure():
+    text = ""
+    if request.method == "POST":
+        order_id = request.form.get("v2_order_id")
+        print("用户输入的订单ID为：【{}】".format(order_id))
+        di = DetectIssue()
+        evaluation = di.get_order_info(order_id=order_id)
+        if evaluation:
+            sql = di.format_sql_out(evaluation["productId"], evaluation["evaPlatform"], evaluation["evaluateVersion"])
+            vpc_price_mysql_client = MysqlClient(
+                host="193.112.170.216",
+                port=3306,
+                username="eva",
+                password="evao123456",
+                database="recycle"
+            )
+            res = vpc_price_mysql_client.insert(sql)
+            if res:
+                text = res
+            else:
+                text = "请联系管理员"
+        else:
+            text = "获取订单信息失败！"
+
     return render_template("tips.html", text=text)

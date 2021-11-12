@@ -19,7 +19,7 @@
 
 import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print, hsb_eva_ipProxy_k8s_test
 
 def base_price_record_query(recodeId):
     param = {"_head":{"_interface":"record_query","_msgType":"request","_remark":"","_version":"0.01","_timestamps":"1525332832","_invokeId":"test","_callerServiceId":"116006","_groupNo":"1"},"_param":{"recodeId":recodeId}}
@@ -29,7 +29,7 @@ def base_price_record_query(recodeId):
     url = "http://bpeserver.huishoubao.com/adjustment_price/record_query"
     md5value = json.dumps(param) + "_" + secret_key
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
-    respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
+    respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_k8s_test())
     respone.encoding = respone.apparent_encoding  # 编码设置
     hsb_response_print(respone=respone)
 

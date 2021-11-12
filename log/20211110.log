@@ -1,0 +1,17 @@
+2021-11-10 17:00:48,377 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:165] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-10 17:00:48,738 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-10 17:00:49,240 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='username']】
+2021-11-10 17:00:49,274 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:147] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-10 17:00:49,375 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.64秒
+
+2021-11-10 17:00:49,375 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-10 17:00:49,876 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-10 17:00:49,898 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:147] - DEBUG: 输入数据：【f6758a4e】
+2021-11-10 17:00:49,956 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-10 17:00:49,957 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-10 17:00:50,458 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginBtn']】
+2021-11-10 17:00:50,482 - D:\work\WebAutoTestProject\base\base_page.py - click[line:156] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-10 17:00:50,511 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-10 17:02:51,584 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='app']/div/div[2]/div[1]/div[1]】

@@ -27,6 +27,7 @@ from website.views.own_place_order import own_place_order_blue
 from website.views.merchant_check import merchant_check_blue
 from website.views.jw_view import jw_blue
 from website.views.eva_admin_view import eva_blue
+from website.views.base_price_admin_view import base_price_blue
 from website.views.base_service import base_blue
 from website.views.honor_test import honor_blue
 from website.views.yiyanhuo_v import fish_blue
@@ -56,6 +57,7 @@ app.register_blueprint(base_blue)
 app.register_blueprint(honor_blue)
 app.register_blueprint(fish_blue)
 app.register_blueprint(eva_blue)
+app.register_blueprint(base_price_blue)
 
 
 @app.route("/", methods=['GET', 'POST'])
