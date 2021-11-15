@@ -39,11 +39,11 @@ class GitClient:
         return self.repo.branches
 
     def add_file(self, files=None):
-        # if files is None:
-        #     self.git.add(".")
-        # else:
-        #     self.repo.index.add(files)
-        self.repo.index.add(files)
+        if files is None:
+            self.git.add(".")
+        else:
+            self.repo.index.add(files)
+        # self.repo.index.add(files)
 
     def commit(self, mark):
         self.repo.index.commit(mark)
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     # git_client.get_all_branches()
     # git_client.get_status()
     # git_client.check_is_empty()
-    # git_client.add_file([".\\practice\\git_client.py"])
-    # git_client.commit("test gitpython add")
-    # git_client.create_tag_push("tag-test-2021111501", "mark words")
+    git_client.add_file()
+    git_client.commit("test gitpython add")
+    git_client.create_tag_push("tag-test-2021111501", "mark words")
     git_client.push("tag-test-2021111501")
