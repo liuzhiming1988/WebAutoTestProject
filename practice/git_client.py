@@ -55,11 +55,31 @@ class GitClient:
         # self.git.push("origin", tag_name)
         # repo方式
         self.repo.create_tag(tag_name, message=remark)
-        self.repo.remotes.origin.push(tag_name)
+        flag = True
+        n = 0
+        while flag:
+            n += 1
+            print("第{}次尝试".format(n))
+            try:
+                self.repo.remotes.origin.push(tag_name)
+                flag = False
+                print("第{}次提交：提交成功".format(n))
+            except Exception as ec:
+                print("提交失败：\n{}".format(repr(ec)))
 
     def push(self, tag_name):
-        # self.repo.remote().push()
-        self.repo.remotes.origin.push(tag_name)
+        flag = True
+        n = 0
+        while flag:
+            n += 1
+            print("第{}次尝试".format(n))
+            try:
+                self.repo.remotes.origin.push(tag_name)
+                flag = False
+                print("第{}次提交：提交成功".format(n))
+            except Exception as ec:
+                print(repr(ec))
+
 
 
     def get_status(self):
@@ -79,6 +99,5 @@ if __name__ == '__main__':
     # git_client.get_status()
     # git_client.check_is_empty()
     git_client.add_file()
-    git_client.commit("test gitpython add")
-    git_client.create_tag_push("tag-test-2021111501", "mark words")
-    git_client.push("tag-test-2021111501")
+    git_client.commit("delete test file")
+    git_client.create_tag_push("tag-test-2021111502", "mark words-tag-test-2021111502")
