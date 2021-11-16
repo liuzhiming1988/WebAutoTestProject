@@ -49,7 +49,7 @@ class GitClient:
         self.repo.index.commit(mark)
 
     def create_tag_push(self, tag_name, remark):
-        """创建tag"""
+        """创建tag，并进行push"""
         # 原生命令
         # self.git.tag(tag_name, remark)
         # self.git.push("origin", tag_name)
@@ -99,5 +99,5 @@ if __name__ == '__main__':
     # git_client.get_status()
     # git_client.check_is_empty()
     git_client.add_file()
-    git_client.commit("delete test file")
-    git_client.create_tag_push("tag-test-2021111502", "mark words-tag-test-2021111502")
+    git_client.commit("read file to csv")
+    git_client.create_tag_push("tag-test-2021111601", "mark words-tag-test-2021111601")

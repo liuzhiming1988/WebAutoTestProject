@@ -35,6 +35,7 @@ class TestConfig(BaseConfig):
 
     JSON_AS_ASCII = False
 
+
 class WorkConfig(BaseConfig):
     pass
 

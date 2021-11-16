@@ -6,7 +6,9 @@
 @Author  : liuzhiming
 @Time    : 2021/6/29 下午11:50
 """
-
+import sys
+sys.path.append("D:\\work\\WebAutoTestProject")
+print(sys.path)
 from flask import Flask
 from flask import redirect
 from flask import url_for
@@ -36,12 +38,15 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager
 
 
+
 app = Flask(__name__, static_url_path="/static_files",
             static_folder="static_files", template_folder="templates")
 
+
 app.config.from_object(TestConfig)       # 从setting.py文件中导入TestConfig类
 # views.config.from_pyfile('setting.ini')      # 引入.ini的配置文件，主要需要带上后缀名
-# manager = Manager(app)
+# manager = Manager(app)      #
+
 
 db = SQLAlchemy(app)
 
@@ -76,8 +81,8 @@ def error(e):
 if __name__ == '__main__':
     import sys
     sys.path.append("D:\\work\\WebAutoTestProject\\website")
-    app.run(port=TestConfig.PORT)
-
+    app.run(host="10.0.11.88", port=TestConfig.PORT)
+    # manager.run()
     # python main.py runserver --host 192.168.43.53
-    # python main.py runserver --host 127.0.0.1
+    # python main.py runserver -h 10.0.11.88 -p 8888
     # sys.path.append("D:\\work\\WebAutoTestProject\\website")
