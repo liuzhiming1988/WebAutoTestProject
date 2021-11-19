@@ -41,11 +41,13 @@ class GitClient:
     def add_file(self, files=None):
         if files is None:
             self.git.add(".")
+            return True
         else:
             self.repo.index.add(files)
         # self.repo.index.add(files)
 
-    def commit_push(self, mark):
+    def commit_push(self, mark, files=None):
+        self.add_file(files)
         self.repo.index.commit(mark)
         flag = True
         n = 0
@@ -54,6 +56,7 @@ class GitClient:
             print("第{}次尝试".format(n))
             try:
                 self.repo.remotes.origin.push()
+                # self.repo.remote().push()
                 flag = False
                 print("第{}次提交：提交成功".format(n))
             except Exception as ec:
@@ -73,8 +76,7 @@ class GitClient:
             n += 1
             print("第{}次尝试".format(n))
             try:
-                # self.repo.remotes.origin.push(tag_name)
-                self.repo.remote().push()
+                self.repo.remotes.origin.push(tag_name)
                 flag = False
                 print("第{}次提交：提交成功".format(n))
             except Exception as ec:
@@ -110,7 +112,6 @@ if __name__ == '__main__':
     date = time.strftime("%Y%m%d%H%M%S", time.localtime())   # 输出格式20211116153051，精确到秒
     tag_name = "tag-test-{}".format(date)
     git_client = GitClient(git_path="D:\work\WebAutoTestProject")
-    git_client.add_file()
     git_client.commit_push("auto-all-commit daily")
     # git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily")
 
