@@ -44,11 +44,13 @@ class GitClient:
             return True
         else:
             self.repo.index.add(files)
-        # self.repo.index.add(files)
 
-    def commit_push(self, mark, files=None):
+    def commit(self, remark):
+        self.repo.index.commit(remark)
+
+    def commit_push(self, remark, files=None):
         self.add_file(files)
-        self.repo.index.commit(mark)
+        self.commit(remark)
         flag = True
         n = 0
         while flag:
@@ -62,13 +64,14 @@ class GitClient:
             except Exception as ec:
                 print("提交失败：\n{}".format(repr(ec)))
 
-
-    def create_tag_push(self, tag_name, remark):
+    def create_tag_push(self, tag_name, remark, files=None):
         """创建tag，并进行push"""
         # 原生命令
         # self.git.tag(tag_name, remark)
         # self.git.push("origin", tag_name)
         # repo方式
+        self.add_file(files)
+        self.commit_push(remark, files)
         self.repo.create_tag(tag_name, message=remark)
         flag = True
         n = 0
@@ -81,21 +84,6 @@ class GitClient:
                 print("第{}次提交：提交成功".format(n))
             except Exception as ec:
                 print("提交失败：\n{}".format(repr(ec)))
-
-    def push(self, tag_name):
-        flag = True
-        n = 0
-        while flag:
-            n += 1
-            print(">>>>>>>第{}次尝试".format(n))
-            try:
-                self.repo.remotes.origin.push(tag_name)
-                flag = False
-                print("第{}次提交：提交成功".format(n))
-            except Exception as ec:
-                print(repr(ec))
-
-
 
     def get_status(self):
         """查看status，打印出改动的信息"""
@@ -116,6 +104,6 @@ if __name__ == '__main__':
     # git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily")
 
     # git_client.get_current_branch()
-    # git_client.get_all_branches()
+    git_client.get_all_branches()
     # git_client.get_status()
     # git_client.check_is_empty()
