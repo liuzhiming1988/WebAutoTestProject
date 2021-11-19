@@ -72,7 +72,7 @@ class GitClient:
         n = 0
         while flag:
             n += 1
-            print("第{}次尝试".format(n))
+            print(">>>>>>>第{}次尝试".format(n))
             try:
                 self.repo.remotes.origin.push(tag_name)
                 flag = False
@@ -93,11 +93,15 @@ class GitClient:
 
 
 if __name__ == '__main__':
+    import time
+    date = time.strftime("%Y%m%d%H%M%S", time.localtime())   # 输出格式20211116153051，精确到秒
+    tag_name = "tag-test-{}".format(date)
     git_client = GitClient(git_path="D:\work\WebAutoTestProject")
+    git_client.add_file()
+    git_client.commit("auto-all-commit daily")
+    git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily")
+
     # git_client.get_current_branch()
     # git_client.get_all_branches()
     # git_client.get_status()
     # git_client.check_is_empty()
-    git_client.add_file()
-    git_client.commit("read file to csv")
-    git_client.create_tag_push("tag-test-2021111601", "mark words-tag-test-2021111601")

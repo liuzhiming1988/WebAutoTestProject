@@ -1,14 +1,11 @@
 #!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
-
 """
 @File    : helloword.py
 @Author  : liuzhiming
 @Time    : 2021/6/29 下午11:50
 """
-import sys
-sys.path.append("D:\\work\\WebAutoTestProject")
-print(sys.path)
+
 from flask import Flask
 from flask import redirect
 from flask import url_for
@@ -36,7 +33,6 @@ from website.views.yiyanhuo_v import fish_blue
 from website.setting import TestConfig
 from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager
-
 
 
 app = Flask(__name__, static_url_path="/static_files",

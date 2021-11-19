@@ -311,11 +311,15 @@ class RedisClient(object):
 
 
 if __name__ == '__main__':
-    REDIS = RedisClient()
-    test = REDIS.redis.hgetall("V3LimitDayCnt")
-    print(test)
-    print(REDIS.exists("V3LimitDayCnt"))
-    print(type(REDIS.exists("V3LimitDayCnt")))
+    # REDIS = RedisClient()
+    # test = REDIS.redis.hgetall("V3LimitDayCnt")
+    # print(test)
+    # print(REDIS.exists("V3LimitDayCnt"))
+    # print(type(REDIS.exists("V3LimitDayCnt")))
+    local_redis = RedisClient(host="10.0.11.14", port=6379, password="12345678")
+    local_redis.set(name="test_ip", value="10.0.11.14")
+    res = local_redis.get_set_value(name="test_ip")
+    print(res)
     # 测试set
     # REDIS.set(name='name', value='Evan', do_pickle=True, expire=60)
     # REDIS.set(name='id', value=6, do_pickle=True, expire=60)

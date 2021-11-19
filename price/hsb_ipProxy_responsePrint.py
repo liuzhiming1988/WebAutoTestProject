@@ -129,7 +129,7 @@ def hsb_baseprice_ipProxy_dev():
 def hsb_response_print(respone):
     '''响应结果打印输出，方法封装'''
     respone.encoding = respone.apparent_encoding  # 编码设置
-    print(json.dumps(respone.json(),indent=4,ensure_ascii=False))
+    # print(json.dumps(respone.json(),indent=4,ensure_ascii=False))
     print('\n==========>接口响应『json』格式数据为：\n', respone.text
         + '\n==========>接口响应时长：{0} 秒\n'.format(respone.elapsed.total_seconds())
         + '\033[32m=\033[0m' * 180

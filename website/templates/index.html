@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>回收宝测试主页</title>
     <style>
         .textarea{
@@ -39,22 +39,26 @@
         }
         .mark{
             color: #838383;
-            font-size: medium;
+            font-size: small;
             margin-left: 110px;
+        }
+        .custom-hr{
+            height: 1.5px;
+            background-color: #a6e19d;
         }
         .mark_product{
             color: #838383;
-            font-size: medium;
+            font-size: small;
         }
     </style>
     <style type="text/css">
 #returntop{
     display: none;
     width: 50px;     /*调整显示块的宽width和高height*/
-    height: 65px;
+    height: 55px;
     padding: 5px 0;
     /*background-image: url(1.png);*/     /*可用背景图片*/
-    background-color: grey;            /*背景颜色*/
+    background-color: #5FB878;            /*背景颜色*/
     background-repeat: no-repeat;
     position: fixed;
     _position: absolute;
@@ -63,7 +67,7 @@
 }
     .top_font{
         color: #00FFFF;
-        font-size: x-large;
+        font-size: larger;
     }
 </style>
 <link rel="stylesheet" href="../static_files/frame/layui/css/layui.css">
@@ -87,12 +91,12 @@
 </div>
 
 <div class="layui-btn-container">
-    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p3">【WMS签收-拆包-收货】</a>
+    <a href="#p3" target="_self" class="layui-btn layui-btn-primary layui-btn-sm">【WMS签收-拆包-收货】</a>
     <a class="layui-btn layui-btn-primary" href="#p4">【新标准检测】</a>
     <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p5">【官方下单-邮寄回收】</a>
     <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p6">【商家自检(手动检)下单】</a>
     <a class="layui-btn layui-btn-sm layui-btn-normal" href="#p7">【价格2.0-2C估价-保存机型配置】</a>
-    <a class="layui-btn layui-btn-primary layui-btn-sm" href="#p8">【修复检测失败问题（价格V2.0订单）】</a>
+    <a class="layui-btn" href="#p8">【修复检测失败问题（价格V2.0订单）】</a>
 </div>
 
 <div class="layui-btn-container">
@@ -100,9 +104,11 @@
     <a class="layui-btn layui-btn-primary" href="#p10">【价格3.0-回收定价参数保存&审核】</a>
 </div>
 
-<fieldset id="p1" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>巨沃-入库处理</legend>
-</fieldset>
+
+
+<div id="p1">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">巨沃-自动化入库处理</blockquote>
+</div>
 
 <form action="/in_storage_jw" method="post">
     <div class="layui-form-item layui-form-text">
@@ -117,22 +123,21 @@
     </div>
 </form>
 
-<!--<div>-->
-<!--    {% for message in get_flashed_messages() %}-->
-<!--        <h3>{{ message }}</h3>-->
-<!--    {% endfor %}-->
-<!--</div>-->
-    <br />
-        <div class="mark">使用说明：<br>
+<br />
+    <div class="mark">使用说明：<br>
         1. 每个条码必须输入18位，否则无法通过；<br>
         2. 每个条码完成入库操作需要三分钟左右，无论最后是否入库成功，都会在网页上显示执行结果；<br>
         3. 进行入库处理时会根据商品条码搜索，若查不到对应的来源单号，则不会继续执行入库操作。<br>
-        </div>
+    </div>
 
 <br />
-<fieldset id="p2" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>巨沃-出库处理</legend>
-</fieldset>
+
+<hr class="custom-hr">
+
+<div id="p2">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">巨沃-自动化出库处理</blockquote>
+</div>
+
 <form action="/outbound" method="post">
 
     <div class="layui-form-item layui-form-text">
@@ -154,10 +159,11 @@
         </label>
     </div>
 <br />
+<hr class="custom-hr">
+<div id="p3">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">WMS自动签收-拆包-收货</blockquote>
+</div>
 
-<fieldset id="p3" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>WMS签收-拆包-收货</legend>
-</fieldset>
 <form action="/wms_sign" method="post">
 
     <div class="layui-form-item layui-form-text">
@@ -179,9 +185,11 @@
         </label>
     </div>
 <br />
-<fieldset id="p4" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>新标准检测</legend>
-</fieldset>
+<hr class="custom-hr">
+<div id="p4">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">新标准检测-自动化检测</blockquote>
+</div>
+
 <form action="/new_standard_detect" method="post">
 
     <div class="layui-form-item layui-form-text">
@@ -204,10 +212,11 @@
         </label>
     </div>
 <br />
+<hr class="custom-hr">
+<div id="p5">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">回收宝APP-顺丰邮寄单</blockquote>
+</div>
 
-<fieldset id="p5" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>官方下单-邮寄回收</legend>
-</fieldset>
 
 <form class="layui-form layui-form-pane" action="/own_recycle_sf" method="post">
 
@@ -289,9 +298,10 @@
         </label>
     </div>
 
-<fieldset id="p6" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>商家自检(手动检)下单</legend>
-</fieldset>
+<hr class="custom-hr">
+<div id="p6">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">专业版-商家自检（手动检）-自动下单</blockquote>
+</div>
 
 <form class="layui-form layui-form-pane" action="/merchant_check" method="post">
 
@@ -372,9 +382,11 @@
     </div>
 <br />
 
-<fieldset id="p7" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>【价格2.0-2C估价-保存机型配置】</legend>
-</fieldset>
+<hr class="custom-hr">
+<div id="p7">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">【价格2.0-2C估价-保存机型配置】</blockquote>
+</div>
+
 <form action="/eva_2c_save" method="post">
 
     <div class="layui-form-item layui-form-text">
@@ -397,9 +409,10 @@
     </div>
 <br />
 
-<fieldset id="p8" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>修复检测失败问题-V2.0订单（获取产品保价估价选项失败,建议排查订单id是否存在）</legend>
-</fieldset>
+<hr class="custom-hr">
+<div id="p8">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">【价格V2.0】修复检测失败问题（获取产品保价估价选项失败,建议排查订单id是否存在）</blockquote>
+</div>
 
 <form action="/v2_fixed_detect_failure" method="post">
     <div class="layui-form-item layui-form-text">
@@ -414,10 +427,11 @@
     </div>
 </form>
 
+<hr class="custom-hr">
+<div id="p9">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">【价格V3.0】销售定价参数保存&审核</blockquote>
+</div>
 
-<fieldset id="p9" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>【价格3.0-销售定价参数保存&审核】</legend>
-</fieldset>
 <form action="/save_sale_price_v3" method="post">
 
     <div class="layui-form-item layui-form-text">
@@ -440,10 +454,11 @@
     </div>
 <br />
 
+<hr class="custom-hr">
+<div id="p10">
+    <blockquote class="layui-elem-quote" style="font-size: medium; font-weight: bolder;background-color: #D3D4D3">【价格V3.0】回收定价参数保存&审核</blockquote>
+</div>
 
-<fieldset id="p10" class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-    <legend>【价格3.0-回收定价参数保存&审核】</legend>
-</fieldset>
 <form action="/save_recycle_price_v3" method="post">
 
     <div class="layui-form-item layui-form-text">
@@ -467,7 +482,7 @@
 <br />
 
 
-<div id="returntop" class="top_font">返回顶部</div>
+<div id="returntop" class="top_font">返回 顶部</div>
 <!--<ul class="layui-fixbar">-->
 <!--    <li id="returntop" class="layui-icon layui-fixbar-top" lay-type="top" style="display: list-item;">返回顶部</li>-->
 <!--</ul>-->
@@ -496,7 +511,7 @@ function getWinSize(){
         winWidth=document.body.clientWidth;
     }
     getDiv.style.bottom=20+"px";  /*距离浏览器底部10px*/
-    getDiv.style.right=100+"px";  /*距离浏览器右边框100px*/
+    getDiv.style.right=0.05*winWidth+"px";  /*距离浏览器右边框100px*/
     /*修改显示块的位置，有四个方向：top,bottom,left,right*/
 }
 getWinSize();

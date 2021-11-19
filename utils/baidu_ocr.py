@@ -37,11 +37,17 @@ class BaiduOcr:
         res_data = ""
         # 将识别到的每行文字进行拼接
         for x in data["words_result"]:
-            res_data+="{}\n".format(x["words"])
-        print(res_data.strip())
+            res_data += "{}\n".format(x["words"])
+        print(res_data)
         return res_data.strip()
 
 
 if __name__ == '__main__':
-    path = "d:\\55.jpg"
+    path = "d:\\111.jpg"
     BaiduOcr().get_ocr_data(path)
+
+
+
+
+
+

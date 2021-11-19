@@ -30,6 +30,7 @@ class  Convert_Check_Item_To_34:
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
         respone.encoding = respone.apparent_encoding  # 编码设置
         respone_dict = json.loads(respone.text)  # 转成字典
+        # print("获取的57项检测选项为：\n{}".format(respone_dict))
         checkList = respone_dict['_data']['_data']['checkList']
         skuList = respone_dict['_data']['_data']['skuList']
 
@@ -123,6 +124,7 @@ class  Convert_Check_Item_To_34:
         # checkList = ["7420", "7422", "7425", "7428", "7434", "7436", "7443", "7446", "8055", "7452", "7460", "7463", "7466", "7467", "7471", "7479", "7481", "7489", "7490", "7495", "7503", "7506", "7513", "7518", "7522", "7530", "7532", "7538", "7542", "7548", "7555", "7556", "7559", "7568", "7570", "7575", "7578", "7581", "7586", "7592", "7596", "7609", "7613"]
 
         param = {"_head":{"_version":"0.01","_msgType":"request","_invokeId":"convert_check_item_to_34","_remark":"","_interface":"convert_check_item_to_34","_timestamps":"1629908689","_callerServiceId":"112006","_groupNo":"1"},"_param":{"productId":productId, "skuList":skuList, "checkList":checkList}}
+        print(param)
         url = "http://codserver.huishoubao.com/detect/convert_check_item_to_34"
         md5value = json.dumps(param) + "_" + self.secret_key
         headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":self.callerserviceid}
@@ -131,11 +133,11 @@ class  Convert_Check_Item_To_34:
 
 if __name__ == '__main__':
     product_53 = Convert_Check_Item_To_34()
-    # product_53.convert_check_item_to_34 (productId='41567') # 苹果机型  iPhone X
+    product_53.convert_check_item_to_34 (productId='41567') # 苹果机型  iPhone X
     # product_53.convert_check_item_to_34 (productId='64000') # 安卓机型 华为 P40（5G）
     # product_53.convert_check_item_to_34 (productId='64000') # 安卓机型 华为 P40（5G） | 不传sku  |  允许
     # product_53.convert_check_item_to_34 (productId='64000') # 安卓机型 华为 P40（5G） | 不传机况 |  允许，全部返回最好的
-    product_53.convert_check_item_to_34 (productId='23007')
+    # product_53.convert_check_item_to_34 (productId='23007')
 
 '''
 【质检报告切34项】【57转34】【server-evaluate_detect】 

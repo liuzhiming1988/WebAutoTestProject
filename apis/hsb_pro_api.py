@@ -176,7 +176,9 @@ class HsbProApi:
         """
         step=1
         :return:
+
         """
+
         items = self.temp["basic"]["items"]
         for item in items:
             del item["singleFlag"]

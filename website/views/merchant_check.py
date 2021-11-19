@@ -21,8 +21,7 @@ merchant_check_blue = Blueprint("merchant_check", __name__)
 
 @merchant_check_blue.route("/merchant_check", methods=['GET', 'POST'])
 def merchant_check():
-    # text = "<h3>专业版-商家自检-精准发布：</h3><br />"
-    text = ""
+    text = "<h5>专业版-商家自检-精准发布：</h5><br />"
     if request.method == "POST":
         phone = request.form.get("phone")
         sms_code = request.form.get("sms_code")
@@ -47,22 +46,24 @@ def merchant_check():
         if pro.mark:
             pro.get_store_list()
             for x in range(num):
-                pro.detect_v3_get_sn()
-                pro.get_check_option(brand_id, product_id)
-                basic_selects = pro.get_basic_selects()
-                condition_selects = pro.get_condition_selects()
-                function_selects = pro.get_function_selects()
-                repair_selects = pro.get_repair_selects()
-                pro.save_update_check_result(basic_selects, 1)
-                pro.save_update_check_result(condition_selects, 2)
-                pro.save_update_check_result(function_selects, 3)
-                pro.save_update_check_result(repair_selects, 4)
-                pro.product_evaluate_merchant_check()
-                pro.save_photo_merchant_check()
-                pro.apply_for_create_goods(product_id)
-                text += "{}<br /><hr />".format(pro.mark_text)
+                try:
+                    pro.detect_v3_get_sn()
+                    pro.get_check_option(brand_id, product_id)
+                    basic_selects = pro.get_basic_selects()
+                    condition_selects = pro.get_condition_selects()
+                    function_selects = pro.get_function_selects()
+                    repair_selects = pro.get_repair_selects()
+                    pro.save_update_check_result(basic_selects, 1)
+                    pro.save_update_check_result(condition_selects, 2)
+                    pro.save_update_check_result(function_selects, 3)
+                    pro.save_update_check_result(repair_selects, 4)
+                    pro.product_evaluate_merchant_check()
+                    pro.save_photo_merchant_check()
+                    pro.apply_for_create_goods(product_id)
+                    text += "{}<br /><hr />".format(pro.mark_text)
+                except KeyError as ec:
+                    text += "下单失败，请联系管理员！错误信息：{}<br /><hr />".format(repr(ec))
         else:
             text = pro.mark_text
-        # return text
 
     return render_template("tips.html", text=text)

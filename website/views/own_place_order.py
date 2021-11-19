@@ -20,7 +20,7 @@ own_place_order_blue = Blueprint("own_place_order", __name__)
 
 @own_place_order_blue.route("/own_recycle_sf", methods=['GET', 'POST'])
 def own_recycle_sf():
-    text = "<h3>官方下单-邮寄回收:</h3><br />"
+    text = "<h6>官方下单-邮寄回收:</h6><br />"
     if request.method == "POST":
         phone = request.form.get("phone")
         sms_code = request.form.get("sms_code")

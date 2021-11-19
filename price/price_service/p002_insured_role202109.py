@@ -245,15 +245,15 @@ if __name__ == '__main__':
     # spec_list = ['9091', '9097']
     # spec_list = ['9091', '9096']
     # spec_list = ['9091', '9095']
-    spec_list = ['9090', '9095']  # 未同时命中指定定价选项，则根据映射关系进行命中（100060）
-    item_list.extend(spec_list)  # 合并入特殊逻辑命中选项
+    # spec_list = ['9090', '9095']  # 未同时命中指定定价选项，则根据映射关系进行命中（100060）
+    # item_list.extend(spec_list)  # 合并入特殊逻辑命中选项
 
     # rec_eva.v3_recycle_evaluate(orderId="7637141", productId="41567", checkType="3", isOverInsurance="0")   # 已过保（超过保价期）
-    rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="3", isOverInsurance="0",
-                                sku_list=sku_list, item_list=item_list)  # 未过保
+    # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="3", isOverInsurance="0",
+    #                             sku_list=sku_list, item_list=item_list)  # 未过保
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="4", isOverInsurance="0",sku_list=sku_list,item_list=item_list)   # 找不到对应定价标准的检测模板
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="3", isOverInsurance="1")   # 已过保（强制过保）
-    # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="64494", checkType="3", isOverInsurance="0")   # 已过保（机型不一致）
+    rec_eva.v3_recycle_evaluate(orderId="7637142", productId="30831", checkType="3", isOverInsurance="0")   # 已过保（机型不一致）
 
     # 估价答案项无100061（特殊映射逻辑）,返回的估价明细中应无100061
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="64494", checkType="3", isOverInsurance="1",
