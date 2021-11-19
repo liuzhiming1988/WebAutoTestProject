@@ -74,7 +74,7 @@ class GitClient:
             print("第{}次尝试".format(n))
             try:
                 # self.repo.remotes.origin.push(tag_name)
-                self.git.push()
+                self.repo.remote().push()
                 flag = False
                 print("第{}次提交：提交成功".format(n))
             except Exception as ec:
