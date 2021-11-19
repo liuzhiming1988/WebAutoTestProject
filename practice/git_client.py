@@ -45,8 +45,20 @@ class GitClient:
             self.repo.index.add(files)
         # self.repo.index.add(files)
 
-    def commit(self, mark):
+    def commit_push(self, mark):
         self.repo.index.commit(mark)
+        flag = True
+        n = 0
+        while flag:
+            n += 1
+            print("第{}次尝试".format(n))
+            try:
+                self.repo.remotes.origin.push()
+                flag = False
+                print("第{}次提交：提交成功".format(n))
+            except Exception as ec:
+                print("提交失败：\n{}".format(repr(ec)))
+
 
     def create_tag_push(self, tag_name, remark):
         """创建tag，并进行push"""
@@ -98,8 +110,8 @@ if __name__ == '__main__':
     tag_name = "tag-test-{}".format(date)
     git_client = GitClient(git_path="D:\work\WebAutoTestProject")
     git_client.add_file()
-    git_client.commit("auto-all-commit daily")
-    git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily")
+    git_client.commit_push("auto-all-commit daily")
+    # git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily")
 
     # git_client.get_current_branch()
     # git_client.get_all_branches()
