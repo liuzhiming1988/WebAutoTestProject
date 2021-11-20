@@ -12,13 +12,13 @@ from base.base_page import BasePage
 
 class RecyclePricingAuditPage(BasePage):
     """回收定价审核菜单"""
-    search_type = ("xpath", "/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input")     # 名称/ID搜索框
-    id_search = ("xpath", "/html/body/div/div[1]/div[1]/ul/li[2]/span")     # ID搜索
-    search_input = ("xpath", "/html/body/section/div[3]/section/div[2]/div[6]/input")     # 关键字输入框
-    search_btn = ("xpath", "/html/body/section/div[3]/section/div[2]/button")     # 搜索按钮
-    audit_btn = ("xpath", "/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span")    # 审核按钮
-    pass_audit_btn = ("xpath", "/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]")      # 审核通过按钮
-    sure_btn = ("xpath", "/html/body/div[2]/div/div[3]/button[2]/span")     # 确认按钮
+    search_type = ("xpath", "/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input", "名称/ID下拉框")     # 名称/ID搜索框
+    id_search = ("xpath", "/html/body/div/div[1]/div[1]/ul/li[2]/span", "ID搜索")     # ID搜索
+    search_input = ("xpath", "/html/body/section/div[3]/section/div[2]/div[6]/input", "关键字输入框")     # 关键字输入框
+    search_btn = ("xpath", "/html/body/section/div[3]/section/div[2]/button", "搜索按钮")     # 搜索按钮
+    audit_btn = ("xpath", "/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span", "审核按钮")    # 审核按钮
+    pass_audit_btn = ("xpath", "/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]", "审核通过按钮")      # 审核通过按钮
+    sure_btn = ("xpath", "/html/body/div[2]/div/div[3]/button[2]/span", "确认按钮")     # 确认按钮
 
     def pass_audit(self, product_id):
         """审核通过菜单"""

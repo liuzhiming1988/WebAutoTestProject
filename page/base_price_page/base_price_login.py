@@ -16,9 +16,9 @@ class BasePriceLoginPage(BasePage):
 
     """2.0估价系统后台登录页面"""
     url = "http://baseprice.huishoubao.com.cn/"
-    username = ('xpath', ".//*[@id='username']")
-    passwd = ('xpath', ".//*[@id='loginForm']/div[3]/div/div/input")
-    submit = ('xpath', ".//*[@id='loginBtn']")
+    username = ('xpath', ".//*[@id='username']", "用户名输入框")
+    passwd = ('xpath', ".//*[@id='loginForm']/div[3]/div/div/input", "密码输入框")
+    submit = ('xpath', ".//*[@id='loginBtn']", "登录按钮")
 
     config = ConfigRead()
 

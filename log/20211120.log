@@ -1,0 +1,372 @@
+2021-11-20 16:22:02,357 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:165] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:22:02,755 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:22:03,257 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='username']】
+2021-11-20 16:22:03,289 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:147] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:22:03,394 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.64秒
+
+2021-11-20 16:22:03,395 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:22:03,896 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:22:03,918 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:147] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:22:03,972 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:22:03,972 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:22:04,473 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【.//*[@id='loginBtn']】
+2021-11-20 16:22:04,492 - D:\work\WebAutoTestProject\base\base_page.py - click[line:156] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:22:04,516 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:22:06,562 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:165] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/recyclePricing/spuList】
+2021-11-20 16:22:06,731 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:193] - DEBUG: 最大化当前页面
+2021-11-20 16:22:09,232 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[2]/div[1]/div[5]/input】
+2021-11-20 16:22:09,252 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:147] - DEBUG: 输入数据：【41568】
+2021-11-20 16:22:09,321 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.59秒
+
+2021-11-20 16:22:09,822 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[2]/div[1]/button】
+2021-11-20 16:22:09,844 - D:\work\WebAutoTestProject\base\base_page.py - click[line:156] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div/div[2]/div[1]/button】
+2021-11-20 16:22:09,867 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:22:10,368 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:106] - DEBUG: 定位元素:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:22:26,720 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:183] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120162226.png】
+2021-11-20 16:22:26,790 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:117] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:22:26,790 - D:\work\WebAutoTestProject\website\views\base_price_admin_view.py - save_recycle_price_v3[line:86] - ERROR: 【价格3.0-保存并审核回收定价参数】<br>机型【41568】审核失败：【TimeoutException('', None, None)】<br>
+2021-11-20 16:23:25,902 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:23:26,315 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:23:26,816 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='username']〗
+2021-11-20 16:23:26,816 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【.//*[@id='username']】
+2021-11-20 16:23:26,860 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:23:27,077 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.76秒
+
+2021-11-20 16:23:27,077 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:23:27,578 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='loginForm']/div[3]/div/div/input〗
+2021-11-20 16:23:27,578 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:23:27,600 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:23:27,658 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:23:27,658 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:23:28,159 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='loginBtn']〗
+2021-11-20 16:23:28,159 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【.//*[@id='loginBtn']】
+2021-11-20 16:23:28,177 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:23:28,200 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:23:30,200 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/recyclePricing/spuList】
+2021-11-20 16:23:30,368 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:23:32,869 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div/div[2]/div[1]/div[5]/input〗
+2021-11-20 16:23:32,869 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[2]/div[1]/div[5]/input】
+2021-11-20 16:23:32,891 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【41567】
+2021-11-20 16:23:32,959 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.59秒
+
+2021-11-20 16:23:33,460 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div/div[2]/div[1]/button〗
+2021-11-20 16:23:33,460 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[2]/div[1]/button】
+2021-11-20 16:23:33,478 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div/div[2]/div[1]/button】
+2021-11-20 16:23:33,499 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:23:34,001 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span〗
+2021-11-20 16:23:34,001 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:23:34,522 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span〗
+2021-11-20 16:23:34,522 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:23:34,544 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:23:34,568 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:23:34,571 - D:\work\WebAutoTestProject\base\base_page.py - scroll_to[line:193] - DEBUG: 移动滚动条位置：x=0,y=100
+2021-11-20 16:23:34,571 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:239] - INFO: 强制等待 3 秒
+2021-11-20 16:23:38,074 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗
+2021-11-20 16:23:38,074 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:23:38,099 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:23:38,134 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.56秒
+
+2021-11-20 16:23:38,134 - D:\work\WebAutoTestProject\page\base_price_page\recycle_pricing_param.py - submit_audit[line:31] - DEBUG: 机型【41567】已提交成功
+2021-11-20 16:23:38,134 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/recyclePricing/audit】
+2021-11-20 16:23:38,184 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:23:40,687 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input〗
+2021-11-20 16:23:40,687 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input】
+2021-11-20 16:23:40,708 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input】
+2021-11-20 16:23:40,738 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:23:41,239 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/div/div[1]/div[1]/ul/li[2]/span〗
+2021-11-20 16:23:41,239 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/div/div[1]/div[1]/ul/li[2]/span】
+2021-11-20 16:23:41,257 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/div/div[1]/div[1]/ul/li[2]/span】
+2021-11-20 16:23:41,283 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:23:41,785 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[2]/div[6]/input〗
+2021-11-20 16:23:41,785 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[2]/div[6]/input】
+2021-11-20 16:23:41,804 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【41567】
+2021-11-20 16:23:41,869 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.59秒
+
+2021-11-20 16:23:42,370 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[2]/button〗
+2021-11-20 16:23:42,370 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[2]/button】
+2021-11-20 16:23:42,398 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[2]/button】
+2021-11-20 16:23:42,420 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:23:42,921 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span〗
+2021-11-20 16:23:42,921 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span】
+2021-11-20 16:23:43,440 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span〗
+2021-11-20 16:23:43,440 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span】
+2021-11-20 16:23:43,456 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span】
+2021-11-20 16:23:43,486 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:23:43,987 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]〗
+2021-11-20 16:23:43,987 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]】
+2021-11-20 16:23:44,009 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]】
+2021-11-20 16:23:44,041 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:23:44,541 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/div[2]/div/div[3]/button[2]/span〗
+2021-11-20 16:23:44,541 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【/html/body/div[2]/div/div[3]/button[2]/span】
+2021-11-20 16:23:44,562 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/div[2]/div/div[3]/button[2]/span】
+2021-11-20 16:23:44,585 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:23:44,586 - D:\work\WebAutoTestProject\page\base_price_page\recycle_pricing_audit.py - pass_audit[line:35] - DEBUG: 机型【41567】已通过审核
+2021-11-20 16:30:09,440 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:30:09,803 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:30:10,304 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='username']〗
+2021-11-20 16:30:10,304 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【.//*[@id='username']】
+2021-11-20 16:30:10,330 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:30:10,399 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.6秒
+
+2021-11-20 16:30:10,399 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:30:10,900 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='loginForm']/div[3]/div/div/input〗
+2021-11-20 16:30:10,900 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:30:10,921 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:30:10,965 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.57秒
+
+2021-11-20 16:30:10,965 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:30:11,467 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='loginBtn']〗
+2021-11-20 16:30:11,467 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】:定位方法【xpath】，值【.//*[@id='loginBtn']】
+2021-11-20 16:30:11,484 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:30:11,506 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:30:13,508 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/recyclePricing/spuList】
+2021-11-20 16:30:13,681 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:30:16,182 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【关键字查询输入框】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[2]/div[1]/div[5]/input】
+2021-11-20 16:30:16,203 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【41567】
+2021-11-20 16:30:16,270 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.59秒
+
+2021-11-20 16:30:16,771 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【列表-搜索按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[2]/div[1]/button】
+2021-11-20 16:30:16,792 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div/div[2]/div[1]/button】
+2021-11-20 16:30:16,817 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:30:17,318 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【首条记录-详情按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:30:17,839 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【首条记录-详情按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:30:17,856 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span】
+2021-11-20 16:30:17,880 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:30:17,884 - D:\work\WebAutoTestProject\base\base_page.py - scroll_to[line:193] - DEBUG: 移动滚动条位置：x=0,y=100
+2021-11-20 16:30:17,884 - D:\work\WebAutoTestProject\base\base_page.py - sleep[line:239] - INFO: 强制等待 3 秒
+2021-11-20 16:30:21,386 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【提交审核按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:30:21,410 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:30:21,447 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.56秒
+
+2021-11-20 16:30:21,447 - D:\work\WebAutoTestProject\page\base_price_page\recycle_pricing_param.py - submit_audit[line:31] - DEBUG: 机型【41567】已提交成功
+2021-11-20 16:30:21,447 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/recyclePricing/audit】
+2021-11-20 16:30:21,537 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:30:24,040 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【名称/ID下拉框】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input】
+2021-11-20 16:30:24,061 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[2]/div[5]/div[1]/input】
+2021-11-20 16:30:24,093 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:30:24,595 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【ID搜索】:定位方法【xpath】，值【/html/body/div/div[1]/div[1]/ul/li[2]/span】
+2021-11-20 16:30:24,628 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/div/div[1]/div[1]/ul/li[2]/span】
+2021-11-20 16:30:24,656 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.56秒
+
+2021-11-20 16:30:25,157 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【关键字输入框】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[2]/div[6]/input】
+2021-11-20 16:30:25,177 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【41567】
+2021-11-20 16:30:25,239 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:30:25,740 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【搜索按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[2]/button】
+2021-11-20 16:30:25,759 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[2]/button】
+2021-11-20 16:30:25,782 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:30:26,284 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【审核按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span】
+2021-11-20 16:30:26,804 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【审核按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span】
+2021-11-20 16:30:26,819 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[9]/div/div[1]/a/span】
+2021-11-20 16:30:26,850 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:30:27,351 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【审核通过按钮】:定位方法【xpath】，值【/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]】
+2021-11-20 16:30:27,372 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/section/div[3]/section/div[5]/div/div[2]/div/div/div[7]/div[3]】
+2021-11-20 16:30:27,405 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.56秒
+
+2021-11-20 16:30:27,906 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【确认按钮】:定位方法【xpath】，值【/html/body/div[2]/div/div[3]/button[2]/span】
+2021-11-20 16:30:27,925 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【/html/body/div[2]/div/div[3]/button[2]/span】
+2021-11-20 16:30:27,947 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:30:27,947 - D:\work\WebAutoTestProject\page\base_price_page\recycle_pricing_audit.py - pass_audit[line:35] - DEBUG: 机型【41567】已通过审核
+2021-11-20 16:40:36,693 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:40:37,048 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:40:37,549 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='username']〗
+2021-11-20 16:40:37,549 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【.//*[@id='username']】
+2021-11-20 16:40:37,575 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:40:37,662 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.61秒
+
+2021-11-20 16:40:37,662 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:40:38,163 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='loginForm']/div[3]/div/div/input〗
+2021-11-20 16:40:38,163 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:40:38,185 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:40:38,242 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:40:38,242 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:40:38,743 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖.//*[@id='loginBtn']〗
+2021-11-20 16:40:38,743 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【.//*[@id='loginBtn']】
+2021-11-20 16:40:38,763 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:40:38,803 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.56秒
+
+2021-11-20 16:40:40,805 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceParamMaintain/spuList】
+2021-11-20 16:40:40,966 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:40:43,468 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input〗
+2021-11-20 16:40:43,468 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input】
+2021-11-20 16:40:43,487 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【83832】
+2021-11-20 16:40:43,570 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.6秒
+
+2021-11-20 16:40:44,072 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/button〗
+2021-11-20 16:40:44,072 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【html/body/section/div[3]/section/div[1]/div[1]/div[1]/button】
+2021-11-20 16:40:44,091 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【html/body/section/div[3]/section/div[1]/div[1]/div[1]/button】
+2021-11-20 16:40:44,115 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:40:44,617 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span〗
+2021-11-20 16:40:44,617 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+2021-11-20 16:41:00,150 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120164100.png】
+2021-11-20 16:41:00,150 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:41:00,151 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：16.03秒
+
+2021-11-20 16:41:00,652 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗
+2021-11-20 16:41:00,652 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-定位方法〈xpath〉-【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:41:16,086 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120164115.png】
+2021-11-20 16:41:16,086 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【/html/body/section/div[3]/section/section/div[7]/div】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:41:16,203 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\Img_20211120164116.png】
+2021-11-20 16:41:16,203 - D:\work\WebAutoTestProject\page\base_price_page\base_price_sale_parameters.py - submit_audit[line:35] - DEBUG: 机型【83832】未找到 提交审核 按钮，请检查！
+2021-11-20 16:45:30,457 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:45:30,794 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:45:31,294 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【用户名输入框】-定位方法〈xpath〉-【.//*[@id='username']】
+2021-11-20 16:45:31,319 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:45:31,403 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.61秒
+
+2021-11-20 16:45:31,403 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:45:31,904 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【密码输入框】-定位方法〈xpath〉-【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:45:31,925 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:45:31,982 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:45:31,982 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:45:32,484 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【登录按钮】-定位方法〈xpath〉-【.//*[@id='loginBtn']】
+2021-11-20 16:45:32,504 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:45:32,531 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:45:34,531 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceParamMaintain/spuList】
+2021-11-20 16:45:34,703 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:45:37,204 - D:\work\WebAutoTestProject\website\views\base_price_admin_view.py - save_sale_price_v3[line:51] - ERROR: 【价格3.0-保存并审核销售定价参数】<br>机型【83832】审核失败：【IndexError('Replacement index 1 out of range for positional args tuple')】<br>
+2021-11-20 16:46:41,804 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:46:42,236 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:46:42,738 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【用户名输入框】-〈xpath〉-【.//*[@id='username']】
+2021-11-20 16:46:42,764 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:46:43,072 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.84秒
+
+2021-11-20 16:46:43,073 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:46:43,574 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【密码输入框】-〈xpath〉-【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:46:43,597 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:46:43,652 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:46:43,653 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:46:44,154 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【登录按钮】-〈xpath〉-【.//*[@id='loginBtn']】
+2021-11-20 16:46:44,172 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:46:44,195 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:46:46,195 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceParamMaintain/spuList】
+2021-11-20 16:46:46,359 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:46:48,861 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input〗-【IndexError('tuple index out of range')】
+2021-11-20 16:46:48,861 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input】
+2021-11-20 16:46:48,883 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【83832】
+2021-11-20 16:46:48,969 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.61秒
+
+2021-11-20 16:46:49,469 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/button〗-【IndexError('tuple index out of range')】
+2021-11-20 16:46:49,469 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【html/body/section/div[3]/section/div[1]/div[1]/div[1]/button】
+2021-11-20 16:46:49,489 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【html/body/section/div[3]/section/div[1]/div[1]/div[1]/button】
+2021-11-20 16:46:49,516 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:46:50,018 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span〗-【IndexError('tuple index out of range')】
+2021-11-20 16:46:50,018 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+2021-11-20 16:47:05,514 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120164705.png】
+2021-11-20 16:47:05,514 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:47:05,514 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：16.0秒
+
+2021-11-20 16:47:06,015 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗-【IndexError('tuple index out of range')】
+2021-11-20 16:47:06,015 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:47:21,381 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120164721.png】
+2021-11-20 16:47:21,381 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【/html/body/section/div[3]/section/section/div[7]/div】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:47:21,510 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\Img_20211120164721.png】
+2021-11-20 16:47:21,510 - D:\work\WebAutoTestProject\page\base_price_page\base_price_sale_parameters.py - submit_audit[line:35] - DEBUG: 机型【83832】未找到 提交审核 按钮，请检查！
+2021-11-20 16:47:41,332 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 16:47:41,825 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 16:47:42,327 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【用户名输入框】-〈xpath〉-【.//*[@id='username']】
+2021-11-20 16:47:42,356 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【test_liuzhiming@huishoubao.com.cn】
+2021-11-20 16:47:42,447 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.62秒
+
+2021-11-20 16:47:42,447 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 16:47:42,948 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【密码输入框】-〈xpath〉-【.//*[@id='loginForm']/div[3]/div/div/input】
+2021-11-20 16:47:42,969 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【f6758a4e】
+2021-11-20 16:47:43,028 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 16:47:43,029 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 16:47:43,530 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【登录按钮】-〈xpath〉-【.//*[@id='loginBtn']】
+2021-11-20 16:47:43,549 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【.//*[@id='loginBtn']】
+2021-11-20 16:47:43,574 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.54秒
+
+2021-11-20 16:47:45,575 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceParamMaintain/spuList】
+2021-11-20 16:47:45,749 - D:\work\WebAutoTestProject\base\base_page.py - max_window[line:198] - DEBUG: 最大化当前页面
+2021-11-20 16:47:48,250 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input〗-【IndexError('tuple index out of range')】
+2021-11-20 16:47:48,250 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input】
+2021-11-20 16:47:48,271 - D:\work\WebAutoTestProject\base\base_page.py - send_key[line:152] - DEBUG: 输入数据：【688999】
+2021-11-20 16:47:48,372 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.62秒
+
+2021-11-20 16:47:48,873 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/button〗-【IndexError('tuple index out of range')】
+2021-11-20 16:47:48,873 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【html/body/section/div[3]/section/div[1]/div[1]/div[1]/button】
+2021-11-20 16:47:48,893 - D:\work\WebAutoTestProject\base\base_page.py - click[line:161] - DEBUG: 点击元素：【xpath】>>【html/body/section/div[3]/section/div[1]/div[1]/div[1]/button】
+2021-11-20 16:47:48,921 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 16:47:49,422 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span〗-【IndexError('tuple index out of range')】
+2021-11-20 16:47:49,422 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+2021-11-20 16:48:04,830 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120164804.png】
+2021-11-20 16:48:04,830 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:48:04,830 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：15.91秒
+
+2021-11-20 16:48:05,331 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗-【IndexError('tuple index out of range')】
+2021-11-20 16:48:05,331 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:111] - DEBUG: 定位元素【默认元素】-〈xpath〉-【/html/body/section/div[3]/section/section/div[7]/div】
+2021-11-20 16:48:20,664 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\find_element_20211120164820.png】
+2021-11-20 16:48:20,664 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【/html/body/section/div[3]/section/section/div[7]/div】
+异常信息：TimeoutException('', None, None)
+2021-11-20 16:48:20,782 - D:\work\WebAutoTestProject\base\base_page.py - save_img[line:188] - DEBUG: 截图成功，保存路径为【D:\work\WebAutoTestProject\screenshot\Img_20211120164820.png】
+2021-11-20 16:48:20,782 - D:\work\WebAutoTestProject\page\base_price_page\base_price_sale_parameters.py - submit_audit[line:35] - DEBUG: 机型【688999】未找到 提交审核 按钮，请检查！
+2021-11-20 17:43:45,047 - D:\work\WebAutoTestProject\utils\logger.py - <module>[line:91] - DEBUG: 信息info:测试一下by test
+2021-11-20 17:43:45,047 - D:\work\WebAutoTestProject\utils\logger.py - <module>[line:92] - ERROR: error:-----
+2021-11-20 17:43:45,047 - D:\work\WebAutoTestProject\utils\logger.py - <module>[line:93] - CRITICAL: critical------
+2021-11-20 17:43:45,047 - D:\work\WebAutoTestProject\utils\logger.py - <module>[line:94] - INFO: info====
+2021-11-20 17:43:45,047 - D:\work\WebAutoTestProject\utils\logger.py - <module>[line:95] - WARNING: warning======
+2021-11-20 17:47:41,479 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+异常信息：TimeoutException('', None, None)
+2021-11-20 17:47:57,326 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【/html/body/section/div[3]/section/section/div[7]/div】
+异常信息：TimeoutException('', None, None)
+2021-11-20 17:48:07,518 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+2021-11-20 17:48:08,030 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:28] - INFO: 开始输入用户名
+2021-11-20 17:48:08,655 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.62秒
+
+2021-11-20 17:48:08,655 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:30] - INFO: 开始输入密码
+2021-11-20 17:48:09,235 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.58秒
+
+2021-11-20 17:48:09,235 - D:\work\WebAutoTestProject\page\base_price_page\base_price_login.py - base_price_login[line:32] - INFO: 点击登录
+2021-11-20 17:48:09,782 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 17:48:11,783 - D:\work\WebAutoTestProject\base\base_page.py - get_url[line:170] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceParamMaintain/spuList】
+2021-11-20 17:48:14,443 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input〗-【IndexError('tuple index out of range')】
+2021-11-20 17:48:14,553 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.61秒
+
+2021-11-20 17:48:15,055 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/button〗-【IndexError('tuple index out of range')】
+2021-11-20 17:48:15,103 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：0.55秒
+
+2021-11-20 17:48:15,604 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span〗-【IndexError('tuple index out of range')】
+2021-11-20 17:48:31,110 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span】
+异常信息：TimeoutException('', None, None)
+2021-11-20 17:48:31,111 - D:\work\WebAutoTestProject\utils\common.py - wrapper[line:29] - INFO: 执行耗时：16.01秒
+
+2021-11-20 17:48:31,613 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:103] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗-【IndexError('tuple index out of range')】
+2021-11-20 17:48:46,977 - D:\work\WebAutoTestProject\base\base_page.py - find_element[line:123] - ERROR: 在15秒内未定位到元素，定位方法【xpath】，元素：〖默认元素〗，值【/html/body/section/div[3]/section/section/div[7]/div】
+异常信息：TimeoutException('', None, None)

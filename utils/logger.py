@@ -76,6 +76,10 @@ class Logger:
         th.setFormatter(format_str)  # 设置文件里写入的格式
         self.logger.addHandler(sh)  # 把对象加到logger里
         self.logger.addHandler(th)
+        # print("\033[1;36m{}\033[0m".format("Info信息"))
+        # print("\033[1;34m{}\033[0m".format("Debug信息"))
+        # print("\033[1;37;41m{}\033[0m".format("Error信息"))
+        # print("\033[1;31;43m{}\033[0m".format("Warming信息"))
 
 
 if __name__ == '__main__':

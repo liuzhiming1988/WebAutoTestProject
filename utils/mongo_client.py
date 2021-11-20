@@ -22,8 +22,17 @@ class TestVpcMongoConfig:
     username = "admin"
     password = "test_price"
 
+local_config = {
+    "ssh_host": ("129.204.129.154", 22),
+    "ssh_username": "zhangjinfa",
+    "ssh_password": "",
+    "mongodb_host": "10.0.11.14",
+    "mongodb_port": 27017,
+    "username": "admin",
+    "password": "12345678",
+}
 
-class MongoClient:
+class MongoSSHClient:
 
     def __init__(self):
         # 直连MongoDB
@@ -73,6 +82,26 @@ class MongoClient:
         return col_object
 
 
+class MongoClient:
+
+    def __init__(self, db_config=local_config):
+        self.client = pymongo.MongoClient(
+            host=db_config.get("mongodb_host", "default"),
+            port=db_config.get("mongodb_port", 27017),
+            username=db_config.get("username", "default"),
+            password=db_config.get("password", "default")
+        )
+
+    def get_db(self, db_name):
+        db = self.client[db_name]
+        return db
+
+    def get_collection(self, db_name, set_name):
+        db = self.get_db(db_name)
+        mongo_set = db[set_name]
+        return mongo_set
+
+
 if __name__ == '__main__':
     # mongo = MongoDemo()
     # with mongo.get_client_ssh() as client:
@@ -85,6 +114,19 @@ if __name__ == '__main__':
         #     print(query)
         #     print(type(query))
         #     print(query['Fevaluate_id'])
+
+    # 本地mongo库
+    local_db = MongoClient()
+    counters = local_db.get_collection(db_name="base_price", set_name="counters")
+    # 统计集合中的记录数
+    print(counters.estimated_document_count())
+
+    answer_item = local_db.get_collection(db_name="base_price", set_name="t_answer_item")
+    print(answer_item.estimated_document_count())
+    results = answer_item.find({"Faname": "黑色"})
+    res_list = [result for result in results]
+    print(res_list[1].get("Fuser_name", "default"))
+    print(type(res_list[1]))
 
 
     # 官方推荐使用insert_one()和insert_many()方法将插入单条和多条记录分开

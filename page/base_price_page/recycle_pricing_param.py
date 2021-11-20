@@ -12,11 +12,11 @@ from base.base_page import BasePage
 
 class RecyclePriceParamPage(BasePage):
     """销售定价参数维护菜单"""
-    keyword = ("xpath", "/html/body/section/div[3]/section/div/div[2]/div[1]/div[5]/input")     # 关键字查询输入框
-    search_btn = ('xpath', "/html/body/section/div[3]/section/div/div[2]/div[1]/button")      # 搜索按钮
-    detail_btn = ('xpath', "/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span")    # 第一条记录的详情按钮
-    audit_btn = ('xpath', "/html/body/section/div[3]/section/section/div[7]/div")      # 详情页面【提交审核】按钮
-    message = ("xpath", "/html/body/div[1]/div/div[2]/div[1]/div/p")      # 提示语
+    keyword = ("xpath", "/html/body/section/div[3]/section/div/div[2]/div[1]/div[5]/input", "关键字查询输入框")     # 关键字查询输入框
+    search_btn = ('xpath', "/html/body/section/div[3]/section/div/div[2]/div[1]/button", "列表-搜索按钮")      # 搜索按钮
+    detail_btn = ('xpath', "/html/body/section/div[3]/section/div/div[3]/div/div[3]/table/tbody/tr/td[9]/div/a[1]/span", "首条记录-详情按钮")    # 第一条记录的详情按钮
+    audit_btn = ('xpath', "/html/body/section/div[3]/section/section/div[7]/div", "提交审核按钮")      # 详情页面【提交审核】按钮
+    message = ("xpath", "/html/body/div[1]/div/div[2]/div[1]/div/p", "提示语")      # 提示语
 
     def submit_audit(self, product_id):
         """提交审核"""

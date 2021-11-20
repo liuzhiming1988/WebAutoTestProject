@@ -96,6 +96,11 @@ class BasePage:
         key = loc[0]       # 定位方法名
         value = loc[1]      # 元素值
         elem = None
+        remark = "默认元素"
+        try:
+            remark = loc[2]
+        except Exception as ec:
+            self.logger.warning("未定义元素名称: 〖{0}〗-【{1}】".format(value, repr(ec)))
 
         if key in FIND_LIST.keys():
             pass
@@ -103,25 +108,25 @@ class BasePage:
             self.logger.error("请检查定位方法，目前仅支持：{0}".format(FIND_LIST.values()))
             return False
 
-        self.logger.debug("定位元素:定位方法【{0}】，值【{1}】".format(key, value))
+        self.logger.debug("定位元素【{0}】-〈{1}〉-【{2}】".format(remark, key, value))
         # filename = os.path.split(os.path.abspath(sys.argv[0]))
         try:
             WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_LIST[key], value)))
             elem = self.driver.find_element(FIND_LIST[key], value)
+            return elem
 
         except TimeoutException as ec:
             self.save_img(get_current_function_name())
-            ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3}".format(
-                self.timeout, key, value, repr(ec))
+            ex_text = "在{0}秒内未定位到元素，定位方法【{1}】，元素：〖{4}〗，值【{2}】\n异常信息：{3}".format(
+                self.timeout, key, value, repr(ec), remark)
             # DingRebot().send_text(ex_text)
             self.logger.error(ex_text)
-            raise
+            return False
         except Exception as ec:
             self.save_img(get_current_function_name())
             self.logger.error("在{0}秒内未定位到元素，定位方法【{1}】，值【{2}】\n异常信息：{3} \n".format(
                 self.timeout, key, value, repr(ec)))
-            raise
-        return elem
+            return False
 
 
     # def loctor(self, loc, timeout=15):
