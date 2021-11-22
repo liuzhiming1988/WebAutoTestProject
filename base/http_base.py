@@ -11,7 +11,7 @@ import requests
 import json
 from urllib import parse
 from urllib.parse import urlencode
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 from utils.common import *
 from urllib3 import encode_multipart_formdata
 import random
@@ -25,7 +25,8 @@ class HttpBase:
         self.__DOMAIN = None
         self.__PORT = None
         self.__BOUNDARY = None
-        self.logger = Logger().logger
+        # self.logger = Logger().logger
+        self.logger = LoggerV2()
 
     @property
     def protocol(self):

@@ -12,7 +12,7 @@ from base.own_api_base import OwnApiBase
 from urllib3 import encode_multipart_formdata
 import requests
 import random
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 import json
 import time
 import requests
@@ -29,7 +29,7 @@ class HsbAppApi:
         self.http_client.domain ="api.huishoubao.com"
 
         self.temp = {}
-        self.logger = Logger().logger
+        self.logger = LoggerV2()
         self.time = "{} 17:00-18:00".format(DATE_NOW)
         self.mark = True
         self.mark_text = ""

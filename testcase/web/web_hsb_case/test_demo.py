@@ -6,13 +6,13 @@
 # @Software: PyCharm
 
 from page.web_hsb_page.search_page_demo import SearchPage
-from utils.logger import Logger
+from utils.logger import LoggerV2
 import pytest
 
 
 class TestSearchBaidu():
 
-    logger = Logger().logger
+    logger = LoggerV2()
 
     def test_search_01(self, get_driver):
         search = SearchPage(get_driver)

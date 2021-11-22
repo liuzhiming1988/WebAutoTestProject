@@ -9,7 +9,7 @@
 import requests
 import json
 import hashlib
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 
 
 class HonorTestApi:
@@ -22,7 +22,7 @@ class HonorTestApi:
         self.SERVICE_ID = "110001"
         self.OS = requests.session()
         self.DOMAIN = "http://ordserver.huishoubao.com"
-        self.logger = Logger().logger
+        self.logger = LoggerV2()
 
     @staticmethod
     def get_md5(str):

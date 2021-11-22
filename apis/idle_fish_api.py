@@ -11,7 +11,7 @@
 import requests
 import json
 import hashlib
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 
 
 class FishApi:
@@ -24,7 +24,7 @@ class FishApi:
         self.SERVICE_ID = "100001"
         self.OS = requests.session()
         self.DOMAIN = "http://xianyu-yiyanhuo-api.hsb.com"
-        self.logger = Logger().logger
+        self.logger = LoggerV2()
 
     @staticmethod
     def get_md5(str):

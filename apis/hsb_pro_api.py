@@ -14,7 +14,7 @@ import json
 from urllib.parse import urlencode
 from urllib import parse
 from utils.pmysql import Pmysql
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 import time
 import random
 from utils import IMEI
@@ -23,7 +23,7 @@ from utils import IMEI
 class HsbProApi:
 
     def __init__(self):
-        self.logger = Logger().logger
+        self.logger = LoggerV2()
         self.mark = True
         self.temp = {}
 

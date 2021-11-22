@@ -18,7 +18,7 @@ import sys
 from utils.common import *
 import traceback
 from selenium import webdriver
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 from config.path_conf import *
 from utils.ding_rebot import DingRebot
 
@@ -41,9 +41,10 @@ FIND_LIST = {
 class BasePage:
     # 封装每个页面共同的属性和方法
 
-    def __init__(self, driver, timeout=15):
+    def __init__(self, driver, timeout=8):
         self.driver = driver
-        self.logger = Logger().logger
+        # self.logger = Logger().logger
+        self.logger = LoggerV2()
         self.timeout = timeout
 
     def find_elements(self, loc):

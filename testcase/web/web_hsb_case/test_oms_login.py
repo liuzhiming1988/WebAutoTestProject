@@ -8,6 +8,7 @@
 """
 from page.web_hsb_page.oms_login_page import OmsLoginPage
 from utils.common import *
+from utils.logger import LoggerV2
 import allure
 import pytest
 
@@ -16,7 +17,7 @@ import pytest
 class TestOmsLogin:
     """oms系统登录测试"""
 
-    logger = Logger().logger
+    logger = LoggerV2()
 
     login_test_data = [
         ({"username":"fdafdaf", "password":""}, "fail", "不输入密码"),

@@ -21,7 +21,7 @@ merchant_check_blue = Blueprint("merchant_check", __name__)
 
 @merchant_check_blue.route("/merchant_check", methods=['GET', 'POST'])
 def merchant_check():
-    text = "<h5>专业版-商家自检-精准发布：</h5><br />"
+    text = "<h1>专业版-商家自检-精准发布：</h1><br />"
     if request.method == "POST":
         phone = request.form.get("phone")
         sms_code = request.form.get("sms_code")

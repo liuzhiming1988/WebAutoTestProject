@@ -13,7 +13,7 @@ import traceback
 import json
 import hashlib
 import inspect
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 
 
 DATE_NOW = time.strftime("%Y-%m-%d", time.localtime())
@@ -26,7 +26,7 @@ def timer(func):
         end_time = time.time()
         run_time = round(end_time-start_time, 2)
         # print("{}--执行耗时：{}".format(func.__name__, run_time))
-        Logger().logger.info("执行耗时：{}秒\n".format(run_time))
+        LoggerV2().info("执行耗时：{}秒\n".format(run_time))
         return res
     return wrapper
 
@@ -168,7 +168,7 @@ def merge_dict(dict_raw, dict_new):
         dict_final = dict(dict_raw, **dict_new)
         return dict_final
     except TypeError as e:
-        Logger().logger.warning("合并字典异常，异常信息：TypeError\n{}".format(e))
+        LoggerV2().warning("合并字典异常，异常信息：TypeError\n{}".format(e))
         return False
 
 

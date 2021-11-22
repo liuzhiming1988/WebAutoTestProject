@@ -11,14 +11,14 @@ from page.web_gwms_page import login_page
 from page.web_gwms_page import menu_page
 from page.web_gwms_page import shipper_allocation_page
 from utils.common import *
-from utils.logger import Logger
+from utils.logger import LoggerV2
 import allure
 import pytest
 
 
 class TestShipperAllocation:
 
-    logger = Logger().logger
+    logger = LoggerV2()
 
     @pytest.mark.web_gwms
     def test_add_material_code(self, get_driver):

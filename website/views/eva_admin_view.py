@@ -19,7 +19,7 @@ eva_blue = Blueprint("eva_admin_view", __name__)
 
 @eva_blue.route("/eva_2c_save", methods=['GET', 'POST'])
 def eva_2c_save():
-    res_text = "【价格2.0】2C估价：批量保存机型<br>"
+    res_text = "<h1>【价格2.0】2C估价：批量保存机型</h1><br>"
     if request.method == "POST":
 
         options = webdriver.ChromeOptions()

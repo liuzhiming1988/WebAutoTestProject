@@ -8,14 +8,14 @@
 """
 
 from page.web_gwms_page.login_page import GwmsLoginPage
-from utils.logger import Logger
+from utils.logger import LoggerV2
 import allure
 import pytest
 
 
 class TestLogin:
 
-    logger = Logger().logger
+    logger = LoggerV2()
 
     login_test_data = [
         ({"username": "test_liuzhiming@huishoubao.com.cn", "password": "32rfdfs"}, "fail", "登录：错误的密码"),

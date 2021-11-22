@@ -9,7 +9,7 @@
 from page.web_gwms_page import login_page
 from page.web_gwms_page import menu_page
 from page.web_gwms_page import outbound_page
-from utils.logger import Logger
+from utils.logger import LoggerV2
 from selenium import webdriver
 
 
@@ -22,7 +22,7 @@ class TestOutbound:
         :return:
         """
         text = ""    # 接收执行结果
-        logger = Logger().logger
+        logger = LoggerV2()
         options = webdriver.ChromeOptions()
         options.add_experimental_option("excludeSwitches", ["enable-logging"])
         get_driver = webdriver.Chrome(options=options)

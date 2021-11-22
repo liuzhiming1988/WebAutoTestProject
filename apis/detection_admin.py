@@ -14,7 +14,7 @@ from urllib.parse import urlencode
 from apis.admin_settings import *
 from apis.amc_client import AmcClient
 import time
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 import copy
 from utils import common
 
@@ -22,7 +22,7 @@ from utils import common
 class DetectionClient:
 
     def __init__(self):
-        self.logger = Logger().logger
+        self.logger = LoggerV2()
         self.detection_client = HttpBase()
         self.detection_client.headers = HEADERS_JSON
         self.detection_client.protocol = PROTOCAL_DETECTION

@@ -20,7 +20,7 @@ base_price_blue = Blueprint("base_price_admin_view", __name__)
 
 @base_price_blue.route("/save_sale_price_v3", methods=['GET', 'POST'])
 def save_sale_price_v3():
-    res_text = "【价格3.0-保存并审核销售定价参数】<br>"
+    res_text = "<h1>【价格3.0-保存并审核销售定价参数】</h1><br>"
     if request.method == "POST":
         options = webdriver.ChromeOptions()
         options.add_experimental_option("excludeSwitches", ["enable-logging"])

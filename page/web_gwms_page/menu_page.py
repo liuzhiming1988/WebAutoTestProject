@@ -26,9 +26,6 @@ def swi_frame(func):
 
 class GwmsMenuPage(BasePage):
 
-    # instantiation log function
-    logger = Logger().logger
-
     # frame
     frame = "folderForm"
 

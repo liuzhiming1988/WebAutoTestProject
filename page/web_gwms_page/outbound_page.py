@@ -54,13 +54,11 @@ review_audit_btn = ("xpath", ".//*[@id='edit:appBut']")    # 复核-审核单据
 
 
 from base.base_page import BasePage
-from utils.logger import Logger
 import random
 
 
 class OutboundPage(BasePage):
     """出库处理相关页面操作"""
-    logger = Logger().logger
     order_label = ""
     sale_order_num = ""
     task_order = ""

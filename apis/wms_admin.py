@@ -14,14 +14,14 @@ from urllib.parse import urlencode
 from apis.admin_settings import *
 from apis.amc_client import AmcClient
 import time
-from utils.logger import Logger
+from utils.logger import Logger, LoggerV2
 import copy
 
 
 class WmsClient:
 
     def __init__(self):
-        self.logger = Logger().logger
+        self.logger = LoggerV2()
         self.wms_client = HttpBase()
         self.wms_client.headers = HEADERS_JSON
         self.wms_client.protocol = PROTOCAL_WMS

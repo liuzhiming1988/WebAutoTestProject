@@ -8,13 +8,11 @@
 """
 
 from base.base_page import BasePage
-from utils.logger import Logger
 import time
 
 
 class ShipperAllocationPage(BasePage):
 
-    logger = Logger().logger
     # 货主物料配置页面
     frame = "tab1_frame"
     newButton = ("xpath", ".//*[@id='list:saveButton']")   # 新增按钮

@@ -12,6 +12,7 @@ from logging import handlers
 from config import path_conf
 import time
 from config.config_read import ConfigRead
+import colorlog
 
 
 """
@@ -35,35 +36,34 @@ format参数中可能用到的格式化串：
 %(message)s            用户输出的消息
 """
 
+log_level = ConfigRead().get_log_level()
+level_relations = {
+    'debug': logging.DEBUG,
+    'info': logging.INFO,
+    'warning': logging.WARNING,
+    'error': logging.ERROR,
+    'critical': logging.CRITICAL
+}  # 定义日志级别
+
+log_name = time.strftime("%Y%m%d", time.localtime()) + ".log"
+path_list = ["log", log_name]
+log_path = path_conf.path_join(path_list)
 
 class Logger:
 
     """
     日志类
     """
-    level_relations = {
-        'debug': logging.DEBUG,
-        'info': logging.INFO,
-        'warning': logging.WARNING,
-        'error': logging.ERROR,
-        'critical': logging.CRITICAL
-    }    # 定义日志级别
-
-    log_name = time.strftime("%Y%m%d", time.localtime())+".log"
-    path_list = ["log", log_name]
-    log_path = path_conf.path_join(path_list)
-    # print(log_path)
-    log_level = ConfigRead().get_log_level()
     fmt = '%(asctime)s - %(pathname)s - %(funcName)s[line:%(lineno)d] - %(levelname)s: %(message)s'
 
     def __init__(self, when='D', backCount=3):
-        self.logger = logging.getLogger(self.log_path)
+        self.logger = logging.getLogger(log_path)
         self.logger.handlers.clear()   # 清理已经存在的handler，防止日志重复
         format_str = logging.Formatter(self.fmt)  # 设置日志格式
-        self.logger.setLevel(self.level_relations.get(self.log_level))  # 设置日志级别
-        sh = logging.StreamHandler() # 往屏幕上输出
-        sh.setFormatter(format_str)  # 设置屏幕上显示的格式
-        th = handlers.TimedRotatingFileHandler(filename=self.log_path, when=when, backupCount=backCount,
+        self.logger.setLevel(level_relations.get(log_level))  # 设置日志级别
+        self.sh = logging.StreamHandler() # 往屏幕上输出
+        self.sh.setFormatter(format_str)  # 设置屏幕上显示的格式
+        self.th = handlers.TimedRotatingFileHandler(filename=log_path, when=when, backupCount=backCount,
                                                encoding='utf-8')  # 往文件里写入#指定间隔时间自动生成文件的处理器
         # 实例化TimedRotatingFileHandler
         # interval是时间间隔，backupCount是备份文件的个数，如果超过这个个数，就会自动删除，when是间隔的时间单位，单位有以下几种：
@@ -73,13 +73,69 @@ class Logger:
         # D 天、
         # W 每星期（interval==0时代表星期一）
         # midnight 每天凌晨
-        th.setFormatter(format_str)  # 设置文件里写入的格式
-        self.logger.addHandler(sh)  # 把对象加到logger里
-        self.logger.addHandler(th)
-        # print("\033[1;36m{}\033[0m".format("Info信息"))
-        # print("\033[1;34m{}\033[0m".format("Debug信息"))
-        # print("\033[1;37;41m{}\033[0m".format("Error信息"))
-        # print("\033[1;31;43m{}\033[0m".format("Warming信息"))
+        self.th.setFormatter(format_str)  # 设置文件里写入的格式
+        self.logger.addHandler(self.sh)  # 把对象加到logger里
+        self.logger.addHandler(self.th)
+
+
+class LoggerV2(object):
+    """
+    终端打印不同颜色的日志，在pycharm中如果强行规定了日志的颜色， 这个方法不会起作用， 但是
+    对于终端，这个方法是可以打印不同颜色的日志的。
+    """
+    # 在这里定义StreamHandler，可以实现单例， 所有的logger()共用一个StreamHandler
+    fmt = '[%(asctime)s] - [%(pathname)s] - %(levelname)s: %(message)s'
+
+    def __init__(self, when='D', backCount=3):
+        # if not os.path.exists(self.log_path):        # 如果目录不存在，则创建
+        #     os.makedirs(self.log_path)
+
+        self.logger = logging.getLogger(log_path)
+        self.logger.handlers.clear()  # 清理已经存在的handler，防止日志重复
+        format_str = logging.Formatter(self.fmt)  # 设置日志格式
+        self.logger.setLevel(level_relations.get(log_level))  # 设置日志级别
+        self.sh = logging.StreamHandler()  # 往屏幕上输出
+        # self.sh.setFormatter(format_str)  # 设置屏幕上显示的格式
+        self.th = handlers.TimedRotatingFileHandler(filename=log_path, when=when, backupCount=backCount,
+                                                    encoding='utf-8')  # 往文件里写入#指定间隔时间自动生成文件的处理器
+        # 实例化TimedRotatingFileHandler
+        # interval是时间间隔，backupCount是备份文件的个数，如果超过这个个数，就会自动删除，when是间隔的时间单位，单位有以下几种：
+        # S 秒
+        # M 分
+        # H 小时、
+        # D 天、
+        # W 每星期（interval==0时代表星期一）
+        # midnight 每天凌晨
+        self.th.setFormatter(format_str)  # 设置文件里写入的格式
+        # self.logger.addHandler(self.sh)  # 把对象加到logger里
+        self.logger.addHandler(self.th)
+
+
+    def debug(self, message):
+        self.fontColor('\033[1;37m%s\033[0m')
+        self.logger.debug(message)
+
+    def info(self, message):
+        self.fontColor('\033[1;37m%s\033[0m')
+        self.logger.info(message)
+
+    def warning(self, message):
+        self.fontColor('\033[1;33m%s\033[0m')
+        self.logger.warning(message)
+
+    def error(self, message):
+        self.fontColor('\033[1;31m%s\033[0m')
+        self.logger.error(message)
+
+    def critical(self, message):
+        self.fontColor('\033[1;35;43m%s\033[0m')
+        self.logger.critical(message)
+
+    def fontColor(self, color):
+        # 不同的日志输出不同的颜色
+        formatter = logging.Formatter(color % self.fmt)
+        self.sh.setFormatter(formatter)
+        self.logger.addHandler(self.sh)
 
 
 if __name__ == '__main__':
@@ -87,9 +143,9 @@ if __name__ == '__main__':
     logger = lg.logger
     # test = lg.level_relations.get("debug")
     # print(test)
-    message = "信息info:测试一下by test"
-    logger.debug(message)
-    logger.error("error:-----")
-    logger.critical("critical------")
-    logger.info("info====")
+    # message = "信息info:测试一下by test"
+    # logger.debug(message)
+    # logger.error("error:-----")
+    # logger.critical("critical------")
+    # logger.info("info====")
     logger.warning("warning======")
