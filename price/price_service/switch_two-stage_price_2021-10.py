@@ -205,10 +205,10 @@ if __name__ == '__main__':
     base_sale = V3BaseGetSalePrice()
     detect_sale = V3DetectGetSalePrice()
 
-    # eva.v3_eva_option_get(product_id="41567", channel_id="10000060", pid="1260", get_way="1", is_best="1")
+    eva.v3_eva_option_get(product_id="64494", channel_id="10000060", pid="1196", get_way="1", is_best="1")
     # eva.v3_eva(product_id="41567", channel_id="10000060", pid="1260")
 
-    recycle.v3_product_check_item(product_id="30752", order_id="7637141", check_type="3", is_over="1")
+    # recycle.v3_product_check_item(product_id="30752", order_id="7637141", check_type="3", is_over="1")
 
     # for x in range(500):
     #     eva.v3_eva_option_get(product_id="41567", channel_id="10000060", pid="1260", get_way="2")

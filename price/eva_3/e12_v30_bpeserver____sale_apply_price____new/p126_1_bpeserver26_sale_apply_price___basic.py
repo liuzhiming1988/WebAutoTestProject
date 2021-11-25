@@ -32,7 +32,7 @@
 
 import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print, hsb_eva_ipProxy_k8s_test
 
 class Sale_Apply_Price:
     def product_check_item_34(self, productId):
@@ -88,7 +88,7 @@ class Sale_Apply_Price:
         url = "http://bpeserver.huishoubao.com/adjustment_price/sale_apply_price"
         md5value = json.dumps(param) + "_" + secret_key
         headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
-        respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
+        respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_k8s_test())
 
         # print('========>1.『{0}』 产品的『检测标准化选项-sku』(随机取)为：\n'.format(productId), strSkuList)
         # print('\n========>2. 以上『检测标准化选项-sku』为：\n', '{' + strSkuDesc[:-1] + '}')
@@ -115,7 +115,7 @@ if __name__ == '__main__':
     # bpeserver_26.sale_apply_price(planId='miking2021', productId='41567', evaType='3', ip='127.0.0.1', freqLimitType='0')
 
     # 6. evaType，传空 | {"_errStr":"请求参数错误 [EvaType为必填字段]","_data":null,"_errCode":"70019100","_ret":"70019100"} | 正常
-    # bpeserver_26.sale_apply_price(planId='14', productId='41567', evaType='', ip='127.0.0.1', freqLimitType='0')
+    bpeserver_26.sale_apply_price(planId='3', productId='41567', evaType='3', ip='127.0.0.1', freqLimitType='0')
 
     # 7. evaType，传错 | {"_errStr":"请求参数错误 [EvaType必须是[0 1 2 3]中的一个]","_data":null,"_errCode":"70019100","_ret":"70019100"} | 正常
     # bpeserver_26.sale_apply_price(planId='14', productId='41567', evaType='55', ip='127.0.0.1', freqLimitType='0')
@@ -164,7 +164,7 @@ if __name__ == '__main__':
     # bpeserver_26.sale_apply_price(planId='14', productId='41567', evaType='3', ip='127.0.0.1', freqLimitType='0')
 
     # 21. 机况  某个问题项，传了多个答案项（多选） | '9025', '9026', '9027' | "_errStr":"SUCCESS" | 正常
-    bpeserver_26.sale_apply_price(planId='14', productId='41567', evaType='3', ip='127.0.0.1', freqLimitType='0')
+    # bpeserver_26.sale_apply_price(planId='14', productId='41567', evaType='3', ip='127.0.0.1', freqLimitType='0')
 
 ''' 
 【外部接口】 【销售价应用方案估价接口】【第二版】【调用方传planId，返回4个价格方案】【暂未使用】

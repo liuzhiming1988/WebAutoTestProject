@@ -1,0 +1,4850 @@
+[2021-11-23 15:08:31,029] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/login请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "system_id": "32",
+     "jump_url": "",
+     "username": "test_liuzhiming@huishoubao.com.cn",
+     "password": "f6758a4e"
+}
+[2021-11-23 15:08:31,130] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:30 GMT",
+    "Server": "nginx",
+    "Set-Cookie": "login_token=think%3A%7B%22user_id%22%3A%221930%22%2C%22token%22%3A%224a9163f06721c26b086ca49264d87ef4%22%2C%22username%22%3A%22test_liuzhiming%2540huishoubao.com.cn%22%2C%22oa_user_id%22%3A0%7D; expires=Tue, 23-Nov-2021 14:08:30 GMT; Max-Age=25200; path=/",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "jump_url": "http://wms.huishoubao.com.cn?login_token=4a9163f06721c26b086ca49264d87ef4&user_id=1930",
+            "login_token": "4a9163f06721c26b086ca49264d87ef4",
+            "system_info": {
+                "name": "WMS系统",
+                "system_desc": "仓库",
+                "system_id": "32",
+                "url": "http://wms.huishoubao.com.cn"
+            },
+            "user_id": "1930"
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "登录系统成功"
+    },
+    "head": {
+        "interface": "login",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+[2021-11-23 15:08:31,170] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.14秒
+
+[2021-11-23 15:08:31,170] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/logininfo请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "head": {
+          "version": "0.01",
+          "msgtype": "request",
+          "interface": "logininfo",
+          "remark": ""
+     },
+     "params": {
+          "login_system_id": "1",
+          "login_token": "4a9163f06721c26b086ca49264d87ef4",
+          "login_user_id": "1930"
+     }
+}
+[2021-11-23 15:08:31,275] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/logininfo响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:30 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "menu": [
+                {
+                    "access_flags": "-",
+                    "authority_id": "58",
+                    "name": "系统设置",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [
+                        {
+                            "access_flags": "/System",
+                            "authority_id": "60",
+                            "name": "系统管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PermissionsManage",
+                            "authority_id": "61",
+                            "name": "模块管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/RoleManage",
+                            "authority_id": "62",
+                            "name": "角色管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/DepartmentManage",
+                            "authority_id": "63",
+                            "name": "部门管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PositionManage",
+                            "authority_id": "64",
+                            "name": "职位管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/UserMnage",
+                            "authority_id": "65",
+                            "name": "用户管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        }
+                    ],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "716",
+                    "name": "账号信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "964",
+                    "name": "修改个人信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                }
+            ],
+            "system_list": [
+                {
+                    "category_id": "7",
+                    "name": "2B机型映射与估价",
+                    "system_desc": "机型库，机型映射，估价问题选项过滤",
+                    "system_id": "20",
+                    "url": "https://evamap.huanjixia.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售系统",
+                    "system_desc": "销售系统",
+                    "system_id": "21",
+                    "url": "https://bid-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B渠道中心",
+                    "system_desc": "2B换机侠渠道中心",
+                    "system_id": "23",
+                    "url": "http://mba.huanjixia.com/channel_center"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服检测系统",
+                    "system_desc": "客服检测系统",
+                    "system_id": "24",
+                    "url": "http://oms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B帮助中心系统",
+                    "system_desc": "帮助中心系统",
+                    "system_id": "25",
+                    "url": "http://mba.huanjixia.com/help_center/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B客服系统",
+                    "system_desc": "客服系统",
+                    "system_id": "26",
+                    "url": "kf.huanjixia.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "经营数据分析系统",
+                    "system_desc": "经营数据分析系统",
+                    "system_id": "28",
+                    "url": "http://bdas.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "配置中心",
+                    "system_desc": "配置中心",
+                    "system_id": "29",
+                    "url": "pz.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B新Dplus审批系统",
+                    "system_desc": "新Dplus后台审批操作",
+                    "system_id": "31",
+                    "url": "http://mba.huanjixia.com/ndp/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "WMS系统",
+                    "system_desc": "仓库",
+                    "system_id": "32",
+                    "url": "http://wms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品检测系统",
+                    "system_desc": "优品检测系统",
+                    "system_id": "33",
+                    "url": "http://upin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理系统",
+                    "system_desc": "回收宝运营管理后台",
+                    "system_id": "34",
+                    "url": "https://op.huishoubao.com"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维自动化平台",
+                    "system_desc": "运维自动化平台",
+                    "system_id": "35",
+                    "url": "http://devops.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "图书管理后台",
+                    "system_desc": "",
+                    "system_id": "36",
+                    "url": "https://books.huishoubao.com/admin.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "数据仓库",
+                    "system_desc": "估价项目数据组仓库",
+                    "system_id": "37",
+                    "url": "http://edw.huishoubao.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "用户管理中心",
+                    "system_desc": "用户管理中心",
+                    "system_id": "38",
+                    "url": "https://user.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心2.0",
+                    "system_desc": "估价系统",
+                    "system_id": "39",
+                    "url": "http://evaluation.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售检测系统",
+                    "system_desc": "销售检测系统",
+                    "system_id": "40",
+                    "url": "http://detect-sales.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "云检测系统",
+                    "system_desc": "云检测系统",
+                    "system_id": "41",
+                    "url": "http://detect-clouds.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机",
+                    "system_desc": "就那个闲鱼的项目",
+                    "system_id": "48",
+                    "url": "http://detection.huishoubao.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品商城",
+                    "system_desc": "优品商城",
+                    "system_id": "49",
+                    "url": "https://mall-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "产线检测",
+                    "system_desc": "产线检测项目",
+                    "system_id": "51",
+                    "url": "http://product-line.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "销售检测系统（一检二检）",
+                    "system_desc": "销售检测系统（一检二检合并）",
+                    "system_id": "55",
+                    "url": "http://detect-sales-online.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理平台",
+                    "system_desc": "C++运营后台接入层",
+                    "system_id": "56",
+                    "url": "https://oss.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心 (新)",
+                    "system_desc": "估价配置后台",
+                    "system_id": "57",
+                    "url": "http://evaadmin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "设备中心",
+                    "system_desc": "设备中心后台管理系统",
+                    "system_id": "63",
+                    "url": "http://device-center.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "以旧换新后台系统",
+                    "system_desc": "以旧换新后台",
+                    "system_id": "64",
+                    "url": "http://replace-f2e.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "定价配置后台系统",
+                    "system_desc": "定价配置后台系统",
+                    "system_id": "66",
+                    "url": "http://baseprice.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营管理系统",
+                    "system_desc": "2B运营管理系统 - 首页",
+                    "system_id": "100",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营活动中心",
+                    "system_desc": "2B运营活动中心",
+                    "system_id": "101",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机WMS",
+                    "system_desc": "闲鱼验机WMS测试版",
+                    "system_id": "104",
+                    "url": "http://xywms.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "自动巡检测试系统",
+                    "system_desc": "",
+                    "system_id": "106",
+                    "url": "http://autotest.huishoubao.com/"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维版本管理系统",
+                    "system_desc": "",
+                    "system_id": "107",
+                    "url": "http://devops-new.huishoubao.com"
+                },
+                {
+                    "category_id": "0",
+                    "name": "日志报表系统",
+                    "system_desc": "",
+                    "system_id": "108",
+                    "url": "http://lrolap.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服工单系统",
+                    "system_desc": "客服工单系统",
+                    "system_id": "115",
+                    "url": "http://csr.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "阿里FT后台系统",
+                    "system_desc": "阿里FT后台系统",
+                    "system_id": "116",
+                    "url": "http://ali-op.huishoubao.com.cn/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "coco",
+                    "system_desc": "运营营销系统",
+                    "system_id": "119",
+                    "url": "https://coco_admin.keleyoupin.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "营销中台",
+                    "system_desc": "活动运营配置系统",
+                    "system_id": "129",
+                    "url": "http://market-f2e.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "促收系统",
+                    "system_desc": "",
+                    "system_id": "132",
+                    "url": "https://op.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "公共运营平台",
+                    "system_desc": "",
+                    "system_id": "133",
+                    "url": "http://mp.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "OPMS",
+                    "system_desc": "老管理系统（2020年9月接入AMC）",
+                    "system_id": "134",
+                    "url": "http://opms.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "价格系统-估价工具",
+                    "system_desc": "估价工具后台",
+                    "system_id": "135",
+                    "url": "http://evamapping.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格系统-商品库",
+                    "system_desc": "商品库后台",
+                    "system_id": "136",
+                    "url": "http://baseproduct.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "闲鱼优品商品上架工具",
+                    "system_desc": "项目启动产品经理：曾斐",
+                    "system_id": "137",
+                    "url": "http://taobao-goods-tool.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "竞拍",
+                    "system_desc": "",
+                    "system_id": "138",
+                    "url": "https://bid-admin.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格渠道调价配置系统",
+                    "system_desc": "",
+                    "system_id": "140",
+                    "url": "http://price-adjustment-conf.huishoubao.com.cn"
+                }
+            ],
+            "user_info": {
+                "city_id": "",
+                "department_id": "52",
+                "department_name": "研发部",
+                "email": "test_liuzhiming@huishoubao.com.cn",
+                "is_lock": "1",
+                "lock_time": "",
+                "login_times": "0",
+                "oa_user_desc": "",
+                "oa_user_id": "0",
+                "phone": "13049368516",
+                "photo": "",
+                "position_id": "101",
+                "position_name": "研发经理（新）",
+                "real_name": "刘志明_TEST",
+                "reset_password": "1",
+                "user_desc": "刘志明",
+                "user_id": "1930",
+                "username": "test_liuzhiming@huishoubao.com.cn"
+            }
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "请求成功"
+    },
+    "head": {
+        "interface": "logininfo",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+[2021-11-23 15:08:31,277] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.11秒
+
+[2021-11-23 15:08:31,277] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1637651311",
+          "_interface": "PlatWms.Parcel.Sign",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "4a9163f06721c26b086ca49264d87ef4",
+          "depotId": "1",
+          "logisticsId": "1",
+          "paymentMethod": "1",
+          "logisticsNum": "HGFRYVQEKZHK",
+          "userId": "1930",
+          "userName": "\u5218\u5fd7\u660e_TEST"
+     }
+}
+[2021-11-23 15:08:31,620] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:31 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "ca5d6f8ce6baa02a",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": "success",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.Sign",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651311",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:31,621] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.34秒
+
+[2021-11-23 15:08:31,621] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1637651311",
+          "_interface": "PlatWms.Parcel.Unpack",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "4a9163f06721c26b086ca49264d87ef4",
+          "depotId": "1",
+          "logisticsNum": "HGFRYVQEKZHK",
+          "productType": "1",
+          "num": 1,
+          "userId": "1930",
+          "userName": "\u5218\u5fd7\u660e_TEST"
+     }
+}
+[2021-11-23 15:08:31,954] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:31 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "f64d6f7964e1e20a",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": "success",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.Unpack",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651311",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:31,954] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.33秒
+
+[2021-11-23 15:08:31,955] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1637651311",
+          "_interface": "PlatWms.Parcel.ReceiveSearch",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "4a9163f06721c26b086ca49264d87ef4",
+          "receiveType": "1",
+          "depotId": "1",
+          "orderSystemId": "1",
+          "orderSystemType": "1",
+          "logisticsNum": "HGFRYVQEKZHK",
+          "searchType": "0",
+          "keywords": ""
+     }
+}
+[2021-11-23 15:08:36,272] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:35 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "9edde079e17975b6",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "actReceiveNum": "0",
+            "createWorkOrderTime": "",
+            "isCreateWorkOrder": "0",
+            "isHint": "0",
+            "logisticsName": "顺丰快递",
+            "logisticsNumber": "HGFRYVQEKZHK",
+            "num": "1",
+            "orderList": [
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "HGFRYVQEKZHK",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000012",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639802",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211123119600012",
+                    "orderStatus": "20",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-23 15:06:16",
+                    "orderType": "普通订单",
+                    "orderWeb": "微信公众号2",
+                    "productName": "iPhone XR",
+                    "salesSerialNumber": "",
+                    "srcPID": "1196",
+                    "trackingNo": "HGFRYVQEKZHK",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SDZBUHSRIDWK",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639758",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211122126000007",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-22 16:53:31",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SDZBUHSRIDWK",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SJITZCWKVZXP",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639757",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211122126000006",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-22 16:52:17",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SJITZCWKVZXP",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "TWNGDCCRARTB",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639736",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211122126000001",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-22 11:32:44",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "TWNGDCCRARTB",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "XIYISKFGJXZJ",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639683",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211118126000007",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-18 19:40:34",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 12",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "XIYISKFGJXZJ",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "XSVPWBCETIGT",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639681",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211118126000006",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-18 18:02:27",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "XSVPWBCETIGT",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "STFWCJGJQKMD",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639647",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211118126000004",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-18 14:51:53",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "STFWCJGJQKMD",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "AIFPISPETWFX",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639489",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000013",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:41",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "AIFPISPETWFX",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "FTNJDZNGQNPX",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639488",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000012",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:40",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "FTNJDZNGQNPX",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "LONESGSTWKEM",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639487",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000011",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:39",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "LONESGSTWKEM",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "RZUIOTTLISFY",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639486",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000010",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:37",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "RZUIOTTLISFY",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "FKHALIKQIXYG",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639485",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000009",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:35",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "FKHALIKQIXYG",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "EQDVFZCIWSVC",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639484",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000008",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:33",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "EQDVFZCIWSVC",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "GLLTJVMWYFYY",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639483",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000007",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:32",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "GLLTJVMWYFYY",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "ETNLARDSDLYF",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639482",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000006",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:30",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "ETNLARDSDLYF",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "ZVMZAYNHHLSY",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639481",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000005",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:29",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "ZVMZAYNHHLSY",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "UWZZITYILLIW",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639480",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000004",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:27",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "UWZZITYILLIW",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "EFTHCTJSGLSA",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639478",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000003",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:51:07",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "EFTHCTJSGLSA",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "FQQQTFLETROZ",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639477",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211117126000002",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-17 09:49:02",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "FQQQTFLETROZ",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "KXGVZKDAOJFQ",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639453",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211116126000003",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-16 14:37:33",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "KXGVZKDAOJFQ",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "LZSCZJABTLZH",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639380",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211112126000006",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-12 15:53:26",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "LZSCZJABTLZH",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SF1011821684063",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7639135",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211109126000002",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-11-09 15:25:36",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SF1011821684063",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SF1334459484417",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7638269",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211022126000004",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-10-22 14:47:11",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SF1334459484417",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SF1324481034205",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7637541",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211011126000005",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-10-11 15:47:34",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SF1324481034205",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SF1324481095961",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7637534",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "211011126000004",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-10-11 15:23:24",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SF1324481095961",
+                    "type": "01"
+                },
+                {
+                    "IMEI": "",
+                    "classId": "01",
+                    "customData": "{\"latitude\":\"22.529312\",\"longitude\":\"113.948805\",\"sessionId\":\"\"}",
+                    "id": "0",
+                    "logisticsNumber": "SF1324483517331",
+                    "masterOrderId": "0",
+                    "merchantSelfCheckSn": "",
+                    "num": "1",
+                    "orderChannelId": "10000060",
+                    "orderChannelType": "1",
+                    "orderChannelTypeCn": "2C",
+                    "orderId": "7636695",
+                    "orderPhone": "186****2152",
+                    "orderPhoneEncrypt": "MTg2NzY3MDIxNTI=",
+                    "orderSn": "210911126000003",
+                    "orderStatus": "24",
+                    "orderSystemId": "1",
+                    "orderTime": "2021-09-11 17:00:40",
+                    "orderType": "普通订单",
+                    "orderWeb": "回收宝APP-2C",
+                    "productName": "iPhone 8",
+                    "salesSerialNumber": "",
+                    "srcPID": "1260",
+                    "trackingNo": "SF1324483517331",
+                    "type": "01"
+                }
+            ],
+            "pageInfo": {
+                "pageIndex": "0",
+                "pageSize": "500",
+                "total": "26"
+            },
+            "parcelId": "12513",
+            "productTypeCn": "3C产品"
+        },
+        "_errCode": "0",
+        "_errStr": "",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.ReceiveSearch",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651315",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:36,277] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：4.32秒
+
+[2021-11-23 15:08:36,278] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: ，已匹配到订单：{'orderSystemId': '1', 'logisticsNumber': 'HGFRYVQEKZHK', 'orderId': '7639802', 'orderSn': '211123119600012', 'orderWeb': '微信公众号2', 'orderPhone': '186****2152', 'num': '1', 'masterOrderId': '0', 'productName': 'iPhone XR', 'orderChannelTypeCn': '2C', 'orderChannelType': '1', 'orderChannelId': '10000012', 'orderTime': '2021-11-23 15:06:16', 'orderType': '普通订单', 'id': '0', 'classId': '01', 'type': '01', 'orderStatus': '20', 'srcPID': '1196', 'customData': '{"latitude":"22.529312","longitude":"113.948805","sessionId":""}', 'trackingNo': 'HGFRYVQEKZHK', 'salesSerialNumber': '', 'IMEI': '', 'merchantSelfCheckSn': '', 'orderPhoneEncrypt': 'MTg2NzY3MDIxNTI='}
+[2021-11-23 15:08:36,278] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 
+[2021-11-23 15:08:36,278] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1637651311",
+          "_interface": "PlatWms.Parcel.GetOrderProduct",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "4a9163f06721c26b086ca49264d87ef4",
+          "orderId": "7639802",
+          "orderSystemId": "1"
+     }
+}
+[2021-11-23 15:08:36,489] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "64dfe2836fa6465f",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "orderProductList": [
+                {
+                    "brand": "苹果",
+                    "classId ": "01",
+                    "imei": "",
+                    "model": "iPhone XR",
+                    "productChid": "54791",
+                    "productId": "5523019"
+                }
+            ]
+        },
+        "_errCode": "0",
+        "_errStr": "",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.GetOrderProduct",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651316",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:36,490] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.21秒
+
+[2021-11-23 15:08:36,490] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1637651311",
+          "_interface": "PlatWms.Parcel.GetProductCode",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "4a9163f06721c26b086ca49264d87ef4",
+          "orderChannelId": "10000012",
+          "number": 1,
+          "depotId": "1",
+          "type": "01",
+          "orderChannelType": "1",
+          "groupCode": "",
+          "orderIdArr": [
+               "7639802"
+          ]
+     }
+}
+[2021-11-23 15:08:36,727] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "594ce031dce67373",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "code": [
+                "ZY0101211123000023"
+            ],
+            "data": [
+                {
+                    "index": "0",
+                    "orderId": "7639802",
+                    "productCode": "ZY0101211123000023"
+                }
+            ]
+        },
+        "_errCode": "0",
+        "_errStr": "",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.GetProductCode",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651316",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:36,727] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.24秒
+
+[2021-11-23 15:08:36,728] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_version": "0.01",
+          "_msgType": "request",
+          "_timestamps": "1637651311",
+          "_interface": "PlatWms.Parcel.BindOrder",
+          "_remark": ""
+     },
+     "_param": {
+          "loginUserId": "1930",
+          "loginToken": "4a9163f06721c26b086ca49264d87ef4",
+          "receiveType": "1",
+          "logisticsNum": "HGFRYVQEKZHK",
+          "depotId": "1",
+          "orderSystemId": "1",
+          "orderSystemType": "1",
+          "orderChannelId": "10000012",
+          "orderChannelType": "1",
+          "orderId": "7639802",
+          "orderSn": "211123119600012",
+          "orderWeb": "\u5fae\u4fe1\u516c\u4f17\u53f72",
+          "orderPhone": "MTg2NzY3MDIxNTI=",
+          "num": "1",
+          "parcelId": "12513",
+          "productInfo": "[{\"productId\": \"5523019\", \"productCode\": \"ZY0101211123000023\", \"classId\": \"01\", \"brand\": \"\u82f9\u679c\", \"model\": \"iPhone XR\", \"imei\": \"\"}]",
+          "partsCode": "",
+          "partsInfo": "",
+          "userName": "\u5218\u5fd7\u660e_TEST",
+          "userId": "1930"
+     }
+}
+[2021-11-23 15:08:37,080] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://wms-wwwapi.huishoubao.com.cn/admin/handle响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:36 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "2bf12a59d78e8e0d",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": "success",
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": "0"
+    },
+    "_head": {
+        "_interface": "PlatWms.Parcel.BindOrder",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651316",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:37,081] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.35秒
+
+[2021-11-23 15:08:37,081] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 物流单号【HGFRYVQEKZHK】的测试结果为：success<br /><hr />
+[2021-11-23 15:08:56,972] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/login请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "system_id": "32",
+     "jump_url": "",
+     "username": "test_liuzhiming@huishoubao.com.cn",
+     "password": "f6758a4e"
+}
+[2021-11-23 15:08:57,058] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/login响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:56 GMT",
+    "Server": "nginx",
+    "Set-Cookie": "login_token=think%3A%7B%22user_id%22%3A%221930%22%2C%22token%22%3A%224a9163f06721c26b086ca49264d87ef4%22%2C%22username%22%3A%22test_liuzhiming%2540huishoubao.com.cn%22%2C%22oa_user_id%22%3A0%7D; expires=Tue, 23-Nov-2021 14:08:56 GMT; Max-Age=25200; path=/",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "jump_url": "http://wms.huishoubao.com.cn?login_token=4a9163f06721c26b086ca49264d87ef4&user_id=1930",
+            "login_token": "4a9163f06721c26b086ca49264d87ef4",
+            "system_info": {
+                "name": "WMS系统",
+                "system_desc": "仓库",
+                "system_id": "32",
+                "url": "http://wms.huishoubao.com.cn"
+            },
+            "user_id": "1930"
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "登录系统成功"
+    },
+    "head": {
+        "interface": "login",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+[2021-11-23 15:08:57,058] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.09秒
+
+[2021-11-23 15:08:57,059] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/logininfo请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "head": {
+          "version": "0.01",
+          "msgtype": "request",
+          "interface": "logininfo",
+          "remark": ""
+     },
+     "params": {
+          "login_system_id": "1",
+          "login_token": "4a9163f06721c26b086ca49264d87ef4",
+          "login_user_id": "1930"
+     }
+}
+[2021-11-23 15:08:57,158] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://api-amc.huishoubao.com.cn/logininfo响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Methods": "POST,GET",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:56 GMT",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "body": {
+        "data": {
+            "menu": [
+                {
+                    "access_flags": "-",
+                    "authority_id": "58",
+                    "name": "系统设置",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [
+                        {
+                            "access_flags": "/System",
+                            "authority_id": "60",
+                            "name": "系统管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PermissionsManage",
+                            "authority_id": "61",
+                            "name": "模块管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/RoleManage",
+                            "authority_id": "62",
+                            "name": "角色管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/DepartmentManage",
+                            "authority_id": "63",
+                            "name": "部门管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/PositionManage",
+                            "authority_id": "64",
+                            "name": "职位管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        },
+                        {
+                            "access_flags": "/UserMnage",
+                            "authority_id": "65",
+                            "name": "用户管理",
+                            "pid": "58",
+                            "show_flags": "",
+                            "style": "",
+                            "sub_menu": [],
+                            "type": "2"
+                        }
+                    ],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "716",
+                    "name": "账号信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                },
+                {
+                    "access_flags": "/AccountInfo",
+                    "authority_id": "964",
+                    "name": "修改个人信息",
+                    "pid": "0",
+                    "show_flags": "",
+                    "style": "",
+                    "sub_menu": [],
+                    "type": "2"
+                }
+            ],
+            "system_list": [
+                {
+                    "category_id": "7",
+                    "name": "2B机型映射与估价",
+                    "system_desc": "机型库，机型映射，估价问题选项过滤",
+                    "system_id": "20",
+                    "url": "https://evamap.huanjixia.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售系统",
+                    "system_desc": "销售系统",
+                    "system_id": "21",
+                    "url": "https://bid-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B渠道中心",
+                    "system_desc": "2B换机侠渠道中心",
+                    "system_id": "23",
+                    "url": "http://mba.huanjixia.com/channel_center"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服检测系统",
+                    "system_desc": "客服检测系统",
+                    "system_id": "24",
+                    "url": "http://oms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B帮助中心系统",
+                    "system_desc": "帮助中心系统",
+                    "system_id": "25",
+                    "url": "http://mba.huanjixia.com/help_center/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "2B客服系统",
+                    "system_desc": "客服系统",
+                    "system_id": "26",
+                    "url": "kf.huanjixia.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "经营数据分析系统",
+                    "system_desc": "经营数据分析系统",
+                    "system_id": "28",
+                    "url": "http://bdas.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "配置中心",
+                    "system_desc": "配置中心",
+                    "system_id": "29",
+                    "url": "pz.huishoubao.com/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B新Dplus审批系统",
+                    "system_desc": "新Dplus后台审批操作",
+                    "system_id": "31",
+                    "url": "http://mba.huanjixia.com/ndp/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "WMS系统",
+                    "system_desc": "仓库",
+                    "system_id": "32",
+                    "url": "http://wms.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品检测系统",
+                    "system_desc": "优品检测系统",
+                    "system_id": "33",
+                    "url": "http://upin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理系统",
+                    "system_desc": "回收宝运营管理后台",
+                    "system_id": "34",
+                    "url": "https://op.huishoubao.com"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维自动化平台",
+                    "system_desc": "运维自动化平台",
+                    "system_id": "35",
+                    "url": "http://devops.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "图书管理后台",
+                    "system_desc": "",
+                    "system_id": "36",
+                    "url": "https://books.huishoubao.com/admin.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "数据仓库",
+                    "system_desc": "估价项目数据组仓库",
+                    "system_id": "37",
+                    "url": "http://edw.huishoubao.com"
+                },
+                {
+                    "category_id": "3",
+                    "name": "用户管理中心",
+                    "system_desc": "用户管理中心",
+                    "system_id": "38",
+                    "url": "https://user.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心2.0",
+                    "system_desc": "估价系统",
+                    "system_id": "39",
+                    "url": "http://evaluation.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "5",
+                    "name": "销售检测系统",
+                    "system_desc": "销售检测系统",
+                    "system_id": "40",
+                    "url": "http://detect-sales.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "云检测系统",
+                    "system_desc": "云检测系统",
+                    "system_id": "41",
+                    "url": "http://detect-clouds.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机",
+                    "system_desc": "就那个闲鱼的项目",
+                    "system_id": "48",
+                    "url": "http://detection.huishoubao.com"
+                },
+                {
+                    "category_id": "5",
+                    "name": "优品商城",
+                    "system_desc": "优品商城",
+                    "system_id": "49",
+                    "url": "https://mall-admin.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "产线检测",
+                    "system_desc": "产线检测项目",
+                    "system_id": "51",
+                    "url": "http://product-line.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "2",
+                    "name": "销售检测系统（一检二检）",
+                    "system_desc": "销售检测系统（一检二检合并）",
+                    "system_id": "55",
+                    "url": "http://detect-sales-online.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "运营管理平台",
+                    "system_desc": "C++运营后台接入层",
+                    "system_id": "56",
+                    "url": "https://oss.huishoubao.com"
+                },
+                {
+                    "category_id": "4",
+                    "name": "估价中心 (新)",
+                    "system_desc": "估价配置后台",
+                    "system_id": "57",
+                    "url": "http://evaadmin.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "设备中心",
+                    "system_desc": "设备中心后台管理系统",
+                    "system_id": "63",
+                    "url": "http://device-center.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "以旧换新后台系统",
+                    "system_desc": "以旧换新后台",
+                    "system_id": "64",
+                    "url": "http://replace-f2e.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "定价配置后台系统",
+                    "system_desc": "定价配置后台系统",
+                    "system_id": "66",
+                    "url": "http://baseprice.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营管理系统",
+                    "system_desc": "2B运营管理系统 - 首页",
+                    "system_id": "100",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "2B运营活动中心",
+                    "system_desc": "2B运营活动中心",
+                    "system_id": "101",
+                    "url": "http://mba.huanjixia.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "闲鱼验机WMS",
+                    "system_desc": "闲鱼验机WMS测试版",
+                    "system_id": "104",
+                    "url": "http://xywms.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "6",
+                    "name": "自动巡检测试系统",
+                    "system_desc": "",
+                    "system_id": "106",
+                    "url": "http://autotest.huishoubao.com/"
+                },
+                {
+                    "category_id": "6",
+                    "name": "运维版本管理系统",
+                    "system_desc": "",
+                    "system_id": "107",
+                    "url": "http://devops-new.huishoubao.com"
+                },
+                {
+                    "category_id": "0",
+                    "name": "日志报表系统",
+                    "system_desc": "",
+                    "system_id": "108",
+                    "url": "http://lrolap.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "客服工单系统",
+                    "system_desc": "客服工单系统",
+                    "system_id": "115",
+                    "url": "http://csr.huishoubao.com.cn/web/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "阿里FT后台系统",
+                    "system_desc": "阿里FT后台系统",
+                    "system_id": "116",
+                    "url": "http://ali-op.huishoubao.com.cn/index.html"
+                },
+                {
+                    "category_id": "1",
+                    "name": "coco",
+                    "system_desc": "运营营销系统",
+                    "system_id": "119",
+                    "url": "https://coco_admin.keleyoupin.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "营销中台",
+                    "system_desc": "活动运营配置系统",
+                    "system_id": "129",
+                    "url": "http://market-f2e.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "促收系统",
+                    "system_desc": "",
+                    "system_id": "132",
+                    "url": "https://op.huishoubao.com/index.html#/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "公共运营平台",
+                    "system_desc": "",
+                    "system_id": "133",
+                    "url": "http://mp.huishoubao.com"
+                },
+                {
+                    "category_id": "1",
+                    "name": "OPMS",
+                    "system_desc": "老管理系统（2020年9月接入AMC）",
+                    "system_id": "134",
+                    "url": "http://opms.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "4",
+                    "name": "价格系统-估价工具",
+                    "system_desc": "估价工具后台",
+                    "system_id": "135",
+                    "url": "http://evamapping.huishoubao.com.cn/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格系统-商品库",
+                    "system_desc": "商品库后台",
+                    "system_id": "136",
+                    "url": "http://baseproduct.huishoubao.com.cn"
+                },
+                {
+                    "category_id": "4",
+                    "name": "闲鱼优品商品上架工具",
+                    "system_desc": "项目启动产品经理：曾斐",
+                    "system_id": "137",
+                    "url": "http://taobao-goods-tool.huishoubao.com"
+                },
+                {
+                    "category_id": "2",
+                    "name": "竞拍",
+                    "system_desc": "",
+                    "system_id": "138",
+                    "url": "https://bid-admin.huishoubao.com/"
+                },
+                {
+                    "category_id": "1",
+                    "name": "价格渠道调价配置系统",
+                    "system_desc": "",
+                    "system_id": "140",
+                    "url": "http://price-adjustment-conf.huishoubao.com.cn"
+                }
+            ],
+            "user_info": {
+                "city_id": "",
+                "department_id": "52",
+                "department_name": "研发部",
+                "email": "test_liuzhiming@huishoubao.com.cn",
+                "is_lock": "1",
+                "lock_time": "",
+                "login_times": "0",
+                "oa_user_desc": "",
+                "oa_user_id": "0",
+                "phone": "13049368516",
+                "photo": "",
+                "position_id": "101",
+                "position_name": "研发经理（新）",
+                "real_name": "刘志明_TEST",
+                "reset_password": "1",
+                "user_desc": "刘志明",
+                "user_id": "1930",
+                "username": "test_liuzhiming@huishoubao.com.cn"
+            }
+        },
+        "ret": "0",
+        "retcode": "0",
+        "retinfo": "请求成功"
+    },
+    "head": {
+        "interface": "logininfo",
+        "msgtype": "response",
+        "remark": "",
+        "version": "0.01"
+    }
+}
+[2021-11-23 15:08:57,161] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.1秒
+
+[2021-11-23 15:08:57,161] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getDetectInfo请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_interface": "/getDetectInfo"
+     },
+     "_param": {
+          "seriesNum": "ZY0101211123000023",
+          "detType": 0,
+          "user_id": "1930",
+          "userId": "1930",
+          "login_token": "4a9163f06721c26b086ca49264d87ef4"
+     }
+}
+[2021-11-23 15:08:57,373] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getDetectInfo响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:57 GMT",
+    "HSB_ENV": "test",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "44167820c95f7e17",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "brandId": "11",
+            "channelFlag": "2C",
+            "channelId": "10000012",
+            "channelName": "微信公众号2",
+            "classId": "1",
+            "createTime": "2021-11-23 15:08:36",
+            "detOrderType": "0",
+            "detSource": "0",
+            "detStatus": "0",
+            "detTpl": "0",
+            "detType": "0",
+            "detectInfoId": "36956",
+            "imei": "",
+            "orderId": "7639802",
+            "orderNum": "211123119600012",
+            "orderType": "普通订单",
+            "partnerCode": "100002",
+            "productId": "54791",
+            "productName": "iPhone XR",
+            "seriesNum": "ZY0101211123000023",
+            "srcPid": "1196",
+            "stockTime": "2021-11-23 15:06:16",
+            "supportDetTpl": [
+                0,
+                "1",
+                "2"
+            ],
+            "uDetOptions": "[\"12\",\"17\",\"38\",\"40\",\"130\",\"5377\",\"2236\",\"100044\",\"100048\",\"100052\",\"100017\",\"100005\",\"100058\",\"100062\"]",
+            "uDetPrice": "218000",
+            "warehouseCode": "01"
+        },
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": 0
+    },
+    "_head": {
+        "_interface": "/getDetectInfo",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651337",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:57,380] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.22秒
+
+[2021-11-23 15:08:57,381] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getNoEvaProCommon请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_interface": "getNoEvaProCommon"
+     },
+     "_param": {
+          "keyword": "54791",
+          "channelId": "10000012",
+          "classId": "",
+          "user_id": "1930",
+          "userId": "1930",
+          "login_token": "4a9163f06721c26b086ca49264d87ef4"
+     }
+}
+[2021-11-23 15:08:57,656] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getNoEvaProCommon响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:57 GMT",
+    "HSB_ENV": "test",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "103e94a088026734",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "product_info": [
+                {
+                    "fbrand_id": "2",
+                    "fbrand_name": "苹果",
+                    "fclass_id": "1",
+                    "fclass_name": "手机",
+                    "fkey_word": "iPhoneXR；XR",
+                    "fmax_price": "227200",
+                    "fos_type_id": "1",
+                    "fos_type_name": "ios系统",
+                    "fproduct_desc": "",
+                    "fproduct_id": "54791",
+                    "fproduct_logo": "54791_20180922111425_245.png",
+                    "fproduct_name": "iPhone XR",
+                    "frecycle_type_id": "3",
+                    "frecycle_type_name": "正常回收",
+                    "fvalid": "1"
+                }
+            ],
+            "sum_num": "1"
+        },
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": 0
+    },
+    "_head": {
+        "_interface": "getNoEvaProCommon",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651337",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:57,657] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.28秒
+
+[2021-11-23 15:08:57,657] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getDetectOptionTmp请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_interface": "/getDetectOptionTmp"
+     },
+     "_param": {
+          "partnerCode": "100002",
+          "productId": "54791",
+          "classId": "1",
+          "orderId": "7639802",
+          "detTpl": 2,
+          "channelId": "10000012",
+          "isOverInsurance": 0,
+          "user_id": "1930",
+          "userId": "1930",
+          "login_token": "4a9163f06721c26b086ca49264d87ef4"
+     }
+}
+[2021-11-23 15:08:57,945] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getDetectOptionTmp响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:57 GMT",
+    "HSB_ENV": "test",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "eb1b88c98db75610",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "objectivitySum": "37",
+            "options": [
+                {
+                    "id": "7263",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7418",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7419",
+                            "item": [],
+                            "name": "不开机",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7420",
+                            "item": [],
+                            "name": "开机异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "开机",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7424",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7425",
+                            "item": [],
+                            "name": "已注销",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7426",
+                            "item": [],
+                            "name": "无法注销/隐藏账号",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "账号锁",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7421",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7422",
+                            "item": [],
+                            "name": "全新机",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7423",
+                            "item": [],
+                            "name": "二手机",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "是否全新",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "918",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "1083",
+                            "item": [],
+                            "name": "其他型号",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "2269",
+                            "item": [],
+                            "name": "A2108",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "5377",
+                            "item": [],
+                            "name": "A2107",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "型号",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "39",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "40",
+                            "item": [],
+                            "name": "白色",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "41",
+                            "item": [],
+                            "name": "黑色",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "47",
+                            "item": [],
+                            "name": "红色",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "133",
+                            "item": [],
+                            "name": "蓝色",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "395",
+                            "item": [],
+                            "name": "黄色",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "2202",
+                            "item": [],
+                            "name": "珊瑚色",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "颜色",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "32",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "36",
+                            "item": [],
+                            "name": "64GB",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "37",
+                            "item": [],
+                            "name": "128GB",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "38",
+                            "item": [],
+                            "name": "256GB",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "存储容量",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "2232",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "2236",
+                            "item": [],
+                            "name": "3GB",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "机身内存",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "122",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "124",
+                            "item": [],
+                            "name": "移动版",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "130",
+                            "item": [],
+                            "name": "全网通",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "471",
+                            "item": [],
+                            "name": "移动联通",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "制式",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "16",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "17",
+                            "item": [],
+                            "name": "剩余保修期大于一个月",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "18",
+                            "item": [],
+                            "name": "剩余保修期不足一个月或过保",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "保修期",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "11",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "12",
+                            "item": [],
+                            "name": "大陆国行",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "13",
+                            "item": [],
+                            "name": "香港行货",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "14",
+                            "item": [],
+                            "name": "其他国家地区-无锁版",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "15",
+                            "item": [],
+                            "name": "其他国家地区-有锁版",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "1124",
+                            "item": [],
+                            "name": "国行官换机/官翻机",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "6047",
+                            "item": [],
+                            "name": "国行展示机",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "6116",
+                            "item": [],
+                            "name": "国行BS机",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "7630",
+                            "item": [],
+                            "name": "监管机",
+                            "singleFlag": true,
+                            "type": "1"
+                        },
+                        {
+                            "id": "8012",
+                            "item": [],
+                            "name": "官修机",
+                            "singleFlag": true,
+                            "type": "1"
+                        }
+                    ],
+                    "name": "购买渠道",
+                    "spotType": "2",
+                    "type": "1"
+                },
+                {
+                    "id": "7427",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7428",
+                            "item": [],
+                            "name": "完好",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7429",
+                            "item": [],
+                            "name": "轻微",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7430",
+                            "item": [],
+                            "name": "明显",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "机身划痕",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7431",
+                    "isMust": "1",
+                    "item": [
+                        {
+                            "id": "7432",
+                            "item": [],
+                            "name": "完好",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7433",
+                            "item": [],
+                            "name": "轻微",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7434",
+                            "item": [],
+                            "name": "明显",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "机身磕碰/掉漆/刻字",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7435",
+                    "isMust": "1",
+                    "item": [
+                        {
+                            "id": "7436",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7437",
+                            "item": [],
+                            "name": "轻微弯曲（1～2mm）",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7438",
+                            "item": [],
+                            "name": "机身有缝隙",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7439",
+                            "item": [],
+                            "name": "背面有破损",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7440",
+                            "item": [],
+                            "name": "中框有断裂",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "9163",
+                            "item": [],
+                            "name": "明显弯曲（≥2mm）",
+                            "singleFlag": false,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "机身异常",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7441",
+                    "isMust": "1",
+                    "item": [
+                        {
+                            "id": "7442",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7443",
+                            "item": [],
+                            "name": "有",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "屏幕支架断裂/脱胶",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7444",
+                    "isMust": "1",
+                    "item": [
+                        {
+                            "id": "7445",
+                            "item": [],
+                            "name": "完好",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7446",
+                            "item": [],
+                            "name": "轻微划痕",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7447",
+                            "item": [],
+                            "name": "明显划痕",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "8054",
+                            "item": [],
+                            "name": "屏幕划伤",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "屏幕划痕",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7448",
+                    "isMust": "1",
+                    "item": [
+                        {
+                            "id": "7449",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7450",
+                            "item": [],
+                            "name": "屏幕碎裂",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "8055",
+                            "item": [],
+                            "name": "屏幕小缺角",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "屏幕碎裂",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7451",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7452",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7453",
+                            "item": [],
+                            "name": "有",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "屏幕气泡",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7454",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7460",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7461",
+                            "item": [],
+                            "name": "有",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "亮点/坏点",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7455",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7462",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7463",
+                            "item": [],
+                            "name": "有",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "进灰",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7456",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7464",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7465",
+                            "item": [],
+                            "name": "轻微",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7466",
+                            "item": [],
+                            "name": "明显",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "亮斑",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7457",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7467",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7468",
+                            "item": [],
+                            "name": "轻微",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7469",
+                            "item": [],
+                            "name": "明显",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "色差/透字",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7458",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7470",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7471",
+                            "item": [],
+                            "name": "轻微",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7472",
+                            "item": [],
+                            "name": "明显",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "色斑/压伤",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7459",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7473",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7474",
+                            "item": [],
+                            "name": "漏液",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7475",
+                            "item": [],
+                            "name": "错乱花屏",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7476",
+                            "item": [],
+                            "name": "屏生线",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7477",
+                            "item": [],
+                            "name": "屏幕抖动",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7478",
+                            "item": [],
+                            "name": "显示不均匀",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7479",
+                            "item": [],
+                            "name": "间歇性不显示",
+                            "singleFlag": false,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "显示异常",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7480",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7481",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7482",
+                            "item": [],
+                            "name": "触屏失灵",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7483",
+                            "item": [],
+                            "name": "触屏间歇性失灵",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "触屏功能",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7484",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7487",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7488",
+                            "item": [],
+                            "name": "杂音/小声",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7489",
+                            "item": [],
+                            "name": "无声",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "扬声器",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7485",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7490",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7491",
+                            "item": [],
+                            "name": "杂音/小声",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7492",
+                            "item": [],
+                            "name": "无声",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "听筒",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7486",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7493",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7494",
+                            "item": [],
+                            "name": "麦克风小声",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7495",
+                            "item": [],
+                            "name": "录音无声",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7496",
+                            "item": [],
+                            "name": "打电话无声",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7497",
+                            "item": [],
+                            "name": "录像无声",
+                            "singleFlag": false,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "麦克风",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7498",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7499",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7500",
+                            "item": [],
+                            "name": "拍照有黑斑",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7501",
+                            "item": [],
+                            "name": "拍照画面抖动",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7502",
+                            "item": [],
+                            "name": "无法聚焦",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7503",
+                            "item": [],
+                            "name": "无法启用",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7504",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "前像头功能",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7505",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7506",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7507",
+                            "item": [],
+                            "name": "像头有进灰",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7508",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "前像头外观",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7509",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7510",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7511",
+                            "item": [],
+                            "name": "拍照有黑斑",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7512",
+                            "item": [],
+                            "name": "拍照画面抖动",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7513",
+                            "item": [],
+                            "name": "无法聚焦",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7514",
+                            "item": [],
+                            "name": "无法启用",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7515",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "后像头功能",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7516",
+                    "isMust": "2",
+                    "item": [
+                        {
+                            "id": "7517",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7518",
+                            "item": [],
+                            "name": "像头有进灰",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7519",
+                            "item": [],
+                            "name": "像头镜片碎裂",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7520",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "后像头外观",
+                    "spotType": "3",
+                    "type": "2"
+                },
+                {
+                    "id": "7521",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7522",
+                            "item": [],
+                            "name": "功能正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7523",
+                            "item": [],
+                            "name": "信号弱",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7524",
+                            "item": [],
+                            "name": "无法打开",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7525",
+                            "item": [],
+                            "name": "无法使用",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7526",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "WiFi",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7527",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7528",
+                            "item": [],
+                            "name": "功能正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7529",
+                            "item": [],
+                            "name": "无法搜索设备",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7530",
+                            "item": [],
+                            "name": "无法打开",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7615",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "蓝牙",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7531",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7532",
+                            "item": [],
+                            "name": "完好",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7533",
+                            "item": [],
+                            "name": "卡托损坏/缺失",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7534",
+                            "item": [],
+                            "name": "无法取出",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "SIM卡托",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7535",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7536",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7537",
+                            "item": [],
+                            "name": "不读卡",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7538",
+                            "item": [],
+                            "name": "无信号",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7539",
+                            "item": [],
+                            "name": "不通话",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "SIM卡1",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7540",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7541",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7542",
+                            "item": [],
+                            "name": "不读卡",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7543",
+                            "item": [],
+                            "name": "无信号",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7544",
+                            "item": [],
+                            "name": "不通话",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7545",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "SIM卡2",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7546",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7547",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7548",
+                            "item": [],
+                            "name": "无基带",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "基带",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7549",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7553",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7554",
+                            "item": [],
+                            "name": "功能异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7555",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "光线感应",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7550",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7556",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7557",
+                            "item": [],
+                            "name": "功能异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7558",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "距离感应",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7551",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7559",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7560",
+                            "item": [],
+                            "name": "功能异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7561",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "指南针",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7552",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7562",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7563",
+                            "item": [],
+                            "name": "开关键异常",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7564",
+                            "item": [],
+                            "name": "音量键异常",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7565",
+                            "item": [],
+                            "name": "震动/静音键异常",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7566",
+                            "item": [],
+                            "name": "HOME键异常",
+                            "singleFlag": false,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "按键",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7569",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7570",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7571",
+                            "item": [],
+                            "name": "无法充电",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7572",
+                            "item": [],
+                            "name": "充电孔接触不良",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "有线充电",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7573",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7574",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7575",
+                            "item": [],
+                            "name": "无法连接电脑",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "USB联机",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7576",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7578",
+                            "item": [],
+                            "name": "有振动",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7579",
+                            "item": [],
+                            "name": "无振动",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "振动",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7577",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7580",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7581",
+                            "item": [],
+                            "name": "功能异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "闪光灯",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7582",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7586",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7587",
+                            "item": [],
+                            "name": "异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7588",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "指纹解锁",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7583",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7589",
+                            "item": [],
+                            "name": "正常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7590",
+                            "item": [],
+                            "name": "异常",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7591",
+                            "item": [],
+                            "name": "不支持",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "Face ID",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7598",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7599",
+                            "item": [],
+                            "name": "无维修",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7600",
+                            "item": [],
+                            "name": "更换屏幕玻璃盖板",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7601",
+                            "item": [],
+                            "name": "更换屏幕-高仿屏/山寨屏",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7602",
+                            "item": [],
+                            "name": "屏幕维修",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7603",
+                            "item": [],
+                            "name": "更换电池",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7604",
+                            "item": [],
+                            "name": "电池鼓包",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7605",
+                            "item": [],
+                            "name": "更换后盖",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7606",
+                            "item": [],
+                            "name": "缺件/少螺丝",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7607",
+                            "item": [],
+                            "name": "原厂防拆标破损",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7608",
+                            "item": [],
+                            "name": "更换摄像头",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7609",
+                            "item": [],
+                            "name": "更换外壳",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7610",
+                            "item": [],
+                            "name": "主板维修/故障",
+                            "singleFlag": false,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7611",
+                            "item": [],
+                            "name": "序列号异常",
+                            "singleFlag": false,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "维修/异常机况",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "7612",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "7613",
+                            "item": [],
+                            "name": "无",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "7614",
+                            "item": [],
+                            "name": "机身浸液/受潮",
+                            "singleFlag": false,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "进水",
+                    "spotType": "2",
+                    "type": "2"
+                },
+                {
+                    "id": "5179",
+                    "isMust": "",
+                    "item": [
+                        {
+                            "id": "9084",
+                            "item": [],
+                            "name": "电池健康度≥90%",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "9085",
+                            "item": [],
+                            "name": "80%≤电池健康度<90%",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "9086",
+                            "item": [],
+                            "name": "电池健康度<80%",
+                            "singleFlag": true,
+                            "type": "2"
+                        },
+                        {
+                            "id": "9192",
+                            "item": [],
+                            "name": "未检测",
+                            "singleFlag": true,
+                            "type": "2"
+                        }
+                    ],
+                    "name": "电池健康度",
+                    "spotType": "",
+                    "type": "2"
+                }
+            ],
+            "select": [],
+            "subjectivityMustSum": "5",
+            "subjectivityNotMustSum": "9",
+            "subjectivitySum": "14"
+        },
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": 0
+    },
+    "_head": {
+        "_interface": "/getDetectOptionTmp",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651337",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:57,954] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.3秒
+
+[2021-11-23 15:08:57,956] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getSkuId请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_interface": "/getSkuId"
+     },
+     "_param": {
+          "login_token": "4a9163f06721c26b086ca49264d87ef4",
+          "productId": "54791",
+          "skuList": [
+               "1083",
+               "40",
+               "36",
+               "2236",
+               "124",
+               "17",
+               "12"
+          ],
+          "user_id": "1930",
+          "userId": "1930"
+     }
+}
+[2021-11-23 15:08:58,056] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/getSkuId响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:57 GMT",
+    "HSB_ENV": "test",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "526f05571c0f0e8f",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": {
+            "skuId": "54791_89001"
+        },
+        "_errCode": "0",
+        "_errStr": "success",
+        "_ret": 0
+    },
+    "_head": {
+        "_interface": "/getSkuId",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651337",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:58,058] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.1秒
+
+[2021-11-23 15:08:58,061] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/productEvaluate请求信息：
+headers={"Content-Type": "application/json;charset=UTF-8"}
+body={
+     "_head": {
+          "_interface": "productEvaluate"
+     },
+     "_param": {
+          "aIdList": "",
+          "channelId": "10000012",
+          "cIdList": "",
+          "detTpl": "0",
+          "engineerOptions": [
+               {
+                    "id": "7263",
+                    "name": "\u5f00\u673a",
+                    "item": [
+                         {
+                              "id": "7418",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7424",
+                    "name": "\u8d26\u53f7\u9501",
+                    "item": [
+                         {
+                              "id": "7425",
+                              "name": "\u5df2\u6ce8\u9500",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7421",
+                    "name": "\u662f\u5426\u5168\u65b0",
+                    "item": [
+                         {
+                              "id": "7422",
+                              "name": "\u5168\u65b0\u673a",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "918",
+                    "name": "\u578b\u53f7",
+                    "item": [
+                         {
+                              "id": "1083",
+                              "name": "\u5176\u4ed6\u578b\u53f7",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "39",
+                    "name": "\u989c\u8272",
+                    "item": [
+                         {
+                              "id": "40",
+                              "name": "\u767d\u8272",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "32",
+                    "name": "\u5b58\u50a8\u5bb9\u91cf",
+                    "item": [
+                         {
+                              "id": "36",
+                              "name": "64GB",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "2232",
+                    "name": "\u673a\u8eab\u5185\u5b58",
+                    "item": [
+                         {
+                              "id": "2236",
+                              "name": "3GB",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "122",
+                    "name": "\u5236\u5f0f",
+                    "item": [
+                         {
+                              "id": "124",
+                              "name": "\u79fb\u52a8\u7248",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "16",
+                    "name": "\u4fdd\u4fee\u671f",
+                    "item": [
+                         {
+                              "id": "17",
+                              "name": "\u5269\u4f59\u4fdd\u4fee\u671f\u5927\u4e8e\u4e00\u4e2a\u6708",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "11",
+                    "name": "\u8d2d\u4e70\u6e20\u9053",
+                    "item": [
+                         {
+                              "id": "12",
+                              "name": "\u5927\u9646\u56fd\u884c",
+                              "type": "1"
+                         }
+                    ],
+                    "type": "1",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7427",
+                    "name": "\u673a\u8eab\u5212\u75d5",
+                    "item": [
+                         {
+                              "id": "7428",
+                              "name": "\u5b8c\u597d",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7431",
+                    "name": "\u673a\u8eab\u78d5\u78b0/\u6389\u6f06/\u523b\u5b57",
+                    "item": [
+                         {
+                              "id": "7432",
+                              "name": "\u5b8c\u597d",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "1"
+               },
+               {
+                    "id": "7435",
+                    "name": "\u673a\u8eab\u5f02\u5e38",
+                    "item": [
+                         {
+                              "id": "7436",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "1"
+               },
+               {
+                    "id": "7441",
+                    "name": "\u5c4f\u5e55\u652f\u67b6\u65ad\u88c2/\u8131\u80f6",
+                    "item": [
+                         {
+                              "id": "7442",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "1"
+               },
+               {
+                    "id": "7444",
+                    "name": "\u5c4f\u5e55\u5212\u75d5",
+                    "item": [
+                         {
+                              "id": "7445",
+                              "name": "\u5b8c\u597d",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "1"
+               },
+               {
+                    "id": "7448",
+                    "name": "\u5c4f\u5e55\u788e\u88c2",
+                    "item": [
+                         {
+                              "id": "7449",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "1"
+               },
+               {
+                    "id": "7451",
+                    "name": "\u5c4f\u5e55\u6c14\u6ce1",
+                    "item": [
+                         {
+                              "id": "7452",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7454",
+                    "name": "\u4eae\u70b9/\u574f\u70b9",
+                    "item": [
+                         {
+                              "id": "7460",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7455",
+                    "name": "\u8fdb\u7070",
+                    "item": [
+                         {
+                              "id": "7462",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7456",
+                    "name": "\u4eae\u6591",
+                    "item": [
+                         {
+                              "id": "7464",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7457",
+                    "name": "\u8272\u5dee/\u900f\u5b57",
+                    "item": [
+                         {
+                              "id": "7467",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7458",
+                    "name": "\u8272\u6591/\u538b\u4f24",
+                    "item": [
+                         {
+                              "id": "7470",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7459",
+                    "name": "\u663e\u793a\u5f02\u5e38",
+                    "item": [
+                         {
+                              "id": "7473",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7480",
+                    "name": "\u89e6\u5c4f\u529f\u80fd",
+                    "item": [
+                         {
+                              "id": "7481",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7484",
+                    "name": "\u626c\u58f0\u5668",
+                    "item": [
+                         {
+                              "id": "7487",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7485",
+                    "name": "\u542c\u7b52",
+                    "item": [
+                         {
+                              "id": "7490",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7486",
+                    "name": "\u9ea6\u514b\u98ce",
+                    "item": [
+                         {
+                              "id": "7493",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7498",
+                    "name": "\u524d\u50cf\u5934\u529f\u80fd",
+                    "item": [
+                         {
+                              "id": "7499",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7505",
+                    "name": "\u524d\u50cf\u5934\u5916\u89c2",
+                    "item": [
+                         {
+                              "id": "7506",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7509",
+                    "name": "\u540e\u50cf\u5934\u529f\u80fd",
+                    "item": [
+                         {
+                              "id": "7510",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7516",
+                    "name": "\u540e\u50cf\u5934\u5916\u89c2",
+                    "item": [
+                         {
+                              "id": "7517",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "3",
+                    "isMust": "2"
+               },
+               {
+                    "id": "7521",
+                    "name": "WiFi",
+                    "item": [
+                         {
+                              "id": "7522",
+                              "name": "\u529f\u80fd\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7527",
+                    "name": "\u84dd\u7259",
+                    "item": [
+                         {
+                              "id": "7528",
+                              "name": "\u529f\u80fd\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7531",
+                    "name": "SIM\u5361\u6258",
+                    "item": [
+                         {
+                              "id": "7532",
+                              "name": "\u5b8c\u597d",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7535",
+                    "name": "SIM\u53611",
+                    "item": [
+                         {
+                              "id": "7536",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7540",
+                    "name": "SIM\u53612",
+                    "item": [
+                         {
+                              "id": "7541",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7546",
+                    "name": "\u57fa\u5e26",
+                    "item": [
+                         {
+                              "id": "7547",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7549",
+                    "name": "\u5149\u7ebf\u611f\u5e94",
+                    "item": [
+                         {
+                              "id": "7553",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7550",
+                    "name": "\u8ddd\u79bb\u611f\u5e94",
+                    "item": [
+                         {
+                              "id": "7556",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7551",
+                    "name": "\u6307\u5357\u9488",
+                    "item": [
+                         {
+                              "id": "7559",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7552",
+                    "name": "\u6309\u952e",
+                    "item": [
+                         {
+                              "id": "7562",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7569",
+                    "name": "\u6709\u7ebf\u5145\u7535",
+                    "item": [
+                         {
+                              "id": "7570",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7573",
+                    "name": "USB\u8054\u673a",
+                    "item": [
+                         {
+                              "id": "7574",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7576",
+                    "name": "\u632f\u52a8",
+                    "item": [
+                         {
+                              "id": "7578",
+                              "name": "\u6709\u632f\u52a8",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7577",
+                    "name": "\u95ea\u5149\u706f",
+                    "item": [
+                         {
+                              "id": "7580",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7582",
+                    "name": "\u6307\u7eb9\u89e3\u9501",
+                    "item": [
+                         {
+                              "id": "7586",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7583",
+                    "name": "Face ID",
+                    "item": [
+                         {
+                              "id": "7589",
+                              "name": "\u6b63\u5e38",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7598",
+                    "name": "\u7ef4\u4fee/\u5f02\u5e38\u673a\u51b5",
+                    "item": [
+                         {
+                              "id": "7599",
+                              "name": "\u65e0\u7ef4\u4fee",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "7612",
+                    "name": "\u8fdb\u6c34",
+                    "item": [
+                         {
+                              "id": "7613",
+                              "name": "\u65e0",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "2",
+                    "isMust": ""
+               },
+               {
+                    "id": "5179",
+                    "name": "\u7535\u6c60\u5065\u5eb7\u5ea6",
+                    "item": [
+                         {
+                              "id": "9084",
+                              "name": "\u7535\u6c60\u5065\u5eb7\u5ea6\u226590%",
+                              "type": "2"
+                         }
+                    ],
+                    "type": "2",
+                    "spotType": "",
+                    "isMust": ""
+               }
+          ],
+          "isOverInsurance": "0",
+          "login_token": "4a9163f06721c26b086ca49264d87ef4",
+          "optionList": [],
+          "orderId": "7639802",
+          "partnerCode": "100002",
+          "productId": "54791",
+          "seriesNum": "ZY0101211123000023",
+          "skuList": [
+               "1083",
+               "40",
+               "36",
+               "2236",
+               "124",
+               "17",
+               "12"
+          ],
+          "user_id": "1930",
+          "userId": "1930"
+     }
+}
+[2021-11-23 15:08:58,119] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: http://detection-wwwapi.huishoubao.com/api/productEvaluate响应信息：
+headers={
+    "Access-Control-Allow-Headers": "x-requested-with,content-type",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Tue, 23 Nov 2021 07:08:57 GMT",
+    "HSB_ENV": "test",
+    "Server": "nginx",
+    "Transfer-Encoding": "chunked",
+    "X-B3-TraceId": "73c0d1aaf02d9340",
+    "X-Powered-By": "PHP/7.1.30"
+}
+response_body={
+    "_data": {
+        "_data": [],
+        "_errCode": "10000",
+        "_errStr": "无法匹配估价类型",
+        "_ret": "1"
+    },
+    "_head": {
+        "_interface": "productEvaluate",
+        "_msgType": "response",
+        "_remark": "",
+        "_timestamps": "1637651337",
+        "_version": "0.01"
+    }
+}
+[2021-11-23 15:08:58,120] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.06秒
+
