@@ -12,7 +12,7 @@ import json
 import os
 import random
 from price.hsb_MD5_Enerypt import Md5Enerypt
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test, hsb_response_print,hsb_eva_ipProxy_k8s_test
 
 """
 获取产品检测模板选项信息：http://wiki.huishoubao.com/web/#/138?page_id=15854
@@ -249,11 +249,17 @@ if __name__ == '__main__':
     # item_list.extend(spec_list)  # 合并入特殊逻辑命中选项
 
     # rec_eva.v3_recycle_evaluate(orderId="7637141", productId="41567", checkType="3", isOverInsurance="0")   # 已过保（超过保价期）
-    # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="3", isOverInsurance="0",
+    # rec_eva.v3_recycle_evaluate(orderId="7639875", productId="41567", checkType="2", isOverInsurance="0",
     #                             sku_list=sku_list, item_list=item_list)  # 未过保
+
+    # 二期切换
+    rec_eva.v3_recycle_evaluate(orderId="7639883", productId="30831", checkType="1", isOverInsurance="0",
+                                sku_list=["12","18","37","45","130","2257","2234"], item_list=["9015","9037","9045","9054","9056","9060","9065"
+,"9070","7559","9080","7570","9083","9087","7589","9090","9108","9109","9112","9564","9649","9651","8158","8164","8168","9660","9658","8241","8240","9028","9094","9019","9625"])  # 未过保
+
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="4", isOverInsurance="0",sku_list=sku_list,item_list=item_list)   # 找不到对应定价标准的检测模板
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="3", isOverInsurance="1")   # 已过保（强制过保）
-    rec_eva.v3_recycle_evaluate(orderId="7637142", productId="30831", checkType="3", isOverInsurance="0")   # 已过保（机型不一致）
+    # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="30831", checkType="3", isOverInsurance="0")   # 已过保（机型不一致）
 
     # 估价答案项无100061（特殊映射逻辑）,返回的估价明细中应无100061
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="64494", checkType="3", isOverInsurance="1",

@@ -38,6 +38,7 @@ if __name__ == '__main__':
     # get_eva_record(evaluateId="20104607") #价格2.0
     # get_eva_record(evaluateId="2011236885") #价格2.0
     # get_eva_record(evaluateId="") #价格2.0
-    get_eva_record(evaluateId="211060937") #价格2.0
+    # get_eva_record(evaluateId="211060937") #价格2.0
     # get_eva_record(evaluateId="2106118278") #价格2.0
-    # get_eva_record(evaluateId="9210585715") #价格3.0
+    # get_eva_record(evaluateId="82111279") #价格3.0
+    get_eva_record(evaluateId="921112164369")
