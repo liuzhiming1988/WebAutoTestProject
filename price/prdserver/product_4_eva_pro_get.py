@@ -22,7 +22,7 @@
 import hashlib, requests, json, os
 from price.hsb_MD5_Enerypt import Md5Enerypt
 from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
-from price.dingdingTalk_push_demo import dingdingTalk_push_run
+
 
 def eva_pro_get(pageindex, pagesize, channel_id, pid, keyword, brandid, classid, recycletype):
     param = { "_head":{ "_interface":"eva_pro_get", "_msgType":"request", "_remark":"hello", "_version":"0.01", "_timestamps":"123", "_invokeId":"111", "_callerServiceId":"112002", "_groupNo":"1" }, "_param":{ "pageindex":pageindex, "pagesize":pagesize, "channel_id":channel_id, "pid":pid, "keyword":keyword, "brandid":brandid, "brandidV1":"", "classid":classid, "orderField":"1", "orderType":"1", "recycletype":recycletype, "os":"","ip":"127.0.0.1"}}
@@ -35,6 +35,7 @@ def eva_pro_get(pageindex, pagesize, channel_id, pid, keyword, brandid, classid,
     respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
     hsb_response_print(respone=respone)
 
+
 if __name__ == '__main__':
     # eva_pro_get(pageindex='1', pagesize='15', channel_id='', keyword='', pid='', brandid='', classid='', recycletype='')
     # eva_pro_get(pageindex='0', pagesize='60', channel_id='10000837', keyword='iphone 12', pid='', brandid='', classid='1', recycletype='3')
@@ -44,6 +45,6 @@ if __name__ == '__main__':
     # eva_pro_get(pageindex='0', pagesize='20', channel_id='10000254', keyword='', pid='', brandid='1', classid='1', recycletype='3')
     # eva_pro_get(pageindex='0', pagesize='20', channel_id='10000254', keyword='', pid='', brandid='2', classid='1', recycletype='3')
     # eva_pro_get(pageindex='0', pagesize='20', channel_id='10000164', keyword='', pid='1405', brandid='1', classid='1', recycletype='3')
-    eva_pro_get(pageindex='0', pagesize='20', channel_id='', keyword='65980', pid='1001', brandid='', classid='1', recycletype='3')
+    eva_pro_get(pageindex='0', pagesize='20', channel_id='', keyword='', pid='1196', brandid='2', classid='1', recycletype='3')
 
 { "_head":{ "_interface":"eva_pro_get", "_msgType":"request", "_remark":"hello", "_version":"0.01", "_timestamps":"123", "_invokeId":"111", "_callerServiceId":"110003", "_groupNo":"1" }, "_param":{ "pageindex":"0", "pagesize":"20", "channel_id":"10000254", "pid":"", "keyword":"", "brandid":"1", "brandidV1":"", "classid":"1", "recycletype":"3", "os":"","ip":"127.0.0.1"}}

@@ -12,15 +12,18 @@
 '''
 
 import requests, json, os
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print, hsb_eva_ipProxy_k8s_test
 
-def insured_his_options(productId,evaPlatform,evaVersion,operEvaVersion,uniVersion,evaluateId):
+
+def insured_his_options(evaluateId, productId="",evaPlatform="",evaVersion="",operEvaVersion="",uniVersion=""):
     param = {"head":{"interface":"insured_his_options","msgtype":"request","remark":"","version":"0.01"},"params":{"productId":productId,"evaPlatform":evaPlatform,"propertyFlag":"0","evaVersion":evaVersion,"operEvaVersion":operEvaVersion,"uniVersion":uniVersion,"evaluateId":evaluateId}}
 
     headers = {"Content-Type":"application/json"}
     url = "http://evaserver.huishoubao.com/rpc/insured"
-    respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
+    respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_k8s_test())
+    # print(respone.text)
     hsb_response_print(respone=respone)
+
 
 if __name__ == '__main__':
     # insured_his_options(productId='',evaPlatform='',evaVersion='',operEvaVersion='',uniVersion='',evaluateId='')
@@ -30,7 +33,8 @@ if __name__ == '__main__':
     # insured_his_options(productId='41567',evaPlatform='10',evaVersion='50',operEvaVersion='0',uniVersion='0',evaluateId='0')
     # insured_his_options(productId='41567',evaPlatform='',evaVersion='',operEvaVersion='',uniVersion='',evaluateId='21041740195')
     # insured_his_options(productId='41567',evaPlatform='',evaVersion='',operEvaVersion='',uniVersion='',evaluateId='202104281412')
-    insured_his_options(productId='41567',evaPlatform='1',evaVersion='297',operEvaVersion='0',uniVersion='0',evaluateId='0')
+    # insured_his_options(productId='41567',evaPlatform='1',evaVersion='297',operEvaVersion='0',uniVersion='0',evaluateId='0')
+    insured_his_options(evaluateId="21121150")
 
 '''
 rpc_insured_server

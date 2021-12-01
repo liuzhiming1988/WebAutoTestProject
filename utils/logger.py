@@ -35,7 +35,16 @@ format参数中可能用到的格式化串：
 %(process)d              进程ID。可能没有
 %(message)s            用户输出的消息
 """
+"""
+日志等级：使用范围
 
+FATAL：致命错误
+CRITICAL：特别糟糕的事情，如内存耗尽、磁盘空间为空，一般很少使用
+ERROR：发生错误时，如IO操作失败或者连接问题
+WARNING：发生很重要的事件，但是并不是错误时，如用户登录密码错误
+INFO：处理请求或者状态变化等日常事务
+DEBUG：调试过程中使用DEBUG等级，如算法中每个循环的中间状态
+"""
 log_level = ConfigRead().get_log_level()
 level_relations = {
     'debug': logging.DEBUG,
@@ -125,7 +134,7 @@ class LoggerV2(object):
 
     def error(self, message):
         self.fontColor('\033[1;31m%s\033[0m')
-        self.logger.error(message)
+        self.logger.error(message, exc_info=True)
 
     def critical(self, message):
         self.fontColor('\033[1;35;43m%s\033[0m')

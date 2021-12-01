@@ -253,10 +253,12 @@ if __name__ == '__main__':
     #                             sku_list=sku_list, item_list=item_list)  # 未过保
 
     # 二期切换
-    rec_eva.v3_recycle_evaluate(orderId="7639883", productId="30831", checkType="1", isOverInsurance="0",
-                                sku_list=["12","18","37","45","130","2257","2234"], item_list=["9015","9037","9045","9054","9056","9060","9065"
-,"9070","7559","9080","7570","9083","9087","7589","9090","9108","9109","9112","9564","9649","9651","8158","8164","8168","9660","9658","8241","8240","9028","9094","9019","9625"])  # 未过保
+#     rec_eva.v3_recycle_evaluate(orderId="7639883", productId="30831", checkType="1", isOverInsurance="0",
+#                                 sku_list=["12","18","37","45","130","2257","2234"], item_list=["9015","9037","9045","9054","9056","9060","9065"
+# ,"9070","7559","9080","7570","9083","9087","7589","9090","9108","9109","9112","9564","9649","9651","8158","8164","8168","9660","9658","8241","8240","9028","9094","9019","9625"])  # 未过保
 
+    rec_eva.v3_recycle_evaluate(orderId="7639980", productId="38200", checkType="5", isOverInsurance="0",
+                                                            sku_list=sku_list, item_list=item_list)  # 未过保
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="4", isOverInsurance="0",sku_list=sku_list,item_list=item_list)   # 找不到对应定价标准的检测模板
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="41567", checkType="3", isOverInsurance="1")   # 已过保（强制过保）
     # rec_eva.v3_recycle_evaluate(orderId="7637142", productId="30831", checkType="3", isOverInsurance="0")   # 已过保（机型不一致）

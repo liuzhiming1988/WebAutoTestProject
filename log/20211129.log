@@ -1,0 +1,47 @@
+[2021-11-29 16:05:51,106] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/】
+[2021-11-29 16:05:51,497] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 开始输入用户名
+[2021-11-29 16:05:52,112] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.61秒
+
+[2021-11-29 16:05:52,112] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 开始输入密码
+[2021-11-29 16:05:52,690] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.58秒
+
+[2021-11-29 16:05:52,690] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 点击登录
+[2021-11-29 16:05:53,237] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.55秒
+
+[2021-11-29 16:05:55,239] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceParamMaintain/spuList】
+[2021-11-29 16:05:57,898] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/div[8]/input〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:05:58,008] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.61秒
+
+[2021-11-29 16:05:58,508] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[1]/div[1]/button〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:05:58,554] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.55秒
+
+[2021-11-29 16:05:59,055] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖html/body/section/div[3]/section/div[1]/div[2]/div/div[3]/table/tbody/tr/td[11]/div/a[1]/span〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:05:59,101] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.55秒
+
+[2021-11-29 16:05:59,601] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:00,137] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/section/div[7]/div〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:00,305] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.67秒
+
+[2021-11-29 16:06:00,305] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 打开网址：【http://baseprice.huishoubao.com.cn/salePrice/priceAudit】
+[2021-11-29 16:06:02,868] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[1]/div[6]/div/input〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:02,925] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.56秒
+
+[2021-11-29 16:06:03,426] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/div/div[1]/div[1]/ul/li[2]/span〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:03,472] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.55秒
+
+[2021-11-29 16:06:03,974] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[1]/div[7]/input〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:04,069] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.6秒
+
+[2021-11-29 16:06:04,570] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[1]/button〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:04,612] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.54秒
+
+[2021-11-29 16:06:05,113] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[10]/div/div/a/span〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:05,634] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[3]/div/div[3]/table/tbody/tr/td[10]/div/div/a/span〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:05,719] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.59秒
+
+[2021-11-29 16:06:06,221] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/section/div[3]/section/div[5]/div/div[2]/div/div[7]/div[3]〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:06,286] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.57秒
+
+[2021-11-29 16:06:06,787] - [D:\work\WebAutoTestProject\utils\logger.py] - WARNING: 未定义元素名称: 〖/html/body/div[2]/div/div[3]/button[2]〗-【IndexError('tuple index out of range')】
+[2021-11-29 16:06:06,829] - [D:\work\WebAutoTestProject\utils\logger.py] - INFO: 执行耗时：0.54秒
+

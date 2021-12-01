@@ -77,7 +77,8 @@ def error(e):
 if __name__ == '__main__':
     import sys
     sys.path.append("D:\\work\\WebAutoTestProject\\website")
-    app.run(host="10.0.11.88", port=TestConfig.PORT)
+    app.run(host="10.0.10.199", port=TestConfig.PORT)
+    # app.run(host="127.0.0.1", port=TestConfig.PORT)
     # manager.run()
     # python main.py runserver --host 192.168.43.53
     # python main.py runserver -h 10.0.11.88 -p 8888

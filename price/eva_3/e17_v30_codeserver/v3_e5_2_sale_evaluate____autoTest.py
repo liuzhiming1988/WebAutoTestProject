@@ -23,7 +23,7 @@
 
 import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print, hsb_eva_ipProxy_k8s_test
 
 class V3_Sale_Evaluate:
     def v3_product_check_item(self, productId, checkType):
@@ -34,6 +34,7 @@ class V3_Sale_Evaluate:
         md5value = json.dumps(param) + "_" + secret_key
         headers = {"Content-Type": "application/json;charset=UTF-8", "HSB-OPENAPI-SIGNATURE": Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID": callerserviceid}
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
+        print(respone.text)
         respone.encoding = respone.apparent_encoding  # 编码设置
         respone_dict = json.loads(respone.text)  # 转成字典
         checkList = respone_dict['_data']['_data']['checkList']
@@ -74,11 +75,13 @@ class V3_Sale_Evaluate:
         md5value = json.dumps(param) + "_" + secret_key
         headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
         respone = requests.post(url, json=param, headers=headers, proxies=hsb_eva_ipProxy_test())
+        print(respone.text)
 
         print('========>1.『{0}』 产品的『标准sku』(随机取)为：\n'.format(productId), strSkuList)
         print('\n========>2. 以上『标准sku』为：\n', '{' + strSkuDesc[:-1] + '}')
         print('\n========>3.『{0}』 产品的『检测模板选项-机况-价格3.0』(随机取)为：\n'.format(productId), strCheckList)
         print('\n========>4. 以上『检测模板选项-机况-价格3.0』为：\n', '{' + strCheckDesc[:-1] + '}')
+
         hsb_response_print(respone=respone)
 
 if __name__ == '__main__':
@@ -93,7 +96,7 @@ if __name__ == '__main__':
     # v3_e5.v3_sale_evaluate(planId='10', productId='30750', checkType='2') #34项苹果定价模板v1（iPhone4-5c）(ID:6)
     # v3_e5.v3_sale_evaluate(planId='10', productId='38201', checkType='2') #34项苹果定价模板v1（iPhone5s-8P及以上）(ID:5)
     # v3_e5.v3_sale_evaluate(planId='10', productId='41567', checkType='2')  # 34项苹果定价模板v1（iPhoneX及以上）(ID:4)
-    v3_e5.v3_sale_evaluate(planId='11', productId='41567', checkType='1')
+    v3_e5.v3_sale_evaluate(planId='3', productId='41567', checkType='5')
 
 
 '''
