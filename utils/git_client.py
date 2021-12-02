@@ -55,14 +55,14 @@ class GitClient:
         n = 0
         while flag:
             n += 1
-            print("第{}次尝试".format(n))
+            print("commit：第{}次尝试".format(n))
             try:
                 self.repo.remotes.origin.push()
                 # self.repo.remote().push()
                 flag = False
-                print("第{}次提交：提交成功".format(n))
+                print("commit：第{}次提交：提交成功".format(n))
             except Exception as ec:
-                print("提交失败：\n{}".format(repr(ec)))
+                print("commit：提交失败：\n{}".format(repr(ec)))
 
     def create_tag_push(self, tag_name, remark, files=None):
         """创建tag，并进行push"""
@@ -77,13 +77,13 @@ class GitClient:
         n = 0
         while flag:
             n += 1
-            print("第{}次尝试".format(n))
+            print("Tag：第{}次尝试".format(n))
             try:
                 self.repo.remotes.origin.push(tag_name)
                 flag = False
-                print("第{}次提交：提交成功".format(n))
+                print("Tag：第{}次提交：提交成功".format(n))
             except Exception as ec:
-                print("提交失败：\n{}".format(repr(ec)))
+                print("Tag：提交失败：\n{}".format(repr(ec)))
 
     def get_status(self):
         """查看status，打印出改动的信息"""
@@ -100,8 +100,8 @@ if __name__ == '__main__':
     date = time.strftime("%Y%m%d%H%M%S", time.localtime())   # 输出格式20211116153051，精确到秒
     tag_name = "v1.0-tag-test-{}".format(date)
     git_client = GitClient(git_path="D:\work\WebAutoTestProject")
-    # git_client.commit_push("auto-all-commit daily at {}".format(date))
-    git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily at {}".format(date))
+    git_client.commit_push("auto-all-commit daily at {}".format(date))
+    # git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily at {}".format(date))
 
     # git_client.get_current_branch()
     # git_client.get_all_branches()

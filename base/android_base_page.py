@@ -25,13 +25,14 @@ from utils.logger import LoggerV2
 # 截图：手机截图，保存到项目指定位置
 # 抓app日志
 # 录制视频
-# 获取应用权限，通讯录，音频，视频等
+# 获取应用权限，通讯录，音频，视频等=用 aapt d permissions xxx.apk, 来查询包名和权限。然后用 python 或者 java 执行：adb shell pm grant 包名 权限， 来赋予权限
 # 封装adb常用命令
 # 命令行启动appium服务，并调用，判断是否存在，不存在则启用，存在则pass
 # 钉钉通知：发送文本消息、图片消息、视频消息
 # 发送邮件通知：主要为测试报告
 # 杀死手机上指定程序的进程。强制关闭monkey
 # 异常：app闪退，页面元素加载失败或长时间加载，出现anr，
+# MVT  数据渲染，菜单、列表、翻页、查询，详情跳转，接收参数插入数据，从数据库读取数据
 
 
 
@@ -73,17 +74,21 @@ desired_caps = {"platformName": "Android",  # 平台名称
 
 
 def get_apk_driver(romote_addr, desired_caps):
-    driver = webdriver.Remote(romote_addr, desired_caps)    # 连接appium
-    driver.implicitly_wait(5)
+    driver = webdriver.Remote(romote_addr, desired_caps)    # 连接appiup
+    driver.implicitly_wait(3)
     return driver
 
 
 class AndroidBasePage:
 
-    def __init__(self, apk_driver, timeout=8):
+    def __init__(self, apk_driver, timeout=5):
         self.timeout = timeout
         self.driver = apk_driver
         self.logger = LoggerV2()
+
+    def quit(self):
+        self.logger.debug("==========退出驱动==========")
+        self.driver.quit()
 
     def find_element(self, loc):
         """
@@ -137,6 +142,7 @@ class AndroidBasePage:
         if element:
             self.logger.debug("点击〖{}〗：【{}】>>【{}】".format(loc[2], loc[0], loc[1]))
             element.click()
+            time.sleep(1)
 
     def get_elem_text(self, loc):
         """

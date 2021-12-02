@@ -1,0 +1,251 @@
+[2021-12-02 10:24:41,570] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: 定位元素出现异常：[TimeoutException('', None, None)]
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 120, in find_element
+    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_KEYS[key], value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[2021-12-02 10:25:08,268] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: 定位元素出现异常：[TimeoutException('', None, None)]
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 120, in find_element
+    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_KEYS[key], value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[2021-12-02 10:26:58,902] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 10:26:59,982] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 10:27:11,098] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: 定位元素出现异常：[TimeoutException('', None, None)]
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 120, in find_element
+    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_KEYS[key], value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+[2021-12-02 10:45:03,339] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 10:45:04,412] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 10:45:06,356] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 10:45:38,364] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 10:45:59,513] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 10:49:25,405] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 10:49:26,481] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 10:49:28,281] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 10:49:59,659] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 10:50:20,640] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 10:55:48,152] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 10:55:49,217] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 10:55:51,030] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 10:56:22,683] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 10:56:43,752] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 10:56:43,764] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 11:11:45,371] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 11:11:46,461] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 11:11:48,318] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 11:12:20,732] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 11:12:41,862] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 11:12:41,873] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 14:26:51,134] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 14:26:52,220] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 14:26:53,976] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 14:27:25,950] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 14:27:46,960] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 14:27:46,968] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 14:29:10,136] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 14:29:11,194] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 14:29:14,775] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 14:29:59,160] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 14:30:02,600] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 14:30:02,606] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 14:31:41,614] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 14:31:43,445] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 14:31:46,600] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 14:32:31,868] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 14:32:52,996] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 14:32:53,004] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 14:33:33,478] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 14:33:34,550] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 14:33:36,455] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 14:34:19,109] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 14:34:41,233] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 14:34:41,241] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 14:57:19,442] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 14:57:20,525] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 14:57:22,242] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 14:57:27,071] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 14:57:29,157] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 14:57:29,165] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 14:58:01,300] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 14:58:02,382] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 14:58:04,037] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 14:58:07,739] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 14:58:09,781] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 14:58:09,789] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:14:14,330] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:14:15,550] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:14:18,652] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:14:19,927] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: InvalidElementStateException('Swipe action cannot be performed', None, None)
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\practice\appium_demo.py", line 40, in start_app
+    self.swipe_up(n=2)
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 193, in swipe_up
+    self.driver.swipe(x1, y1, x1, y2, t)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\extensions\action_helpers.py", line 131, in swipe
+    action.perform()
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\common\touch_action.py", line 163, in perform
+    self._driver.execute(Command.TOUCH_ACTION, params)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidElementStateException: Message: Swipe action cannot be performed
+
+[2021-12-02 15:14:35,970] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: 定位元素出现异常：[WebDriverException('An unknown server-side error occurred while processing the command. Original error: Timed out after 15511ms waiting for the root AccessibilityNodeInfo in the active window. Make sure the active window is not constantly hogging the main UI thread (e.g. the application is being idle long enough), so the accessibility manager could do its work', None, None)]
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 120, in find_element
+    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_KEYS[key], value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\webdriver.py", line 414, in find_element
+    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Timed out after 15511ms waiting for the root AccessibilityNodeInfo in the active window. Make sure the active window is not constantly hogging the main UI thread (e.g. the application is being idle long enough), so the accessibility manager could do its work
+
+[2021-12-02 15:14:51,494] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: 定位元素出现异常：[WebDriverException('An unknown server-side error occurred while processing the command. Original error: Timed out after 15513ms waiting for the root AccessibilityNodeInfo in the active window. Make sure the active window is not constantly hogging the main UI thread (e.g. the application is being idle long enough), so the accessibility manager could do its work', None, None)]
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 120, in find_element
+    WebDriverWait(self.driver, self.timeout, 0.5).until(EC.visibility_of_element_located((FIND_KEYS[key], value)))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\webdriver.py", line 414, in find_element
+    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Timed out after 15513ms waiting for the root AccessibilityNodeInfo in the active window. Make sure the active window is not constantly hogging the main UI thread (e.g. the application is being idle long enough), so the accessibility manager could do its work
+
+[2021-12-02 15:14:51,494] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:16:36,400] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:16:37,632] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:16:41,307] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:16:42,580] - [D:\work\WebAutoTestProject\utils\logger.py] - ERROR: InvalidElementStateException('Swipe action cannot be performed', None, None)
+Traceback (most recent call last):
+  File "D:\work\WebAutoTestProject\practice\appium_demo.py", line 41, in start_app
+    self.swipe_up(n=2)
+  File "D:\work\WebAutoTestProject\base\android_base_page.py", line 193, in swipe_up
+    self.driver.swipe(x1, y1, x1, y2, t)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\extensions\action_helpers.py", line 131, in swipe
+    action.perform()
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\common\touch_action.py", line 163, in perform
+    self._driver.execute(Command.TOUCH_ACTION, params)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "D:\work\WebAutoTestProject\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidElementStateException: Message: Swipe action cannot be performed
+
+[2021-12-02 15:17:24,207] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:17:46,935] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:17:47,346] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:18:35,191] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:18:36,249] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:18:40,512] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:18:44,218] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:18:46,198] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:18:47,208] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:19:58,125] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:19:59,375] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:20:28,230] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:20:29,308] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:20:33,582] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:20:37,311] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:20:38,743] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:20:40,315] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-去登录〗：【id】>>【com.hll.phone_recycle:id/user_name_tv】
+[2021-12-02 15:20:44,514] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 输入数据：【13049368516】
+[2021-12-02 15:20:46,375] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖获取验证码按钮〗：【id】>>【com.hll.phone_recycle:id/login_timer】
+[2021-12-02 15:20:48,030] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖勾选同意用户协议〗：【id】>>【com.hll.phone_recycle:id/agreement_checkbox】
+[2021-12-02 15:20:57,237] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖登录按钮〗：【id】>>【com.hll.phone_recycle:id/login】
+[2021-12-02 15:21:01,308] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:22:50,328] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:22:51,385] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:22:55,963] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:23:00,720] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:23:03,712] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:23:04,748] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-去登录〗：【id】>>【com.hll.phone_recycle:id/user_name_tv】
+[2021-12-02 15:23:08,962] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 输入数据：【13049368516】
+[2021-12-02 15:23:10,825] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖获取验证码按钮〗：【id】>>【com.hll.phone_recycle:id/login_timer】
+[2021-12-02 15:23:12,477] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖勾选同意用户协议〗：【id】>>【com.hll.phone_recycle:id/agreement_checkbox】
+[2021-12-02 15:23:28,685] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖登录按钮〗：【id】>>【com.hll.phone_recycle:id/login】
+[2021-12-02 15:23:34,755] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:23:57,741] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:23:59,375] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:24:03,861] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:24:07,525] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:24:10,638] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:24:16,647] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:27:31,501] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:27:32,576] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:27:36,857] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:27:40,567] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:27:43,190] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:27:44,750] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-去登录〗：【id】>>【com.hll.phone_recycle:id/user_name_tv】
+[2021-12-02 15:27:48,960] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 输入数据：【13049368516】
+[2021-12-02 15:27:50,825] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖获取验证码按钮〗：【id】>>【com.hll.phone_recycle:id/login_timer】
+[2021-12-02 15:27:52,477] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖勾选同意用户协议〗：【id】>>【com.hll.phone_recycle:id/agreement_checkbox】
+[2021-12-02 15:28:08,684] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖登录按钮〗：【id】>>【com.hll.phone_recycle:id/login】
+[2021-12-02 15:28:30,790] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:28:46,911] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:28:47,972] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:28:52,235] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:28:55,864] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:28:59,392] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:29:00,481] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-去登录〗：【id】>>【com.hll.phone_recycle:id/user_name_tv】
+[2021-12-02 15:29:04,719] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 输入数据：【13049368516】
+[2021-12-02 15:29:06,599] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖获取验证码按钮〗：【id】>>【com.hll.phone_recycle:id/login_timer】
+[2021-12-02 15:29:08,339] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖勾选同意用户协议〗：【id】>>【com.hll.phone_recycle:id/agreement_checkbox】
+[2021-12-02 15:29:25,376] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖登录按钮〗：【id】>>【com.hll.phone_recycle:id/login】
+[2021-12-02 15:29:47,502] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
+[2021-12-02 15:36:04,223] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖同意协议按钮〗：【id】>>【com.hll.phone_recycle:id/btn_dialog_ok】
+[2021-12-02 15:36:05,289] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖跳过引导页〗：【xpath】>>【/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.TextView】
+[2021-12-02 15:36:09,351] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖关闭广告弹窗〗：【id】>>【com.hll.phone_recycle:id/ad_dialog_close】
+[2021-12-02 15:36:12,988] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖保值榜-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout4】
+[2021-12-02 15:36:16,051] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-主模块〗：【id】>>【com.hll.phone_recycle:id/navigation_layout5】
+[2021-12-02 15:36:17,683] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖我的-去登录〗：【id】>>【com.hll.phone_recycle:id/user_name_tv】
+[2021-12-02 15:36:21,908] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 输入数据：【13049368516】
+[2021-12-02 15:36:23,785] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖获取验证码按钮〗：【id】>>【com.hll.phone_recycle:id/login_timer】
+[2021-12-02 15:36:25,442] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖勾选同意用户协议〗：【id】>>【com.hll.phone_recycle:id/agreement_checkbox】
+[2021-12-02 15:36:41,649] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: 点击〖登录按钮〗：【id】>>【com.hll.phone_recycle:id/login】
+[2021-12-02 15:37:02,725] - [D:\work\WebAutoTestProject\utils\logger.py] - DEBUG: ==========退出驱动==========
