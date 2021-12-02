@@ -98,10 +98,10 @@ class GitClient:
 if __name__ == '__main__':
     import time
     date = time.strftime("%Y%m%d%H%M%S", time.localtime())   # 输出格式20211116153051，精确到秒
-    tag_name = "tag-test-{}".format(date)
+    tag_name = "v1.0-tag-test-{}".format(date)
     git_client = GitClient(git_path="D:\work\WebAutoTestProject")
-    git_client.commit_push("auto-all-commit daily at {}".format(date))
-    # git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily at {}".format(date))
+    # git_client.commit_push("auto-all-commit daily at {}".format(date))
+    git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily at {}".format(date))
 
     # git_client.get_current_branch()
     # git_client.get_all_branches()
