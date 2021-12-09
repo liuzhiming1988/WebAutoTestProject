@@ -33,12 +33,12 @@
 
 import hashlib, requests, json, os, random
 from price.hsb_MD5_Enerypt import Md5Enerypt
-from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print
+from price.hsb_ipProxy_responsePrint import hsb_eva_ipProxy_test,hsb_response_print,hsb_eva_ipProxy_k8s_test
 
 def v3_eva_option_get(channel_id, product_id, pid):
     param = {"_head":{"_interface":"eva_option_get","_msgType":"request","_remark":"eva_product_v3","_version":"0.01","_timestamps":"123","_invokeId":"eva_product_v3","_callerServiceId":"816006","_groupNo":"1"},"_param":{"channel_id":channel_id, "product_id":product_id, "pid":pid}}
-    secret_key = "R2gFCRbILiNhwv3YbtaGceYJlPS5Ku02"
-    callerserviceid = "816006"
+    secret_key = "dk26kmdasnph0voz69fj0jpv7t3ixev8"
+    callerserviceid = "212006"
     url = "http://prdserver.huishoubao.com/eva_product_v3/eva_option_get"
     md5value = json.dumps(param) + "_" + secret_key
     headers = {"Content-Type":"application/json;charset=UTF-8","HSB-OPENAPI-SIGNATURE":Md5Enerypt(md5value),"HSB-OPENAPI-CALLERSERVICEID":callerserviceid}
@@ -103,11 +103,12 @@ if __name__ == '__main__':
     # v3_eva_option_get(channel_id="10000838", pid="3419", product_id="41567")
 
 
-    v3_eva_option_get(channel_id="10000164", pid="1405", product_id="41567")
-    v3_eva_option_get(channel_id="10000165", pid="1406", product_id="41567")
-    v3_eva_option_get(channel_id="10000166", pid="1407", product_id="41567")
-    v3_eva_option_get(channel_id="10000167", pid="1408", product_id="41567")
-    v3_eva_option_get(channel_id="10000168", pid="1409", product_id="41567")
+    # v3_eva_option_get(channel_id="10000164", pid="1405", product_id="41567")
+    # v3_eva_option_get(channel_id="10000165", pid="1406", product_id="41567")
+    # v3_eva_option_get(channel_id="10000166", pid="1407", product_id="41567")
+    # v3_eva_option_get(channel_id="10000167", pid="1408", product_id="41567")
+    # v3_eva_option_get(channel_id="10000168", pid="1409", product_id="41567")
+    v3_eva_option_get(channel_id="10000164", pid="1196", product_id="41567")
 
 '''
 【EvaluateProduct】

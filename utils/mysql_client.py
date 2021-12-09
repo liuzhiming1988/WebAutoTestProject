@@ -27,9 +27,7 @@ class MysqlClient:
 
     def insert(self, sql):
         text = ""
-        if "insert" in sql.lower()[:10]:
-            pass
-        else:
+        if "insert" not in sql.lower()[:10]:
             print("只允许传入Insert语句，请检查：\n{}".format(sql))
             return False
 

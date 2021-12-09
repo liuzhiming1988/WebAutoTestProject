@@ -75,7 +75,7 @@ class DetectIssue:
 if __name__ == '__main__':
     from utils.mysql_client import MysqlClient
     di = DetectIssue()
-    evaluation = di.get_order_info(order_id="7638650")
+    evaluation = di.get_order_info(order_id="7640259")
     sql = di.format_sql_out(evaluation["productId"], evaluation["evaPlatform"], evaluation["evaluateVersion"])
     vpc_price_mysql_client = MysqlClient(
         host="193.112.170.216",

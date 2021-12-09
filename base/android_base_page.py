@@ -33,7 +33,8 @@ from utils.logger import LoggerV2
 # 杀死手机上指定程序的进程。强制关闭monkey
 # 异常：app闪退，页面元素加载失败或长时间加载，出现anr，
 # MVT  数据渲染，菜单、列表、翻页、查询，详情跳转，接收参数插入数据，从数据库读取数据
-
+# monkeyrunner python 编写测试脚本
+# monkey执行脚本，发送随机事件
 
 
 

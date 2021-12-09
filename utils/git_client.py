@@ -102,7 +102,7 @@ if __name__ == '__main__':
     git_client = GitClient(git_path="D:\work\WebAutoTestProject")
     git_client.commit_push("auto-all-commit daily at {}".format(date))
     # git_client.create_tag_push(tag_name=tag_name, remark="auto-all-commit-tag daily at {}".format(date))
-
+    print(11%4)
     # git_client.get_current_branch()
     # git_client.get_all_branches()
     # git_client.get_status()
