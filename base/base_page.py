@@ -22,6 +22,7 @@ from utils.logger import Logger, LoggerV2
 from config.path_conf import *
 from utils.ding_rebot import DingRebot
 
+
 # 定义寻找元素方法字典
 FIND_LIST = {
     # selenium
@@ -39,7 +40,7 @@ FIND_LIST = {
 
 
 class BasePage:
-    # 封装每个页面共同的属性和方法
+    # 封装driver的属性和方法
 
     def __init__(self, driver, timeout=8):
         self.driver = driver
